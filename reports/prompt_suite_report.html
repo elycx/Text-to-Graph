@@ -1,0 +1,608 @@
+<!doctype html>
+<html><head><meta charset='utf-8'><title>Text-to-Graph Prompt Suite</title>
+<style>body{font-family:Arial,sans-serif;max-width:1100px;margin:32px auto;line-height:1.45;color:#1f2933}h1,h2{color:#111827}.case{border-top:1px solid #ddd;padding-top:24px;margin-top:28px}.meta{color:#52616b}.iter{margin:18px 0;padding:12px 16px;background:#f7f9fb;border-radius:8px}img{max-width:720px;width:100%;height:auto;border:1px solid #ddd;background:white}code{background:#eef2f7;padding:2px 4px;border-radius:4px}</style></head><body>
+<h1>Text-to-Graph Prompt Suite Report</h1>
+<p class='meta'>Created: 2026-06-01T23:54:52 | Model: <code>gpt-5.5</code> | Base URL: <code>http://localhost:1455/v1</code></p>
+<p class='meta'>Output: <code>outputs\prompt_suite\run_20260601_222019 ; ring_of_switches retry: outputs\prompt_suite_ring_retry\run_20260601_232107</code></p>
+<p>This report records each challenging prompt, validation history, and every rendered iteration image.</p>
+<h2>Summary</h2>
+<table border='1' cellspacing='0' cellpadding='6'><tr><th>Case</th><th>Success</th><th>Iterations</th><th>Visual Score</th><th>Nodes</th><th>Edges</th><th>Min Node Dist</th><th>Min Edge-Node</th><th>Min Edge-Edge</th><th>Max Parallel</th><th>Crossings</th><th>Errors Seen</th></tr>
+<tr><td>Braided Ladder With Portals</td><td>True</td><td>1</td><td>8.50</td><td>14</td><td>30</td><td>1.64</td><td>1.24</td><td>0.16</td><td>0.58</td><td>5.00</td><td>0</td></tr>
+<tr><td>Double Crown Bridge</td><td>True</td><td>4</td><td>8.00</td><td>18</td><td>28</td><td>2.33</td><td>1.70</td><td>0.10</td><td>0.60</td><td>4.00</td><td>11</td></tr>
+<tr><td>Stacked Diamond Flow</td><td>True</td><td>2</td><td>7.60</td><td>18</td><td>27</td><td>1.67</td><td>0.97</td><td>0.04</td><td>0.64</td><td>8.00</td><td>5</td></tr>
+<tr><td>Hubbed Grid With Teleports</td><td>False</td><td>4</td><td>n/a</td><td>13</td><td>27</td><td>2.38</td><td>0.54</td><td>0.00</td><td>1.58</td><td>21.00</td><td>23</td></tr>
+<tr><td>Cactus Chain With Spikes</td><td>True</td><td>1</td><td>8.50</td><td>16</td><td>21</td><td>1.25</td><td>1.09</td><td>1.26</td><td>0.00</td><td>0.00</td><td>0</td></tr>
+<tr><td>Twisted Prism Tree</td><td>True</td><td>4</td><td>8.00</td><td>13</td><td>21</td><td>1.72</td><td>0.76</td><td>0.04</td><td>0.67</td><td>3.00</td><td>8</td></tr>
+<tr><td>Three-Module Dependency Network</td><td>False</td><td>4</td><td>6.50</td><td>12</td><td>19</td><td>1.26</td><td>0.91</td><td>0.01</td><td>0.59</td><td>4.00</td><td>17</td></tr>
+<tr><td>Ring of Switches With Local Gates</td><td>False</td><td>4</td><td>4.00</td><td>18</td><td>30</td><td>1.22</td><td>0.75</td><td>0.00</td><td>0.64</td><td>14.00</td><td>44</td></tr>
+</table>
+<section class='case'>
+<h2>Braided Ladder With Portals</h2>
+<p><strong>Prompt:</strong> Draw an artificial undirected graph called a braided ladder with portals. There are two horizontal rails A0-A1-A2-A3-A4-A5 and B0-B1-B2-B3-B4-B5. Add vertical rungs Ai-Bi for i=0..5. Add diagonal braid edges A0-B1, B1-A2, A2-B3, B3-A4, A4-B5, and also B0-A1, A1-B2, B2-A3, A3-B4, B4-A5. Add portal nodes S and T, with S connected to A0 and B0, and T connected to A5 and B5. Make it readable and symmetric.</p>
+<p><strong>Success:</strong> <code>True</code></p>
+<p><strong>Structure:</strong> 14 nodes, 30 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph extracted by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Applied local geometry-aware layout polishing to reduce overlaps and improve alignment.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>True</code>; visual_score: <code>8.50</code>; next_refinement: <code>None</code>; min_node_dist: `1.64`; min_edge_node_clearance: `1.24`; min_edge_edge_clearance: `0.16`; max_parallel: `0.58`; crossings: `5.00`</p>
+<img src='../outputs/prompt_suite/run_20260601_222019/braided_ladder_portals/iteration_0/braided_ladder_portals.png' alt='braided_ladder_portals iteration 0'>
+</div>
+</section>
+<section class='case'>
+<h2>Double Crown Bridge</h2>
+<p><strong>Prompt:</strong> Create a complex artificial graph made from two crowns connected by a bridge. The left crown has center L and rim nodes l0,l1,l2,l3,l4,l5 forming a 6-cycle, with L connected to l0,l2,l4 only. The right crown has center R and rim nodes r0,r1,r2,r3,r4,r5 forming a 6-cycle, with R connected to r1,r3,r5 only. Add bridge path l0-x0-x1-r3 and bridge path l3-y0-y1-r0. Add twist matching edges l1-r4, l2-r5, l4-r1, l5-r2. Draw it as two circular clusters with the bridges between them.</p>
+<p><strong>Success:</strong> <code>True</code></p>
+<p><strong>Structure:</strong> 18 nodes, 28 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=2.01, maximum=4.59, moved_fraction=0.89.</li>
+<li>Applied local geometry-aware layout polishing to reduce overlaps and improve alignment.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.50</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.44`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.01`; max_parallel: `1.26`; crossings: `10.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The central twist matching edges create a fairly tangled bundle between the two crowns, with several crossings in the middle that make the bridge/matching structure harder to read.</li>
+<li>The long edge from l4 to r1 runs across the entire graph and visually crowds the left crown interior before crossing other long matching edges.</li>
+<li>The left crown is not drawn as an even circular cluster: l0 and l5 are pulled inward, making the rim cycle less clear and causing the local crown gadget to look compressed.</li>
+<li>The bottom bridge path l3-y0-y1-r0 takes a very low wide route, visually detached from the two circular clusters and longer than necessary.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Place l0 through l5 more evenly on a circular ring around L, with l0 near upper-right and l5 lower-right but farther from the center to clarify the 6-cycle.</li>
+<li>Place r0 through r5 more evenly around R to match the left crown symmetry.</li>
+<li>Separate the four twist matching edges into a cleaner fan: route l1-r4 and l2-r5 slightly above the center, and l4-r1 and l5-r2 slightly below or with small bends to avoid a dense central crossing bundle.</li>
+<li>Move y0 and y1 upward closer to the gap between crowns, or route l3-y0-y1-r0 with a shallower bend so the lower bridge does not make such a large detour.</li>
+<li>Keep x0 and x1 aligned as an upper bridge path, but ensure it remains clearly separated from the upper twist edges.</li>
+</ul>
+<ul>
+<li>Visual review score=6.5: The central twist matching edges create a fairly tangled bundle between the two crowns, with several crossings in the middle that make the bridge/matching structure harder to read.</li>
+<li>Visual review score=6.5: The long edge from l4 to r1 runs across the entire graph and visually crowds the left crown interior before crossing other long matching edges.</li>
+<li>Visual review score=6.5: The left crown is not drawn as an even circular cluster: l0 and l5 are pulled inward, making the rim cycle less clear and causing the local crown gadget to look compressed.</li>
+<li>Visual review score=6.5: The bottom bridge path l3-y0-y1-r0 takes a very low wide route, visually detached from the two circular clusters and longer than necessary.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/double_crown_bridge/iteration_0/double_crown_bridge.png' alt='double_crown_bridge iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.50</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.56`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.01`; max_parallel: `0.63`; crossings: `4.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The routed edge l2-r5 makes a large rectangular detour around the top of the entire drawing, which is visually distracting and obscures the intended two-crown structure.</li>
+<li>The top l2-r5 route crosses the l0-x0 and x1-r3 bridge edges, adding avoidable tangles near the upper bridge path.</li>
+<li>Several long inter-crown matching edges run nearly horizontally across the middle, making the center area feel crowded and less semantically clear.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Reroute l2-r5 as a smoother upper inter-crown curve between the crowns, below x0/x1 if possible, rather than around the outside top boundary.</li>
+<li>Move x0 and x1 slightly higher or route the l0-x0-x1-r3 bridge as a clean upper arc so it does not cross the l2-r5 matching edge.</li>
+<li>Separate the four twist matching edges vertically into distinct bands: l1-r4 upper, l2-r5 upper-middle, l5-r2 middle-lower, and l4-r1 lower, with enough spacing between them.</li>
+<li>Keep both crowns more circular and symmetric, with bridge nodes placed between the crowns rather than forcing matching edges to detour around the whole figure.</li>
+</ul>
+<ul>
+<li>Visual review score=6.5: The routed edge l2-r5 makes a large rectangular detour around the top of the entire drawing, which is visually distracting and obscures the intended two-crown structure.</li>
+<li>Visual review score=6.5: The top l2-r5 route crosses the l0-x0 and x1-r3 bridge edges, adding avoidable tangles near the upper bridge path.</li>
+<li>Visual review score=6.5: Several long inter-crown matching edges run nearly horizontally across the middle, making the center area feel crowded and less semantically clear.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/double_crown_bridge/iteration_1/double_crown_bridge.png' alt='double_crown_bridge iteration 1'>
+</div>
+<div class='iter'>
+<h3>Iteration 2</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.50</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.56`; min_edge_node_clearance: `0.80`; min_edge_edge_clearance: `0.02`; max_parallel: `0.60`; crossings: `6.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The top bridge edge x0-l0 crosses the l1-r4 matching edge very close to the left crown, crowding the l0/l1 area.</li>
+<li>The top bridge edge x1-r3 crosses the l1-r4 matching edge near the right crown and runs close to the r4-r3 area, making that gadget harder to read.</li>
+<li>The long matching edges l1-r4 and l2-r5 run nearly parallel across much of the drawing, creating a visually heavy band through the middle/top of the graph.</li>
+<li>The lower routed edge l4-r1 makes a long detour beneath the graph and creates an overly wide rectangular path, while the l5-r2 edge is a long straight line through the center; the inter-crown connections feel tangled rather than organized.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Move x0 and x1 higher or route l0-x0-x1-r3 farther above the crowns so its descending segments do not cross the l1-r4 edge near l0/l1 or r3/r4.</li>
+<li>Separate the long twist edges vertically: route l1-r4 higher and l2-r5 slightly lower or with gentle bends so they do not form a close parallel band.</li>
+<li>Consider routing l4-r1 closer to the lower bridge corridor or moving it inward with fewer detour bends, while keeping it clear of l5-r2.</li>
+<li>Space the rim nodes in each crown more evenly on circular arcs so the two crown modules read as symmetric clusters before adding the inter-crown edges.</li>
+</ul>
+<ul>
+<li>Visual review score=6.5: The top bridge edge x0-l0 crosses the l1-r4 matching edge very close to the left crown, crowding the l0/l1 area.</li>
+<li>Visual review score=6.5: The top bridge edge x1-r3 crosses the l1-r4 matching edge near the right crown and runs close to the r4-r3 area, making that gadget harder to read.</li>
+<li>Visual review score=6.5: The long matching edges l1-r4 and l2-r5 run nearly parallel across much of the drawing, creating a visually heavy band through the middle/top of the graph.</li>
+<li>Visual review score=6.5: The lower routed edge l4-r1 makes a long detour beneath the graph and creates an overly wide rectangular path, while the l5-r2 edge is a long straight line through the center; the inter-crown connections feel tangled rather than organized.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/double_crown_bridge/iteration_2/double_crown_bridge.png' alt='double_crown_bridge iteration 2'>
+</div>
+<div class='iter'>
+<h3>Iteration 3</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>True</code>; visual_score: <code>8.00</code>; next_refinement: <code>None</code>; min_node_dist: `2.33`; min_edge_node_clearance: `1.70`; min_edge_edge_clearance: `0.10`; max_parallel: `0.60`; crossings: `4.00`</p>
+<img src='../outputs/prompt_suite/run_20260601_222019/double_crown_bridge/iteration_3/double_crown_bridge.png' alt='double_crown_bridge iteration 3'>
+</div>
+</section>
+<section class='case'>
+<h2>Stacked Diamond Flow</h2>
+<p><strong>Prompt:</strong> Draw a directed artificial flow graph built from four stacked diamond gadgets. Start at s and end at t. For each k=0,1,2,3 create top node uk, bottom node vk, left branch ak, and right branch bk. Add directed edges uk-&gt;ak, uk-&gt;bk, ak-&gt;vk, bk-&gt;vk for every k. Chain them with s-&gt;u0, v0-&gt;u1, v1-&gt;u2, v2-&gt;u3, v3-&gt;t. Add cross-layer directed shortcuts a0-&gt;b1, b0-&gt;a1, a1-&gt;b2, b1-&gt;a2, a2-&gt;b3, b2-&gt;a3. Make layers vertical from left to right.</p>
+<p><strong>Success:</strong> <code>True</code></p>
+<p><strong>Structure:</strong> 18 nodes, 27 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=1.87, maximum=3.38, moved_fraction=0.83.</li>
+<li>Applied local geometry-aware layout polishing to reduce overlaps and improve alignment.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>5.50</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.15`; min_edge_node_clearance: `0.80`; min_edge_edge_clearance: `0.05`; max_parallel: `0.59`; crossings: `4.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The repeated diamond gadgets are not drawn evenly: several gadgets are collapsed or skewed, especially the k=2 and k=3 gadgets.</li>
+<li>In the k=3 gadget, a_3 is nearly on the vertical u_3-v_3 chain, making the diamond structure hard to read and crowding the incident edges.</li>
+<li>The long shortcut routes a_0-&gt;b_1 and a_2-&gt;b_3 take high detours that crowd the top row near u_1 and u_3 and make the figure less clean.</li>
+<li>The middle region around b_1, a_2, v_1, v_2, and u_2 is tangled, with multiple crossings and diagonal edges close together.</li>
+<li>The layer ordering is visually inconsistent: nodes that should form repeated vertical diamond modules drift left/right unevenly, making the flow harder to follow.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Place each gadget in a consistent diamond: align u_k on a common upper row, v_k on a common lower row, a_k on the left branch, and b_k on the right branch for every k.</li>
+<li>Move a_3 leftward and b_3 rightward relative to the u_3-v_3 centerline so the final diamond opens up clearly.</li>
+<li>Separate the k=2 gadget by moving a_2 left/down slightly and b_2 right/down slightly, with u_2 centered above and v_2 centered below.</li>
+<li>Route shortcuts a_0-&gt;b_1, a_1-&gt;b_2, and a_2-&gt;b_3 with smoother shallow arcs or consistent lanes that stay farther from node labels.</li>
+<li>Increase horizontal spacing between consecutive gadgets to reduce crossings and edge crowding in the middle layers.</li>
+</ul>
+<ul>
+<li>Visual review score=5.5: The repeated diamond gadgets are not drawn evenly: several gadgets are collapsed or skewed, especially the k=2 and k=3 gadgets.</li>
+<li>Visual review score=5.5: In the k=3 gadget, a_3 is nearly on the vertical u_3-v_3 chain, making the diamond structure hard to read and crowding the incident edges.</li>
+<li>Visual review score=5.5: The long shortcut routes a_0-&gt;b_1 and a_2-&gt;b_3 take high detours that crowd the top row near u_1 and u_3 and make the figure less clean.</li>
+<li>Visual review score=5.5: The middle region around b_1, a_2, v_1, v_2, and u_2 is tangled, with multiple crossings and diagonal edges close together.</li>
+<li>Visual review score=5.5: The layer ordering is visually inconsistent: nodes that should form repeated vertical diamond modules drift left/right unevenly, making the flow harder to follow.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/stacked_diamond_flow/iteration_0/stacked_diamond_flow.png' alt='stacked_diamond_flow iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>True</code>; visual_score: <code>7.60</code>; next_refinement: <code>None</code>; min_node_dist: `1.67`; min_edge_node_clearance: `0.97`; min_edge_edge_clearance: `0.04`; max_parallel: `0.64`; crossings: `8.00`</p>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>If refining further, make the four diamond gadgets more uniform by aligning all u_k and v_k nodes in two consistent rows and spacing a_k/b_k branches evenly.</li>
+<li>The three upper shortcut routes are readable but could be slightly staggered or drawn with smoother bends to reduce the boxy appearance.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/stacked_diamond_flow/iteration_1/stacked_diamond_flow.png' alt='stacked_diamond_flow iteration 1'>
+</div>
+</section>
+<section class='case'>
+<h2>Hubbed Grid With Teleports</h2>
+<p><strong>Prompt:</strong> Draw an artificial undirected graph made from a 3 by 4 grid plus teleports. Grid vertices are g00,g01,g02,g03 on the top row, g10,g11,g12,g13 in the middle row, and g20,g21,g22,g23 on the bottom row. Add all horizontal and vertical grid edges. Add hub node H connected to g01,g02,g11,g12,g21,g22. Add teleport edges g00-g23, g03-g20, g10-g13, and g01-g22. Use bends or an outer route for long teleports so the grid remains legible.</p>
+<p><strong>Success:</strong> <code>False</code></p>
+<p><strong>Structure:</strong> 13 nodes, 27 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=2.16, maximum=5.01, moved_fraction=0.77.</li>
+<li>Applied local geometry-aware layout polishing to reduce overlaps and improve alignment.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `2.33`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.01`; max_parallel: `0.95`; crossings: `21.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The hub spokes from H create a dense bundle through the middle of the grid, with several crossings near grid nodes and labels, especially around g01, g02, g11, g12, and g22.</li>
+<li>The repeated 3 by 4 grid structure is visibly uneven: rows and columns are not well aligned, making the intended grid harder to read.</li>
+<li>The curved teleport edge g01-g22 runs through the central grid area and adds clutter near g12 and g22.</li>
+<li>The outer teleport route from g03 to g20 runs very close to the top row and crosses the H spokes, creating an avoidable tangle.</li>
+<li>The g10-g13 routed edge forms a long horizontal segment through the lower middle of the drawing and crowds the area around g10/g20 and g13.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Place g00-g03, g10-g13, and g20-g23 on a more regular aligned 3 by 4 lattice with consistent row and column spacing.</li>
+<li>Move H higher or slightly centered above the middle columns, and fan or curve its six incident edges so they avoid passing close to non-incident grid nodes and labels.</li>
+<li>Route g01-g22 outside or with a wider bend that avoids the central g11/g12 area.</li>
+<li>Move the g03-g20 teleport farther outside the grid perimeter, with more clearance above the top row and away from the H spokes.</li>
+<li>Route g10-g13 with a cleaner outer path below the middle row or keep it as a straight middle-row chord only if it does not crowd g10, g11, g12, or g13.</li>
+</ul>
+<ul>
+<li>Visual review score=4.0: The hub spokes from H create a dense bundle through the middle of the grid, with several crossings near grid nodes and labels, especially around g01, g02, g11, g12, and g22.</li>
+<li>Visual review score=4.0: The repeated 3 by 4 grid structure is visibly uneven: rows and columns are not well aligned, making the intended grid harder to read.</li>
+<li>Visual review score=4.0: The curved teleport edge g01-g22 runs through the central grid area and adds clutter near g12 and g22.</li>
+<li>Visual review score=4.0: The outer teleport route from g03 to g20 runs very close to the top row and crosses the H spokes, creating an avoidable tangle.</li>
+<li>Visual review score=4.0: The g10-g13 routed edge forms a long horizontal segment through the lower middle of the drawing and crowds the area around g10/g20 and g13.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/hubbed_grid_with_teleports/iteration_0/hubbed_grid_with_teleports.png' alt='hubbed_grid_with_teleports iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>3.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `4.65`; min_edge_node_clearance: `0.64`; min_edge_edge_clearance: `0.01`; max_parallel: `0.94`; crossings: `13.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The 3 by 4 grid is visually distorted: g01 is far above the top row while g02 is much lower, so the intended row/column structure is hard to read.</li>
+<li>Several hub edges create avoidable tangles through the grid area, especially H-g11 and H-g12, which cross near central grid edges and make the hub connections hard to follow.</li>
+<li>The routed teleport g01-g22 takes a large left-side detour and then runs across the lower part of the drawing close to bottom-row nodes, adding clutter around g20, g21, and g22.</li>
+<li>The long outer teleport routes g00-g23 and g03-g20 create large rectangular loops around the graph and crowd the bottom/side boundary, making the drawing look chaotic rather than cleanly layered.</li>
+<li>There are many edge crossings in and around the central grid, including crossings near g00, g02, g11, and g12, reducing readability.</li>
+<li>Unrelated long routed edges run near each other for visible segments along the outer left and bottom portions of the figure.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Place the grid vertices in a regular 3-row by 4-column layout: align g00-g03 on one top row, g10-g13 on a middle row, and g20-g23 on a bottom row with even column spacing.</li>
+<li>Move H directly above the center of the grid and route H-g01, H-g02, H-g11, H-g12, H-g21, and H-g22 as short, mostly straight radial edges, avoiding crossings near grid nodes.</li>
+<li>Route teleports g00-g23 and g03-g20 outside the grid with smooth outer arcs or clean perimeter bends, keeping them well separated from bottom-row labels.</li>
+<li>Route g10-g13 as a straight or slightly offset horizontal edge below the middle row, with enough clearance from g10-g13 node labels.</li>
+<li>Route g01-g22 either as a clearly offset diagonal/curved connection or along a separate outer corridor that does not pass close to g20, g21, or g22.</li>
+<li>Increase spacing between outer routed edges so unrelated long edges do not share nearly parallel corridors along the sides or bottom.</li>
+</ul>
+<ul>
+<li>Edge H-g11 passes too close to unrelated node g00: distance 0.64.</li>
+<li>Visual review score=3.0: The 3 by 4 grid is visually distorted: g01 is far above the top row while g02 is much lower, so the intended row/column structure is hard to read.</li>
+<li>Visual review score=3.0: Several hub edges create avoidable tangles through the grid area, especially H-g11 and H-g12, which cross near central grid edges and make the hub connections hard to follow.</li>
+<li>Visual review score=3.0: The routed teleport g01-g22 takes a large left-side detour and then runs across the lower part of the drawing close to bottom-row nodes, adding clutter around g20, g21, and g22.</li>
+<li>Visual review score=3.0: The long outer teleport routes g00-g23 and g03-g20 create large rectangular loops around the graph and crowd the bottom/side boundary, making the drawing look chaotic rather than cleanly layered.</li>
+<li>Visual review score=3.0: There are many edge crossings in and around the central grid, including crossings near g00, g02, g11, and g12, reducing readability.</li>
+<li>Visual review score=3.0: Unrelated long routed edges run near each other for visible segments along the outer left and bottom portions of the figure.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/hubbed_grid_with_teleports/iteration_1/hubbed_grid_with_teleports.png' alt='hubbed_grid_with_teleports iteration 1'>
+</div>
+<div class='iter'>
+<h3>Iteration 2</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>3.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `3.05`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.01`; max_parallel: `0.92`; crossings: `16.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The intended 3 by 4 grid is visually distorted: g01 is far above the top row, and g20, g21, g22, g23 are not aligned on a clear bottom row, making the grid structure hard to read.</li>
+<li>Several long routed teleport edges form large rectangular boxes that crowd the drawing and obscure the grid semantics.</li>
+<li>The g01-g22 teleport route runs across the upper part of the graph and passes close to the g02/g03 area and other edges, creating avoidable tangles.</li>
+<li>The g03-g20 teleport takes a very large outer detour around the top and left side, crossing the visual field near H-related edges and making the layout chaotic.</li>
+<li>Edges from H to grid nodes are long and fan through the central grid area, producing many crossings and crowding around g01, g02, g11, and g12.</li>
+<li>The bottom-right area around g22 and g23 is especially tangled, with multiple routed edges and bends close together.</li>
+<li>Unrelated routed edges run close together for long visible segments along the right and lower outside of the graph.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Place g00-g03, g10-g13, and g20-g23 in three straight, evenly spaced horizontal rows and four aligned columns.</li>
+<li>Move g01 down into the top row and move g20, g21, g22, g23 onto a single bottom row to restore the grid structure.</li>
+<li>Place H centered above the middle columns, closer to g01/g02/g11/g12, and route its six incident edges as short, separated spokes with slight bends to avoid labels.</li>
+<li>Route g00-g23 around the outside using a clean left-bottom-right path with more margin from g20, g21, g22, and g23.</li>
+<li>Route g03-g20 on the opposite outside perimeter, preferably top-right to left side, with enough clearance from H and top-row labels.</li>
+<li>Route g10-g13 as a shallow arc or small-bend path just below the middle row, avoiding g20 and the bottom-row edges.</li>
+<li>Route g01-g22 along the right outside perimeter instead of across the top interior, keeping it away from g02, g03, and H spokes.</li>
+</ul>
+<ul>
+<li>Edge g01-g22 appears over-routed: routed length 36.57 vs direct length 14.15, while a direct or shallow route has node clearance 1.77.</li>
+<li>Visual review score=3.0: The intended 3 by 4 grid is visually distorted: g01 is far above the top row, and g20, g21, g22, g23 are not aligned on a clear bottom row, making the grid structure hard to read.</li>
+<li>Visual review score=3.0: Several long routed teleport edges form large rectangular boxes that crowd the drawing and obscure the grid semantics.</li>
+<li>Visual review score=3.0: The g01-g22 teleport route runs across the upper part of the graph and passes close to the g02/g03 area and other edges, creating avoidable tangles.</li>
+<li>Visual review score=3.0: The g03-g20 teleport takes a very large outer detour around the top and left side, crossing the visual field near H-related edges and making the layout chaotic.</li>
+<li>Visual review score=3.0: Edges from H to grid nodes are long and fan through the central grid area, producing many crossings and crowding around g01, g02, g11, and g12.</li>
+<li>Visual review score=3.0: The bottom-right area around g22 and g23 is especially tangled, with multiple routed edges and bends close together.</li>
+<li>Visual review score=3.0: Unrelated routed edges run close together for long visible segments along the right and lower outside of the graph.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/hubbed_grid_with_teleports/iteration_2/hubbed_grid_with_teleports.png' alt='hubbed_grid_with_teleports iteration 2'>
+</div>
+<div class='iter'>
+<h3>Iteration 3</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>False</code>; visual_ok: <code>False</code>; visual_score: <code>n/a</code>; next_refinement: <code>None</code>; min_node_dist: `2.38`; min_edge_node_clearance: `0.54`; min_edge_edge_clearance: `0.00`; max_parallel: `1.58`; crossings: `21.00`</p>
+<ul>
+<li>Edge g03-g20 passes too close to unrelated node g11: distance 0.54.</li>
+<li>Edge g01-g22 appears over-routed: routed length 46.94 vs direct length 18.18, while a direct or shallow route has node clearance 2.47.</li>
+<li>!  ==&gt; Fatal error occurred, no output PDF file produced!</li>
+</ul>
+<p><em>No rendered image for this iteration.</em></p>
+</div>
+</section>
+<section class='case'>
+<h2>Cactus Chain With Spikes</h2>
+<p><strong>Prompt:</strong> Draw a cactus-like artificial graph. Use articulation nodes c0,c1,c2,c3,c4 in a horizontal chain. Around c0,c1 make a triangle c0-a0-c1-c0. Around c1,c2 make a square c1-a1-a2-c2-c1. Around c2,c3 make a pentagon c2-a3-a4-a5-c3-c2. Around c3,c4 make another triangle c3-a6-c4-c3. Add spike leaves p0 attached to c0, p1 attached to c2, p2 attached to c4, and add a top connector z attached to c1,c2,c3. Make the block structure visually obvious.</p>
+<p><strong>Success:</strong> <code>True</code></p>
+<p><strong>Structure:</strong> 16 nodes, 21 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph extracted by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Applied local geometry-aware layout polishing to reduce overlaps and improve alignment.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>True</code>; visual_score: <code>8.50</code>; next_refinement: <code>None</code>; min_node_dist: `1.25`; min_edge_node_clearance: `1.09`; min_edge_edge_clearance: `1.26`; max_parallel: `0.00`; crossings: `0.00`</p>
+<img src='../outputs/prompt_suite/run_20260601_222019/cactus_chain_with_spikes/iteration_0/cactus_chain_with_spikes.png' alt='cactus_chain_with_spikes iteration 0'>
+</div>
+</section>
+<section class='case'>
+<h2>Twisted Prism Tree</h2>
+<p><strong>Prompt:</strong> Draw an artificial graph combining a triangular prism and a small tree. Prism nodes are top triangle U0,U1,U2, bottom triangle V0,V1,V2, with triangle edges among all U nodes, triangle edges among all V nodes, and vertical edges U0-V0, U1-V1, U2-V2. Add a twisted matching U0-V1, U1-V2, U2-V0. Attach a binary tree root r to U1; r connects to x0 and x1; x0 connects to x00 and x01; x1 connects to x10 and x11. Also connect leaf x01 to V2 and leaf x10 to V0. Draw the prism on the left and the tree on the right.</p>
+<p><strong>Success:</strong> <code>True</code></p>
+<p><strong>Structure:</strong> 13 nodes, 21 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=2.05, maximum=3.04, moved_fraction=0.92.</li>
+<li>Applied local geometry-aware layout polishing to reduce overlaps and improve alignment.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.38`; min_edge_node_clearance: `0.90`; min_edge_edge_clearance: `0.09`; max_parallel: `0.63`; crossings: `5.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The long routed edge V2-x01 makes a large bottom detour across the whole figure and then rises vertically beside the tree, which is visually distracting and much longer than necessary.</li>
+<li>The long edge V0-x10 also runs along the bottom of the figure and creates an avoidable sweeping detour from the prism to the tree.</li>
+<li>The two long cross-gadget edges V2-x01 and V0-x10 run in the same lower region for a long visible span, making the bottom of the drawing look like routing clutter rather than part of the graph structure.</li>
+<li>The prism on the left is fairly tangled, with several crossings concentrated near the U/V nodes, making the prism semantics harder to read.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Reroute V2-x01 with a shorter path, for example using a gentle bend through the open space between the prism and tree instead of dropping to the bottom edge of the figure.</li>
+<li>Reroute V0-x10 separately from V2-x01, perhaps with a lower but shorter arc or by moving x10 slightly left/down so the connection can be more direct.</li>
+<li>Increase separation between the two cross-gadget edges V2-x01 and V0-x10 if both must be routed below the drawing.</li>
+<li>Consider arranging the prism nodes more evenly as two offset triangles or a clearer hexagonal/prism layout to reduce concentrated crossings near V1 and V2.</li>
+</ul>
+<ul>
+<li>Visual review score=6.0: The long routed edge V2-x01 makes a large bottom detour across the whole figure and then rises vertically beside the tree, which is visually distracting and much longer than necessary.</li>
+<li>Visual review score=6.0: The long edge V0-x10 also runs along the bottom of the figure and creates an avoidable sweeping detour from the prism to the tree.</li>
+<li>Visual review score=6.0: The two long cross-gadget edges V2-x01 and V0-x10 run in the same lower region for a long visible span, making the bottom of the drawing look like routing clutter rather than part of the graph structure.</li>
+<li>Visual review score=6.0: The prism on the left is fairly tangled, with several crossings concentrated near the U/V nodes, making the prism semantics harder to read.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/twisted_prism_tree/iteration_0/twisted_prism_tree.png' alt='twisted_prism_tree iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>False</code>; visual_ok: <code>False</code>; visual_score: <code>n/a</code>; next_refinement: <code>text_refinement</code>; min_node_dist: `1.54`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.04`; max_parallel: `0.64`; crossings: `4.00`</p>
+<ul>
+<li>!  ==&gt; Fatal error occurred, no output PDF file produced!</li>
+</ul>
+<p><em>No rendered image for this iteration.</em></p>
+</div>
+<div class='iter'>
+<h3>Iteration 2</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.82`; min_edge_node_clearance: `0.88`; min_edge_edge_clearance: `0.01`; max_parallel: `0.91`; crossings: `8.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The edge V2-x01 takes a very long detour far below the graph and then up the far right side, making the drawing unnecessarily stretched and harder to read.</li>
+<li>The edge V0-x10 is also a long sweeping arc across the middle/bottom of the drawing and passes through the visual gap between the prism and tree, adding avoidable clutter.</li>
+<li>The prism on the left is somewhat tangled, with several crossings clustered inside the U/V gadget; it remains mostly readable but could be made clearer with more regular prism placement.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Reroute V2-x01 with a shorter path, for example using a modest lower bend from V2 toward x01 rather than dropping to the extreme bottom-right corner.</li>
+<li>Move x01 slightly lower or inward, or move V2 slightly right/down, so the V2-x01 connection can be drawn as a shorter curved or two-bend edge without crossing the tree heavily.</li>
+<li>Reroute V0-x10 with a smaller bend, or move x10 slightly left/down so the edge does not need such a broad arc across the figure.</li>
+<li>Arrange the prism nodes more evenly as two offset triangles or a compact hexagonal prism-like shape to reduce the dense central crossings.</li>
+</ul>
+<ul>
+<li>Visual review score=6.0: The edge V2-x01 takes a very long detour far below the graph and then up the far right side, making the drawing unnecessarily stretched and harder to read.</li>
+<li>Visual review score=6.0: The edge V0-x10 is also a long sweeping arc across the middle/bottom of the drawing and passes through the visual gap between the prism and tree, adding avoidable clutter.</li>
+<li>Visual review score=6.0: The prism on the left is somewhat tangled, with several crossings clustered inside the U/V gadget; it remains mostly readable but could be made clearer with more regular prism placement.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/twisted_prism_tree/iteration_2/twisted_prism_tree.png' alt='twisted_prism_tree iteration 2'>
+</div>
+<div class='iter'>
+<h3>Iteration 3</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>True</code>; visual_score: <code>8.00</code>; next_refinement: <code>None</code>; min_node_dist: `1.72`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.04`; max_parallel: `0.67`; crossings: `3.00`</p>
+<img src='../outputs/prompt_suite/run_20260601_222019/twisted_prism_tree/iteration_3/twisted_prism_tree.png' alt='twisted_prism_tree iteration 3'>
+</div>
+</section>
+<section class='case'>
+<h2>Three-Module Dependency Network</h2>
+<p><strong>Prompt:</strong> Draw a directed artificial dependency graph with three modules A, B, C. Module A has nodes A0,A1,A2,A3 with edges A0-&gt;A1, A0-&gt;A2, A1-&gt;A3, A2-&gt;A3. Module B has nodes B0,B1,B2,B3 with edges B0-&gt;B1, B0-&gt;B2, B1-&gt;B3, B2-&gt;B3. Module C has nodes C0,C1,C2,C3 with edges C0-&gt;C1, C0-&gt;C2, C1-&gt;C3, C2-&gt;C3. Add inter-module edges A3-&gt;B0, B3-&gt;C0, A1-&gt;B2, A2-&gt;C1, B1-&gt;C2, and feedback monitor edges C3-&gt;A0 and C2-&gt;B0 drawn as curved dashed-looking outer arcs if possible. Keep modules separated as three rounded-looking clusters using layout only.</p>
+<p><strong>Success:</strong> <code>False</code></p>
+<p><strong>Structure:</strong> 12 nodes, 19 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=0.99, maximum=1.94, moved_fraction=0.58.</li>
+<li>Applied local geometry-aware layout polishing to reduce overlaps and improve alignment.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.19`; min_edge_node_clearance: `0.80`; min_edge_edge_clearance: `0.00`; max_parallel: `1.25`; crossings: `5.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The A2-&gt;C1 edge takes a very long bottom-and-right detour and its right vertical segment crowds the C module, especially near C3 and C2, before entering C1.</li>
+<li>The C module is cramped: C1, C3, and C2 are stacked too tightly, making the local arrows and arrowheads crowded.</li>
+<li>The repeated A, B, and C dependency modules are not laid out consistently; C is compressed while A and B are more spread out, making the intended three-module structure less clear.</li>
+<li>Several inter-module edges create avoidable tangles in the middle, especially around B0/B2/B3 and the edges A1-&gt;B2, B0-&gt;B1, and B3-&gt;C0.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Arrange each module as a clearer diamond: node 0 on the left, nodes 1 and 2 vertically separated in the middle, node 3 on the right; apply this pattern consistently for A, B, and C.</li>
+<li>Move C1 upward and C2 downward slightly, and move C3 farther right or lower-right to open space inside the C module.</li>
+<li>Reroute A2-&gt;C1 as a smoother outer curve with more clearance from C2/C3, or route it below the modules but keep the vertical return segment farther to the right of the C cluster.</li>
+<li>Keep the feedback arcs C3-&gt;A0 and C2-&gt;B0 farther outside the main drawing so they read clearly as monitor arcs and do not visually compete with ordinary inter-module edges.</li>
+<li>Increase horizontal spacing between modules B and C, and route B1-&gt;C2 and B3-&gt;C0 with separated lanes to reduce crowding near C0/C2.</li>
+</ul>
+<ul>
+<li>Visual review score=6.0: The A2-&gt;C1 edge takes a very long bottom-and-right detour and its right vertical segment crowds the C module, especially near C3 and C2, before entering C1.</li>
+<li>Visual review score=6.0: The C module is cramped: C1, C3, and C2 are stacked too tightly, making the local arrows and arrowheads crowded.</li>
+<li>Visual review score=6.0: The repeated A, B, and C dependency modules are not laid out consistently; C is compressed while A and B are more spread out, making the intended three-module structure less clear.</li>
+<li>Visual review score=6.0: Several inter-module edges create avoidable tangles in the middle, especially around B0/B2/B3 and the edges A1-&gt;B2, B0-&gt;B1, and B3-&gt;C0.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/three_module_dependency/iteration_0/three_module_dependency.png' alt='three_module_dependency iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>5.50</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.96`; min_edge_node_clearance: `0.88`; min_edge_edge_clearance: `0.04`; max_parallel: `1.17`; crossings: `5.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The routed edge A2-&gt;C1 takes a very long bottom-and-right detour across the whole graph, creating a prominent enclosing line that obscures the intended three-module structure.</li>
+<li>Near the right side, the A2-&gt;C1 routed segment and the outer feedback arc C3-&gt;A0 crowd the C1/C3 area, making it hard to distinguish which edge is entering C1 and which is feedback.</li>
+<li>The B module is cramped: B0 and B2 are close, with several edges converging and crossing in the small space between A3, B0, B1, B2, and B3.</li>
+<li>The feedback/monitor arcs are not visually dashed-looking and instead read as solid enclosing boundaries, which makes the graph look boxed in rather than modular.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Reroute A2-&gt;C1 as a smoother upper or mid-level curved inter-module edge, or move it outside the modules with more clearance and a less rectangular path.</li>
+<li>Move C1 and C3 slightly inward/left or route the C3-&gt;A0 feedback arc farther above the graph so it does not crowd the C1/C3 labels and incoming arrows.</li>
+<li>Increase spacing inside Module B by moving B0 left/down, B2 right/down, and B1 upward so the B0-&gt;B2, A1-&gt;B2, A3-&gt;B0, and B1/B2-&gt;B3 edges have clearer separation.</li>
+<li>Make the three modules more evenly repeated: arrange A, B, and C as similar diamond-shaped clusters in separate columns, then route inter-module edges between columns with small bends.</li>
+</ul>
+<ul>
+<li>Visual review score=5.5: The routed edge A2-&gt;C1 takes a very long bottom-and-right detour across the whole graph, creating a prominent enclosing line that obscures the intended three-module structure.</li>
+<li>Visual review score=5.5: Near the right side, the A2-&gt;C1 routed segment and the outer feedback arc C3-&gt;A0 crowd the C1/C3 area, making it hard to distinguish which edge is entering C1 and which is feedback.</li>
+<li>Visual review score=5.5: The B module is cramped: B0 and B2 are close, with several edges converging and crossing in the small space between A3, B0, B1, B2, and B3.</li>
+<li>Visual review score=5.5: The feedback/monitor arcs are not visually dashed-looking and instead read as solid enclosing boundaries, which makes the graph look boxed in rather than modular.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/three_module_dependency/iteration_1/three_module_dependency.png' alt='three_module_dependency iteration 1'>
+</div>
+<div class='iter'>
+<h3>Iteration 2</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.50</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.15`; min_edge_node_clearance: `0.97`; min_edge_edge_clearance: `0.05`; max_parallel: `0.59`; crossings: `2.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The long A2-&gt;C1 routed edge runs close above the A3 node/label and makes the A-module area harder to read.</li>
+<li>The B1-&gt;C2 and B3-&gt;C0 inter-module edges cross in the central B-C gap, creating an avoidable tangle between the modules.</li>
+<li>The C2-&gt;B0 feedback edge takes a long angular detour along the bottom and then rises close to the B cluster, making it look like a structural edge rather than an outer feedback arc.</li>
+<li>The three repeated module diamonds are not evenly aligned or separated; module B is compressed vertically while module C is spread unevenly, reducing the intended modular readability.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Raise or bow the A2-&gt;C1 edge farther above A3, or move A3 slightly downward/right to increase clearance.</li>
+<li>Separate the B-to-C inter-module routes: route B3-&gt;C0 slightly above and B1-&gt;C2 slightly below, or adjust C0/C2 vertically to avoid their crossing.</li>
+<li>Reroute C2-&gt;B0 as a smoother dashed-looking outer bottom arc with more clearance from B2/B3 and B0, rather than a vertical segment near the B cluster.</li>
+<li>Arrange A, B, and C as more consistent diamond modules in three columns, with each module's top/source, two middle branches, and bottom/sink spaced evenly.</li>
+</ul>
+<ul>
+<li>Visual review score=6.5: The long A2-&gt;C1 routed edge runs close above the A3 node/label and makes the A-module area harder to read.</li>
+<li>Visual review score=6.5: The B1-&gt;C2 and B3-&gt;C0 inter-module edges cross in the central B-C gap, creating an avoidable tangle between the modules.</li>
+<li>Visual review score=6.5: The C2-&gt;B0 feedback edge takes a long angular detour along the bottom and then rises close to the B cluster, making it look like a structural edge rather than an outer feedback arc.</li>
+<li>Visual review score=6.5: The three repeated module diamonds are not evenly aligned or separated; module B is compressed vertically while module C is spread unevenly, reducing the intended modular readability.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/three_module_dependency/iteration_2/three_module_dependency.png' alt='three_module_dependency iteration 2'>
+</div>
+<div class='iter'>
+<h3>Iteration 3</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.50</code>; next_refinement: <code>None</code>; min_node_dist: `1.26`; min_edge_node_clearance: `0.91`; min_edge_edge_clearance: `0.01`; max_parallel: `0.59`; crossings: `4.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The long A2-&gt;C1 edge rises through module A and crosses the local A1-&gt;A3 area close to A3, making the A module harder to read.</li>
+<li>The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.</li>
+<li>The C2-&gt;B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.</li>
+<li>The C3-&gt;A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.</li>
+<li>Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route A2-&gt;C1 outside or above module A so it does not pass close to A3 or cross the A1-&gt;A3 region.</li>
+<li>Reposition B0, B1, B2, and B3 into a clearer diamond similar to module A: B0 left, B1 upper-middle, B2 lower-middle, B3 right, with more vertical separation between B1 and B2.</li>
+<li>Draw C2-&gt;B0 as a smoother lower outer arc that stays below all modules and approaches B0 from outside without running vertically through the B cluster.</li>
+<li>Draw C3-&gt;A0 as a smoother upper curved arc with more margin from the frame and make it visually distinct from ordinary edges if possible.</li>
+<li>Align the three modules in a more regular left-to-right sequence with comparable internal spacing and diamond proportions.</li>
+</ul>
+<ul>
+<li>Visual review score=6.5: The long A2-&gt;C1 edge rises through module A and crosses the local A1-&gt;A3 area close to A3, making the A module harder to read.</li>
+<li>Visual review score=6.5: The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.</li>
+<li>Visual review score=6.5: The C2-&gt;B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.</li>
+<li>Visual review score=6.5: The C3-&gt;A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.</li>
+<li>Visual review score=6.5: Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C.</li>
+</ul>
+<img src='../outputs/prompt_suite/run_20260601_222019/three_module_dependency/iteration_3/three_module_dependency.png' alt='three_module_dependency iteration 3'>
+</div>
+</section>
+<section class='case'>
+<h2>Ring of Switches With Local Gates</h2>
+<p><strong>Prompt:</strong> Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0-&gt;s1-&gt;s2-&gt;s3-&gt;s4-&gt;s5-&gt;s0. Each switch si has a local gate gi and output oi, with edges si-&gt;gi, gi-&gt;oi, and oi-&gt;s(i+1 mod 6). Add skip edges g0-&gt;s3, g1-&gt;s4, g2-&gt;s5, g3-&gt;s0, g4-&gt;s1, g5-&gt;s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.</p>
+<p><strong>Success:</strong> <code>False</code></p>
+<p><strong>Structure:</strong> 18 nodes, 30 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=2.72, maximum=4.48, moved_fraction=1.00.</li>
+<li>Applied local geometry-aware layout polishing to reduce overlaps and improve alignment.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `2.22`; min_edge_node_clearance: `0.75`; min_edge_edge_clearance: `0.00`; max_parallel: `2.86`; crossings: `22.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip edges create large rectangular detours that dominate the drawing and make the circular structure hard to read.</li>
+<li>The left-side outside routes for g3-&gt;s0, g4-&gt;s1, and g5-&gt;s2 run close and nearly parallel for long vertical spans, producing a heavy bundled frame.</li>
+<li>The right-side outside routes for g0-&gt;s3 and g2-&gt;s5 create long vertical detours and multiple crossings near the s1/s2 side of the graph.</li>
+<li>Some long diagonal edges cross the interior close to unrelated nodes, especially around s0, s1, s3, and s4, making incidences difficult to distinguish.</li>
+<li>The repeated switch-gate-output modules are not evenly arranged on a clean circular/radial pattern; the local gates and outputs are unevenly spaced and some satellites obscure the intended ring structure.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Place s0 through s5 more evenly on a circle and put each gi and oi on the same radial spoke just outside its switch.</li>
+<li>Route the six skip edges as separated outer arcs around the perimeter instead of rectangular paths with long vertical and horizontal segments.</li>
+<li>Increase radial spacing between the switch ring and gate/output satellites so local edges do not crowd the cycle edges.</li>
+<li>Move the g4/o4 and g5/o5 modules slightly outward and separate their outer skip routes to avoid the close parallel bundle on the left.</li>
+<li>Move the g1/o1 and g2/o2 modules slightly outward/right and reroute g0-&gt;s3 and g2-&gt;s5 as smoother right-side arcs away from s1 and s2.</li>
+<li>Avoid routing any skip edge through the interior near s0, s1, s3, or s4; keep crossings away from node labels.</li>
+</ul>
+<ul>
+<li>Edge g0-s3 appears over-routed: routed length 51.10 vs direct length 17.22, while a direct or shallow route has node clearance 2.77.</li>
+<li>Edge g2-s5 appears over-routed: routed length 46.37 vs direct length 20.46, while a direct or shallow route has node clearance 1.49.</li>
+<li>Edge g3-s0 appears over-routed: routed length 50.44 vs direct length 18.51, while a direct or shallow route has node clearance 2.77.</li>
+<li>Edge g5-s2 appears over-routed: routed length 53.07 vs direct length 21.32, while a direct or shallow route has node clearance 1.05.</li>
+<li>Edges g3-s0 and g4-s1 run too close together for a long segment: close length 2.86.</li>
+<li>Visual review score=4.0: Several skip edges create large rectangular detours that dominate the drawing and make the circular structure hard to read.</li>
+<li>Visual review score=4.0: The left-side outside routes for g3-&gt;s0, g4-&gt;s1, and g5-&gt;s2 run close and nearly parallel for long vertical spans, producing a heavy bundled frame.</li>
+<li>Visual review score=4.0: The right-side outside routes for g0-&gt;s3 and g2-&gt;s5 create long vertical detours and multiple crossings near the s1/s2 side of the graph.</li>
+<li>Visual review score=4.0: Some long diagonal edges cross the interior close to unrelated nodes, especially around s0, s1, s3, and s4, making incidences difficult to distinguish.</li>
+<li>Visual review score=4.0: The repeated switch-gate-output modules are not evenly arranged on a clean circular/radial pattern; the local gates and outputs are unevenly spaced and some satellites obscure the intended ring structure.</li>
+</ul>
+<img src='../outputs/prompt_suite_ring_retry/run_20260601_232107/ring_of_switches/iteration_0/ring_of_switches.png' alt='ring_of_switches iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.44`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.02`; max_parallel: `3.44`; crossings: `18.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The outer skip-edge routing is visually chaotic, with large polygonal detours that dominate the drawing and obscure the intended circular structure.</li>
+<li>Several skip edges cross or pass close to local gate/output gadgets, especially around the s1/g1/o1, s2/g2/o2, s4/g4/o4, and s5/g5/o5 regions.</li>
+<li>There are many crossings near nodes rather than in open space, making it hard to distinguish incident edges from unrelated skip edges.</li>
+<li>Some unrelated edges run nearly parallel and close together for long visible segments, especially along the outer perimeter.</li>
+<li>The repeated six-module structure is uneven: g2/o2 and g5/o5 are displaced much farther outward and sideways than the other gate/output pairs, breaking the circular symmetry.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Place all six switches evenly on a regular hexagon and keep each gi and oi on a short radial chain outside its switch: si -&gt; gi -&gt; oi.</li>
+<li>Route the switch cycle as a clean inner hexagon or near-hexagonal ring.</li>
+<li>Route all skip edges consistently on an outer circular band with smooth arcs or short bundled bends, keeping them outside the local si/gi/oi gadgets.</li>
+<li>Move g2/o2 and g5/o5 inward or reposition them to match the radial spacing used by the other gate/output pairs.</li>
+<li>Increase clearance between skip-edge arcs and the local labels around s1, s2, s4, and s5.</li>
+<li>Avoid long polygonal detours with sharp corners; use more direct outer arcs from each gi to its target switch.</li>
+</ul>
+<ul>
+<li>Edge g2-s5 appears over-routed: routed length 41.17 vs direct length 16.42, while a direct or shallow route has node clearance 1.62.</li>
+<li>Edge g5-s2 appears over-routed: routed length 41.17 vs direct length 16.42, while a direct or shallow route has node clearance 1.62.</li>
+<li>Edges g0-s3 and g5-s2 run too close together for a long segment: close length 1.90.</li>
+<li>Edges g1-s4 and g5-s2 run too close together for a long segment: close length 3.44.</li>
+<li>Edges g2-s5 and g3-s0 run too close together for a long segment: close length 1.90.</li>
+<li>Edges g2-s5 and g4-s1 run too close together for a long segment: close length 3.44.</li>
+<li>Visual review score=4.0: The outer skip-edge routing is visually chaotic, with large polygonal detours that dominate the drawing and obscure the intended circular structure.</li>
+<li>Visual review score=4.0: Several skip edges cross or pass close to local gate/output gadgets, especially around the s1/g1/o1, s2/g2/o2, s4/g4/o4, and s5/g5/o5 regions.</li>
+<li>Visual review score=4.0: There are many crossings near nodes rather than in open space, making it hard to distinguish incident edges from unrelated skip edges.</li>
+<li>Visual review score=4.0: Some unrelated edges run nearly parallel and close together for long visible segments, especially along the outer perimeter.</li>
+<li>Visual review score=4.0: The repeated six-module structure is uneven: g2/o2 and g5/o5 are displaced much farther outward and sideways than the other gate/output pairs, breaking the circular symmetry.</li>
+</ul>
+<img src='../outputs/prompt_suite_ring_retry/run_20260601_232107/ring_of_switches/iteration_1/ring_of_switches.png' alt='ring_of_switches iteration 1'>
+</div>
+<div class='iter'>
+<h3>Iteration 2</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>3.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.66`; min_edge_node_clearance: `0.36`; min_edge_edge_clearance: `0.01`; max_parallel: `1.56`; crossings: `20.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip edges take very long polygonal detours and then cut back across the drawing, creating a chaotic outer cage rather than clear outside routing.</li>
+<li>The skip edge from g5 to s2 runs across the upper/right side and crowds the s1 region before reaching s2, making the local s1/g1/o1 gadget harder to read.</li>
+<li>The skip edge from g1 to s4 loops far around the top/left and crosses or closely parallels other long skip routes, producing avoidable tangles.</li>
+<li>The skip edge from g4 to s1 loops far around the bottom/right and crosses through the lower central area near s3/s4-related edges, adding clutter.</li>
+<li>The g2 to s5 route appears especially indirect and cuts across the drawing instead of staying on the outside near the lower/right-to-left arc.</li>
+<li>Several unrelated long edges run close together for visible segments along the outer boundary, reducing readability.</li>
+<li>The six repeated switch-gate-output modules are not evenly arranged: some satellites are pushed far outward while others sit close to their switch, making the circular structure visually uneven.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Place the six switch nodes on a more regular hexagon and position each gi and oi radially outward from its corresponding si with consistent spacing.</li>
+<li>Route all skip edges as smooth outer arcs around the perimeter, one per side of the hexagon, avoiding routes that cut back through the center.</li>
+<li>Reroute g0-&gt;s3 and g3-&gt;s0 as opposite-side outer arcs that stay well outside the switch ring and do not pass through the s1/s2 or s4/s5 local gadgets.</li>
+<li>Reroute g1-&gt;s4 and g4-&gt;s1 on separate outer bands so they do not overlap or closely parallel other skip edges for long stretches.</li>
+<li>Reroute g2-&gt;s5 and g5-&gt;s2 as lower/right and upper/left perimeter arcs respectively, keeping them away from the s1, s2, s4, and s5 labels.</li>
+<li>Increase spacing between the outer gate/output labels and the skip-edge paths so no long edge crowds a non-incident node or label.</li>
+</ul>
+<ul>
+<li>Edge g0-s3 appears over-routed: routed length 45.12 vs direct length 16.38, while a direct or shallow route has node clearance 1.05.</li>
+<li>Edge g1-s4 appears over-routed: routed length 43.51 vs direct length 15.62, while a direct or shallow route has node clearance 1.75.</li>
+<li>Edge g2-s5 passes too close to unrelated node g4: distance 0.36.</li>
+<li>Edge g3-s0 appears over-routed: routed length 45.12 vs direct length 16.38, while a direct or shallow route has node clearance 1.05.</li>
+<li>Edge g4-s1 appears over-routed: routed length 44.29 vs direct length 15.97, while a direct or shallow route has node clearance 1.14.</li>
+<li>Edge g5-s2 passes too close to unrelated node g0: distance 0.39.</li>
+<li>Visual review score=3.0: Several skip edges take very long polygonal detours and then cut back across the drawing, creating a chaotic outer cage rather than clear outside routing.</li>
+<li>Visual review score=3.0: The skip edge from g5 to s2 runs across the upper/right side and crowds the s1 region before reaching s2, making the local s1/g1/o1 gadget harder to read.</li>
+<li>Visual review score=3.0: The skip edge from g1 to s4 loops far around the top/left and crosses or closely parallels other long skip routes, producing avoidable tangles.</li>
+<li>Visual review score=3.0: The skip edge from g4 to s1 loops far around the bottom/right and crosses through the lower central area near s3/s4-related edges, adding clutter.</li>
+<li>Visual review score=3.0: The g2 to s5 route appears especially indirect and cuts across the drawing instead of staying on the outside near the lower/right-to-left arc.</li>
+<li>Visual review score=3.0: Several unrelated long edges run close together for visible segments along the outer boundary, reducing readability.</li>
+<li>Visual review score=3.0: The six repeated switch-gate-output modules are not evenly arranged: some satellites are pushed far outward while others sit close to their switch, making the circular structure visually uneven.</li>
+</ul>
+<img src='../outputs/prompt_suite_ring_retry/run_20260601_232107/ring_of_switches/iteration_2/ring_of_switches.png' alt='ring_of_switches iteration 2'>
+</div>
+<div class='iter'>
+<h3>Iteration 3</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>None</code>; min_node_dist: `1.22`; min_edge_node_clearance: `0.75`; min_edge_edge_clearance: `0.00`; max_parallel: `0.64`; crossings: `14.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several routed skip edges make very large rectangular detours, producing a visually chaotic drawing despite the intended circular structure.</li>
+<li>The vertical edge from s1 to s2 runs very close to the local nodes/labels around o1, g2, and o2, making the right-side gadget hard to read.</li>
+<li>The long routed skip edges g1-&gt;s4, g4-&gt;s1, g5-&gt;s2, and g2-&gt;s5 form large box-like paths that cross through the visual field and obscure the circular/hexagonal organization.</li>
+<li>The g3-&gt;s0 skip edge cuts through the center of the drawing instead of going around the outside, adding avoidable crossings and clutter near the switch cycle.</li>
+<li>Multiple unrelated long edges run near each other or cross in the central region, making it difficult to distinguish the switch cycle from skip edges.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Rebuild the layout as a more regular hexagon: place s0 through s5 evenly on a circle, with each gi and oi placed just outside its corresponding switch in a small radial chain.</li>
+<li>Route all skip edges as smooth outer arcs or well-separated concentric polylines around the perimeter instead of large rectangular boxes crossing the figure.</li>
+<li>Move the right-side local gadget g1,o1 and g2,o2 slightly farther outward from the s1-s2 edge, or curve/offset the s1-&gt;s2 edge inward so it does not crowd those labels.</li>
+<li>Reroute g3-&gt;s0 around the outside of the circle rather than through the center.</li>
+<li>Separate the outer skip routes into distinct lanes so g1-&gt;s4, g4-&gt;s1, g5-&gt;s2, and g2-&gt;s5 do not overlap visually or create unnecessary long detours.</li>
+</ul>
+<ul>
+<li>Edge g0-s3 appears over-routed: routed length 28.15 vs direct length 11.61, while a direct or shallow route has node clearance 1.21.</li>
+<li>Edge g1-s4 appears over-routed: routed length 35.14 vs direct length 15.33, while a direct or shallow route has node clearance 1.29.</li>
+<li>Edge g2-s5 appears over-routed: routed length 41.12 vs direct length 15.42, while a direct or shallow route has node clearance 1.41.</li>
+<li>Edge g4-s1 appears over-routed: routed length 36.28 vs direct length 14.09, while a direct or shallow route has node clearance 1.35.</li>
+<li>Edge g5-s2 appears over-routed: routed length 44.19 vs direct length 14.63, while a direct or shallow route has node clearance 1.33.</li>
+<li>Visual review score=4.0: Several routed skip edges make very large rectangular detours, producing a visually chaotic drawing despite the intended circular structure.</li>
+<li>Visual review score=4.0: The vertical edge from s1 to s2 runs very close to the local nodes/labels around o1, g2, and o2, making the right-side gadget hard to read.</li>
+<li>Visual review score=4.0: The long routed skip edges g1-&gt;s4, g4-&gt;s1, g5-&gt;s2, and g2-&gt;s5 form large box-like paths that cross through the visual field and obscure the circular/hexagonal organization.</li>
+<li>Visual review score=4.0: The g3-&gt;s0 skip edge cuts through the center of the drawing instead of going around the outside, adding avoidable crossings and clutter near the switch cycle.</li>
+<li>Visual review score=4.0: Multiple unrelated long edges run near each other or cross in the central region, making it difficult to distinguish the switch cycle from skip edges.</li>
+</ul>
+<img src='../outputs/prompt_suite_ring_retry/run_20260601_232107/ring_of_switches/iteration_3/ring_of_switches.png' alt='ring_of_switches iteration 3'>
+</div>
+</section>
+</body></html>

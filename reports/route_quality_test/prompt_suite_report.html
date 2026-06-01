@@ -1,0 +1,270 @@
+<!doctype html>
+<html><head><meta charset='utf-8'><title>Text-to-Graph Prompt Suite</title>
+<style>body{font-family:Arial,sans-serif;max-width:1100px;margin:32px auto;line-height:1.45;color:#1f2933}h1,h2{color:#111827}.case{border-top:1px solid #ddd;padding-top:24px;margin-top:28px}.meta{color:#52616b}.iter{margin:18px 0;padding:12px 16px;background:#f7f9fb;border-radius:8px}img{max-width:720px;width:100%;height:auto;border:1px solid #ddd;background:white}code{background:#eef2f7;padding:2px 4px;border-radius:4px}</style></head><body>
+<h1>Text-to-Graph Prompt Suite Report</h1>
+<p class='meta'>Created: 2026-06-01T20:03:00 | Model: <code>gpt-5.5</code> | Base URL: <code>http://localhost:1455/v1</code></p>
+<p class='meta'>Output: <code>outputs\prompt_suite_route_quality\run_20260601_200300</code></p>
+<p>This report records each challenging prompt, validation history, and every rendered iteration image.</p>
+<h2>Summary</h2>
+<table border='1' cellspacing='0' cellpadding='6'><tr><th>Case</th><th>Success</th><th>Iterations</th><th>Visual Score</th><th>Nodes</th><th>Edges</th><th>Min Node Dist</th><th>Min Edge-Node</th><th>Min Edge-Edge</th><th>Max Parallel</th><th>Errors Seen</th></tr>
+<tr><td>Double Crown Bridge</td><td>False</td><td>4</td><td>6.50</td><td>18</td><td>28</td><td>2.12</td><td>1.25</td><td>0.03</td><td>0.95</td><td>28</td></tr>
+<tr><td>Ring of Switches With Local Gates</td><td>False</td><td>4</td><td>4.50</td><td>18</td><td>30</td><td>2.85</td><td>0.76</td><td>0.00</td><td>2.54</td><td>47</td></tr>
+</table>
+<section class='case'>
+<h2>Double Crown Bridge</h2>
+<p><strong>Prompt:</strong> Create a complex artificial graph made from two crowns connected by a bridge. The left crown has center L and rim nodes l0,l1,l2,l3,l4,l5 forming a 6-cycle, with L connected to l0,l2,l4 only. The right crown has center R and rim nodes r0,r1,r2,r3,r4,r5 forming a 6-cycle, with R connected to r1,r3,r5 only. Add bridge path l0-x0-x1-r3 and bridge path l3-y0-y1-r0. Add twist matching edges l1-r4, l2-r5, l4-r1, l5-r2. Draw it as two circular clusters with the bridges between them.</p>
+<p><strong>Success:</strong> <code>False</code></p>
+<p><strong>Structure:</strong> 18 nodes, 28 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=4.71, maximum=8.99, moved_fraction=1.00.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>5.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.16`; min_edge_node_clearance: `0.68`; min_edge_edge_clearance: `0.00`; max_parallel: `1.76`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several long twist/matching edges converge through the middle and pass too close to the non-incident node x0; at least one edge appears to touch or cross the x0 node/label, making the label hard to read.</li>
+<li>The central bundle of edges between the two crowns is tangled: multiple unrelated edges cross near x0 and run close together for a visible segment, reducing readability.</li>
+<li>The straight bridge segment l0-x0-x1-r3 lies directly through the same corridor as the twist edges, causing crowding around x0 and the middle of the figure.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Move x0 and x1 slightly above or below the central edge bundle, or route the l0-x0-x1-r3 bridge as a separate shallow arc so it does not pass through the twist-edge crossing area.</li>
+<li>Increase the bend/separation of the twist matching edges l1-r4, l2-r5, l4-r1, and l5-r2 so they occupy distinct upper/lower corridors and avoid x0.</li>
+<li>Keep crossings away from node disks and labels, especially around x0; ensure no non-incident edge passes through or grazes that node.</li>
+</ul>
+<ul>
+<li>Edges l0-x0 and l1-r4 run too close together for a long segment: close length 1.76.</li>
+<li>Edges l0-x0 and l2-r5 run too close together for a long segment: close length 1.76.</li>
+<li>Edges l0-x0 and l4-r1 run too close together for a long segment: close length 1.76.</li>
+<li>Edges l0-x0 and l5-r2 run too close together for a long segment: close length 1.76.</li>
+<li>Visual review score=5.0: Several long twist/matching edges converge through the middle and pass too close to the non-incident node x0; at least one edge appears to touch or cross the x0 node/label, making the label hard to read.</li>
+<li>Visual review score=5.0: The central bundle of edges between the two crowns is tangled: multiple unrelated edges cross near x0 and run close together for a visible segment, reducing readability.</li>
+<li>Visual review score=5.0: The straight bridge segment l0-x0-x1-r3 lies directly through the same corridor as the twist edges, causing crowding around x0 and the middle of the figure.</li>
+</ul>
+<img src='../../outputs/prompt_suite_route_quality/run_20260601_200300/double_crown_bridge/iteration_0/double_crown_bridge.png' alt='double_crown_bridge iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.79`; min_edge_node_clearance: `0.69`; min_edge_edge_clearance: `0.04`; max_parallel: `6.50`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several twist-matching edges use very large rectangular detours around the entire drawing, making the graph semantics hard to follow.</li>
+<li>The long routed edges create close parallel runs along the top, bottom, and right side for long visible segments.</li>
+<li>On the right crown, the routed matching edges crowd the r1, r2, r4, and r5 region; some vertical and horizontal routed segments pass too close to non-incident nodes and labels.</li>
+<li>The y1-r0 bridge route approaches the right crown diagonally and visually cuts through the r4/r5 area, adding clutter near unrelated nodes and edges.</li>
+<li>The lower bridge path through y0 and y1 is placed very far below the crowns, forcing long detours and making the bridge less readable.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Move y0 and y1 upward closer to the gap between the crowns, and route l3-y0-y1-r0 as a lower bridge with only small bends, avoiding the right crown interior.</li>
+<li>Reroute the twist edges l1-r4, l2-r5, l4-r1, and l5-r2 through the central space between the crowns using separated gentle arcs or short polyline bands instead of enclosing the whole graph.</li>
+<li>Increase spacing around the right crown or move r1, r2, r4, and r5 slightly outward so routed matching edges do not crowd their labels.</li>
+<li>Avoid long shared horizontal/vertical corridors on the outer boundary; assign each long inter-crown edge a distinct, shorter route with clear separation.</li>
+</ul>
+<ul>
+<li>Edge l1-r4 appears over-routed: routed length 25.37 vs direct length 10.13, while a direct or shallow route has node clearance 1.20.</li>
+<li>Edge l5-r2 appears over-routed: routed length 28.77 vs direct length 10.13, while a direct or shallow route has node clearance 1.20.</li>
+<li>Edges l1-r4 and l5-r2 run too close together for a long segment: close length 6.50.</li>
+<li>Edges l4-r1 and l5-r2 run too close together for a long segment: close length 1.85.</li>
+<li>Visual review score=4.0: Several twist-matching edges use very large rectangular detours around the entire drawing, making the graph semantics hard to follow.</li>
+<li>Visual review score=4.0: The long routed edges create close parallel runs along the top, bottom, and right side for long visible segments.</li>
+<li>Visual review score=4.0: On the right crown, the routed matching edges crowd the r1, r2, r4, and r5 region; some vertical and horizontal routed segments pass too close to non-incident nodes and labels.</li>
+<li>Visual review score=4.0: The y1-r0 bridge route approaches the right crown diagonally and visually cuts through the r4/r5 area, adding clutter near unrelated nodes and edges.</li>
+<li>Visual review score=4.0: The lower bridge path through y0 and y1 is placed very far below the crowns, forcing long detours and making the bridge less readable.</li>
+</ul>
+<img src='../../outputs/prompt_suite_route_quality/run_20260601_200300/double_crown_bridge/iteration_1/double_crown_bridge.png' alt='double_crown_bridge iteration 1'>
+</div>
+<div class='iter'>
+<h3>Iteration 2</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `2.53`; min_edge_node_clearance: `0.66`; min_edge_edge_clearance: `0.00`; max_parallel: `5.01`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several long inter-crown twist edges create an avoidable tangle through the middle and around the right crown.</li>
+<li>The bottom routed edge from l4 to r1 runs close to the y0-y1 bridge for a long visible segment and crowds the bottom bridge nodes, especially y0 and y1.</li>
+<li>The y1-r0 bridge route passes very close to the r5/r0 area and visually crowds the right crown boundary.</li>
+<li>Long detouring edges l2-r5 and l4-r1 wrap far around the graph instead of using clearer, shorter routes between the crowns.</li>
+<li>Multiple crossings occur near the right crown nodes r3, r4, r5, and r0, making the right cluster semantics harder to read.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Move the bridge nodes x0,x1 and y0,y1 farther outward from the crowns and separate the upper and lower bridge corridors more clearly.</li>
+<li>Reroute l4-r1 with a shorter lower-middle path that stays below the crown but does not run parallel to y0-y1 for so long.</li>
+<li>Reroute l2-r5 with fewer extreme bends, keeping it away from the right crown labels and avoiding the central tangle.</li>
+<li>Increase spacing among r0, r5, r4, and r3 or move the right crown slightly outward to reduce crossings and edge crowding near those nodes.</li>
+<li>Use distinct vertical lanes for the four twist matching edges so unrelated long edges do not travel close together.</li>
+</ul>
+<ul>
+<li>Edge l4-r1 passes too close to unrelated node r5: distance 0.66.</li>
+<li>Edges y1-r0 and l2-r5 run too close together for a long segment: close length 3.75.</li>
+<li>Edges y1-r0 and l4-r1 run too close together for a long segment: close length 3.13.</li>
+<li>Edges l1-r4 and l2-r5 run too close together for a long segment: close length 5.01.</li>
+<li>Visual review score=4.0: Several long inter-crown twist edges create an avoidable tangle through the middle and around the right crown.</li>
+<li>Visual review score=4.0: The bottom routed edge from l4 to r1 runs close to the y0-y1 bridge for a long visible segment and crowds the bottom bridge nodes, especially y0 and y1.</li>
+<li>Visual review score=4.0: The y1-r0 bridge route passes very close to the r5/r0 area and visually crowds the right crown boundary.</li>
+<li>Visual review score=4.0: Long detouring edges l2-r5 and l4-r1 wrap far around the graph instead of using clearer, shorter routes between the crowns.</li>
+<li>Visual review score=4.0: Multiple crossings occur near the right crown nodes r3, r4, r5, and r0, making the right cluster semantics harder to read.</li>
+</ul>
+<img src='../../outputs/prompt_suite_route_quality/run_20260601_200300/double_crown_bridge/iteration_2/double_crown_bridge.png' alt='double_crown_bridge iteration 2'>
+</div>
+<div class='iter'>
+<h3>Iteration 3</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>6.50</code>; next_refinement: <code>None</code>; min_node_dist: `2.12`; min_edge_node_clearance: `1.25`; min_edge_edge_clearance: `0.03`; max_parallel: `0.95`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>The edge y1-r0 passes very close to, and appears to graze or overlap, the unrelated node r1 and its label area.</li>
+<li>The lower bridge y0-y1-r0 cuts through the right crown gadget instead of staying outside it, making the r0/r1/R area harder to read.</li>
+<li>The diagonal edge R-r1 and the diagonal bridge edge y1-r0 create a crowded tangle near r1.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Move y1 farther to the lower-right, below and slightly outside r0/r1, so the edge y1-r0 approaches r0 from the outside without passing near r1.</li>
+<li>Alternatively, route y1-r0 with a bend around the outside of the right crown, below r1 and then up to r0.</li>
+<li>If keeping straight edges, move r1 slightly farther down/right or move r0 farther right to increase clearance from the y1-r0 bridge edge.</li>
+</ul>
+<ul>
+<li>Visual review score=6.5: The edge y1-r0 passes very close to, and appears to graze or overlap, the unrelated node r1 and its label area.</li>
+<li>Visual review score=6.5: The lower bridge y0-y1-r0 cuts through the right crown gadget instead of staying outside it, making the r0/r1/R area harder to read.</li>
+<li>Visual review score=6.5: The diagonal edge R-r1 and the diagonal bridge edge y1-r0 create a crowded tangle near r1.</li>
+</ul>
+<img src='../../outputs/prompt_suite_route_quality/run_20260601_200300/double_crown_bridge/iteration_3/double_crown_bridge.png' alt='double_crown_bridge iteration 3'>
+</div>
+</section>
+<section class='case'>
+<h2>Ring of Switches With Local Gates</h2>
+<p><strong>Prompt:</strong> Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0-&gt;s1-&gt;s2-&gt;s3-&gt;s4-&gt;s5-&gt;s0. Each switch si has a local gate gi and output oi, with edges si-&gt;gi, gi-&gt;oi, and oi-&gt;s(i+1 mod 6). Add skip edges g0-&gt;s3, g1-&gt;s4, g2-&gt;s5, g3-&gt;s0, g4-&gt;s1, g5-&gt;s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.</p>
+<p><strong>Success:</strong> <code>False</code></p>
+<p><strong>Structure:</strong> 18 nodes, 30 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=1.58, maximum=3.21, moved_fraction=1.00.</li>
+<li>Applied local geometry-aware node-position nudging to reduce node-edge overlap.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `2.37`; min_edge_node_clearance: `0.65`; min_edge_edge_clearance: `0.00`; max_parallel: `4.40`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip-edge routes crowd or appear to pass very close to unrelated output nodes, especially around o0 at the top and o3 at the bottom.</li>
+<li>The routed skip edges g1-&gt;s4 and g5-&gt;s2 bend through the top apex area and visually crowd o0 and its label.</li>
+<li>The routed skip edges g2-&gt;s5 and g4-&gt;s1 bend through the bottom apex area and visually crowd o3 and its label.</li>
+<li>Multiple unrelated outer skip edges run close together for long visible segments along the left and right perimeter, making the routing look tangled.</li>
+<li>Some skip edges take very long polygonal detours despite the intended circular layout, reducing readability.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Move o0 farther outward/upward or route the top skip edges around it with a wider clearance so no unrelated edge approaches the o0 node or label.</li>
+<li>Move o3 farther outward/downward or route the bottom skip edges around it with a wider clearance.</li>
+<li>Separate the outer skip-edge corridors into distinct lanes so g1-&gt;s4, g5-&gt;s2, g2-&gt;s5, and g4-&gt;s1 do not share close parallel paths for long distances.</li>
+<li>Route each skip edge around the outside with smoother arcs or fewer bends, keeping them outside the local gate/output gadgets rather than through the apex regions near o0 and o3.</li>
+<li>Increase the overall radius of the switch cycle or push gates/outputs slightly farther from the center to create more clearance for outer skip routes.</li>
+</ul>
+<ul>
+<li>Edge g4-s1 passes too close to unrelated node o3: distance 0.65.</li>
+<li>Edge g5-s2 passes too close to unrelated node o0: distance 0.65.</li>
+<li>Edges g0-s3 and g5-s2 run too close together for a long segment: close length 2.52.</li>
+<li>Edges g1-s4 and g2-s5 run too close together for a long segment: close length 2.84.</li>
+<li>Edges g2-s5 and g3-s0 run too close together for a long segment: close length 3.48.</li>
+<li>Edges g3-s0 and g4-s1 run too close together for a long segment: close length 2.50.</li>
+<li>Edges g4-s1 and g5-s2 run too close together for a long segment: close length 4.40.</li>
+<li>Visual review score=4.0: Several skip-edge routes crowd or appear to pass very close to unrelated output nodes, especially around o0 at the top and o3 at the bottom.</li>
+<li>Visual review score=4.0: The routed skip edges g1-&gt;s4 and g5-&gt;s2 bend through the top apex area and visually crowd o0 and its label.</li>
+<li>Visual review score=4.0: The routed skip edges g2-&gt;s5 and g4-&gt;s1 bend through the bottom apex area and visually crowd o3 and its label.</li>
+<li>Visual review score=4.0: Multiple unrelated outer skip edges run close together for long visible segments along the left and right perimeter, making the routing look tangled.</li>
+<li>Visual review score=4.0: Some skip edges take very long polygonal detours despite the intended circular layout, reducing readability.</li>
+</ul>
+<img src='../../outputs/prompt_suite_route_quality/run_20260601_200300/ring_of_switches/iteration_0/ring_of_switches.png' alt='ring_of_switches iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `3.16`; min_edge_node_clearance: `0.72`; min_edge_edge_clearance: `0.00`; max_parallel: `4.09`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip edges take very long detours around the whole drawing, creating a large outer tangle that makes the intended circular structure hard to read.</li>
+<li>The upper skip-edge routes run across the top half of the graph and pass too close to the local gadget around g0/o0, especially near the o0 and g0 labels.</li>
+<li>On the right side, the routed skip edges around g1/o1 and g2/o2 create crowded bends close to the o1 and o2 local gadgets.</li>
+<li>On the left side, the routed skip edges around g4/o4 and g5/o5 run close to the local gadgets and visually obscure the relationship between each switch, gate, and output.</li>
+<li>Multiple unrelated outer skip edges run nearly parallel or very close for long visible segments, especially along the top and side boundaries.</li>
+<li>Some skip-edge routes cross the central cycle region instead of staying cleanly outside, producing avoidable crossings near the switch nodes.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route each skip edge as a smooth outer arc on its own radial lane, with g0-&gt;s3 and g3-&gt;s0 using top/bottom lanes and the remaining skip edges using left/right diagonal lanes.</li>
+<li>Increase the radius of the six switch nodes slightly and place each gate/output pair farther outward from its switch so local edges remain visually separate from skip-edge lanes.</li>
+<li>Move o0 farther above-left of g0 and keep all top skip routes outside both o0 and g0, not between or near their labels.</li>
+<li>Move the g1/o1 and g2/o2 gadgets farther outward to the right, and route their skip edges outside those gadgets with wider clearance.</li>
+<li>Move the g4/o4 and g5/o5 gadgets farther outward to the left, and route their skip edges outside those gadgets with wider clearance.</li>
+<li>Separate parallel outer skip-edge lanes by a visible gap so unrelated edges do not share long close-running segments.</li>
+</ul>
+<ul>
+<li>Edges g0-s3 and g1-s4 run too close together for a long segment: close length 3.44.</li>
+<li>Edges g1-s4 and g2-s5 run too close together for a long segment: close length 4.09.</li>
+<li>Edges g1-s4 and g5-s2 run too close together for a long segment: close length 3.17.</li>
+<li>Edges g2-s5 and g4-s1 run too close together for a long segment: close length 3.17.</li>
+<li>Edges g3-s0 and g4-s1 run too close together for a long segment: close length 3.44.</li>
+<li>Edges g4-s1 and g5-s2 run too close together for a long segment: close length 4.09.</li>
+<li>Visual review score=4.0: Several skip edges take very long detours around the whole drawing, creating a large outer tangle that makes the intended circular structure hard to read.</li>
+<li>Visual review score=4.0: The upper skip-edge routes run across the top half of the graph and pass too close to the local gadget around g0/o0, especially near the o0 and g0 labels.</li>
+<li>Visual review score=4.0: On the right side, the routed skip edges around g1/o1 and g2/o2 create crowded bends close to the o1 and o2 local gadgets.</li>
+<li>Visual review score=4.0: On the left side, the routed skip edges around g4/o4 and g5/o5 run close to the local gadgets and visually obscure the relationship between each switch, gate, and output.</li>
+<li>Visual review score=4.0: Multiple unrelated outer skip edges run nearly parallel or very close for long visible segments, especially along the top and side boundaries.</li>
+<li>Visual review score=4.0: Some skip-edge routes cross the central cycle region instead of staying cleanly outside, producing avoidable crossings near the switch nodes.</li>
+</ul>
+<img src='../../outputs/prompt_suite_route_quality/run_20260601_200300/ring_of_switches/iteration_1/ring_of_switches.png' alt='ring_of_switches iteration 1'>
+</div>
+<div class='iter'>
+<h3>Iteration 2</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `2.24`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.00`; max_parallel: `7.76`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip-edge routes are not visually confined to the outside; their first or last segments cut back through the interior and cross near local gate/output gadgets.</li>
+<li>The upper g0/o0 gadget is crowded by long skip-edge segments passing close to the g0 label and the g0-&gt;o0 edge.</li>
+<li>The right-side g1/o1 area is cluttered: long routed skip edges pass close to the g1 and o1 labels and cross near the local s1-g1-o1 edges.</li>
+<li>The bottom g3/o3 gadget is crowded by long skip-edge segments passing close to the g3-&gt;o3 edge and nearby labels.</li>
+<li>Multiple unrelated outer skip edges run nearly parallel for long visible stretches along the top-right and bottom-left perimeter, making the routing look tangled.</li>
+<li>There are avoidable long detours and crossings around the perimeter that reduce readability, especially where skip edges form overlapping polygonal loops.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Move all gate/output pairs slightly farther outward from their corresponding switch so local gadgets have more clearance from skip-edge routes.</li>
+<li>Route each skip edge with a short radial segment outward from its gate, then follow a dedicated outer circular arc, then a short radial segment inward to the target switch.</li>
+<li>Increase the radius of the outer skip-edge ring and separate skip edges into two or more concentric rings to avoid long close-parallel runs.</li>
+<li>Reroute g0-&gt;s3 and g3-&gt;s0 so their final inward segments approach s3 and s0 without crossing through the g0/o0 or g3/o3 local gadgets.</li>
+<li>Reroute g1-&gt;s4, g2-&gt;s5, g4-&gt;s1, and g5-&gt;s2 with smoother outside arcs instead of polygonal paths that cut across adjacent local gadgets.</li>
+</ul>
+<ul>
+<li>Edges g0-s3 and g1-s4 run too close together for a long segment: close length 7.73.</li>
+<li>Edges g0-s3 and g2-s5 run too close together for a long segment: close length 7.76.</li>
+<li>Edges g0-s3 and g4-s1 run too close together for a long segment: close length 6.35.</li>
+<li>Edges g1-s4 and g2-s5 run too close together for a long segment: close length 6.31.</li>
+<li>Edges g1-s4 and g3-s0 run too close together for a long segment: close length 6.35.</li>
+<li>Edges g1-s4 and g5-s2 run too close together for a long segment: close length 3.09.</li>
+<li>Edges g2-s5 and g4-s1 run too close together for a long segment: close length 3.09.</li>
+<li>Edges g3-s0 and g4-s1 run too close together for a long segment: close length 7.73.</li>
+<li>Edges g3-s0 and g5-s2 run too close together for a long segment: close length 7.76.</li>
+<li>Edges g4-s1 and g5-s2 run too close together for a long segment: close length 6.31.</li>
+<li>Visual review score=4.0: Several skip-edge routes are not visually confined to the outside; their first or last segments cut back through the interior and cross near local gate/output gadgets.</li>
+<li>Visual review score=4.0: The upper g0/o0 gadget is crowded by long skip-edge segments passing close to the g0 label and the g0-&gt;o0 edge.</li>
+<li>Visual review score=4.0: The right-side g1/o1 area is cluttered: long routed skip edges pass close to the g1 and o1 labels and cross near the local s1-g1-o1 edges.</li>
+<li>Visual review score=4.0: The bottom g3/o3 gadget is crowded by long skip-edge segments passing close to the g3-&gt;o3 edge and nearby labels.</li>
+<li>Visual review score=4.0: Multiple unrelated outer skip edges run nearly parallel for long visible stretches along the top-right and bottom-left perimeter, making the routing look tangled.</li>
+<li>Visual review score=4.0: There are avoidable long detours and crossings around the perimeter that reduce readability, especially where skip edges form overlapping polygonal loops.</li>
+</ul>
+<img src='../../outputs/prompt_suite_route_quality/run_20260601_200300/ring_of_switches/iteration_2/ring_of_switches.png' alt='ring_of_switches iteration 2'>
+</div>
+<div class='iter'>
+<h3>Iteration 3</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.50</code>; next_refinement: <code>None</code>; min_node_dist: `2.85`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.00`; max_parallel: `2.54`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip-edge routes pass too close to unrelated output nodes and labels. In particular, the outer route ending at s2 runs near o1, and the corresponding lower-right route ending at s1 runs near o2.</li>
+<li>The left-side skip routes similarly crowd the o4/o5 area, with long diagonal outer segments visually interfering with the local gate-output gadgets near s4 and s5.</li>
+<li>The skip edges create large rectangular/diagonal detours around the whole drawing, producing avoidable tangles and making it hard to distinguish the intended circular cycle from skip connections.</li>
+<li>Multiple unrelated outer edges run close together for long visible segments near the top, bottom, and side boundaries.</li>
+<li>Some crossings occur near switch/local gadget areas, especially around s1/s2 and s4/s5, reducing readability.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route each skip edge as a smoother, separated arc outside the local gate/output nodes, keeping clear radial lanes for o0 through o5.</li>
+<li>Move o1, o2, o4, and o5 slightly farther outward from the center or reroute the adjacent skip edges farther outside so no skip edge passes near their labels.</li>
+<li>Increase spacing between the outer skip routes so that top, bottom, left, and right long segments do not run nearly parallel on top of one another.</li>
+<li>Keep final approach segments into s1, s2, s4, and s5 away from unrelated output nodes by using wider bends outside the output ring before entering the target switch.</li>
+</ul>
+<ul>
+<li>Edges g0-s3 and g4-s1 run too close together for a long segment: close length 2.54.</li>
+<li>Edges g0-s3 and g5-s2 run too close together for a long segment: close length 2.54.</li>
+<li>Visual review score=4.5: Several skip-edge routes pass too close to unrelated output nodes and labels. In particular, the outer route ending at s2 runs near o1, and the corresponding lower-right route ending at s1 runs near o2.</li>
+<li>Visual review score=4.5: The left-side skip routes similarly crowd the o4/o5 area, with long diagonal outer segments visually interfering with the local gate-output gadgets near s4 and s5.</li>
+<li>Visual review score=4.5: The skip edges create large rectangular/diagonal detours around the whole drawing, producing avoidable tangles and making it hard to distinguish the intended circular cycle from skip connections.</li>
+<li>Visual review score=4.5: Multiple unrelated outer edges run close together for long visible segments near the top, bottom, and side boundaries.</li>
+<li>Visual review score=4.5: Some crossings occur near switch/local gadget areas, especially around s1/s2 and s4/s5, reducing readability.</li>
+</ul>
+<img src='../../outputs/prompt_suite_route_quality/run_20260601_200300/ring_of_switches/iteration_3/ring_of_switches.png' alt='ring_of_switches iteration 3'>
+</div>
+</section>
+</body></html>

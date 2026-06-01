@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset='utf-8'><title>Text-to-Graph Prompt Suite</title>
+<style>body{font-family:Arial,sans-serif;max-width:1100px;margin:32px auto;line-height:1.45;color:#1f2933}h1,h2{color:#111827}.case{border-top:1px solid #ddd;padding-top:24px;margin-top:28px}.meta{color:#52616b}.iter{margin:18px 0;padding:12px 16px;background:#f7f9fb;border-radius:8px}img{max-width:720px;width:100%;height:auto;border:1px solid #ddd;background:white}code{background:#eef2f7;padding:2px 4px;border-radius:4px}</style></head><body>
+<h1>Text-to-Graph Prompt Suite Report</h1>
+<p class='meta'>Created: 2026-06-01T19:22:35 | Model: <code>gpt-5.5</code> | Base URL: <code>http://localhost:1455/v1</code></p>
+<p class='meta'>Output: <code>outputs\prompt_suite_smoke\run_20260601_192235</code></p>
+<p>This report records each challenging prompt, validation history, and every rendered iteration image.</p>
+<h2>Summary</h2>
+<table border='1' cellspacing='0' cellpadding='6'><tr><th>Case</th><th>Success</th><th>Iterations</th><th>Visual Score</th><th>Nodes</th><th>Edges</th><th>Min Node Dist</th><th>Min Edge Clearance</th><th>Errors Seen</th></tr>
+<tr><td>Braided Ladder With Portals</td><td>True</td><td>1</td><td>9.00</td><td>14</td><td>30</td><td>2.53</td><td>1.99</td><td>0</td></tr>
+</table>
+<section class='case'>
+<h2>Braided Ladder With Portals</h2>
+<p><strong>Prompt:</strong> Draw an artificial undirected graph called a braided ladder with portals. There are two horizontal rails A0-A1-A2-A3-A4-A5 and B0-B1-B2-B3-B4-B5. Add vertical rungs Ai-Bi for i=0..5. Add diagonal braid edges A0-B1, B1-A2, A2-B3, B3-A4, A4-B5, and also B0-A1, A1-B2, B2-A3, A3-B4, B4-A5. Add portal nodes S and T, with S connected to A0 and B0, and T connected to A5 and B5. Make it readable and symmetric.</p>
+<p><strong>Success:</strong> <code>True</code></p>
+<p><strong>Structure:</strong> 14 nodes, 30 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph extracted by gpt-5.5 at http://localhost:1455/v1.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>True</code>; visual_score: <code>9.00</code>; next_refinement: <code>None</code>; min_node_dist: `2.53`; min_edge_clearance: `1.99`</p>
+<img src='../../outputs/prompt_suite_smoke/run_20260601_192235/braided_ladder_portals/iteration_0/braided_ladder_portals.png' alt='braided_ladder_portals iteration 0'>
+</div>
+</section>
+</body></html>

@@ -1,0 +1,484 @@
+{
+  "created_at": "2026-06-01T13:54:10",
+  "model": "gpt-5.5",
+  "base_url": "http://localhost:1455/v1",
+  "output_dir": "outputs\\prompt_suite_macro_test\\run_20260601_135410",
+  "results": [
+    {
+      "success": false,
+      "iterations": 1,
+      "graph": {
+        "nodes": [
+          {
+            "id": "s0",
+            "label": "$s_{0}$"
+          },
+          {
+            "id": "s1",
+            "label": "$s_{1}$"
+          },
+          {
+            "id": "s2",
+            "label": "$s_{2}$"
+          },
+          {
+            "id": "s3",
+            "label": "$s_{3}$"
+          },
+          {
+            "id": "s4",
+            "label": "$s_{4}$"
+          },
+          {
+            "id": "s5",
+            "label": "$s_{5}$"
+          },
+          {
+            "id": "g0",
+            "label": "$g_{0}$"
+          },
+          {
+            "id": "g1",
+            "label": "$g_{1}$"
+          },
+          {
+            "id": "g2",
+            "label": "$g_{2}$"
+          },
+          {
+            "id": "g3",
+            "label": "$g_{3}$"
+          },
+          {
+            "id": "g4",
+            "label": "$g_{4}$"
+          },
+          {
+            "id": "g5",
+            "label": "$g_{5}$"
+          },
+          {
+            "id": "o0",
+            "label": "$o_{0}$"
+          },
+          {
+            "id": "o1",
+            "label": "$o_{1}$"
+          },
+          {
+            "id": "o2",
+            "label": "$o_{2}$"
+          },
+          {
+            "id": "o3",
+            "label": "$o_{3}$"
+          },
+          {
+            "id": "o4",
+            "label": "$o_{4}$"
+          },
+          {
+            "id": "o5",
+            "label": "$o_{5}$"
+          }
+        ],
+        "edges": [
+          {
+            "source": "s0",
+            "target": "s1",
+            "directed": true
+          },
+          {
+            "source": "s1",
+            "target": "s2",
+            "directed": true
+          },
+          {
+            "source": "s2",
+            "target": "s3",
+            "directed": true
+          },
+          {
+            "source": "s3",
+            "target": "s4",
+            "directed": true
+          },
+          {
+            "source": "s4",
+            "target": "s5",
+            "directed": true
+          },
+          {
+            "source": "s5",
+            "target": "s0",
+            "directed": true
+          },
+          {
+            "source": "s0",
+            "target": "g0",
+            "directed": true
+          },
+          {
+            "source": "g0",
+            "target": "o0",
+            "directed": true
+          },
+          {
+            "source": "o0",
+            "target": "s1",
+            "directed": true
+          },
+          {
+            "source": "s1",
+            "target": "g1",
+            "directed": true
+          },
+          {
+            "source": "g1",
+            "target": "o1",
+            "directed": true
+          },
+          {
+            "source": "o1",
+            "target": "s2",
+            "directed": true
+          },
+          {
+            "source": "s2",
+            "target": "g2",
+            "directed": true
+          },
+          {
+            "source": "g2",
+            "target": "o2",
+            "directed": true
+          },
+          {
+            "source": "o2",
+            "target": "s3",
+            "directed": true
+          },
+          {
+            "source": "s3",
+            "target": "g3",
+            "directed": true
+          },
+          {
+            "source": "g3",
+            "target": "o3",
+            "directed": true
+          },
+          {
+            "source": "o3",
+            "target": "s4",
+            "directed": true
+          },
+          {
+            "source": "s4",
+            "target": "g4",
+            "directed": true
+          },
+          {
+            "source": "g4",
+            "target": "o4",
+            "directed": true
+          },
+          {
+            "source": "o4",
+            "target": "s5",
+            "directed": true
+          },
+          {
+            "source": "s5",
+            "target": "g5",
+            "directed": true
+          },
+          {
+            "source": "g5",
+            "target": "o5",
+            "directed": true
+          },
+          {
+            "source": "o5",
+            "target": "s0",
+            "directed": true
+          },
+          {
+            "source": "g0",
+            "target": "s3",
+            "directed": true
+          },
+          {
+            "source": "g1",
+            "target": "s4",
+            "directed": true
+          },
+          {
+            "source": "g2",
+            "target": "s5",
+            "directed": true
+          },
+          {
+            "source": "g3",
+            "target": "s0",
+            "directed": true
+          },
+          {
+            "source": "g4",
+            "target": "s1",
+            "directed": true
+          },
+          {
+            "source": "g5",
+            "target": "s2",
+            "directed": true
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "s0": [
+              0.0,
+              5.2
+            ],
+            "s1": [
+              4.5,
+              2.6
+            ],
+            "s2": [
+              4.5,
+              -2.6
+            ],
+            "s3": [
+              0.0,
+              -5.2
+            ],
+            "s4": [
+              -4.5,
+              -2.6
+            ],
+            "s5": [
+              -4.5,
+              2.6
+            ],
+            "g0": [
+              -0.335,
+              7.601
+            ],
+            "g1": [
+              6.414,
+              4.094
+            ],
+            "g2": [
+              6.751,
+              -3.514
+            ],
+            "g3": [
+              0.335,
+              -7.601
+            ],
+            "g4": [
+              -6.414,
+              -4.094
+            ],
+            "g5": [
+              -6.751,
+              3.514
+            ],
+            "o0": [
+              0.0,
+              10.15
+            ],
+            "o1": [
+              8.79,
+              5.08
+            ],
+            "o2": [
+              8.79,
+              -5.08
+            ],
+            "o3": [
+              0.0,
+              -10.15
+            ],
+            "o4": [
+              -8.79,
+              -5.08
+            ],
+            "o5": [
+              -8.79,
+              5.08
+            ]
+          },
+          "edge_options": {
+            "directed:s0:s1": "bend right=12,looseness=1.05",
+            "directed:s1:s2": "bend right=12,looseness=1.05",
+            "directed:s2:s3": "bend right=12,looseness=1.05",
+            "directed:s3:s4": "bend right=12,looseness=1.05",
+            "directed:s4:s5": "bend right=12,looseness=1.05",
+            "directed:s5:s0": "bend right=12,looseness=1.05",
+            "directed:o0:s1": "bend right=26,looseness=1.15",
+            "directed:o1:s2": "bend right=26,looseness=1.15",
+            "directed:o2:s3": "bend right=26,looseness=1.15",
+            "directed:o3:s4": "bend right=26,looseness=1.15",
+            "directed:o4:s5": "bend right=26,looseness=1.15",
+            "directed:o5:s0": "bend right=26,looseness=1.15",
+            "directed:g0:s3": "bend left=72,looseness=1.55",
+            "directed:g1:s4": "bend right=72,looseness=1.55",
+            "directed:g2:s5": "bend left=72,looseness=1.55",
+            "directed:g3:s0": "bend right=72,looseness=1.55",
+            "directed:g4:s1": "bend left=72,looseness=1.55",
+            "directed:g5:s2": "bend right=72,looseness=1.55"
+          },
+          "node_options": {
+            "s0": "circle,draw",
+            "s1": "circle,draw",
+            "s2": "circle,draw",
+            "s3": "circle,draw",
+            "s4": "circle,draw",
+            "s5": "circle,draw",
+            "g0": "rectangle,draw",
+            "g1": "rectangle,draw",
+            "g2": "rectangle,draw",
+            "g3": "rectangle,draw",
+            "g4": "rectangle,draw",
+            "g5": "rectangle,draw",
+            "o0": "circle,draw",
+            "o1": "circle,draw",
+            "o2": "circle,draw",
+            "o3": "circle,draw",
+            "o4": "circle,draw",
+            "o5": "circle,draw"
+          },
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.98, maximum=3.81, moved_fraction=1.00.",
+          "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.98, maximum=3.81, moved_fraction=1.00."
+        ]
+      },
+      "layout_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 2.4242578245722957,
+        "min_edge_node_clearance": 0.7309664437611336
+      },
+      "visual_review": {
+        "acceptable": false,
+        "score": 5.0,
+        "issues": [
+          "Several long skip edges are routed through the main circular gadget rather than cleanly around the outside, creating avoidable tangles near the switch cycle.",
+          "The long edge from g3 to s0 runs close to the right-side switch region around s1 and s2, crowding unrelated nodes and their incident edges.",
+          "The long edge from g0 to s3 passes through the right half of the drawing and crowds the local s1/g1 and s2/g2 structures.",
+          "On the left side, long skip edges crowd the s4/s5 region, with multiple nearly parallel curves passing close to the switch nodes and making arrow directions hard to distinguish.",
+          "The central switch-cycle edges and the output-to-next-switch edges are too close and nearly parallel in several places, especially between s1-s2, s2-s3, s4-s5, and s5-s0, reducing readability."
+        ],
+        "suggestions": [
+          "Route all skip edges farther outside the six-switch circle, using larger-radius arcs that avoid passing between or near non-incident switch nodes.",
+          "Move the gate/output satellites slightly farther outward from their switches to create more clearance for local edges.",
+          "Reroute g0->s3 and g3->s0 as broad exterior arcs on opposite sides rather than through the right interior of the graph.",
+          "Separate the cycle edges si->s(i+1) from the local output edges oi->s(i+1) with stronger, consistent bends so the paired arrows do not visually merge.",
+          "Increase spacing around the left-side s4/s5 area and reroute the skip edges there outward to avoid crowding those nodes."
+        ],
+        "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 5.0,\n  \"issues\": [\n    \"Several long skip edges are routed through the main circular gadget rather than cleanly around the outside, creating avoidable tangles near the switch cycle.\",\n    \"The long edge from g3 to s0 runs close to the right-side switch region around s1 and s2, crowding unrelated nodes and their incident edges.\",\n    \"The long edge from g0 to s3 passes through the right half of the drawing and crowds the local s1/g1 and s2/g2 structures.\",\n    \"On the left side, long skip edges crowd the s4/s5 region, with multiple nearly parallel curves passing close to the switch nodes and making arrow directions hard to distinguish.\",\n    \"The central switch-cycle edges and the output-to-next-switch edges are too close and nearly parallel in several places, especially between s1-s2, s2-s3, s4-s5, and s5-s0, reducing readability.\"\n  ],\n  \"suggestions\": [\n    \"Route all skip edges farther outside the six-switch circle, using larger-radius arcs that avoid passing between or near non-incident switch nodes.\",\n    \"Move the gate/output satellites slightly farther outward from their switches to create more clearance for local edges.\",\n    \"Reroute g0->s3 and g3->s0 as broad exterior arcs on opposite sides rather than through the right interior of the graph.\",\n    \"Separate the cycle edges si->s(i+1) from the local output edges oi->s(i+1) with stronger, consistent bends so the paired arrows do not visually merge.\",\n    \"Increase spacing around the left-side s4/s5 area and reroute the skip edges there outward to avoid crowding those nodes.\"\n  ]\n}"
+      },
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": true,
+        "tex_path": "outputs\\prompt_suite_macro_test\\run_20260601_135410\\ring_of_switches\\iteration_1\\ring_of_switches.tex",
+        "pdf_path": "outputs\\prompt_suite_macro_test\\run_20260601_135410\\ring_of_switches\\iteration_1\\ring_of_switches.pdf",
+        "png_path": "outputs\\prompt_suite_macro_test\\run_20260601_135410\\ring_of_switches\\iteration_1\\ring_of_switches.png",
+        "error": ""
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 4.0,
+          "visual_issues": [
+            "Several skip edges are routed through the inner switch ring instead of around the outside, creating a dense tangle around s0, s1, s2, s3, s4, and s5.",
+            "Multiple curved edges pass very close to non-incident switch nodes and their labels, especially near s1, s2, s4, and s5.",
+            "The edge from o1 toward s2 runs close to the g1 gadget area and contributes to crowding on the right side.",
+            "The long edge from o5 toward s0 crosses the upper-left area close to the s5/g5 region and adds visual ambiguity.",
+            "Arrowheads and parallel arcs around the switch cycle crowd the switch labels, making edge incidence hard to read."
+          ],
+          "visual_suggestions": [
+            "Route all skip edges g0->s3, g1->s4, g2->s5, g3->s0, g4->s1, and g5->s2 farther outside the six-switch ring with larger-radius bends.",
+            "Increase the radius of the switch cycle or move switches slightly farther apart to create more clearance between parallel arcs and switch labels.",
+            "Move each gate/output pair farther outward from its switch so local edges do not interfere with the central cycle.",
+            "Reroute o_i->s(i+1) edges as outer arcs where possible, rather than long straight chords that pass near unrelated gadgets.",
+            "Separate parallel edges near s1, s2, s4, and s5 with distinct bend amounts so arrowheads do not cluster on top of node boundaries."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.1805159888794392,
+            "min_edge_node_clearance": 0.6998571318152628
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=4.0: Several skip edges are routed through the inner switch ring instead of around the outside, creating a dense tangle around s0, s1, s2, s3, s4, and s5.",
+            "Visual review score=4.0: Multiple curved edges pass very close to non-incident switch nodes and their labels, especially near s1, s2, s4, and s5.",
+            "Visual review score=4.0: The edge from o1 toward s2 runs close to the g1 gadget area and contributes to crowding on the right side.",
+            "Visual review score=4.0: The long edge from o5 toward s0 crosses the upper-left area close to the s5/g5 region and adds visual ambiguity.",
+            "Visual review score=4.0: Arrowheads and parallel arcs around the switch cycle crowd the switch labels, making edge incidence hard to read."
+          ]
+        },
+        {
+          "iteration": 1,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 5.0,
+          "visual_issues": [
+            "Several long skip edges are routed through the main circular gadget rather than cleanly around the outside, creating avoidable tangles near the switch cycle.",
+            "The long edge from g3 to s0 runs close to the right-side switch region around s1 and s2, crowding unrelated nodes and their incident edges.",
+            "The long edge from g0 to s3 passes through the right half of the drawing and crowds the local s1/g1 and s2/g2 structures.",
+            "On the left side, long skip edges crowd the s4/s5 region, with multiple nearly parallel curves passing close to the switch nodes and making arrow directions hard to distinguish.",
+            "The central switch-cycle edges and the output-to-next-switch edges are too close and nearly parallel in several places, especially between s1-s2, s2-s3, s4-s5, and s5-s0, reducing readability."
+          ],
+          "visual_suggestions": [
+            "Route all skip edges farther outside the six-switch circle, using larger-radius arcs that avoid passing between or near non-incident switch nodes.",
+            "Move the gate/output satellites slightly farther outward from their switches to create more clearance for local edges.",
+            "Reroute g0->s3 and g3->s0 as broad exterior arcs on opposite sides rather than through the right interior of the graph.",
+            "Separate the cycle edges si->s(i+1) from the local output edges oi->s(i+1) with stronger, consistent bends so the paired arrows do not visually merge.",
+            "Increase spacing around the left-side s4/s5 area and reroute the skip edges there outward to avoid crowding those nodes."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 2.4242578245722957,
+            "min_edge_node_clearance": 0.7309664437611336
+          },
+          "next_refinement": null,
+          "errors": [
+            "Visual review score=5.0: Several long skip edges are routed through the main circular gadget rather than cleanly around the outside, creating avoidable tangles near the switch cycle.",
+            "Visual review score=5.0: The long edge from g3 to s0 runs close to the right-side switch region around s1 and s2, crowding unrelated nodes and their incident edges.",
+            "Visual review score=5.0: The long edge from g0 to s3 passes through the right half of the drawing and crowds the local s1/g1 and s2/g2 structures.",
+            "Visual review score=5.0: On the left side, long skip edges crowd the s4/s5 region, with multiple nearly parallel curves passing close to the switch nodes and making arrow directions hard to distinguish.",
+            "Visual review score=5.0: The central switch-cycle edges and the output-to-next-switch edges are too close and nearly parallel in several places, especially between s1-s2, s2-s3, s4-s5, and s5-s0, reducing readability."
+          ]
+        }
+      ],
+      "id": "ring_of_switches",
+      "title": "Ring of Switches With Local Gates",
+      "prompt": "Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0->s1->s2->s3->s4->s5->s0. Each switch si has a local gate gi and output oi, with edges si->gi, gi->oi, and oi->s(i+1 mod 6). Add skip edges g0->s3, g1->s4, g2->s5, g3->s0, g4->s1, g5->s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.",
+      "case_dir": "outputs\\prompt_suite_macro_test\\run_20260601_135410\\ring_of_switches"
+    }
+  ]
+}

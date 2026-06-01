@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset='utf-8'><title>Text-to-Graph Prompt Suite</title>
+<style>body{font-family:Arial,sans-serif;max-width:1100px;margin:32px auto;line-height:1.45;color:#1f2933}h1,h2{color:#111827}.case{border-top:1px solid #ddd;padding-top:24px;margin-top:28px}.meta{color:#52616b}.iter{margin:18px 0;padding:12px 16px;background:#f7f9fb;border-radius:8px}img{max-width:720px;width:100%;height:auto;border:1px solid #ddd;background:white}code{background:#eef2f7;padding:2px 4px;border-radius:4px}</style></head><body>
+<h1>Text-to-Graph Prompt Suite Report</h1>
+<p class='meta'>Created: 2026-06-01T20:36:39 | Model: <code>gpt-5.5</code> | Base URL: <code>http://localhost:1455/v1</code></p>
+<p class='meta'>Output: <code>outputs\prompt_suite_group_move\run_20260601_203639</code></p>
+<p>This report records each challenging prompt, validation history, and every rendered iteration image.</p>
+<h2>Summary</h2>
+<table border='1' cellspacing='0' cellpadding='6'><tr><th>Case</th><th>Success</th><th>Iterations</th><th>Visual Score</th><th>Nodes</th><th>Edges</th><th>Min Node Dist</th><th>Min Edge-Node</th><th>Min Edge-Edge</th><th>Max Parallel</th><th>Crossings</th><th>Errors Seen</th></tr>
+<tr><td>Double Crown Bridge</td><td>True</td><td>2</td><td>8.00</td><td>18</td><td>28</td><td>1.88</td><td>0.91</td><td>0.91</td><td>0.00</td><td>0.00</td><td>8</td></tr>
+</table>
+<section class='case'>
+<h2>Double Crown Bridge</h2>
+<p><strong>Prompt:</strong> Create a complex artificial graph made from two crowns connected by a bridge. The left crown has center L and rim nodes l0,l1,l2,l3,l4,l5 forming a 6-cycle, with L connected to l0,l2,l4 only. The right crown has center R and rim nodes r0,r1,r2,r3,r4,r5 forming a 6-cycle, with R connected to r1,r3,r5 only. Add bridge path l0-x0-x1-r3 and bridge path l3-y0-y1-r0. Add twist matching edges l1-r4, l2-r5, l4-r1, l5-r2. Draw it as two circular clusters with the bridges between them.</p>
+<p><strong>Success:</strong> <code>True</code></p>
+<p><strong>Structure:</strong> 18 nodes, 28 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=2.27, maximum=6.00, moved_fraction=0.83.</li>
+<li>Applied local geometry-aware node-position nudging to reduce node-edge overlap.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>False</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.48`; min_edge_node_clearance: `0.76`; min_edge_edge_clearance: `0.00`; max_parallel: `6.98`; crossings: `9.00`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several twist/matching edges take very long rectangular detours around the whole drawing, making the semantics hard to read.</li>
+<li>The right-side vertical routed edges run very close to non-incident nodes r0 and r5, especially the l4-r1 and l2-r5 routes.</li>
+<li>The bottom routed l4-r1 edge crowds the y0-y1 bridge path and runs close to the y0/y1 labels for a long visible segment.</li>
+<li>The upper routed l2-r5 edge runs close to r2 and then down near r5, creating avoidable congestion in the right crown.</li>
+<li>Unrelated routed edges on the right side run nearly parallel and close together for long segments, creating visual ambiguity.</li>
+<li>The l1-r4 routed edge forms a large box-like detour through the center/right area instead of a clearer shorter route.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Move the outer top and bottom routed twist edges farther away from the crowns, or replace them with shorter curved routes through the gap between the two crowns.</li>
+<li>Reroute l4-r1 so its right vertical segment stays well outside r0/r5 and does not crowd the y0-y1 bridge.</li>
+<li>Reroute l2-r5 so it approaches r5 from above/right with more clearance from r2 and r5.</li>
+<li>Separate the right-side vertical channels for l2-r5 and l4-r1, or move r0/r5 slightly inward to increase clearance.</li>
+<li>Consider moving y0 and y1 slightly lower or routing the l4-r1 edge farther below them to keep the bottom bridge visually distinct.</li>
+<li>Use shorter, more direct routes for l1-r4 and l5-r2 through the central gap where possible.</li>
+</ul>
+<ul>
+<li>Edges y1-r0 and l4-r1 run too close together for a long segment: close length 2.43.</li>
+<li>Edges l2-r5 and l5-r2 run too close together for a long segment: close length 6.98.</li>
+<li>Visual review score=4.0: Several twist/matching edges take very long rectangular detours around the whole drawing, making the semantics hard to read.</li>
+<li>Visual review score=4.0: The right-side vertical routed edges run very close to non-incident nodes r0 and r5, especially the l4-r1 and l2-r5 routes.</li>
+<li>Visual review score=4.0: The bottom routed l4-r1 edge crowds the y0-y1 bridge path and runs close to the y0/y1 labels for a long visible segment.</li>
+<li>Visual review score=4.0: The upper routed l2-r5 edge runs close to r2 and then down near r5, creating avoidable congestion in the right crown.</li>
+<li>Visual review score=4.0: Unrelated routed edges on the right side run nearly parallel and close together for long segments, creating visual ambiguity.</li>
+<li>Visual review score=4.0: The l1-r4 routed edge forms a large box-like detour through the center/right area instead of a clearer shorter route.</li>
+</ul>
+<img src='../../outputs/prompt_suite_group_move/run_20260601_203639/double_crown_bridge/iteration_0/double_crown_bridge.png' alt='double_crown_bridge iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>True</code>; visual_score: <code>8.00</code>; next_refinement: <code>None</code>; min_node_dist: `1.88`; min_edge_node_clearance: `0.91`; min_edge_edge_clearance: `0.91`; max_parallel: `0.00`; crossings: `0.00`</p>
+<img src='../../outputs/prompt_suite_group_move/run_20260601_203639/double_crown_bridge/iteration_1/double_crown_bridge.png' alt='double_crown_bridge iteration 1'>
+</div>
+</section>
+</body></html>

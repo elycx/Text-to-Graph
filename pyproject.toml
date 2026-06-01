@@ -1,0 +1,12 @@
+[project]
+name = "text-to-graph"
+version = "0.1.0"
+description = "LLM-based natural-language to TikZ graph generation workflow."
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.0.0",
+    "requests>=2.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["text_to_graph*"]

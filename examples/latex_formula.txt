@@ -1,0 +1,22 @@
+Let
+$$
+U=\{u_0,\ldots,u_{m-1}\},\qquad V=\{v_0,\ldots,v_{m-1}\}.
+$$
+The graph $G$ is defined as follows:
+$$
+V(G)=T\cup \{p,q\}\cup \{w_0,\ldots,w_{m-2}\}.
+$$
+
+The edge set is
+$$
+\begin{aligned}
+E(G)=
+&\ \{\{u_i,p\}\mid 0\le i\le m-1\}
+ \cup \{\{v_i,q\}\mid 0\le i\le m-1\}
+ \cup \{\{p,q\}\} \\
+&\ \cup \{\{u_{i+1},w_i\},\{v_i,w_i\}\mid 0\le i\le m-2\} \\
+&\ \cup \{\{w_i,w_{i+1}\}\mid 0\le i\le m-3\} \\
+&\ \cup \{\{u_0,w_0\},\{w_{m-2},v_{m-1}\}\}.
+\end{aligned}
+$$
+

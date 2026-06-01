@@ -1,0 +1,130 @@
+<!doctype html>
+<html><head><meta charset='utf-8'><title>Text-to-Graph Prompt Suite</title>
+<style>body{font-family:Arial,sans-serif;max-width:1100px;margin:32px auto;line-height:1.45;color:#1f2933}h1,h2{color:#111827}.case{border-top:1px solid #ddd;padding-top:24px;margin-top:28px}.meta{color:#52616b}.iter{margin:18px 0;padding:12px 16px;background:#f7f9fb;border-radius:8px}img{max-width:720px;width:100%;height:auto;border:1px solid #ddd;background:white}code{background:#eef2f7;padding:2px 4px;border-radius:4px}</style></head><body>
+<h1>Text-to-Graph Prompt Suite Report</h1>
+<p class='meta'>Created: 2026-06-01T13:58:14 | Model: <code>gpt-5.5</code> | Base URL: <code>http://localhost:1455/v1</code></p>
+<p class='meta'>Output: <code>outputs\prompt_suite_macro_test\run_20260601_135814</code></p>
+<p>This report records each challenging prompt, validation history, and every rendered iteration image.</p>
+<h2>Summary</h2>
+<table border='1' cellspacing='0' cellpadding='6'><tr><th>Case</th><th>Success</th><th>Iterations</th><th>Visual Score</th><th>Nodes</th><th>Edges</th><th>Min Node Dist</th><th>Min Edge Clearance</th><th>Errors Seen</th></tr>
+<tr><td>Ring of Switches With Local Gates</td><td>False</td><td>4</td><td>5.00</td><td>18</td><td>30</td><td>2.70</td><td>0.68</td><td>21</td></tr>
+</table>
+<section class='case'>
+<h2>Ring of Switches With Local Gates</h2>
+<p><strong>Prompt:</strong> Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0-&gt;s1-&gt;s2-&gt;s3-&gt;s4-&gt;s5-&gt;s0. Each switch si has a local gate gi and output oi, with edges si-&gt;gi, gi-&gt;oi, and oi-&gt;s(i+1 mod 6). Add skip edges g0-&gt;s3, g1-&gt;s4, g2-&gt;s5, g3-&gt;s0, g4-&gt;s1, g5-&gt;s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.</p>
+<p><strong>Success:</strong> <code>False</code></p>
+<p><strong>Structure:</strong> 18 nodes, 30 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=4.20, maximum=5.90, moved_fraction=1.00.</li>
+<li>Applied local geometry-aware node-position nudging to reduce node-edge overlap.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>5.50</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `2.03`; min_edge_clearance: `0.76`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several long skip edges run through the interior instead of clearly around the outside, creating an avoidable central tangle.</li>
+<li>The long curved edge from g2 toward s5 passes very close to the s3 node/label area near the bottom center.</li>
+<li>Edges around s0, s1, and s2 are crowded; multiple arcs approach or pass close to unrelated nodes, making incident relationships hard to distinguish.</li>
+<li>The left-side edge from o5 toward s0 crowds the g5/s5 local gadget area, reducing readability.</li>
+<li>The intended circular switch cycle is visually obscured by overlapping and near-parallel long arcs.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route all skip edges farther outside the ring with larger-radius arcs, especially g2-&gt;s5 and g5-&gt;s2.</li>
+<li>Move the gate/output pairs farther outward from their switch anchors to give more clearance for the switch cycle.</li>
+<li>Increase separation around s0, s1, and s2 or bend local edges away from the central region.</li>
+<li>Move the g5/o5 local gadget farther left/up or reroute o5-&gt;s0 so it does not crowd g5 and s5.</li>
+<li>Keep the six switch nodes on a cleaner, wider circle and reserve the interior mainly for the switch cycle, with skip edges outside.</li>
+</ul>
+<ul>
+<li>Visual review score=5.5: Several long skip edges run through the interior instead of clearly around the outside, creating an avoidable central tangle.</li>
+<li>Visual review score=5.5: The long curved edge from g2 toward s5 passes very close to the s3 node/label area near the bottom center.</li>
+<li>Visual review score=5.5: Edges around s0, s1, and s2 are crowded; multiple arcs approach or pass close to unrelated nodes, making incident relationships hard to distinguish.</li>
+<li>Visual review score=5.5: The left-side edge from o5 toward s0 crowds the g5/s5 local gadget area, reducing readability.</li>
+<li>Visual review score=5.5: The intended circular switch cycle is visually obscured by overlapping and near-parallel long arcs.</li>
+</ul>
+<img src='../../outputs/prompt_suite_macro_test/run_20260601_135814/ring_of_switches/iteration_0/ring_of_switches.png' alt='ring_of_switches iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>5.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.17`; min_edge_clearance: `0.68`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip edges are routed through the interior rather than around the outside, creating avoidable tangles near the switch cycle.</li>
+<li>The long edge from g5 to s2 crosses the central region and passes close to s0 and s1, making the local cycle edges hard to distinguish.</li>
+<li>The long edge from g1 to s4 sweeps through the lower-right/central area and appears to crowd s2 and s3.</li>
+<li>Multiple edges converge tightly around s1, s2, and s3, with arrowheads and curved edges crowded near the node labels.</li>
+<li>The local gate/output satellites are far from their anchor switches, so the intended local gadgets are visually separated and partially obscured by long connecting edges.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route all skip edges g0-&gt;s3, g1-&gt;s4, g2-&gt;s5, g3-&gt;s0, g4-&gt;s1, and g5-&gt;s2 as larger exterior arcs outside the circle of switches.</li>
+<li>Move each gate/output pair closer to its corresponding switch while keeping them outside the switch cycle.</li>
+<li>Increase radial separation between the switch cycle and the outer skip-edge routes to avoid crowding near s1, s2, and s3.</li>
+<li>Reroute g5-&gt;s2 above the graph perimeter rather than through the center.</li>
+<li>Reroute g1-&gt;s4 along the outer right/bottom perimeter rather than through the central switch area.</li>
+</ul>
+<ul>
+<li>Visual review score=5.0: Several skip edges are routed through the interior rather than around the outside, creating avoidable tangles near the switch cycle.</li>
+<li>Visual review score=5.0: The long edge from g5 to s2 crosses the central region and passes close to s0 and s1, making the local cycle edges hard to distinguish.</li>
+<li>Visual review score=5.0: The long edge from g1 to s4 sweeps through the lower-right/central area and appears to crowd s2 and s3.</li>
+<li>Visual review score=5.0: Multiple edges converge tightly around s1, s2, and s3, with arrowheads and curved edges crowded near the node labels.</li>
+<li>Visual review score=5.0: The local gate/output satellites are far from their anchor switches, so the intended local gadgets are visually separated and partially obscured by long connecting edges.</li>
+</ul>
+<img src='../../outputs/prompt_suite_macro_test/run_20260601_135814/ring_of_switches/iteration_1/ring_of_switches.png' alt='ring_of_switches iteration 1'>
+</div>
+<div class='iter'>
+<h3>Iteration 2</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>5.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `2.75`; min_edge_clearance: `0.75`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip edges are routed through the interior rather than around the outside, creating a dense tangle near the switch cycle.</li>
+<li>The long edge from g5 to s2 passes very close to s0 and its label, making the local edges around s0 hard to distinguish.</li>
+<li>The long edge from g4 to s1 cuts across the center and crowds the s3/s4 region before reaching s1.</li>
+<li>Multiple edges between and around s1 and s2 are nearly overlapping or tightly bundled, obscuring arrow directions and making the local structure difficult to read.</li>
+<li>The lower central region around s3 is crowded by several unrelated long edges, with crossings occurring close to the s3 node and label.</li>
+<li>Skip edges do not follow the requested outside routing and instead obscure the anchor switch-gate-output gadgets.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route all skip edges farther outside the six-switch circle, using larger-radius arcs that avoid the central switch cycle.</li>
+<li>Move the gate/output satellites slightly farther outward from their switches to create more clearance for local edges.</li>
+<li>Reroute g5-&gt;s2 as a wide outer arc around the upper/right perimeter so it does not pass near s0.</li>
+<li>Reroute g4-&gt;s1 and g1-&gt;s4 as wide exterior arcs on opposite sides of the drawing instead of through the center.</li>
+<li>Separate the s1-&gt;s2, o1-&gt;s2, and nearby skip-edge arrivals with distinct bends so arrowheads and directions remain readable.</li>
+<li>Increase clearance around s3 by pushing long skip edges away from the lower central switch before they cross the drawing.</li>
+</ul>
+<ul>
+<li>Visual review score=5.0: Several skip edges are routed through the interior rather than around the outside, creating a dense tangle near the switch cycle.</li>
+<li>Visual review score=5.0: The long edge from g5 to s2 passes very close to s0 and its label, making the local edges around s0 hard to distinguish.</li>
+<li>Visual review score=5.0: The long edge from g4 to s1 cuts across the center and crowds the s3/s4 region before reaching s1.</li>
+<li>Visual review score=5.0: Multiple edges between and around s1 and s2 are nearly overlapping or tightly bundled, obscuring arrow directions and making the local structure difficult to read.</li>
+<li>Visual review score=5.0: The lower central region around s3 is crowded by several unrelated long edges, with crossings occurring close to the s3 node and label.</li>
+<li>Visual review score=5.0: Skip edges do not follow the requested outside routing and instead obscure the anchor switch-gate-output gadgets.</li>
+</ul>
+<img src='../../outputs/prompt_suite_macro_test/run_20260601_135814/ring_of_switches/iteration_2/ring_of_switches.png' alt='ring_of_switches iteration 2'>
+</div>
+<div class='iter'>
+<h3>Iteration 3</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>5.00</code>; next_refinement: <code>None</code>; min_node_dist: `2.70`; min_edge_clearance: `0.68`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several long skip edges create avoidable tangles through the central switch cluster rather than staying outside.</li>
+<li>The large arc from g1 to s4 passes close to the s5/s0 region and crowds the central labels.</li>
+<li>The skip edge from g4 to s1 runs through the middle-left/central area and contributes to crossings near s4, s5, and s1.</li>
+<li>The long edge from g5 to s2 dives through the central cluster and passes close to s0/s1-related edges, making directionality hard to read.</li>
+<li>The local gate/output satellites are very far from their anchor switches, so local gadgets are stretched and partially obscured by long return/skip arcs.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route all skip edges g0-&gt;s3, g1-&gt;s4, g2-&gt;s5, g3-&gt;s0, g4-&gt;s1, and g5-&gt;s2 farther around the exterior with larger-radius bends, avoiding the switch ring interior.</li>
+<li>Move each gate/output pair closer to its switch along a consistent radial direction so the local si-&gt;gi-&gt;oi gadget remains compact.</li>
+<li>Increase spacing among the central switch nodes or place the six switches on a cleaner larger circle to reduce central edge crowding.</li>
+<li>Reroute g1-&gt;s4 outside the right/top perimeter and g4-&gt;s1 outside the left/top perimeter instead of through the center.</li>
+<li>Reroute g5-&gt;s2 and g2-&gt;s5 along the outer perimeter to avoid passing near s0, s1, and s4.</li>
+</ul>
+<ul>
+<li>Visual review score=5.0: Several long skip edges create avoidable tangles through the central switch cluster rather than staying outside.</li>
+<li>Visual review score=5.0: The large arc from g1 to s4 passes close to the s5/s0 region and crowds the central labels.</li>
+<li>Visual review score=5.0: The skip edge from g4 to s1 runs through the middle-left/central area and contributes to crossings near s4, s5, and s1.</li>
+<li>Visual review score=5.0: The long edge from g5 to s2 dives through the central cluster and passes close to s0/s1-related edges, making directionality hard to read.</li>
+<li>Visual review score=5.0: The local gate/output satellites are very far from their anchor switches, so local gadgets are stretched and partially obscured by long return/skip arcs.</li>
+</ul>
+<img src='../../outputs/prompt_suite_macro_test/run_20260601_135814/ring_of_switches/iteration_3/ring_of_switches.png' alt='ring_of_switches iteration 3'>
+</div>
+</section>
+</body></html>

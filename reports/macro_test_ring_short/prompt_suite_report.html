@@ -1,0 +1,75 @@
+<!doctype html>
+<html><head><meta charset='utf-8'><title>Text-to-Graph Prompt Suite</title>
+<style>body{font-family:Arial,sans-serif;max-width:1100px;margin:32px auto;line-height:1.45;color:#1f2933}h1,h2{color:#111827}.case{border-top:1px solid #ddd;padding-top:24px;margin-top:28px}.meta{color:#52616b}.iter{margin:18px 0;padding:12px 16px;background:#f7f9fb;border-radius:8px}img{max-width:720px;width:100%;height:auto;border:1px solid #ddd;background:white}code{background:#eef2f7;padding:2px 4px;border-radius:4px}</style></head><body>
+<h1>Text-to-Graph Prompt Suite Report</h1>
+<p class='meta'>Created: 2026-06-01T13:54:10 | Model: <code>gpt-5.5</code> | Base URL: <code>http://localhost:1455/v1</code></p>
+<p class='meta'>Output: <code>outputs\prompt_suite_macro_test\run_20260601_135410</code></p>
+<p>This report records each challenging prompt, validation history, and every rendered iteration image.</p>
+<h2>Summary</h2>
+<table border='1' cellspacing='0' cellpadding='6'><tr><th>Case</th><th>Success</th><th>Iterations</th><th>Visual Score</th><th>Nodes</th><th>Edges</th><th>Min Node Dist</th><th>Min Edge Clearance</th><th>Errors Seen</th></tr>
+<tr><td>Ring of Switches With Local Gates</td><td>False</td><td>2</td><td>5.00</td><td>18</td><td>30</td><td>2.42</td><td>0.73</td><td>10</td></tr>
+</table>
+<section class='case'>
+<h2>Ring of Switches With Local Gates</h2>
+<p><strong>Prompt:</strong> Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0-&gt;s1-&gt;s2-&gt;s3-&gt;s4-&gt;s5-&gt;s0. Each switch si has a local gate gi and output oi, with edges si-&gt;gi, gi-&gt;oi, and oi-&gt;s(i+1 mod 6). Add skip edges g0-&gt;s3, g1-&gt;s4, g2-&gt;s5, g3-&gt;s0, g4-&gt;s1, g5-&gt;s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.</p>
+<p><strong>Success:</strong> <code>False</code></p>
+<p><strong>Structure:</strong> 18 nodes, 30 edges.</p>
+<p><strong>Warnings:</strong></p><ul>
+<li>Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.</li>
+<li>Macro relayout coordinate motion: average=2.98, maximum=3.81, moved_fraction=1.00.</li>
+<li>Applied local geometry-aware node-position nudging to reduce node-edge overlap.</li>
+</ul>
+<div class='iter'>
+<h3>Iteration 0</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>4.00</code>; next_refinement: <code>visual_macro_relayout</code>; min_node_dist: `1.18`; min_edge_clearance: `0.70`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several skip edges are routed through the inner switch ring instead of around the outside, creating a dense tangle around s0, s1, s2, s3, s4, and s5.</li>
+<li>Multiple curved edges pass very close to non-incident switch nodes and their labels, especially near s1, s2, s4, and s5.</li>
+<li>The edge from o1 toward s2 runs close to the g1 gadget area and contributes to crowding on the right side.</li>
+<li>The long edge from o5 toward s0 crosses the upper-left area close to the s5/g5 region and adds visual ambiguity.</li>
+<li>Arrowheads and parallel arcs around the switch cycle crowd the switch labels, making edge incidence hard to read.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route all skip edges g0-&gt;s3, g1-&gt;s4, g2-&gt;s5, g3-&gt;s0, g4-&gt;s1, and g5-&gt;s2 farther outside the six-switch ring with larger-radius bends.</li>
+<li>Increase the radius of the switch cycle or move switches slightly farther apart to create more clearance between parallel arcs and switch labels.</li>
+<li>Move each gate/output pair farther outward from its switch so local edges do not interfere with the central cycle.</li>
+<li>Reroute o_i-&gt;s(i+1) edges as outer arcs where possible, rather than long straight chords that pass near unrelated gadgets.</li>
+<li>Separate parallel edges near s1, s2, s4, and s5 with distinct bend amounts so arrowheads do not cluster on top of node boundaries.</li>
+</ul>
+<ul>
+<li>Visual review score=4.0: Several skip edges are routed through the inner switch ring instead of around the outside, creating a dense tangle around s0, s1, s2, s3, s4, and s5.</li>
+<li>Visual review score=4.0: Multiple curved edges pass very close to non-incident switch nodes and their labels, especially near s1, s2, s4, and s5.</li>
+<li>Visual review score=4.0: The edge from o1 toward s2 runs close to the g1 gadget area and contributes to crowding on the right side.</li>
+<li>Visual review score=4.0: The long edge from o5 toward s0 crosses the upper-left area close to the s5/g5 region and adds visual ambiguity.</li>
+<li>Visual review score=4.0: Arrowheads and parallel arcs around the switch cycle crowd the switch labels, making edge incidence hard to read.</li>
+</ul>
+<img src='../../outputs/prompt_suite_macro_test/run_20260601_135410/ring_of_switches/iteration_0/ring_of_switches.png' alt='ring_of_switches iteration 0'>
+</div>
+<div class='iter'>
+<h3>Iteration 1</h3>
+<p>graph_ok: <code>True</code>; layout_ok: <code>True</code>; code_ok: <code>True</code>; render_ok: <code>True</code>; visual_ok: <code>False</code>; visual_score: <code>5.00</code>; next_refinement: <code>None</code>; min_node_dist: `2.42`; min_edge_clearance: `0.73`</p>
+<p><strong>Visual issues:</strong></p><ul>
+<li>Several long skip edges are routed through the main circular gadget rather than cleanly around the outside, creating avoidable tangles near the switch cycle.</li>
+<li>The long edge from g3 to s0 runs close to the right-side switch region around s1 and s2, crowding unrelated nodes and their incident edges.</li>
+<li>The long edge from g0 to s3 passes through the right half of the drawing and crowds the local s1/g1 and s2/g2 structures.</li>
+<li>On the left side, long skip edges crowd the s4/s5 region, with multiple nearly parallel curves passing close to the switch nodes and making arrow directions hard to distinguish.</li>
+<li>The central switch-cycle edges and the output-to-next-switch edges are too close and nearly parallel in several places, especially between s1-s2, s2-s3, s4-s5, and s5-s0, reducing readability.</li>
+</ul>
+<p><strong>Visual suggestions:</strong></p><ul>
+<li>Route all skip edges farther outside the six-switch circle, using larger-radius arcs that avoid passing between or near non-incident switch nodes.</li>
+<li>Move the gate/output satellites slightly farther outward from their switches to create more clearance for local edges.</li>
+<li>Reroute g0-&gt;s3 and g3-&gt;s0 as broad exterior arcs on opposite sides rather than through the right interior of the graph.</li>
+<li>Separate the cycle edges si-&gt;s(i+1) from the local output edges oi-&gt;s(i+1) with stronger, consistent bends so the paired arrows do not visually merge.</li>
+<li>Increase spacing around the left-side s4/s5 area and reroute the skip edges there outward to avoid crowding those nodes.</li>
+</ul>
+<ul>
+<li>Visual review score=5.0: Several long skip edges are routed through the main circular gadget rather than cleanly around the outside, creating avoidable tangles near the switch cycle.</li>
+<li>Visual review score=5.0: The long edge from g3 to s0 runs close to the right-side switch region around s1 and s2, crowding unrelated nodes and their incident edges.</li>
+<li>Visual review score=5.0: The long edge from g0 to s3 passes through the right half of the drawing and crowds the local s1/g1 and s2/g2 structures.</li>
+<li>Visual review score=5.0: On the left side, long skip edges crowd the s4/s5 region, with multiple nearly parallel curves passing close to the switch nodes and making arrow directions hard to distinguish.</li>
+<li>Visual review score=5.0: The central switch-cycle edges and the output-to-next-switch edges are too close and nearly parallel in several places, especially between s1-s2, s2-s3, s4-s5, and s5-s0, reducing readability.</li>
+</ul>
+<img src='../../outputs/prompt_suite_macro_test/run_20260601_135410/ring_of_switches/iteration_1/ring_of_switches.png' alt='ring_of_switches iteration 1'>
+</div>
+</section>
+</body></html>

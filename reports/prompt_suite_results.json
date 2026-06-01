@@ -1,0 +1,3679 @@
+{
+  "created_at": "2026-06-01T23:54:52",
+  "model": "gpt-5.5",
+  "base_url": "http://localhost:1455/v1",
+  "output_dir": "outputs\\prompt_suite\\run_20260601_222019 ; ring_of_switches retry: outputs\\prompt_suite_ring_retry\\run_20260601_232107",
+  "results": [
+    {
+      "success": true,
+      "iterations": 0,
+      "graph": {
+        "nodes": [
+          {
+            "id": "A0",
+            "label": "$A_{0}$"
+          },
+          {
+            "id": "A1",
+            "label": "$A_{1}$"
+          },
+          {
+            "id": "A2",
+            "label": "$A_{2}$"
+          },
+          {
+            "id": "A3",
+            "label": "$A_{3}$"
+          },
+          {
+            "id": "A4",
+            "label": "$A_{4}$"
+          },
+          {
+            "id": "A5",
+            "label": "$A_{5}$"
+          },
+          {
+            "id": "B0",
+            "label": "$B_{0}$"
+          },
+          {
+            "id": "B1",
+            "label": "$B_{1}$"
+          },
+          {
+            "id": "B2",
+            "label": "$B_{2}$"
+          },
+          {
+            "id": "B3",
+            "label": "$B_{3}$"
+          },
+          {
+            "id": "B4",
+            "label": "$B_{4}$"
+          },
+          {
+            "id": "B5",
+            "label": "$B_{5}$"
+          },
+          {
+            "id": "S",
+            "label": "S"
+          },
+          {
+            "id": "T",
+            "label": "T"
+          }
+        ],
+        "edges": [
+          {
+            "source": "A0",
+            "target": "A1",
+            "directed": false
+          },
+          {
+            "source": "A1",
+            "target": "A2",
+            "directed": false
+          },
+          {
+            "source": "A2",
+            "target": "A3",
+            "directed": false
+          },
+          {
+            "source": "A3",
+            "target": "A4",
+            "directed": false
+          },
+          {
+            "source": "A4",
+            "target": "A5",
+            "directed": false
+          },
+          {
+            "source": "B0",
+            "target": "B1",
+            "directed": false
+          },
+          {
+            "source": "B1",
+            "target": "B2",
+            "directed": false
+          },
+          {
+            "source": "B2",
+            "target": "B3",
+            "directed": false
+          },
+          {
+            "source": "B3",
+            "target": "B4",
+            "directed": false
+          },
+          {
+            "source": "B4",
+            "target": "B5",
+            "directed": false
+          },
+          {
+            "source": "A0",
+            "target": "B0",
+            "directed": false
+          },
+          {
+            "source": "A1",
+            "target": "B1",
+            "directed": false
+          },
+          {
+            "source": "A2",
+            "target": "B2",
+            "directed": false
+          },
+          {
+            "source": "A3",
+            "target": "B3",
+            "directed": false
+          },
+          {
+            "source": "A4",
+            "target": "B4",
+            "directed": false
+          },
+          {
+            "source": "A5",
+            "target": "B5",
+            "directed": false
+          },
+          {
+            "source": "A0",
+            "target": "B1",
+            "directed": false
+          },
+          {
+            "source": "B1",
+            "target": "A2",
+            "directed": false
+          },
+          {
+            "source": "A2",
+            "target": "B3",
+            "directed": false
+          },
+          {
+            "source": "B3",
+            "target": "A4",
+            "directed": false
+          },
+          {
+            "source": "A4",
+            "target": "B5",
+            "directed": false
+          },
+          {
+            "source": "B0",
+            "target": "A1",
+            "directed": false
+          },
+          {
+            "source": "A1",
+            "target": "B2",
+            "directed": false
+          },
+          {
+            "source": "B2",
+            "target": "A3",
+            "directed": false
+          },
+          {
+            "source": "A3",
+            "target": "B4",
+            "directed": false
+          },
+          {
+            "source": "B4",
+            "target": "A5",
+            "directed": false
+          },
+          {
+            "source": "S",
+            "target": "A0",
+            "directed": false
+          },
+          {
+            "source": "S",
+            "target": "B0",
+            "directed": false
+          },
+          {
+            "source": "T",
+            "target": "A5",
+            "directed": false
+          },
+          {
+            "source": "T",
+            "target": "B5",
+            "directed": false
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "A0": [
+              -0.842,
+              0.629
+            ],
+            "A1": [
+              2.033,
+              0.629
+            ],
+            "A2": [
+              4.908,
+              0.629
+            ],
+            "A3": [
+              7.783,
+              0.629
+            ],
+            "A4": [
+              10.658,
+              0.629
+            ],
+            "A5": [
+              13.533,
+              0.629
+            ],
+            "B0": [
+              -1.267,
+              -0.955
+            ],
+            "B1": [
+              1.607,
+              -0.955
+            ],
+            "B2": [
+              4.482,
+              -0.955
+            ],
+            "B3": [
+              7.357,
+              -0.955
+            ],
+            "B4": [
+              10.232,
+              -0.955
+            ],
+            "B5": [
+              13.107,
+              -0.955
+            ],
+            "S": [
+              -3.093,
+              0.0
+            ],
+            "T": [
+              15.213,
+              0.0
+            ]
+          },
+          "edge_options": {},
+          "edge_routes": {},
+          "node_options": {},
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+          "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+        ]
+      },
+      "layout_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 1.6400246949360244,
+        "min_edge_node_clearance": 1.243669088238633,
+        "min_edge_edge_clearance": 0.15526931618776074,
+        "max_close_parallel_length": 0.5833234780119861,
+        "max_clear_detour_ratio": 1.0,
+        "edge_crossings": 5.0
+      },
+      "visual_review": {
+        "acceptable": true,
+        "score": 8.5,
+        "issues": [],
+        "suggestions": [],
+        "raw_response": "{\n  \"acceptable\": true,\n  \"score\": 8.5,\n  \"issues\": [],\n  \"suggestions\": []\n}"
+      },
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": true,
+        "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\braided_ladder_portals\\iteration_0\\braided_ladder_portals.tex",
+        "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\braided_ladder_portals\\iteration_0\\braided_ladder_portals.pdf",
+        "png_path": "outputs\\prompt_suite\\run_20260601_222019\\braided_ladder_portals\\iteration_0\\braided_ladder_portals.png",
+        "error": ""
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": true,
+          "visual_score": 8.5,
+          "visual_issues": [],
+          "visual_suggestions": [],
+          "layout_metrics": {
+            "min_node_distance": 1.6400246949360244,
+            "min_edge_node_clearance": 1.243669088238633,
+            "min_edge_edge_clearance": 0.15526931618776074,
+            "max_close_parallel_length": 0.5833234780119861,
+            "max_clear_detour_ratio": 1.0,
+            "edge_crossings": 5.0
+          },
+          "next_refinement": null,
+          "errors": []
+        }
+      ],
+      "id": "braided_ladder_portals",
+      "title": "Braided Ladder With Portals",
+      "prompt": "Draw an artificial undirected graph called a braided ladder with portals. There are two horizontal rails A0-A1-A2-A3-A4-A5 and B0-B1-B2-B3-B4-B5. Add vertical rungs Ai-Bi for i=0..5. Add diagonal braid edges A0-B1, B1-A2, A2-B3, B3-A4, A4-B5, and also B0-A1, A1-B2, B2-A3, A3-B4, B4-A5. Add portal nodes S and T, with S connected to A0 and B0, and T connected to A5 and B5. Make it readable and symmetric.",
+      "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\braided_ladder_portals"
+    },
+    {
+      "success": true,
+      "iterations": 3,
+      "graph": {
+        "nodes": [
+          {
+            "id": "L",
+            "label": "L"
+          },
+          {
+            "id": "l0",
+            "label": "l0"
+          },
+          {
+            "id": "l1",
+            "label": "l1"
+          },
+          {
+            "id": "l2",
+            "label": "l2"
+          },
+          {
+            "id": "l3",
+            "label": "l3"
+          },
+          {
+            "id": "l4",
+            "label": "l4"
+          },
+          {
+            "id": "l5",
+            "label": "l5"
+          },
+          {
+            "id": "R",
+            "label": "R"
+          },
+          {
+            "id": "r0",
+            "label": "r0"
+          },
+          {
+            "id": "r1",
+            "label": "r1"
+          },
+          {
+            "id": "r2",
+            "label": "r2"
+          },
+          {
+            "id": "r3",
+            "label": "r3"
+          },
+          {
+            "id": "r4",
+            "label": "r4"
+          },
+          {
+            "id": "r5",
+            "label": "r5"
+          },
+          {
+            "id": "x0",
+            "label": "x0"
+          },
+          {
+            "id": "x1",
+            "label": "x1"
+          },
+          {
+            "id": "y0",
+            "label": "y0"
+          },
+          {
+            "id": "y1",
+            "label": "y1"
+          }
+        ],
+        "edges": [
+          {
+            "source": "l0",
+            "target": "l1",
+            "directed": false
+          },
+          {
+            "source": "l1",
+            "target": "l2",
+            "directed": false
+          },
+          {
+            "source": "l2",
+            "target": "l3",
+            "directed": false
+          },
+          {
+            "source": "l3",
+            "target": "l4",
+            "directed": false
+          },
+          {
+            "source": "l4",
+            "target": "l5",
+            "directed": false
+          },
+          {
+            "source": "l5",
+            "target": "l0",
+            "directed": false
+          },
+          {
+            "source": "L",
+            "target": "l0",
+            "directed": false
+          },
+          {
+            "source": "L",
+            "target": "l2",
+            "directed": false
+          },
+          {
+            "source": "L",
+            "target": "l4",
+            "directed": false
+          },
+          {
+            "source": "r0",
+            "target": "r1",
+            "directed": false
+          },
+          {
+            "source": "r1",
+            "target": "r2",
+            "directed": false
+          },
+          {
+            "source": "r2",
+            "target": "r3",
+            "directed": false
+          },
+          {
+            "source": "r3",
+            "target": "r4",
+            "directed": false
+          },
+          {
+            "source": "r4",
+            "target": "r5",
+            "directed": false
+          },
+          {
+            "source": "r5",
+            "target": "r0",
+            "directed": false
+          },
+          {
+            "source": "R",
+            "target": "r1",
+            "directed": false
+          },
+          {
+            "source": "R",
+            "target": "r3",
+            "directed": false
+          },
+          {
+            "source": "R",
+            "target": "r5",
+            "directed": false
+          },
+          {
+            "source": "l0",
+            "target": "x0",
+            "directed": false
+          },
+          {
+            "source": "x0",
+            "target": "x1",
+            "directed": false
+          },
+          {
+            "source": "x1",
+            "target": "r3",
+            "directed": false
+          },
+          {
+            "source": "l3",
+            "target": "y0",
+            "directed": false
+          },
+          {
+            "source": "y0",
+            "target": "y1",
+            "directed": false
+          },
+          {
+            "source": "y1",
+            "target": "r0",
+            "directed": false
+          },
+          {
+            "source": "l1",
+            "target": "r4",
+            "directed": false
+          },
+          {
+            "source": "l2",
+            "target": "r5",
+            "directed": false
+          },
+          {
+            "source": "l4",
+            "target": "r1",
+            "directed": false
+          },
+          {
+            "source": "l5",
+            "target": "r2",
+            "directed": false
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "L": [
+              -7.0,
+              0.0
+            ],
+            "l0": [
+              -7.0,
+              2.4
+            ],
+            "l1": [
+              -9.0,
+              1.2
+            ],
+            "l2": [
+              -9.0,
+              -1.2
+            ],
+            "l3": [
+              -7.0,
+              -2.4
+            ],
+            "l4": [
+              -5.0,
+              -1.2
+            ],
+            "l5": [
+              -5.0,
+              1.2
+            ],
+            "R": [
+              7.0,
+              0.0
+            ],
+            "r0": [
+              7.0,
+              -2.4
+            ],
+            "r1": [
+              5.0,
+              -1.2
+            ],
+            "r2": [
+              5.0,
+              1.2
+            ],
+            "r3": [
+              7.0,
+              2.4
+            ],
+            "r4": [
+              9.0,
+              1.2
+            ],
+            "r5": [
+              9.0,
+              -1.2
+            ],
+            "x0": [
+              -3.75,
+              6.763
+            ],
+            "x1": [
+              3.75,
+              6.763
+            ],
+            "y0": [
+              -3.75,
+              -6.767
+            ],
+            "y1": [
+              3.75,
+              -6.767
+            ]
+          },
+          "edge_options": {},
+          "edge_routes": {
+            "undirected:l1:r4": [
+              [
+                -10.0,
+                4.1
+              ],
+              [
+                10.0,
+                4.1
+              ]
+            ],
+            "undirected:l2:r5": [
+              [
+                -10.0,
+                -4.1
+              ],
+              [
+                10.0,
+                -4.1
+              ]
+            ]
+          },
+          "node_options": {},
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.01, maximum=4.59, moved_fraction=0.89.",
+          "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.01, maximum=4.59, moved_fraction=0.89."
+        ]
+      },
+      "layout_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 2.3323807579381204,
+        "min_edge_node_clearance": 1.6999999999999997,
+        "min_edge_edge_clearance": 0.09876666666666623,
+        "max_close_parallel_length": 0.6048486087494729,
+        "max_clear_detour_ratio": 1.4519524811150657,
+        "edge_crossings": 4.0
+      },
+      "visual_review": {
+        "acceptable": true,
+        "score": 8.0,
+        "issues": [],
+        "suggestions": [],
+        "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[]}"
+      },
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": true,
+        "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\double_crown_bridge\\iteration_3\\double_crown_bridge.tex",
+        "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\double_crown_bridge\\iteration_3\\double_crown_bridge.pdf",
+        "png_path": "outputs\\prompt_suite\\run_20260601_222019\\double_crown_bridge\\iteration_3\\double_crown_bridge.png",
+        "error": ""
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 6.5,
+          "visual_issues": [
+            "The central twist matching edges create a fairly tangled bundle between the two crowns, with several crossings in the middle that make the bridge/matching structure harder to read.",
+            "The long edge from l4 to r1 runs across the entire graph and visually crowds the left crown interior before crossing other long matching edges.",
+            "The left crown is not drawn as an even circular cluster: l0 and l5 are pulled inward, making the rim cycle less clear and causing the local crown gadget to look compressed.",
+            "The bottom bridge path l3-y0-y1-r0 takes a very low wide route, visually detached from the two circular clusters and longer than necessary."
+          ],
+          "visual_suggestions": [
+            "Place l0 through l5 more evenly on a circular ring around L, with l0 near upper-right and l5 lower-right but farther from the center to clarify the 6-cycle.",
+            "Place r0 through r5 more evenly around R to match the left crown symmetry.",
+            "Separate the four twist matching edges into a cleaner fan: route l1-r4 and l2-r5 slightly above the center, and l4-r1 and l5-r2 slightly below or with small bends to avoid a dense central crossing bundle.",
+            "Move y0 and y1 upward closer to the gap between crowns, or route l3-y0-y1-r0 with a shallower bend so the lower bridge does not make such a large detour.",
+            "Keep x0 and x1 aligned as an upper bridge path, but ensure it remains clearly separated from the upper twist edges."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.4405339287916823,
+            "min_edge_node_clearance": 0.7611512235308844,
+            "min_edge_edge_clearance": 0.009472599522929214,
+            "max_close_parallel_length": 1.264876987519684,
+            "max_clear_detour_ratio": 1.1284592443550177,
+            "edge_crossings": 10.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=6.5: The central twist matching edges create a fairly tangled bundle between the two crowns, with several crossings in the middle that make the bridge/matching structure harder to read.",
+            "Visual review score=6.5: The long edge from l4 to r1 runs across the entire graph and visually crowds the left crown interior before crossing other long matching edges.",
+            "Visual review score=6.5: The left crown is not drawn as an even circular cluster: l0 and l5 are pulled inward, making the rim cycle less clear and causing the local crown gadget to look compressed.",
+            "Visual review score=6.5: The bottom bridge path l3-y0-y1-r0 takes a very low wide route, visually detached from the two circular clusters and longer than necessary."
+          ]
+        },
+        {
+          "iteration": 1,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 6.5,
+          "visual_issues": [
+            "The routed edge l2-r5 makes a large rectangular detour around the top of the entire drawing, which is visually distracting and obscures the intended two-crown structure.",
+            "The top l2-r5 route crosses the l0-x0 and x1-r3 bridge edges, adding avoidable tangles near the upper bridge path.",
+            "Several long inter-crown matching edges run nearly horizontally across the middle, making the center area feel crowded and less semantically clear."
+          ],
+          "visual_suggestions": [
+            "Reroute l2-r5 as a smoother upper inter-crown curve between the crowns, below x0/x1 if possible, rather than around the outside top boundary.",
+            "Move x0 and x1 slightly higher or route the l0-x0-x1-r3 bridge as a clean upper arc so it does not cross the l2-r5 matching edge.",
+            "Separate the four twist matching edges vertically into distinct bands: l1-r4 upper, l2-r5 upper-middle, l5-r2 middle-lower, and l4-r1 lower, with enough spacing between them.",
+            "Keep both crowns more circular and symmetric, with bridge nodes placed between the crowns rather than forcing matching edges to detour around the whole figure."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.555579634734268,
+            "min_edge_node_clearance": 0.7621507792776221,
+            "min_edge_edge_clearance": 0.012388888888888783,
+            "max_close_parallel_length": 0.6296,
+            "max_clear_detour_ratio": 1.2266906833578324,
+            "edge_crossings": 4.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=6.5: The routed edge l2-r5 makes a large rectangular detour around the top of the entire drawing, which is visually distracting and obscures the intended two-crown structure.",
+            "Visual review score=6.5: The top l2-r5 route crosses the l0-x0 and x1-r3 bridge edges, adding avoidable tangles near the upper bridge path.",
+            "Visual review score=6.5: Several long inter-crown matching edges run nearly horizontally across the middle, making the center area feel crowded and less semantically clear."
+          ]
+        },
+        {
+          "iteration": 2,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 6.5,
+          "visual_issues": [
+            "The top bridge edge x0-l0 crosses the l1-r4 matching edge very close to the left crown, crowding the l0/l1 area.",
+            "The top bridge edge x1-r3 crosses the l1-r4 matching edge near the right crown and runs close to the r4-r3 area, making that gadget harder to read.",
+            "The long matching edges l1-r4 and l2-r5 run nearly parallel across much of the drawing, creating a visually heavy band through the middle/top of the graph.",
+            "The lower routed edge l4-r1 makes a long detour beneath the graph and creates an overly wide rectangular path, while the l5-r2 edge is a long straight line through the center; the inter-crown connections feel tangled rather than organized."
+          ],
+          "visual_suggestions": [
+            "Move x0 and x1 higher or route l0-x0-x1-r3 farther above the crowns so its descending segments do not cross the l1-r4 edge near l0/l1 or r3/r4.",
+            "Separate the long twist edges vertically: route l1-r4 higher and l2-r5 slightly lower or with gentle bends so they do not form a close parallel band.",
+            "Consider routing l4-r1 closer to the lower bridge corridor or moving it inward with fewer detour bends, while keeping it clear of l5-r2.",
+            "Space the rim nodes in each crown more evenly on circular arcs so the two crown modules read as symmetric clusters before adding the inter-crown edges."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.5567568853228173,
+            "min_edge_node_clearance": 0.8018830443191906,
+            "min_edge_edge_clearance": 0.021475926777262077,
+            "max_close_parallel_length": 0.5978035203048647,
+            "max_clear_detour_ratio": 1.201103367276815,
+            "edge_crossings": 6.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=6.5: The top bridge edge x0-l0 crosses the l1-r4 matching edge very close to the left crown, crowding the l0/l1 area.",
+            "Visual review score=6.5: The top bridge edge x1-r3 crosses the l1-r4 matching edge near the right crown and runs close to the r4-r3 area, making that gadget harder to read.",
+            "Visual review score=6.5: The long matching edges l1-r4 and l2-r5 run nearly parallel across much of the drawing, creating a visually heavy band through the middle/top of the graph.",
+            "Visual review score=6.5: The lower routed edge l4-r1 makes a long detour beneath the graph and creates an overly wide rectangular path, while the l5-r2 edge is a long straight line through the center; the inter-crown connections feel tangled rather than organized."
+          ]
+        },
+        {
+          "iteration": 3,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": true,
+          "visual_score": 8.0,
+          "visual_issues": [],
+          "visual_suggestions": [],
+          "layout_metrics": {
+            "min_node_distance": 2.3323807579381204,
+            "min_edge_node_clearance": 1.6999999999999997,
+            "min_edge_edge_clearance": 0.09876666666666623,
+            "max_close_parallel_length": 0.6048486087494729,
+            "max_clear_detour_ratio": 1.4519524811150657,
+            "edge_crossings": 4.0
+          },
+          "next_refinement": null,
+          "errors": []
+        }
+      ],
+      "id": "double_crown_bridge",
+      "title": "Double Crown Bridge",
+      "prompt": "Create a complex artificial graph made from two crowns connected by a bridge. The left crown has center L and rim nodes l0,l1,l2,l3,l4,l5 forming a 6-cycle, with L connected to l0,l2,l4 only. The right crown has center R and rim nodes r0,r1,r2,r3,r4,r5 forming a 6-cycle, with R connected to r1,r3,r5 only. Add bridge path l0-x0-x1-r3 and bridge path l3-y0-y1-r0. Add twist matching edges l1-r4, l2-r5, l4-r1, l5-r2. Draw it as two circular clusters with the bridges between them.",
+      "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\double_crown_bridge"
+    },
+    {
+      "success": true,
+      "iterations": 1,
+      "graph": {
+        "nodes": [
+          {
+            "id": "s",
+            "label": "$s$"
+          },
+          {
+            "id": "t",
+            "label": "$t$"
+          },
+          {
+            "id": "u_0",
+            "label": "$u_{0}$"
+          },
+          {
+            "id": "v_0",
+            "label": "$v_{0}$"
+          },
+          {
+            "id": "a_0",
+            "label": "$a_{0}$"
+          },
+          {
+            "id": "b_0",
+            "label": "$b_{0}$"
+          },
+          {
+            "id": "u_1",
+            "label": "$u_{1}$"
+          },
+          {
+            "id": "v_1",
+            "label": "$v_{1}$"
+          },
+          {
+            "id": "a_1",
+            "label": "$a_{1}$"
+          },
+          {
+            "id": "b_1",
+            "label": "$b_{1}$"
+          },
+          {
+            "id": "u_2",
+            "label": "$u_{2}$"
+          },
+          {
+            "id": "v_2",
+            "label": "$v_{2}$"
+          },
+          {
+            "id": "a_2",
+            "label": "$a_{2}$"
+          },
+          {
+            "id": "b_2",
+            "label": "$b_{2}$"
+          },
+          {
+            "id": "u_3",
+            "label": "$u_{3}$"
+          },
+          {
+            "id": "v_3",
+            "label": "$v_{3}$"
+          },
+          {
+            "id": "a_3",
+            "label": "$a_{3}$"
+          },
+          {
+            "id": "b_3",
+            "label": "$b_{3}$"
+          }
+        ],
+        "edges": [
+          {
+            "source": "u_0",
+            "target": "a_0",
+            "directed": true
+          },
+          {
+            "source": "u_0",
+            "target": "b_0",
+            "directed": true
+          },
+          {
+            "source": "a_0",
+            "target": "v_0",
+            "directed": true
+          },
+          {
+            "source": "b_0",
+            "target": "v_0",
+            "directed": true
+          },
+          {
+            "source": "u_1",
+            "target": "a_1",
+            "directed": true
+          },
+          {
+            "source": "u_1",
+            "target": "b_1",
+            "directed": true
+          },
+          {
+            "source": "a_1",
+            "target": "v_1",
+            "directed": true
+          },
+          {
+            "source": "b_1",
+            "target": "v_1",
+            "directed": true
+          },
+          {
+            "source": "u_2",
+            "target": "a_2",
+            "directed": true
+          },
+          {
+            "source": "u_2",
+            "target": "b_2",
+            "directed": true
+          },
+          {
+            "source": "a_2",
+            "target": "v_2",
+            "directed": true
+          },
+          {
+            "source": "b_2",
+            "target": "v_2",
+            "directed": true
+          },
+          {
+            "source": "u_3",
+            "target": "a_3",
+            "directed": true
+          },
+          {
+            "source": "u_3",
+            "target": "b_3",
+            "directed": true
+          },
+          {
+            "source": "a_3",
+            "target": "v_3",
+            "directed": true
+          },
+          {
+            "source": "b_3",
+            "target": "v_3",
+            "directed": true
+          },
+          {
+            "source": "s",
+            "target": "u_0",
+            "directed": true
+          },
+          {
+            "source": "v_0",
+            "target": "u_1",
+            "directed": true
+          },
+          {
+            "source": "v_1",
+            "target": "u_2",
+            "directed": true
+          },
+          {
+            "source": "v_2",
+            "target": "u_3",
+            "directed": true
+          },
+          {
+            "source": "v_3",
+            "target": "t",
+            "directed": true
+          },
+          {
+            "source": "a_0",
+            "target": "b_1",
+            "directed": true
+          },
+          {
+            "source": "b_0",
+            "target": "a_1",
+            "directed": true
+          },
+          {
+            "source": "a_1",
+            "target": "b_2",
+            "directed": true
+          },
+          {
+            "source": "b_1",
+            "target": "a_2",
+            "directed": true
+          },
+          {
+            "source": "a_2",
+            "target": "b_3",
+            "directed": true
+          },
+          {
+            "source": "b_2",
+            "target": "a_3",
+            "directed": true
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "s": [
+              -12.0,
+              1.7
+            ],
+            "t": [
+              12.0,
+              -1.7
+            ],
+            "u_0": [
+              -8.1,
+              1.24
+            ],
+            "v_0": [
+              -8.1,
+              -1.7
+            ],
+            "a_0": [
+              -9.788,
+              -2.778
+            ],
+            "b_0": [
+              -6.739,
+              2.213
+            ],
+            "u_1": [
+              -2.7,
+              1.24
+            ],
+            "v_1": [
+              -2.7,
+              -1.7
+            ],
+            "a_1": [
+              -5.018,
+              -3.713
+            ],
+            "b_1": [
+              -1.339,
+              2.213
+            ],
+            "u_2": [
+              2.7,
+              1.24
+            ],
+            "v_2": [
+              2.7,
+              -1.7
+            ],
+            "a_2": [
+              0.942,
+              -3.713
+            ],
+            "b_2": [
+              4.061,
+              2.213
+            ],
+            "u_3": [
+              8.1,
+              1.24
+            ],
+            "v_3": [
+              8.1,
+              -1.7
+            ],
+            "a_3": [
+              6.451,
+              -2.841
+            ],
+            "b_3": [
+              9.771,
+              2.22
+            ]
+          },
+          "edge_options": {},
+          "edge_routes": {
+            "directed:a_0:b_1": [
+              [
+                -9.55,
+                3.35
+              ],
+              [
+                -1.25,
+                3.35
+              ]
+            ],
+            "directed:a_1:b_2": [
+              [
+                -4.15,
+                4.15
+              ],
+              [
+                4.15,
+                4.15
+              ]
+            ],
+            "directed:a_2:b_3": [
+              [
+                1.25,
+                3.35
+              ],
+              [
+                9.55,
+                3.35
+              ]
+            ],
+            "directed:b_0:a_1": [
+              [
+                -4.15,
+                -3.35
+              ]
+            ],
+            "directed:b_1:a_2": [
+              [
+                1.25,
+                -4.15
+              ]
+            ],
+            "directed:b_2:a_3": [
+              [
+                6.65,
+                -3.35
+              ]
+            ]
+          },
+          "node_options": {},
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=1.87, maximum=3.38, moved_fraction=0.83.",
+          "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=1.87, maximum=3.38, moved_fraction=0.83."
+        ]
+      },
+      "layout_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 1.6730361621913614,
+        "min_edge_node_clearance": 0.9658231132125503,
+        "min_edge_edge_clearance": 0.03985748995081928,
+        "max_close_parallel_length": 0.6384615384615385,
+        "max_clear_detour_ratio": 1.6740507868378764,
+        "edge_crossings": 8.0
+      },
+      "visual_review": {
+        "acceptable": true,
+        "score": 7.6,
+        "issues": [],
+        "suggestions": [
+          "If refining further, make the four diamond gadgets more uniform by aligning all u_k and v_k nodes in two consistent rows and spacing a_k/b_k branches evenly.",
+          "The three upper shortcut routes are readable but could be slightly staggered or drawn with smoother bends to reduce the boxy appearance."
+        ],
+        "raw_response": "{\"acceptable\":true,\"score\":7.6,\"issues\":[],\"suggestions\":[\"If refining further, make the four diamond gadgets more uniform by aligning all u_k and v_k nodes in two consistent rows and spacing a_k/b_k branches evenly.\",\"The three upper shortcut routes are readable but could be slightly staggered or drawn with smoother bends to reduce the boxy appearance.\"]}"
+      },
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": true,
+        "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.tex",
+        "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.pdf",
+        "png_path": "outputs\\prompt_suite\\run_20260601_222019\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.png",
+        "error": ""
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 5.5,
+          "visual_issues": [
+            "The repeated diamond gadgets are not drawn evenly: several gadgets are collapsed or skewed, especially the k=2 and k=3 gadgets.",
+            "In the k=3 gadget, a_3 is nearly on the vertical u_3-v_3 chain, making the diamond structure hard to read and crowding the incident edges.",
+            "The long shortcut routes a_0->b_1 and a_2->b_3 take high detours that crowd the top row near u_1 and u_3 and make the figure less clean.",
+            "The middle region around b_1, a_2, v_1, v_2, and u_2 is tangled, with multiple crossings and diagonal edges close together.",
+            "The layer ordering is visually inconsistent: nodes that should form repeated vertical diamond modules drift left/right unevenly, making the flow harder to follow."
+          ],
+          "visual_suggestions": [
+            "Place each gadget in a consistent diamond: align u_k on a common upper row, v_k on a common lower row, a_k on the left branch, and b_k on the right branch for every k.",
+            "Move a_3 leftward and b_3 rightward relative to the u_3-v_3 centerline so the final diamond opens up clearly.",
+            "Separate the k=2 gadget by moving a_2 left/down slightly and b_2 right/down slightly, with u_2 centered above and v_2 centered below.",
+            "Route shortcuts a_0->b_1, a_1->b_2, and a_2->b_3 with smoother shallow arcs or consistent lanes that stay farther from node labels.",
+            "Increase horizontal spacing between consecutive gadgets to reduce crossings and edge crowding in the middle layers."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.1519800345492104,
+            "min_edge_node_clearance": 0.8029999999999999,
+            "min_edge_edge_clearance": 0.048036757443358176,
+            "max_close_parallel_length": 0.5942731379593058,
+            "max_clear_detour_ratio": 1.4831809584364202,
+            "edge_crossings": 4.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=5.5: The repeated diamond gadgets are not drawn evenly: several gadgets are collapsed or skewed, especially the k=2 and k=3 gadgets.",
+            "Visual review score=5.5: In the k=3 gadget, a_3 is nearly on the vertical u_3-v_3 chain, making the diamond structure hard to read and crowding the incident edges.",
+            "Visual review score=5.5: The long shortcut routes a_0->b_1 and a_2->b_3 take high detours that crowd the top row near u_1 and u_3 and make the figure less clean.",
+            "Visual review score=5.5: The middle region around b_1, a_2, v_1, v_2, and u_2 is tangled, with multiple crossings and diagonal edges close together.",
+            "Visual review score=5.5: The layer ordering is visually inconsistent: nodes that should form repeated vertical diamond modules drift left/right unevenly, making the flow harder to follow."
+          ]
+        },
+        {
+          "iteration": 1,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": true,
+          "visual_score": 7.6,
+          "visual_issues": [],
+          "visual_suggestions": [
+            "If refining further, make the four diamond gadgets more uniform by aligning all u_k and v_k nodes in two consistent rows and spacing a_k/b_k branches evenly.",
+            "The three upper shortcut routes are readable but could be slightly staggered or drawn with smoother bends to reduce the boxy appearance."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.6730361621913614,
+            "min_edge_node_clearance": 0.9658231132125503,
+            "min_edge_edge_clearance": 0.03985748995081928,
+            "max_close_parallel_length": 0.6384615384615385,
+            "max_clear_detour_ratio": 1.6740507868378764,
+            "edge_crossings": 8.0
+          },
+          "next_refinement": null,
+          "errors": []
+        }
+      ],
+      "id": "stacked_diamond_flow",
+      "title": "Stacked Diamond Flow",
+      "prompt": "Draw a directed artificial flow graph built from four stacked diamond gadgets. Start at s and end at t. For each k=0,1,2,3 create top node uk, bottom node vk, left branch ak, and right branch bk. Add directed edges uk->ak, uk->bk, ak->vk, bk->vk for every k. Chain them with s->u0, v0->u1, v1->u2, v2->u3, v3->t. Add cross-layer directed shortcuts a0->b1, b0->a1, a1->b2, b1->a2, a2->b3, b2->a3. Make layers vertical from left to right.",
+      "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\stacked_diamond_flow"
+    },
+    {
+      "success": false,
+      "iterations": 3,
+      "graph": {
+        "nodes": [
+          {
+            "id": "g00",
+            "label": "$g_{00}$"
+          },
+          {
+            "id": "g01",
+            "label": "$g_{01}$"
+          },
+          {
+            "id": "g02",
+            "label": "$g_{02}$"
+          },
+          {
+            "id": "g03",
+            "label": "$g_{03}$"
+          },
+          {
+            "id": "g10",
+            "label": "$g_{10}$"
+          },
+          {
+            "id": "g11",
+            "label": "$g_{11}$"
+          },
+          {
+            "id": "g12",
+            "label": "$g_{12}$"
+          },
+          {
+            "id": "g13",
+            "label": "$g_{13}$"
+          },
+          {
+            "id": "g20",
+            "label": "$g_{20}$"
+          },
+          {
+            "id": "g21",
+            "label": "$g_{21}$"
+          },
+          {
+            "id": "g22",
+            "label": "$g_{22}$"
+          },
+          {
+            "id": "g23",
+            "label": "$g_{23}$"
+          },
+          {
+            "id": "H",
+            "label": "H"
+          }
+        ],
+        "edges": [
+          {
+            "source": "g00",
+            "target": "g01",
+            "directed": false
+          },
+          {
+            "source": "g01",
+            "target": "g02",
+            "directed": false
+          },
+          {
+            "source": "g02",
+            "target": "g03",
+            "directed": false
+          },
+          {
+            "source": "g10",
+            "target": "g11",
+            "directed": false
+          },
+          {
+            "source": "g11",
+            "target": "g12",
+            "directed": false
+          },
+          {
+            "source": "g12",
+            "target": "g13",
+            "directed": false
+          },
+          {
+            "source": "g20",
+            "target": "g21",
+            "directed": false
+          },
+          {
+            "source": "g21",
+            "target": "g22",
+            "directed": false
+          },
+          {
+            "source": "g22",
+            "target": "g23",
+            "directed": false
+          },
+          {
+            "source": "g00",
+            "target": "g10",
+            "directed": false
+          },
+          {
+            "source": "g10",
+            "target": "g20",
+            "directed": false
+          },
+          {
+            "source": "g01",
+            "target": "g11",
+            "directed": false
+          },
+          {
+            "source": "g11",
+            "target": "g21",
+            "directed": false
+          },
+          {
+            "source": "g02",
+            "target": "g12",
+            "directed": false
+          },
+          {
+            "source": "g12",
+            "target": "g22",
+            "directed": false
+          },
+          {
+            "source": "g03",
+            "target": "g13",
+            "directed": false
+          },
+          {
+            "source": "g13",
+            "target": "g23",
+            "directed": false
+          },
+          {
+            "source": "H",
+            "target": "g01",
+            "directed": false
+          },
+          {
+            "source": "H",
+            "target": "g02",
+            "directed": false
+          },
+          {
+            "source": "H",
+            "target": "g11",
+            "directed": false
+          },
+          {
+            "source": "H",
+            "target": "g12",
+            "directed": false
+          },
+          {
+            "source": "H",
+            "target": "g21",
+            "directed": false
+          },
+          {
+            "source": "H",
+            "target": "g22",
+            "directed": false
+          },
+          {
+            "source": "g00",
+            "target": "g23",
+            "directed": false
+          },
+          {
+            "source": "g03",
+            "target": "g20",
+            "directed": false
+          },
+          {
+            "source": "g10",
+            "target": "g13",
+            "directed": false
+          },
+          {
+            "source": "g01",
+            "target": "g22",
+            "directed": false
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "g00": [
+              -11.859,
+              1.81
+            ],
+            "g01": [
+              -5.363,
+              4.626
+            ],
+            "g02": [
+              3.915,
+              5.411
+            ],
+            "g03": [
+              13.316,
+              5.619
+            ],
+            "g10": [
+              -11.921,
+              -0.568
+            ],
+            "g11": [
+              -4.026,
+              -0.568
+            ],
+            "g12": [
+              2.596,
+              -0.299
+            ],
+            "g13": [
+              11.764,
+              -0.568
+            ],
+            "g20": [
+              -11.921,
+              -3.567
+            ],
+            "g21": [
+              -4.026,
+              -7.062
+            ],
+            "g22": [
+              6.767,
+              -8.922
+            ],
+            "g23": [
+              12.072,
+              -5.153
+            ],
+            "H": [
+              -0.66,
+              12.895
+            ]
+          },
+          "edge_options": {
+            "undirected:H:g11": "{'bend': 16}",
+            "undirected:H:g12": "{'bend': -16}"
+          },
+          "edge_routes": {
+            "undirected:H:g21": [
+              [
+                -6.943,
+                9.227
+              ],
+              [
+                -13.447,
+                1.729
+              ],
+              [
+                -13.447,
+                -6.852
+              ],
+              [
+                -4.324,
+                -6.852
+              ]
+            ],
+            "undirected:H:g22": [
+              [
+                6.786,
+                9.227
+              ],
+              [
+                13.29,
+                1.729
+              ],
+              [
+                13.29,
+                -6.852
+              ],
+              [
+                4.167,
+                -6.852
+              ]
+            ],
+            "undirected:g00:g23": [
+              [
+                -15.976,
+                4.078
+              ],
+              [
+                -15.976,
+                -10.104
+              ],
+              [
+                15.819,
+                -10.104
+              ]
+            ],
+            "undirected:g03:g20": [
+              [
+                13.832,
+                4.078
+              ],
+              [
+                13.832,
+                8.143
+              ]
+            ],
+            "undirected:g10:g13": [
+              [
+                -8.389,
+                -2.516
+              ],
+              [
+                8.232,
+                -2.516
+              ]
+            ],
+            "undirected:g01:g22": [
+              [
+                16.0,
+                3.446
+              ],
+              [
+                16.0,
+                -8.297
+              ],
+              [
+                4.528,
+                -8.297
+              ]
+            ]
+          },
+          "node_options": {},
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.16, maximum=5.01, moved_fraction=0.77.",
+          "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.16, maximum=5.01, moved_fraction=0.77."
+        ]
+      },
+      "layout_validation": {
+        "errors": [
+          "Edge g03-g20 passes too close to unrelated node g11: distance 0.54.",
+          "Edge g01-g22 appears over-routed: routed length 46.94 vs direct length 18.18, while a direct or shallow route has node clearance 2.47."
+        ],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 2.3788081049130465,
+        "min_edge_node_clearance": 0.5378947083672186,
+        "min_edge_edge_clearance": 0.004000149592598872,
+        "max_close_parallel_length": 1.5789999999999997,
+        "max_clear_detour_ratio": 2.581017338469205,
+        "edge_crossings": 21.0
+      },
+      "visual_review": null,
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": false,
+        "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\hubbed_grid_with_teleports\\iteration_3\\hubbed_grid_with_teleports.tex",
+        "pdf_path": null,
+        "png_path": null,
+        "error": "!  ==> Fatal error occurred, no output PDF file produced!"
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 4.0,
+          "visual_issues": [
+            "The hub spokes from H create a dense bundle through the middle of the grid, with several crossings near grid nodes and labels, especially around g01, g02, g11, g12, and g22.",
+            "The repeated 3 by 4 grid structure is visibly uneven: rows and columns are not well aligned, making the intended grid harder to read.",
+            "The curved teleport edge g01-g22 runs through the central grid area and adds clutter near g12 and g22.",
+            "The outer teleport route from g03 to g20 runs very close to the top row and crosses the H spokes, creating an avoidable tangle.",
+            "The g10-g13 routed edge forms a long horizontal segment through the lower middle of the drawing and crowds the area around g10/g20 and g13."
+          ],
+          "visual_suggestions": [
+            "Place g00-g03, g10-g13, and g20-g23 on a more regular aligned 3 by 4 lattice with consistent row and column spacing.",
+            "Move H higher or slightly centered above the middle columns, and fan or curve its six incident edges so they avoid passing close to non-incident grid nodes and labels.",
+            "Route g01-g22 outside or with a wider bend that avoids the central g11/g12 area.",
+            "Move the g03-g20 teleport farther outside the grid perimeter, with more clearance above the top row and away from the H spokes.",
+            "Route g10-g13 with a cleaner outer path below the middle row or keep it as a straight middle-row chord only if it does not crowd g10, g11, g12, or g13."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 2.3269355384281707,
+            "min_edge_node_clearance": 0.7612483275011,
+            "min_edge_edge_clearance": 0.01049999999999951,
+            "max_close_parallel_length": 0.9457060234621011,
+            "max_clear_detour_ratio": 1.6387805439718701,
+            "edge_crossings": 21.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=4.0: The hub spokes from H create a dense bundle through the middle of the grid, with several crossings near grid nodes and labels, especially around g01, g02, g11, g12, and g22.",
+            "Visual review score=4.0: The repeated 3 by 4 grid structure is visibly uneven: rows and columns are not well aligned, making the intended grid harder to read.",
+            "Visual review score=4.0: The curved teleport edge g01-g22 runs through the central grid area and adds clutter near g12 and g22.",
+            "Visual review score=4.0: The outer teleport route from g03 to g20 runs very close to the top row and crosses the H spokes, creating an avoidable tangle.",
+            "Visual review score=4.0: The g10-g13 routed edge forms a long horizontal segment through the lower middle of the drawing and crowds the area around g10/g20 and g13."
+          ]
+        },
+        {
+          "iteration": 1,
+          "graph_ok": true,
+          "layout_ok": false,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 3.0,
+          "visual_issues": [
+            "The 3 by 4 grid is visually distorted: g01 is far above the top row while g02 is much lower, so the intended row/column structure is hard to read.",
+            "Several hub edges create avoidable tangles through the grid area, especially H-g11 and H-g12, which cross near central grid edges and make the hub connections hard to follow.",
+            "The routed teleport g01-g22 takes a large left-side detour and then runs across the lower part of the drawing close to bottom-row nodes, adding clutter around g20, g21, and g22.",
+            "The long outer teleport routes g00-g23 and g03-g20 create large rectangular loops around the graph and crowd the bottom/side boundary, making the drawing look chaotic rather than cleanly layered.",
+            "There are many edge crossings in and around the central grid, including crossings near g00, g02, g11, and g12, reducing readability.",
+            "Unrelated long routed edges run near each other for visible segments along the outer left and bottom portions of the figure."
+          ],
+          "visual_suggestions": [
+            "Place the grid vertices in a regular 3-row by 4-column layout: align g00-g03 on one top row, g10-g13 on a middle row, and g20-g23 on a bottom row with even column spacing.",
+            "Move H directly above the center of the grid and route H-g01, H-g02, H-g11, H-g12, H-g21, and H-g22 as short, mostly straight radial edges, avoiding crossings near grid nodes.",
+            "Route teleports g00-g23 and g03-g20 outside the grid with smooth outer arcs or clean perimeter bends, keeping them well separated from bottom-row labels.",
+            "Route g10-g13 as a straight or slightly offset horizontal edge below the middle row, with enough clearance from g10-g13 node labels.",
+            "Route g01-g22 either as a clearly offset diagonal/curved connection or along a separate outer corridor that does not pass close to g20, g21, or g22.",
+            "Increase spacing between outer routed edges so unrelated long edges do not share nearly parallel corridors along the sides or bottom."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 4.652304052832316,
+            "min_edge_node_clearance": 0.6380772042236145,
+            "min_edge_edge_clearance": 0.012286367130816985,
+            "max_close_parallel_length": 0.9401999999999999,
+            "max_clear_detour_ratio": 2.2503003091595395,
+            "edge_crossings": 13.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Edge H-g11 passes too close to unrelated node g00: distance 0.64.",
+            "Visual review score=3.0: The 3 by 4 grid is visually distorted: g01 is far above the top row while g02 is much lower, so the intended row/column structure is hard to read.",
+            "Visual review score=3.0: Several hub edges create avoidable tangles through the grid area, especially H-g11 and H-g12, which cross near central grid edges and make the hub connections hard to follow.",
+            "Visual review score=3.0: The routed teleport g01-g22 takes a large left-side detour and then runs across the lower part of the drawing close to bottom-row nodes, adding clutter around g20, g21, and g22.",
+            "Visual review score=3.0: The long outer teleport routes g00-g23 and g03-g20 create large rectangular loops around the graph and crowd the bottom/side boundary, making the drawing look chaotic rather than cleanly layered.",
+            "Visual review score=3.0: There are many edge crossings in and around the central grid, including crossings near g00, g02, g11, and g12, reducing readability.",
+            "Visual review score=3.0: Unrelated long routed edges run near each other for visible segments along the outer left and bottom portions of the figure."
+          ]
+        },
+        {
+          "iteration": 2,
+          "graph_ok": true,
+          "layout_ok": false,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 3.0,
+          "visual_issues": [
+            "The intended 3 by 4 grid is visually distorted: g01 is far above the top row, and g20, g21, g22, g23 are not aligned on a clear bottom row, making the grid structure hard to read.",
+            "Several long routed teleport edges form large rectangular boxes that crowd the drawing and obscure the grid semantics.",
+            "The g01-g22 teleport route runs across the upper part of the graph and passes close to the g02/g03 area and other edges, creating avoidable tangles.",
+            "The g03-g20 teleport takes a very large outer detour around the top and left side, crossing the visual field near H-related edges and making the layout chaotic.",
+            "Edges from H to grid nodes are long and fan through the central grid area, producing many crossings and crowding around g01, g02, g11, and g12.",
+            "The bottom-right area around g22 and g23 is especially tangled, with multiple routed edges and bends close together.",
+            "Unrelated routed edges run close together for long visible segments along the right and lower outside of the graph."
+          ],
+          "visual_suggestions": [
+            "Place g00-g03, g10-g13, and g20-g23 in three straight, evenly spaced horizontal rows and four aligned columns.",
+            "Move g01 down into the top row and move g20, g21, g22, g23 onto a single bottom row to restore the grid structure.",
+            "Place H centered above the middle columns, closer to g01/g02/g11/g12, and route its six incident edges as short, separated spokes with slight bends to avoid labels.",
+            "Route g00-g23 around the outside using a clean left-bottom-right path with more margin from g20, g21, g22, and g23.",
+            "Route g03-g20 on the opposite outside perimeter, preferably top-right to left side, with enough clearance from H and top-row labels.",
+            "Route g10-g13 as a shallow arc or small-bend path just below the middle row, avoiding g20 and the bottom-row edges.",
+            "Route g01-g22 along the right outside perimeter instead of across the top interior, keeping it away from g02, g03, and H spokes."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 3.0518461625711084,
+            "min_edge_node_clearance": 0.7610000000000001,
+            "min_edge_edge_clearance": 0.006157894736842806,
+            "max_close_parallel_length": 0.9176999999999998,
+            "max_clear_detour_ratio": 2.583913059415192,
+            "edge_crossings": 16.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Edge g01-g22 appears over-routed: routed length 36.57 vs direct length 14.15, while a direct or shallow route has node clearance 1.77.",
+            "Visual review score=3.0: The intended 3 by 4 grid is visually distorted: g01 is far above the top row, and g20, g21, g22, g23 are not aligned on a clear bottom row, making the grid structure hard to read.",
+            "Visual review score=3.0: Several long routed teleport edges form large rectangular boxes that crowd the drawing and obscure the grid semantics.",
+            "Visual review score=3.0: The g01-g22 teleport route runs across the upper part of the graph and passes close to the g02/g03 area and other edges, creating avoidable tangles.",
+            "Visual review score=3.0: The g03-g20 teleport takes a very large outer detour around the top and left side, crossing the visual field near H-related edges and making the layout chaotic.",
+            "Visual review score=3.0: Edges from H to grid nodes are long and fan through the central grid area, producing many crossings and crowding around g01, g02, g11, and g12.",
+            "Visual review score=3.0: The bottom-right area around g22 and g23 is especially tangled, with multiple routed edges and bends close together.",
+            "Visual review score=3.0: Unrelated routed edges run close together for long visible segments along the right and lower outside of the graph."
+          ]
+        },
+        {
+          "iteration": 3,
+          "graph_ok": true,
+          "layout_ok": false,
+          "code_ok": true,
+          "render_ok": false,
+          "visual_ok": false,
+          "visual_score": null,
+          "visual_issues": [],
+          "visual_suggestions": [],
+          "layout_metrics": {
+            "min_node_distance": 2.3788081049130465,
+            "min_edge_node_clearance": 0.5378947083672186,
+            "min_edge_edge_clearance": 0.004000149592598872,
+            "max_close_parallel_length": 1.5789999999999997,
+            "max_clear_detour_ratio": 2.581017338469205,
+            "edge_crossings": 21.0
+          },
+          "next_refinement": null,
+          "errors": [
+            "Edge g03-g20 passes too close to unrelated node g11: distance 0.54.",
+            "Edge g01-g22 appears over-routed: routed length 46.94 vs direct length 18.18, while a direct or shallow route has node clearance 2.47.",
+            "!  ==> Fatal error occurred, no output PDF file produced!"
+          ]
+        }
+      ],
+      "id": "hubbed_grid_with_teleports",
+      "title": "Hubbed Grid With Teleports",
+      "prompt": "Draw an artificial undirected graph made from a 3 by 4 grid plus teleports. Grid vertices are g00,g01,g02,g03 on the top row, g10,g11,g12,g13 in the middle row, and g20,g21,g22,g23 on the bottom row. Add all horizontal and vertical grid edges. Add hub node H connected to g01,g02,g11,g12,g21,g22. Add teleport edges g00-g23, g03-g20, g10-g13, and g01-g22. Use bends or an outer route for long teleports so the grid remains legible.",
+      "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\hubbed_grid_with_teleports"
+    },
+    {
+      "success": true,
+      "iterations": 0,
+      "graph": {
+        "nodes": [
+          {
+            "id": "c0",
+            "label": "$c_{0}$"
+          },
+          {
+            "id": "c1",
+            "label": "$c_{1}$"
+          },
+          {
+            "id": "c2",
+            "label": "$c_{2}$"
+          },
+          {
+            "id": "c3",
+            "label": "$c_{3}$"
+          },
+          {
+            "id": "c4",
+            "label": "$c_{4}$"
+          },
+          {
+            "id": "a0",
+            "label": "$a_{0}$"
+          },
+          {
+            "id": "a1",
+            "label": "$a_{1}$"
+          },
+          {
+            "id": "a2",
+            "label": "$a_{2}$"
+          },
+          {
+            "id": "a3",
+            "label": "$a_{3}$"
+          },
+          {
+            "id": "a4",
+            "label": "$a_{4}$"
+          },
+          {
+            "id": "a5",
+            "label": "$a_{5}$"
+          },
+          {
+            "id": "a6",
+            "label": "$a_{6}$"
+          },
+          {
+            "id": "p0",
+            "label": "$p_{0}$"
+          },
+          {
+            "id": "p1",
+            "label": "$p_{1}$"
+          },
+          {
+            "id": "p2",
+            "label": "$p_{2}$"
+          },
+          {
+            "id": "z",
+            "label": "$z$"
+          }
+        ],
+        "edges": [
+          {
+            "source": "c0",
+            "target": "a0",
+            "directed": false
+          },
+          {
+            "source": "a0",
+            "target": "c1",
+            "directed": false
+          },
+          {
+            "source": "c1",
+            "target": "c0",
+            "directed": false
+          },
+          {
+            "source": "c1",
+            "target": "a1",
+            "directed": false
+          },
+          {
+            "source": "a1",
+            "target": "a2",
+            "directed": false
+          },
+          {
+            "source": "a2",
+            "target": "c2",
+            "directed": false
+          },
+          {
+            "source": "c2",
+            "target": "c1",
+            "directed": false
+          },
+          {
+            "source": "c2",
+            "target": "a3",
+            "directed": false
+          },
+          {
+            "source": "a3",
+            "target": "a4",
+            "directed": false
+          },
+          {
+            "source": "a4",
+            "target": "a5",
+            "directed": false
+          },
+          {
+            "source": "a5",
+            "target": "c3",
+            "directed": false
+          },
+          {
+            "source": "c3",
+            "target": "c2",
+            "directed": false
+          },
+          {
+            "source": "c3",
+            "target": "a6",
+            "directed": false
+          },
+          {
+            "source": "a6",
+            "target": "c4",
+            "directed": false
+          },
+          {
+            "source": "c4",
+            "target": "c3",
+            "directed": false
+          },
+          {
+            "source": "c0",
+            "target": "p0",
+            "directed": false
+          },
+          {
+            "source": "c2",
+            "target": "p1",
+            "directed": false
+          },
+          {
+            "source": "c4",
+            "target": "p2",
+            "directed": false
+          },
+          {
+            "source": "z",
+            "target": "c1",
+            "directed": false
+          },
+          {
+            "source": "z",
+            "target": "c2",
+            "directed": false
+          },
+          {
+            "source": "z",
+            "target": "c3",
+            "directed": false
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "c0": [
+              -1.996,
+              -0.013
+            ],
+            "c1": [
+              1.881,
+              -0.013
+            ],
+            "c2": [
+              5.757,
+              -0.013
+            ],
+            "c3": [
+              9.633,
+              -0.013
+            ],
+            "c4": [
+              13.51,
+              -0.013
+            ],
+            "a0": [
+              1.028,
+              -1.253
+            ],
+            "a1": [
+              3.09,
+              -1.345
+            ],
+            "a2": [
+              4.377,
+              -1.294
+            ],
+            "a3": [
+              6.882,
+              -1.731
+            ],
+            "a4": [
+              7.915,
+              -2.441
+            ],
+            "a5": [
+              8.949,
+              -1.731
+            ],
+            "a6": [
+              11.792,
+              -1.309
+            ],
+            "p0": [
+              -3.197,
+              -0.714
+            ],
+            "p1": [
+              5.799,
+              -2.407
+            ],
+            "p2": [
+              15.151,
+              -0.714
+            ],
+            "z": [
+              6.339,
+              2.655
+            ]
+          },
+          "edge_options": {},
+          "edge_routes": {},
+          "node_options": {},
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+          "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+        ]
+      },
+      "layout_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 1.253470781470394,
+        "min_edge_node_clearance": 1.0946911962178747,
+        "min_edge_edge_clearance": 1.264755669688239,
+        "max_close_parallel_length": 0.0,
+        "max_clear_detour_ratio": 1.0,
+        "edge_crossings": 0.0
+      },
+      "visual_review": {
+        "acceptable": true,
+        "score": 8.5,
+        "issues": [],
+        "suggestions": [],
+        "raw_response": "{\"acceptable\":true,\"score\":8.5,\"issues\":[],\"suggestions\":[]}"
+      },
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": true,
+        "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.tex",
+        "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.pdf",
+        "png_path": "outputs\\prompt_suite\\run_20260601_222019\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.png",
+        "error": ""
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": true,
+          "visual_score": 8.5,
+          "visual_issues": [],
+          "visual_suggestions": [],
+          "layout_metrics": {
+            "min_node_distance": 1.253470781470394,
+            "min_edge_node_clearance": 1.0946911962178747,
+            "min_edge_edge_clearance": 1.264755669688239,
+            "max_close_parallel_length": 0.0,
+            "max_clear_detour_ratio": 1.0,
+            "edge_crossings": 0.0
+          },
+          "next_refinement": null,
+          "errors": []
+        }
+      ],
+      "id": "cactus_chain_with_spikes",
+      "title": "Cactus Chain With Spikes",
+      "prompt": "Draw a cactus-like artificial graph. Use articulation nodes c0,c1,c2,c3,c4 in a horizontal chain. Around c0,c1 make a triangle c0-a0-c1-c0. Around c1,c2 make a square c1-a1-a2-c2-c1. Around c2,c3 make a pentagon c2-a3-a4-a5-c3-c2. Around c3,c4 make another triangle c3-a6-c4-c3. Add spike leaves p0 attached to c0, p1 attached to c2, p2 attached to c4, and add a top connector z attached to c1,c2,c3. Make the block structure visually obvious.",
+      "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\cactus_chain_with_spikes"
+    },
+    {
+      "success": true,
+      "iterations": 3,
+      "graph": {
+        "nodes": [
+          {
+            "id": "U0",
+            "label": "$U_0$"
+          },
+          {
+            "id": "U1",
+            "label": "$U_1$"
+          },
+          {
+            "id": "U2",
+            "label": "$U_2$"
+          },
+          {
+            "id": "V0",
+            "label": "$V_0$"
+          },
+          {
+            "id": "V1",
+            "label": "$V_1$"
+          },
+          {
+            "id": "V2",
+            "label": "$V_2$"
+          },
+          {
+            "id": "r",
+            "label": "$r$"
+          },
+          {
+            "id": "x0",
+            "label": "$x_0$"
+          },
+          {
+            "id": "x1",
+            "label": "$x_1$"
+          },
+          {
+            "id": "x00",
+            "label": "$x_{00}$"
+          },
+          {
+            "id": "x01",
+            "label": "$x_{01}$"
+          },
+          {
+            "id": "x10",
+            "label": "$x_{10}$"
+          },
+          {
+            "id": "x11",
+            "label": "$x_{11}$"
+          }
+        ],
+        "edges": [
+          {
+            "source": "U0",
+            "target": "U1",
+            "directed": false
+          },
+          {
+            "source": "U1",
+            "target": "U2",
+            "directed": false
+          },
+          {
+            "source": "U0",
+            "target": "U2",
+            "directed": false
+          },
+          {
+            "source": "V0",
+            "target": "V1",
+            "directed": false
+          },
+          {
+            "source": "V1",
+            "target": "V2",
+            "directed": false
+          },
+          {
+            "source": "V0",
+            "target": "V2",
+            "directed": false
+          },
+          {
+            "source": "U0",
+            "target": "V0",
+            "directed": false
+          },
+          {
+            "source": "U1",
+            "target": "V1",
+            "directed": false
+          },
+          {
+            "source": "U2",
+            "target": "V2",
+            "directed": false
+          },
+          {
+            "source": "U0",
+            "target": "V1",
+            "directed": false
+          },
+          {
+            "source": "U1",
+            "target": "V2",
+            "directed": false
+          },
+          {
+            "source": "U2",
+            "target": "V0",
+            "directed": false
+          },
+          {
+            "source": "U1",
+            "target": "r",
+            "directed": false
+          },
+          {
+            "source": "r",
+            "target": "x0",
+            "directed": false
+          },
+          {
+            "source": "r",
+            "target": "x1",
+            "directed": false
+          },
+          {
+            "source": "x0",
+            "target": "x00",
+            "directed": false
+          },
+          {
+            "source": "x0",
+            "target": "x01",
+            "directed": false
+          },
+          {
+            "source": "x1",
+            "target": "x10",
+            "directed": false
+          },
+          {
+            "source": "x1",
+            "target": "x11",
+            "directed": false
+          },
+          {
+            "source": "V2",
+            "target": "x01",
+            "directed": false
+          },
+          {
+            "source": "V0",
+            "target": "x10",
+            "directed": false
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "U0": [
+              -10.019,
+              1.992
+            ],
+            "U1": [
+              -6.058,
+              2.632
+            ],
+            "U2": [
+              -6.971,
+              -0.313
+            ],
+            "V0": [
+              -7.774,
+              -3.318
+            ],
+            "V1": [
+              -8.8,
+              -0.233
+            ],
+            "V2": [
+              -5.52,
+              -1.911
+            ],
+            "r": [
+              -2.218,
+              2.674
+            ],
+            "x0": [
+              2.638,
+              4.177
+            ],
+            "x1": [
+              2.638,
+              -1.258
+            ],
+            "x00": [
+              2.638,
+              6.179
+            ],
+            "x01": [
+              2.638,
+              2.461
+            ],
+            "x10": [
+              2.638,
+              -3.261
+            ],
+            "x11": [
+              2.638,
+              0.458
+            ]
+          },
+          "edge_options": {
+            "undirected:U1:V1": "bend left=10",
+            "undirected:U2:V0": "bend right=10",
+            "undirected:U0:V0": "bend right=8"
+          },
+          "edge_routes": {},
+          "node_options": {},
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.05, maximum=3.04, moved_fraction=0.92.",
+          "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.05, maximum=3.04, moved_fraction=0.92."
+        ]
+      },
+      "layout_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 1.7159999999999997,
+        "min_edge_node_clearance": 0.7617892651958811,
+        "min_edge_edge_clearance": 0.03615225239706403,
+        "max_close_parallel_length": 0.6702618239618423,
+        "max_clear_detour_ratio": 1.0211895701743932,
+        "edge_crossings": 3.0
+      },
+      "visual_review": {
+        "acceptable": true,
+        "score": 8.0,
+        "issues": [],
+        "suggestions": [],
+        "raw_response": "{\n  \"acceptable\": true,\n  \"score\": 8.0,\n  \"issues\": [],\n  \"suggestions\": []\n}"
+      },
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": true,
+        "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\twisted_prism_tree\\iteration_3\\twisted_prism_tree.tex",
+        "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\twisted_prism_tree\\iteration_3\\twisted_prism_tree.pdf",
+        "png_path": "outputs\\prompt_suite\\run_20260601_222019\\twisted_prism_tree\\iteration_3\\twisted_prism_tree.png",
+        "error": ""
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 6.0,
+          "visual_issues": [
+            "The long routed edge V2-x01 makes a large bottom detour across the whole figure and then rises vertically beside the tree, which is visually distracting and much longer than necessary.",
+            "The long edge V0-x10 also runs along the bottom of the figure and creates an avoidable sweeping detour from the prism to the tree.",
+            "The two long cross-gadget edges V2-x01 and V0-x10 run in the same lower region for a long visible span, making the bottom of the drawing look like routing clutter rather than part of the graph structure.",
+            "The prism on the left is fairly tangled, with several crossings concentrated near the U/V nodes, making the prism semantics harder to read."
+          ],
+          "visual_suggestions": [
+            "Reroute V2-x01 with a shorter path, for example using a gentle bend through the open space between the prism and tree instead of dropping to the bottom edge of the figure.",
+            "Reroute V0-x10 separately from V2-x01, perhaps with a lower but shorter arc or by moving x10 slightly left/down so the connection can be more direct.",
+            "Increase separation between the two cross-gadget edges V2-x01 and V0-x10 if both must be routed below the drawing.",
+            "Consider arranging the prism nodes more evenly as two offset triangles or a clearer hexagonal/prism layout to reduce concentrated crossings near V1 and V2."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.3823183424956786,
+            "min_edge_node_clearance": 0.8984006107421213,
+            "min_edge_edge_clearance": 0.08725849606697293,
+            "max_close_parallel_length": 0.6288037194920675,
+            "max_clear_detour_ratio": 1.4619535452025811,
+            "edge_crossings": 5.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=6.0: The long routed edge V2-x01 makes a large bottom detour across the whole figure and then rises vertically beside the tree, which is visually distracting and much longer than necessary.",
+            "Visual review score=6.0: The long edge V0-x10 also runs along the bottom of the figure and creates an avoidable sweeping detour from the prism to the tree.",
+            "Visual review score=6.0: The two long cross-gadget edges V2-x01 and V0-x10 run in the same lower region for a long visible span, making the bottom of the drawing look like routing clutter rather than part of the graph structure.",
+            "Visual review score=6.0: The prism on the left is fairly tangled, with several crossings concentrated near the U/V nodes, making the prism semantics harder to read."
+          ]
+        },
+        {
+          "iteration": 1,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": false,
+          "visual_ok": false,
+          "visual_score": null,
+          "visual_issues": [],
+          "visual_suggestions": [],
+          "layout_metrics": {
+            "min_node_distance": 1.543586084415119,
+            "min_edge_node_clearance": 0.7614083865456429,
+            "min_edge_edge_clearance": 0.038682162538421695,
+            "max_close_parallel_length": 0.6353957539772639,
+            "max_clear_detour_ratio": 1.0,
+            "edge_crossings": 4.0
+          },
+          "next_refinement": "text_refinement",
+          "errors": [
+            "!  ==> Fatal error occurred, no output PDF file produced!"
+          ]
+        },
+        {
+          "iteration": 2,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 6.0,
+          "visual_issues": [
+            "The edge V2-x01 takes a very long detour far below the graph and then up the far right side, making the drawing unnecessarily stretched and harder to read.",
+            "The edge V0-x10 is also a long sweeping arc across the middle/bottom of the drawing and passes through the visual gap between the prism and tree, adding avoidable clutter.",
+            "The prism on the left is somewhat tangled, with several crossings clustered inside the U/V gadget; it remains mostly readable but could be made clearer with more regular prism placement."
+          ],
+          "visual_suggestions": [
+            "Reroute V2-x01 with a shorter path, for example using a modest lower bend from V2 toward x01 rather than dropping to the extreme bottom-right corner.",
+            "Move x01 slightly lower or inward, or move V2 slightly right/down, so the V2-x01 connection can be drawn as a shorter curved or two-bend edge without crossing the tree heavily.",
+            "Reroute V0-x10 with a smaller bend, or move x10 slightly left/down so the edge does not need such a broad arc across the figure.",
+            "Arrange the prism nodes more evenly as two offset triangles or a compact hexagonal prism-like shape to reduce the dense central crossings."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.8212525909384456,
+            "min_edge_node_clearance": 0.879702722858341,
+            "min_edge_edge_clearance": 0.009912972257465978,
+            "max_close_parallel_length": 0.9087583700228048,
+            "max_clear_detour_ratio": 1.5935197492322022,
+            "edge_crossings": 8.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=6.0: The edge V2-x01 takes a very long detour far below the graph and then up the far right side, making the drawing unnecessarily stretched and harder to read.",
+            "Visual review score=6.0: The edge V0-x10 is also a long sweeping arc across the middle/bottom of the drawing and passes through the visual gap between the prism and tree, adding avoidable clutter.",
+            "Visual review score=6.0: The prism on the left is somewhat tangled, with several crossings clustered inside the U/V gadget; it remains mostly readable but could be made clearer with more regular prism placement."
+          ]
+        },
+        {
+          "iteration": 3,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": true,
+          "visual_score": 8.0,
+          "visual_issues": [],
+          "visual_suggestions": [],
+          "layout_metrics": {
+            "min_node_distance": 1.7159999999999997,
+            "min_edge_node_clearance": 0.7617892651958811,
+            "min_edge_edge_clearance": 0.03615225239706403,
+            "max_close_parallel_length": 0.6702618239618423,
+            "max_clear_detour_ratio": 1.0211895701743932,
+            "edge_crossings": 3.0
+          },
+          "next_refinement": null,
+          "errors": []
+        }
+      ],
+      "id": "twisted_prism_tree",
+      "title": "Twisted Prism Tree",
+      "prompt": "Draw an artificial graph combining a triangular prism and a small tree. Prism nodes are top triangle U0,U1,U2, bottom triangle V0,V1,V2, with triangle edges among all U nodes, triangle edges among all V nodes, and vertical edges U0-V0, U1-V1, U2-V2. Add a twisted matching U0-V1, U1-V2, U2-V0. Attach a binary tree root r to U1; r connects to x0 and x1; x0 connects to x00 and x01; x1 connects to x10 and x11. Also connect leaf x01 to V2 and leaf x10 to V0. Draw the prism on the left and the tree on the right.",
+      "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\twisted_prism_tree"
+    },
+    {
+      "success": false,
+      "iterations": 3,
+      "graph": {
+        "nodes": [
+          {
+            "id": "A0",
+            "label": "A0"
+          },
+          {
+            "id": "A1",
+            "label": "A1"
+          },
+          {
+            "id": "A2",
+            "label": "A2"
+          },
+          {
+            "id": "A3",
+            "label": "A3"
+          },
+          {
+            "id": "B0",
+            "label": "B0"
+          },
+          {
+            "id": "B1",
+            "label": "B1"
+          },
+          {
+            "id": "B2",
+            "label": "B2"
+          },
+          {
+            "id": "B3",
+            "label": "B3"
+          },
+          {
+            "id": "C0",
+            "label": "C0"
+          },
+          {
+            "id": "C1",
+            "label": "C1"
+          },
+          {
+            "id": "C2",
+            "label": "C2"
+          },
+          {
+            "id": "C3",
+            "label": "C3"
+          }
+        ],
+        "edges": [
+          {
+            "source": "A0",
+            "target": "A1",
+            "directed": true
+          },
+          {
+            "source": "A0",
+            "target": "A2",
+            "directed": true
+          },
+          {
+            "source": "A1",
+            "target": "A3",
+            "directed": true
+          },
+          {
+            "source": "A2",
+            "target": "A3",
+            "directed": true
+          },
+          {
+            "source": "B0",
+            "target": "B1",
+            "directed": true
+          },
+          {
+            "source": "B0",
+            "target": "B2",
+            "directed": true
+          },
+          {
+            "source": "B1",
+            "target": "B3",
+            "directed": true
+          },
+          {
+            "source": "B2",
+            "target": "B3",
+            "directed": true
+          },
+          {
+            "source": "C0",
+            "target": "C1",
+            "directed": true
+          },
+          {
+            "source": "C0",
+            "target": "C2",
+            "directed": true
+          },
+          {
+            "source": "C1",
+            "target": "C3",
+            "directed": true
+          },
+          {
+            "source": "C2",
+            "target": "C3",
+            "directed": true
+          },
+          {
+            "source": "A3",
+            "target": "B0",
+            "directed": true
+          },
+          {
+            "source": "B3",
+            "target": "C0",
+            "directed": true
+          },
+          {
+            "source": "A1",
+            "target": "B2",
+            "directed": true
+          },
+          {
+            "source": "A2",
+            "target": "C1",
+            "directed": true
+          },
+          {
+            "source": "B1",
+            "target": "C2",
+            "directed": true
+          },
+          {
+            "source": "C3",
+            "target": "A0",
+            "directed": true
+          },
+          {
+            "source": "C2",
+            "target": "B0",
+            "directed": true
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "A0": [
+              -8.866,
+              -0.427
+            ],
+            "A1": [
+              -7.358,
+              1.298
+            ],
+            "A2": [
+              -6.581,
+              -1.494
+            ],
+            "A3": [
+              -5.016,
+              -0.427
+            ],
+            "B0": [
+              -2.479,
+              -0.409
+            ],
+            "B1": [
+              0.782,
+              0.138
+            ],
+            "B2": [
+              0.262,
+              -1.013
+            ],
+            "B3": [
+              2.407,
+              -0.361
+            ],
+            "C0": [
+              6.045,
+              -0.427
+            ],
+            "C1": [
+              7.15,
+              0.64
+            ],
+            "C2": [
+              7.932,
+              -2.276
+            ],
+            "C3": [
+              9.175,
+              -0.427
+            ]
+          },
+          "edge_options": {
+            "directed:C3:A0": "",
+            "directed:C2:B0": ""
+          },
+          "edge_routes": {
+            "directed:A1:B2": [
+              [
+                -4.162,
+                1.708
+              ],
+              [
+                -0.534,
+                1.708
+              ],
+              [
+                -0.534,
+                -1.494
+              ]
+            ],
+            "directed:A2:C1": [
+              [
+                -4.375,
+                2.846
+              ]
+            ],
+            "directed:B1:C2": [
+              [
+                2.383,
+                -2.49
+              ],
+              [
+                5.585,
+                -2.49
+              ]
+            ],
+            "directed:C3:A0": [
+              [
+                9.0,
+                4.411
+              ],
+              [
+                -9.0,
+                4.411
+              ]
+            ],
+            "directed:C2:B0": [
+              [
+                -2.455,
+                -4.411
+              ],
+              [
+                -2.455,
+                -0.427
+              ]
+            ]
+          },
+          "node_options": {},
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=0.99, maximum=1.94, moved_fraction=0.58.",
+          "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=0.99, maximum=1.94, moved_fraction=0.58."
+        ]
+      },
+      "layout_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 1.2630126681866654,
+        "min_edge_node_clearance": 0.9116405446929083,
+        "min_edge_edge_clearance": 0.014951015398797124,
+        "max_close_parallel_length": 0.5858529418049273,
+        "max_clear_detour_ratio": 1.5343395256726757,
+        "edge_crossings": 4.0
+      },
+      "visual_review": {
+        "acceptable": false,
+        "score": 6.5,
+        "issues": [
+          "The long A2->C1 edge rises through module A and crosses the local A1->A3 area close to A3, making the A module harder to read.",
+          "The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.",
+          "The C2->B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.",
+          "The C3->A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.",
+          "Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C."
+        ],
+        "suggestions": [
+          "Route A2->C1 outside or above module A so it does not pass close to A3 or cross the A1->A3 region.",
+          "Reposition B0, B1, B2, and B3 into a clearer diamond similar to module A: B0 left, B1 upper-middle, B2 lower-middle, B3 right, with more vertical separation between B1 and B2.",
+          "Draw C2->B0 as a smoother lower outer arc that stays below all modules and approaches B0 from outside without running vertically through the B cluster.",
+          "Draw C3->A0 as a smoother upper curved arc with more margin from the frame and make it visually distinct from ordinary edges if possible.",
+          "Align the three modules in a more regular left-to-right sequence with comparable internal spacing and diamond proportions."
+        ],
+        "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 6.5,\n  \"issues\": [\n    \"The long A2->C1 edge rises through module A and crosses the local A1->A3 area close to A3, making the A module harder to read.\",\n    \"The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.\",\n    \"The C2->B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.\",\n    \"The C3->A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.\",\n    \"Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C.\"\n  ],\n  \"suggestions\": [\n    \"Route A2->C1 outside or above module A so it does not pass close to A3 or cross the A1->A3 region.\",\n    \"Reposition B0, B1, B2, and B3 into a clearer diamond similar to module A: B0 left, B1 upper-middle, B2 lower-middle, B3 right, with more vertical separation between B1 and B2.\",\n    \"Draw C2->B0 as a smoother lower outer arc that stays below all modules and approaches B0 from outside without running vertically through the B cluster.\",\n    \"Draw C3->A0 as a smoother upper curved arc with more margin from the frame and make it visually distinct from ordinary edges if possible.\",\n    \"Align the three modules in a more regular left-to-right sequence with comparable internal spacing and diamond proportions.\"\n  ]\n}"
+      },
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": true,
+        "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\three_module_dependency\\iteration_3\\three_module_dependency.tex",
+        "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\three_module_dependency\\iteration_3\\three_module_dependency.pdf",
+        "png_path": "outputs\\prompt_suite\\run_20260601_222019\\three_module_dependency\\iteration_3\\three_module_dependency.png",
+        "error": ""
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 6.0,
+          "visual_issues": [
+            "The A2->C1 edge takes a very long bottom-and-right detour and its right vertical segment crowds the C module, especially near C3 and C2, before entering C1.",
+            "The C module is cramped: C1, C3, and C2 are stacked too tightly, making the local arrows and arrowheads crowded.",
+            "The repeated A, B, and C dependency modules are not laid out consistently; C is compressed while A and B are more spread out, making the intended three-module structure less clear.",
+            "Several inter-module edges create avoidable tangles in the middle, especially around B0/B2/B3 and the edges A1->B2, B0->B1, and B3->C0."
+          ],
+          "visual_suggestions": [
+            "Arrange each module as a clearer diamond: node 0 on the left, nodes 1 and 2 vertically separated in the middle, node 3 on the right; apply this pattern consistently for A, B, and C.",
+            "Move C1 upward and C2 downward slightly, and move C3 farther right or lower-right to open space inside the C module.",
+            "Reroute A2->C1 as a smoother outer curve with more clearance from C2/C3, or route it below the modules but keep the vertical return segment farther to the right of the C cluster.",
+            "Keep the feedback arcs C3->A0 and C2->B0 farther outside the main drawing so they read clearly as monitor arcs and do not visually compete with ordinary inter-module edges.",
+            "Increase horizontal spacing between modules B and C, and route B1->C2 and B3->C0 with separated lanes to reduce crowding near C0/C2."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.1921514165574774,
+            "min_edge_node_clearance": 0.8000000000000007,
+            "min_edge_edge_clearance": 0.00021795421747505193,
+            "max_close_parallel_length": 1.2505000000000002,
+            "max_clear_detour_ratio": 1.5751736739343243,
+            "edge_crossings": 5.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=6.0: The A2->C1 edge takes a very long bottom-and-right detour and its right vertical segment crowds the C module, especially near C3 and C2, before entering C1.",
+            "Visual review score=6.0: The C module is cramped: C1, C3, and C2 are stacked too tightly, making the local arrows and arrowheads crowded.",
+            "Visual review score=6.0: The repeated A, B, and C dependency modules are not laid out consistently; C is compressed while A and B are more spread out, making the intended three-module structure less clear.",
+            "Visual review score=6.0: Several inter-module edges create avoidable tangles in the middle, especially around B0/B2/B3 and the edges A1->B2, B0->B1, and B3->C0."
+          ]
+        },
+        {
+          "iteration": 1,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 5.5,
+          "visual_issues": [
+            "The routed edge A2->C1 takes a very long bottom-and-right detour across the whole graph, creating a prominent enclosing line that obscures the intended three-module structure.",
+            "Near the right side, the A2->C1 routed segment and the outer feedback arc C3->A0 crowd the C1/C3 area, making it hard to distinguish which edge is entering C1 and which is feedback.",
+            "The B module is cramped: B0 and B2 are close, with several edges converging and crossing in the small space between A3, B0, B1, B2, and B3.",
+            "The feedback/monitor arcs are not visually dashed-looking and instead read as solid enclosing boundaries, which makes the graph look boxed in rather than modular."
+          ],
+          "visual_suggestions": [
+            "Reroute A2->C1 as a smoother upper or mid-level curved inter-module edge, or move it outside the modules with more clearance and a less rectangular path.",
+            "Move C1 and C3 slightly inward/left or route the C3->A0 feedback arc farther above the graph so it does not crowd the C1/C3 labels and incoming arrows.",
+            "Increase spacing inside Module B by moving B0 left/down, B2 right/down, and B1 upward so the B0->B2, A1->B2, A3->B0, and B1/B2->B3 edges have clearer separation.",
+            "Make the three modules more evenly repeated: arrange A, B, and C as similar diamond-shaped clusters in separate columns, then route inter-module edges between columns with small bends."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.9625982777940063,
+            "min_edge_node_clearance": 0.8799999999999999,
+            "min_edge_edge_clearance": 0.04335254231024611,
+            "max_close_parallel_length": 1.174283015119382,
+            "max_clear_detour_ratio": 1.6343166012431358,
+            "edge_crossings": 5.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=5.5: The routed edge A2->C1 takes a very long bottom-and-right detour across the whole graph, creating a prominent enclosing line that obscures the intended three-module structure.",
+            "Visual review score=5.5: Near the right side, the A2->C1 routed segment and the outer feedback arc C3->A0 crowd the C1/C3 area, making it hard to distinguish which edge is entering C1 and which is feedback.",
+            "Visual review score=5.5: The B module is cramped: B0 and B2 are close, with several edges converging and crossing in the small space between A3, B0, B1, B2, and B3.",
+            "Visual review score=5.5: The feedback/monitor arcs are not visually dashed-looking and instead read as solid enclosing boundaries, which makes the graph look boxed in rather than modular."
+          ]
+        },
+        {
+          "iteration": 2,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 6.5,
+          "visual_issues": [
+            "The long A2->C1 routed edge runs close above the A3 node/label and makes the A-module area harder to read.",
+            "The B1->C2 and B3->C0 inter-module edges cross in the central B-C gap, creating an avoidable tangle between the modules.",
+            "The C2->B0 feedback edge takes a long angular detour along the bottom and then rises close to the B cluster, making it look like a structural edge rather than an outer feedback arc.",
+            "The three repeated module diamonds are not evenly aligned or separated; module B is compressed vertically while module C is spread unevenly, reducing the intended modular readability."
+          ],
+          "visual_suggestions": [
+            "Raise or bow the A2->C1 edge farther above A3, or move A3 slightly downward/right to increase clearance.",
+            "Separate the B-to-C inter-module routes: route B3->C0 slightly above and B1->C2 slightly below, or adjust C0/C2 vertically to avoid their crossing.",
+            "Reroute C2->B0 as a smoother dashed-looking outer bottom arc with more clearance from B2/B3 and B0, rather than a vertical segment near the B cluster.",
+            "Arrange A, B, and C as more consistent diamond modules in three columns, with each module's top/source, two middle branches, and bottom/sink spaced evenly."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.1507549695743224,
+            "min_edge_node_clearance": 0.9666059092833392,
+            "min_edge_edge_clearance": 0.045535714285714235,
+            "max_close_parallel_length": 0.588307010742596,
+            "max_clear_detour_ratio": 1.5408477965178964,
+            "edge_crossings": 2.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Visual review score=6.5: The long A2->C1 routed edge runs close above the A3 node/label and makes the A-module area harder to read.",
+            "Visual review score=6.5: The B1->C2 and B3->C0 inter-module edges cross in the central B-C gap, creating an avoidable tangle between the modules.",
+            "Visual review score=6.5: The C2->B0 feedback edge takes a long angular detour along the bottom and then rises close to the B cluster, making it look like a structural edge rather than an outer feedback arc.",
+            "Visual review score=6.5: The three repeated module diamonds are not evenly aligned or separated; module B is compressed vertically while module C is spread unevenly, reducing the intended modular readability."
+          ]
+        },
+        {
+          "iteration": 3,
+          "graph_ok": true,
+          "layout_ok": true,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 6.5,
+          "visual_issues": [
+            "The long A2->C1 edge rises through module A and crosses the local A1->A3 area close to A3, making the A module harder to read.",
+            "The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.",
+            "The C2->B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.",
+            "The C3->A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.",
+            "Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C."
+          ],
+          "visual_suggestions": [
+            "Route A2->C1 outside or above module A so it does not pass close to A3 or cross the A1->A3 region.",
+            "Reposition B0, B1, B2, and B3 into a clearer diamond similar to module A: B0 left, B1 upper-middle, B2 lower-middle, B3 right, with more vertical separation between B1 and B2.",
+            "Draw C2->B0 as a smoother lower outer arc that stays below all modules and approaches B0 from outside without running vertically through the B cluster.",
+            "Draw C3->A0 as a smoother upper curved arc with more margin from the frame and make it visually distinct from ordinary edges if possible.",
+            "Align the three modules in a more regular left-to-right sequence with comparable internal spacing and diamond proportions."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.2630126681866654,
+            "min_edge_node_clearance": 0.9116405446929083,
+            "min_edge_edge_clearance": 0.014951015398797124,
+            "max_close_parallel_length": 0.5858529418049273,
+            "max_clear_detour_ratio": 1.5343395256726757,
+            "edge_crossings": 4.0
+          },
+          "next_refinement": null,
+          "errors": [
+            "Visual review score=6.5: The long A2->C1 edge rises through module A and crosses the local A1->A3 area close to A3, making the A module harder to read.",
+            "Visual review score=6.5: The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.",
+            "Visual review score=6.5: The C2->B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.",
+            "Visual review score=6.5: The C3->A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.",
+            "Visual review score=6.5: Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C."
+          ]
+        }
+      ],
+      "id": "three_module_dependency",
+      "title": "Three-Module Dependency Network",
+      "prompt": "Draw a directed artificial dependency graph with three modules A, B, C. Module A has nodes A0,A1,A2,A3 with edges A0->A1, A0->A2, A1->A3, A2->A3. Module B has nodes B0,B1,B2,B3 with edges B0->B1, B0->B2, B1->B3, B2->B3. Module C has nodes C0,C1,C2,C3 with edges C0->C1, C0->C2, C1->C3, C2->C3. Add inter-module edges A3->B0, B3->C0, A1->B2, A2->C1, B1->C2, and feedback monitor edges C3->A0 and C2->B0 drawn as curved dashed-looking outer arcs if possible. Keep modules separated as three rounded-looking clusters using layout only.",
+      "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\three_module_dependency"
+    },
+    {
+      "success": false,
+      "iterations": 3,
+      "graph": {
+        "nodes": [
+          {
+            "id": "s0",
+            "label": "$s_{0}$"
+          },
+          {
+            "id": "s1",
+            "label": "$s_{1}$"
+          },
+          {
+            "id": "s2",
+            "label": "$s_{2}$"
+          },
+          {
+            "id": "s3",
+            "label": "$s_{3}$"
+          },
+          {
+            "id": "s4",
+            "label": "$s_{4}$"
+          },
+          {
+            "id": "s5",
+            "label": "$s_{5}$"
+          },
+          {
+            "id": "g0",
+            "label": "$g_{0}$"
+          },
+          {
+            "id": "g1",
+            "label": "$g_{1}$"
+          },
+          {
+            "id": "g2",
+            "label": "$g_{2}$"
+          },
+          {
+            "id": "g3",
+            "label": "$g_{3}$"
+          },
+          {
+            "id": "g4",
+            "label": "$g_{4}$"
+          },
+          {
+            "id": "g5",
+            "label": "$g_{5}$"
+          },
+          {
+            "id": "o0",
+            "label": "$o_{0}$"
+          },
+          {
+            "id": "o1",
+            "label": "$o_{1}$"
+          },
+          {
+            "id": "o2",
+            "label": "$o_{2}$"
+          },
+          {
+            "id": "o3",
+            "label": "$o_{3}$"
+          },
+          {
+            "id": "o4",
+            "label": "$o_{4}$"
+          },
+          {
+            "id": "o5",
+            "label": "$o_{5}$"
+          }
+        ],
+        "edges": [
+          {
+            "source": "s0",
+            "target": "s1",
+            "directed": true
+          },
+          {
+            "source": "s1",
+            "target": "s2",
+            "directed": true
+          },
+          {
+            "source": "s2",
+            "target": "s3",
+            "directed": true
+          },
+          {
+            "source": "s3",
+            "target": "s4",
+            "directed": true
+          },
+          {
+            "source": "s4",
+            "target": "s5",
+            "directed": true
+          },
+          {
+            "source": "s5",
+            "target": "s0",
+            "directed": true
+          },
+          {
+            "source": "s0",
+            "target": "g0",
+            "directed": true
+          },
+          {
+            "source": "g0",
+            "target": "o0",
+            "directed": true
+          },
+          {
+            "source": "o0",
+            "target": "s1",
+            "directed": true
+          },
+          {
+            "source": "s1",
+            "target": "g1",
+            "directed": true
+          },
+          {
+            "source": "g1",
+            "target": "o1",
+            "directed": true
+          },
+          {
+            "source": "o1",
+            "target": "s2",
+            "directed": true
+          },
+          {
+            "source": "s2",
+            "target": "g2",
+            "directed": true
+          },
+          {
+            "source": "g2",
+            "target": "o2",
+            "directed": true
+          },
+          {
+            "source": "o2",
+            "target": "s3",
+            "directed": true
+          },
+          {
+            "source": "s3",
+            "target": "g3",
+            "directed": true
+          },
+          {
+            "source": "g3",
+            "target": "o3",
+            "directed": true
+          },
+          {
+            "source": "o3",
+            "target": "s4",
+            "directed": true
+          },
+          {
+            "source": "s4",
+            "target": "g4",
+            "directed": true
+          },
+          {
+            "source": "g4",
+            "target": "o4",
+            "directed": true
+          },
+          {
+            "source": "o4",
+            "target": "s5",
+            "directed": true
+          },
+          {
+            "source": "s5",
+            "target": "g5",
+            "directed": true
+          },
+          {
+            "source": "g5",
+            "target": "o5",
+            "directed": true
+          },
+          {
+            "source": "o5",
+            "target": "s0",
+            "directed": true
+          },
+          {
+            "source": "g0",
+            "target": "s3",
+            "directed": true
+          },
+          {
+            "source": "g1",
+            "target": "s4",
+            "directed": true
+          },
+          {
+            "source": "g2",
+            "target": "s5",
+            "directed": true
+          },
+          {
+            "source": "g3",
+            "target": "s0",
+            "directed": true
+          },
+          {
+            "source": "g4",
+            "target": "s1",
+            "directed": true
+          },
+          {
+            "source": "g5",
+            "target": "s2",
+            "directed": true
+          }
+        ],
+        "layout_hints": {
+          "style": "explicit",
+          "positions": {
+            "s0": [
+              1.4,
+              5.25
+            ],
+            "s1": [
+              6.24,
+              2.5
+            ],
+            "s2": [
+              7.204,
+              -1.996
+            ],
+            "s3": [
+              1.44,
+              -5.0
+            ],
+            "s4": [
+              -6.499,
+              -2.606
+            ],
+            "s5": [
+              -8.057,
+              2.066
+            ],
+            "g0": [
+              0.024,
+              6.521
+            ],
+            "g1": [
+              6.67,
+              5.25
+            ],
+            "g2": [
+              6.36,
+              -3.4
+            ],
+            "g3": [
+              0.0,
+              -6.8
+            ],
+            "g4": [
+              -6.129,
+              -4.25
+            ],
+            "g5": [
+              -6.303,
+              3.622
+            ],
+            "o0": [
+              -0.024,
+              8.579
+            ],
+            "o1": [
+              7.48,
+              4.25
+            ],
+            "o2": [
+              7.48,
+              -4.25
+            ],
+            "o3": [
+              -0.024,
+              -8.021
+            ],
+            "o4": [
+              -7.48,
+              -4.25
+            ],
+            "o5": [
+              -7.48,
+              4.25
+            ]
+          },
+          "edge_options": {},
+          "edge_routes": {
+            "directed:g0:s3": [
+              [
+                8.8,
+                7.0
+              ],
+              [
+                8.8,
+                -5.0
+              ]
+            ],
+            "directed:g1:s4": [
+              [
+                5.9,
+                9.4
+              ],
+              [
+                -10.4,
+                9.4
+              ],
+              [
+                -10.4,
+                -1.0
+              ]
+            ],
+            "directed:g2:s5": [
+              [
+                5.9,
+                -12.0
+              ],
+              [
+                -12.0,
+                -12.0
+              ]
+            ],
+            "directed:g3:s0": [
+              [
+                -1.6,
+                5.8
+              ]
+            ],
+            "directed:g4:s1": [
+              [
+                -5.9,
+                -9.4
+              ],
+              [
+                10.4,
+                -9.4
+              ],
+              [
+                10.4,
+                1.0
+              ]
+            ],
+            "directed:g5:s2": [
+              [
+                -5.9,
+                12.0
+              ],
+              [
+                12.0,
+                12.0
+              ],
+              [
+                12.0,
+                -1.0
+              ]
+            ]
+          },
+          "node_options": {},
+          "disable_auto_expand": true
+        },
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.72, maximum=4.48, moved_fraction=1.00.",
+          "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+        ]
+      },
+      "graph_validation": {
+        "errors": [],
+        "warnings": [
+          "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+          "Macro relayout coordinate motion: average=2.72, maximum=4.48, moved_fraction=1.00."
+        ]
+      },
+      "layout_validation": {
+        "errors": [
+          "Edge g0-s3 appears over-routed: routed length 28.15 vs direct length 11.61, while a direct or shallow route has node clearance 1.21.",
+          "Edge g1-s4 appears over-routed: routed length 35.14 vs direct length 15.33, while a direct or shallow route has node clearance 1.29.",
+          "Edge g2-s5 appears over-routed: routed length 41.12 vs direct length 15.42, while a direct or shallow route has node clearance 1.41.",
+          "Edge g4-s1 appears over-routed: routed length 36.28 vs direct length 14.09, while a direct or shallow route has node clearance 1.35.",
+          "Edge g5-s2 appears over-routed: routed length 44.19 vs direct length 14.63, while a direct or shallow route has node clearance 1.33."
+        ],
+        "warnings": []
+      },
+      "layout_metrics": {
+        "min_node_distance": 1.2212358494574267,
+        "min_edge_node_clearance": 0.75,
+        "min_edge_edge_clearance": 0.0012164597494030557,
+        "max_close_parallel_length": 0.6382949225579547,
+        "max_clear_detour_ratio": 3.020487038315761,
+        "edge_crossings": 14.0
+      },
+      "visual_review": {
+        "acceptable": false,
+        "score": 4.0,
+        "issues": [
+          "Several routed skip edges make very large rectangular detours, producing a visually chaotic drawing despite the intended circular structure.",
+          "The vertical edge from s1 to s2 runs very close to the local nodes/labels around o1, g2, and o2, making the right-side gadget hard to read.",
+          "The long routed skip edges g1->s4, g4->s1, g5->s2, and g2->s5 form large box-like paths that cross through the visual field and obscure the circular/hexagonal organization.",
+          "The g3->s0 skip edge cuts through the center of the drawing instead of going around the outside, adding avoidable crossings and clutter near the switch cycle.",
+          "Multiple unrelated long edges run near each other or cross in the central region, making it difficult to distinguish the switch cycle from skip edges."
+        ],
+        "suggestions": [
+          "Rebuild the layout as a more regular hexagon: place s0 through s5 evenly on a circle, with each gi and oi placed just outside its corresponding switch in a small radial chain.",
+          "Route all skip edges as smooth outer arcs or well-separated concentric polylines around the perimeter instead of large rectangular boxes crossing the figure.",
+          "Move the right-side local gadget g1,o1 and g2,o2 slightly farther outward from the s1-s2 edge, or curve/offset the s1->s2 edge inward so it does not crowd those labels.",
+          "Reroute g3->s0 around the outside of the circle rather than through the center.",
+          "Separate the outer skip routes into distinct lanes so g1->s4, g4->s1, g5->s2, and g2->s5 do not overlap visually or create unnecessary long detours."
+        ],
+        "raw_response": "{\"acceptable\":false,\"score\":4.0,\"issues\":[\"Several routed skip edges make very large rectangular detours, producing a visually chaotic drawing despite the intended circular structure.\",\"The vertical edge from s1 to s2 runs very close to the local nodes/labels around o1, g2, and o2, making the right-side gadget hard to read.\",\"The long routed skip edges g1->s4, g4->s1, g5->s2, and g2->s5 form large box-like paths that cross through the visual field and obscure the circular/hexagonal organization.\",\"The g3->s0 skip edge cuts through the center of the drawing instead of going around the outside, adding avoidable crossings and clutter near the switch cycle.\",\"Multiple unrelated long edges run near each other or cross in the central region, making it difficult to distinguish the switch cycle from skip edges.\"],\"suggestions\":[\"Rebuild the layout as a more regular hexagon: place s0 through s5 evenly on a circle, with each gi and oi placed just outside its corresponding switch in a small radial chain.\",\"Route all skip edges as smooth outer arcs or well-separated concentric polylines around the perimeter instead of large rectangular boxes crossing the figure.\",\"Move the right-side local gadget g1,o1 and g2,o2 slightly farther outward from the s1-s2 edge, or curve/offset the s1->s2 edge inward so it does not crowd those labels.\",\"Reroute g3->s0 around the outside of the circle rather than through the center.\",\"Separate the outer skip routes into distinct lanes so g1->s4, g4->s1, g5->s2, and g2->s5 do not overlap visually or create unnecessary long detours.\"]}"
+      },
+      "code_validation": {
+        "errors": [],
+        "warnings": []
+      },
+      "render": {
+        "success": true,
+        "tex_path": "outputs\\prompt_suite_ring_retry\\run_20260601_232107\\ring_of_switches\\iteration_3\\ring_of_switches.tex",
+        "pdf_path": "outputs\\prompt_suite_ring_retry\\run_20260601_232107\\ring_of_switches\\iteration_3\\ring_of_switches.pdf",
+        "png_path": "outputs\\prompt_suite_ring_retry\\run_20260601_232107\\ring_of_switches\\iteration_3\\ring_of_switches.png",
+        "error": ""
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "graph_ok": true,
+          "layout_ok": false,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 4.0,
+          "visual_issues": [
+            "Several skip edges create large rectangular detours that dominate the drawing and make the circular structure hard to read.",
+            "The left-side outside routes for g3->s0, g4->s1, and g5->s2 run close and nearly parallel for long vertical spans, producing a heavy bundled frame.",
+            "The right-side outside routes for g0->s3 and g2->s5 create long vertical detours and multiple crossings near the s1/s2 side of the graph.",
+            "Some long diagonal edges cross the interior close to unrelated nodes, especially around s0, s1, s3, and s4, making incidences difficult to distinguish.",
+            "The repeated switch-gate-output modules are not evenly arranged on a clean circular/radial pattern; the local gates and outputs are unevenly spaced and some satellites obscure the intended ring structure."
+          ],
+          "visual_suggestions": [
+            "Place s0 through s5 more evenly on a circle and put each gi and oi on the same radial spoke just outside its switch.",
+            "Route the six skip edges as separated outer arcs around the perimeter instead of rectangular paths with long vertical and horizontal segments.",
+            "Increase radial spacing between the switch ring and gate/output satellites so local edges do not crowd the cycle edges.",
+            "Move the g4/o4 and g5/o5 modules slightly outward and separate their outer skip routes to avoid the close parallel bundle on the left.",
+            "Move the g1/o1 and g2/o2 modules slightly outward/right and reroute g0->s3 and g2->s5 as smoother right-side arcs away from s1 and s2.",
+            "Avoid routing any skip edge through the interior near s0, s1, s3, or s4; keep crossings away from node labels."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 2.2169999999999996,
+            "min_edge_node_clearance": 0.7454802622698165,
+            "min_edge_edge_clearance": 0.004195873670212926,
+            "max_close_parallel_length": 2.855264613468218,
+            "max_clear_detour_ratio": 2.966874979122156,
+            "edge_crossings": 22.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Edge g0-s3 appears over-routed: routed length 51.10 vs direct length 17.22, while a direct or shallow route has node clearance 2.77.",
+            "Edge g2-s5 appears over-routed: routed length 46.37 vs direct length 20.46, while a direct or shallow route has node clearance 1.49.",
+            "Edge g3-s0 appears over-routed: routed length 50.44 vs direct length 18.51, while a direct or shallow route has node clearance 2.77.",
+            "Edge g5-s2 appears over-routed: routed length 53.07 vs direct length 21.32, while a direct or shallow route has node clearance 1.05.",
+            "Edges g3-s0 and g4-s1 run too close together for a long segment: close length 2.86.",
+            "Visual review score=4.0: Several skip edges create large rectangular detours that dominate the drawing and make the circular structure hard to read.",
+            "Visual review score=4.0: The left-side outside routes for g3->s0, g4->s1, and g5->s2 run close and nearly parallel for long vertical spans, producing a heavy bundled frame.",
+            "Visual review score=4.0: The right-side outside routes for g0->s3 and g2->s5 create long vertical detours and multiple crossings near the s1/s2 side of the graph.",
+            "Visual review score=4.0: Some long diagonal edges cross the interior close to unrelated nodes, especially around s0, s1, s3, and s4, making incidences difficult to distinguish.",
+            "Visual review score=4.0: The repeated switch-gate-output modules are not evenly arranged on a clean circular/radial pattern; the local gates and outputs are unevenly spaced and some satellites obscure the intended ring structure."
+          ]
+        },
+        {
+          "iteration": 1,
+          "graph_ok": true,
+          "layout_ok": false,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 4.0,
+          "visual_issues": [
+            "The outer skip-edge routing is visually chaotic, with large polygonal detours that dominate the drawing and obscure the intended circular structure.",
+            "Several skip edges cross or pass close to local gate/output gadgets, especially around the s1/g1/o1, s2/g2/o2, s4/g4/o4, and s5/g5/o5 regions.",
+            "There are many crossings near nodes rather than in open space, making it hard to distinguish incident edges from unrelated skip edges.",
+            "Some unrelated edges run nearly parallel and close together for long visible segments, especially along the outer perimeter.",
+            "The repeated six-module structure is uneven: g2/o2 and g5/o5 are displaced much farther outward and sideways than the other gate/output pairs, breaking the circular symmetry."
+          ],
+          "visual_suggestions": [
+            "Place all six switches evenly on a regular hexagon and keep each gi and oi on a short radial chain outside its switch: si -> gi -> oi.",
+            "Route the switch cycle as a clean inner hexagon or near-hexagonal ring.",
+            "Route all skip edges consistently on an outer circular band with smooth arcs or short bundled bends, keeping them outside the local si/gi/oi gadgets.",
+            "Move g2/o2 and g5/o5 inward or reposition them to match the radial spacing used by the other gate/output pairs.",
+            "Increase clearance between skip-edge arcs and the local labels around s1, s2, s4, and s5.",
+            "Avoid long polygonal detours with sharp corners; use more direct outer arcs from each gi to its target switch."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.4423747779270129,
+            "min_edge_node_clearance": 0.7617109462343928,
+            "min_edge_edge_clearance": 0.01774019602629164,
+            "max_close_parallel_length": 3.4442972890694623,
+            "max_clear_detour_ratio": 2.832621619839097,
+            "edge_crossings": 18.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Edge g2-s5 appears over-routed: routed length 41.17 vs direct length 16.42, while a direct or shallow route has node clearance 1.62.",
+            "Edge g5-s2 appears over-routed: routed length 41.17 vs direct length 16.42, while a direct or shallow route has node clearance 1.62.",
+            "Edges g0-s3 and g5-s2 run too close together for a long segment: close length 1.90.",
+            "Edges g1-s4 and g5-s2 run too close together for a long segment: close length 3.44.",
+            "Edges g2-s5 and g3-s0 run too close together for a long segment: close length 1.90.",
+            "Edges g2-s5 and g4-s1 run too close together for a long segment: close length 3.44.",
+            "Visual review score=4.0: The outer skip-edge routing is visually chaotic, with large polygonal detours that dominate the drawing and obscure the intended circular structure.",
+            "Visual review score=4.0: Several skip edges cross or pass close to local gate/output gadgets, especially around the s1/g1/o1, s2/g2/o2, s4/g4/o4, and s5/g5/o5 regions.",
+            "Visual review score=4.0: There are many crossings near nodes rather than in open space, making it hard to distinguish incident edges from unrelated skip edges.",
+            "Visual review score=4.0: Some unrelated edges run nearly parallel and close together for long visible segments, especially along the outer perimeter.",
+            "Visual review score=4.0: The repeated six-module structure is uneven: g2/o2 and g5/o5 are displaced much farther outward and sideways than the other gate/output pairs, breaking the circular symmetry."
+          ]
+        },
+        {
+          "iteration": 2,
+          "graph_ok": true,
+          "layout_ok": false,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 3.0,
+          "visual_issues": [
+            "Several skip edges take very long polygonal detours and then cut back across the drawing, creating a chaotic outer cage rather than clear outside routing.",
+            "The skip edge from g5 to s2 runs across the upper/right side and crowds the s1 region before reaching s2, making the local s1/g1/o1 gadget harder to read.",
+            "The skip edge from g1 to s4 loops far around the top/left and crosses or closely parallels other long skip routes, producing avoidable tangles.",
+            "The skip edge from g4 to s1 loops far around the bottom/right and crosses through the lower central area near s3/s4-related edges, adding clutter.",
+            "The g2 to s5 route appears especially indirect and cuts across the drawing instead of staying on the outside near the lower/right-to-left arc.",
+            "Several unrelated long edges run close together for visible segments along the outer boundary, reducing readability.",
+            "The six repeated switch-gate-output modules are not evenly arranged: some satellites are pushed far outward while others sit close to their switch, making the circular structure visually uneven."
+          ],
+          "visual_suggestions": [
+            "Place the six switch nodes on a more regular hexagon and position each gi and oi radially outward from its corresponding si with consistent spacing.",
+            "Route all skip edges as smooth outer arcs around the perimeter, one per side of the hexagon, avoiding routes that cut back through the center.",
+            "Reroute g0->s3 and g3->s0 as opposite-side outer arcs that stay well outside the switch ring and do not pass through the s1/s2 or s4/s5 local gadgets.",
+            "Reroute g1->s4 and g4->s1 on separate outer bands so they do not overlap or closely parallel other skip edges for long stretches.",
+            "Reroute g2->s5 and g5->s2 as lower/right and upper/left perimeter arcs respectively, keeping them away from the s1, s2, s4, and s5 labels.",
+            "Increase spacing between the outer gate/output labels and the skip-edge paths so no long edge crowds a non-incident node or label."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.6556898864219718,
+            "min_edge_node_clearance": 0.35518510223637173,
+            "min_edge_edge_clearance": 0.0053054938914908764,
+            "max_close_parallel_length": 1.557210808353346,
+            "max_clear_detour_ratio": 2.7858049037714734,
+            "edge_crossings": 20.0
+          },
+          "next_refinement": "visual_macro_relayout",
+          "errors": [
+            "Edge g0-s3 appears over-routed: routed length 45.12 vs direct length 16.38, while a direct or shallow route has node clearance 1.05.",
+            "Edge g1-s4 appears over-routed: routed length 43.51 vs direct length 15.62, while a direct or shallow route has node clearance 1.75.",
+            "Edge g2-s5 passes too close to unrelated node g4: distance 0.36.",
+            "Edge g3-s0 appears over-routed: routed length 45.12 vs direct length 16.38, while a direct or shallow route has node clearance 1.05.",
+            "Edge g4-s1 appears over-routed: routed length 44.29 vs direct length 15.97, while a direct or shallow route has node clearance 1.14.",
+            "Edge g5-s2 passes too close to unrelated node g0: distance 0.39.",
+            "Visual review score=3.0: Several skip edges take very long polygonal detours and then cut back across the drawing, creating a chaotic outer cage rather than clear outside routing.",
+            "Visual review score=3.0: The skip edge from g5 to s2 runs across the upper/right side and crowds the s1 region before reaching s2, making the local s1/g1/o1 gadget harder to read.",
+            "Visual review score=3.0: The skip edge from g1 to s4 loops far around the top/left and crosses or closely parallels other long skip routes, producing avoidable tangles.",
+            "Visual review score=3.0: The skip edge from g4 to s1 loops far around the bottom/right and crosses through the lower central area near s3/s4-related edges, adding clutter.",
+            "Visual review score=3.0: The g2 to s5 route appears especially indirect and cuts across the drawing instead of staying on the outside near the lower/right-to-left arc.",
+            "Visual review score=3.0: Several unrelated long edges run close together for visible segments along the outer boundary, reducing readability.",
+            "Visual review score=3.0: The six repeated switch-gate-output modules are not evenly arranged: some satellites are pushed far outward while others sit close to their switch, making the circular structure visually uneven."
+          ]
+        },
+        {
+          "iteration": 3,
+          "graph_ok": true,
+          "layout_ok": false,
+          "code_ok": true,
+          "render_ok": true,
+          "visual_ok": false,
+          "visual_score": 4.0,
+          "visual_issues": [
+            "Several routed skip edges make very large rectangular detours, producing a visually chaotic drawing despite the intended circular structure.",
+            "The vertical edge from s1 to s2 runs very close to the local nodes/labels around o1, g2, and o2, making the right-side gadget hard to read.",
+            "The long routed skip edges g1->s4, g4->s1, g5->s2, and g2->s5 form large box-like paths that cross through the visual field and obscure the circular/hexagonal organization.",
+            "The g3->s0 skip edge cuts through the center of the drawing instead of going around the outside, adding avoidable crossings and clutter near the switch cycle.",
+            "Multiple unrelated long edges run near each other or cross in the central region, making it difficult to distinguish the switch cycle from skip edges."
+          ],
+          "visual_suggestions": [
+            "Rebuild the layout as a more regular hexagon: place s0 through s5 evenly on a circle, with each gi and oi placed just outside its corresponding switch in a small radial chain.",
+            "Route all skip edges as smooth outer arcs or well-separated concentric polylines around the perimeter instead of large rectangular boxes crossing the figure.",
+            "Move the right-side local gadget g1,o1 and g2,o2 slightly farther outward from the s1-s2 edge, or curve/offset the s1->s2 edge inward so it does not crowd those labels.",
+            "Reroute g3->s0 around the outside of the circle rather than through the center.",
+            "Separate the outer skip routes into distinct lanes so g1->s4, g4->s1, g5->s2, and g2->s5 do not overlap visually or create unnecessary long detours."
+          ],
+          "layout_metrics": {
+            "min_node_distance": 1.2212358494574267,
+            "min_edge_node_clearance": 0.75,
+            "min_edge_edge_clearance": 0.0012164597494030557,
+            "max_close_parallel_length": 0.6382949225579547,
+            "max_clear_detour_ratio": 3.020487038315761,
+            "edge_crossings": 14.0
+          },
+          "next_refinement": null,
+          "errors": [
+            "Edge g0-s3 appears over-routed: routed length 28.15 vs direct length 11.61, while a direct or shallow route has node clearance 1.21.",
+            "Edge g1-s4 appears over-routed: routed length 35.14 vs direct length 15.33, while a direct or shallow route has node clearance 1.29.",
+            "Edge g2-s5 appears over-routed: routed length 41.12 vs direct length 15.42, while a direct or shallow route has node clearance 1.41.",
+            "Edge g4-s1 appears over-routed: routed length 36.28 vs direct length 14.09, while a direct or shallow route has node clearance 1.35.",
+            "Edge g5-s2 appears over-routed: routed length 44.19 vs direct length 14.63, while a direct or shallow route has node clearance 1.33.",
+            "Visual review score=4.0: Several routed skip edges make very large rectangular detours, producing a visually chaotic drawing despite the intended circular structure.",
+            "Visual review score=4.0: The vertical edge from s1 to s2 runs very close to the local nodes/labels around o1, g2, and o2, making the right-side gadget hard to read.",
+            "Visual review score=4.0: The long routed skip edges g1->s4, g4->s1, g5->s2, and g2->s5 form large box-like paths that cross through the visual field and obscure the circular/hexagonal organization.",
+            "Visual review score=4.0: The g3->s0 skip edge cuts through the center of the drawing instead of going around the outside, adding avoidable crossings and clutter near the switch cycle.",
+            "Visual review score=4.0: Multiple unrelated long edges run near each other or cross in the central region, making it difficult to distinguish the switch cycle from skip edges."
+          ]
+        }
+      ],
+      "id": "ring_of_switches",
+      "title": "Ring of Switches With Local Gates",
+      "prompt": "Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0->s1->s2->s3->s4->s5->s0. Each switch si has a local gate gi and output oi, with edges si->gi, gi->oi, and oi->s(i+1 mod 6). Add skip edges g0->s3, g1->s4, g2->s5, g3->s0, g4->s1, g5->s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.",
+      "case_dir": "outputs\\prompt_suite_ring_retry\\run_20260601_232107\\ring_of_switches"
+    }
+  ]
+}

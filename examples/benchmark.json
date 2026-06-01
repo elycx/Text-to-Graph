@@ -1,0 +1,95 @@
+[
+  {
+    "id": "proposal_demo",
+    "description": "There are four nodes A, B, C, and D. A is connected to B and C. C points to D.",
+    "expected": {
+      "nodes": ["A", "B", "C", "D"],
+      "edges": [
+        {"source": "A", "target": "B", "directed": false},
+        {"source": "A", "target": "C", "directed": false},
+        {"source": "C", "target": "D", "directed": true}
+      ]
+    }
+  },
+  {
+    "id": "directed_chain",
+    "description": "Create a directed chain A, B, C, D.",
+    "expected": {
+      "nodes": ["A", "B", "C", "D"],
+      "edges": [
+        {"source": "A", "target": "B", "directed": true},
+        {"source": "B", "target": "C", "directed": true},
+        {"source": "C", "target": "D", "directed": true}
+      ]
+    }
+  },
+  {
+    "id": "triangle",
+    "description": "Make a cycle with nodes A, B, and C.",
+    "expected": {
+      "nodes": ["A", "B", "C"],
+      "edges": [
+        {"source": "A", "target": "B", "directed": false},
+        {"source": "B", "target": "C", "directed": false},
+        {"source": "C", "target": "A", "directed": false}
+      ]
+    }
+  },
+  {
+    "id": "complete_three",
+    "description": "Build a complete graph on X, Y, and Z.",
+    "expected": {
+      "nodes": ["X", "Y", "Z"],
+      "edges": [
+        {"source": "X", "target": "Y", "directed": false},
+        {"source": "X", "target": "Z", "directed": false},
+        {"source": "Y", "target": "Z", "directed": false}
+      ]
+    }
+  },
+  {
+    "id": "edge_from",
+    "description": "There is an edge from Start to End.",
+    "expected": {
+      "nodes": ["Start", "End"],
+      "edges": [
+        {"source": "Start", "target": "End", "directed": true}
+      ]
+    }
+  },
+  {
+    "id": "arrow_notation",
+    "description": "Nodes P, Q, and R. P -> Q. Q -- R.",
+    "expected": {
+      "nodes": ["P", "Q", "R"],
+      "edges": [
+        {"source": "P", "target": "Q", "directed": true},
+        {"source": "Q", "target": "R", "directed": false}
+      ]
+    }
+  },
+  {
+    "id": "manual_hint",
+    "description": "There are nodes Left and Right. Left is left of Right. Left connects to Right.",
+    "expected": {
+      "nodes": ["Left", "Right"],
+      "edges": [
+        {"source": "Left", "target": "Right", "directed": false}
+      ]
+    }
+  },
+  {
+    "id": "layered_dag",
+    "description": "Use a layered layout. A points to B and C. B points to D. C points to D.",
+    "expected": {
+      "nodes": ["A", "B", "C", "D"],
+      "edges": [
+        {"source": "A", "target": "B", "directed": true},
+        {"source": "A", "target": "C", "directed": true},
+        {"source": "B", "target": "D", "directed": true},
+        {"source": "C", "target": "D", "directed": true}
+      ]
+    }
+  }
+]
+
