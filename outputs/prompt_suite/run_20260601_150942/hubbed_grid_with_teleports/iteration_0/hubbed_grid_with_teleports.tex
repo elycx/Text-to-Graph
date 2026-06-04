@@ -1,0 +1,52 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_g00) at (-3.77,6.24) {g00};
+\node[graphnode] (n_g01) at (0.35,6.24) {g01};
+\node[graphnode] (n_g02) at (5.42,5.92) {g02};
+\node[graphnode] (n_g03) at (7.72,4.49) {g03};
+\node[graphnode] (n_g10) at (-3.77,1.69) {g10};
+\node[graphnode] (n_g11) at (0.35,1.69) {g11};
+\node[graphnode] (n_g12) at (5.36,1.69) {g12};
+\node[graphnode] (n_g13) at (9.23,1.69) {g13};
+\node[graphnode] (n_g20) at (-4.06,-2.70) {g20};
+\node[graphnode] (n_g21) at (0.35,-2.70) {g21};
+\node[graphnode] (n_g22) at (5.36,-2.70) {g22};
+\node[graphnode] (n_g23) at (9.24,-1.94) {g23};
+\node[graphnode,fill=gray!15] (n_H) at (15.36,9.43) {H};
+\draw[undirected] (n_g00) -- (n_g01);
+\draw[undirected] (n_g01) -- (n_g02);
+\draw[undirected] (n_g02) -- (n_g03);
+\draw[undirected] (n_g10) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g13);
+\draw[undirected] (n_g20) -- (n_g21);
+\draw[undirected] (n_g21) -- (n_g22);
+\draw[undirected] (n_g22) -- (n_g23);
+\draw[undirected] (n_g00) -- (n_g10);
+\draw[undirected] (n_g10) -- (n_g20);
+\draw[undirected] (n_g01) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g21);
+\draw[undirected] (n_g02) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g22);
+\draw[undirected] (n_g03) -- (n_g13);
+\draw[undirected] (n_g13) -- (n_g23);
+\draw[undirected] (n_H) -- (n_g01);
+\draw[undirected] (n_H) -- (n_g02);
+\draw[undirected] (n_H) -- (n_g11);
+\draw[undirected] (n_H) -- (n_g12);
+\draw[undirected,rounded corners=5pt] (n_H) -- (13.86,-5.15) -- (0.81,-5.15) -- (n_g21);
+\draw[undirected,rounded corners=5pt] (n_H) -- (15.04,-3.96) -- (5.16,-3.96) -- (n_g22);
+\draw[undirected,rounded corners=5pt] (n_g00) -- (-5.52,7.11) -- (-5.52,-4.16) -- (9.51,-4.16) -- (n_g23);
+\draw[undirected,rounded corners=5pt] (n_g03) -- (11.48,7.11) -- (11.48,8.49) -- (-5.13,8.49) -- (-5.13,-2.18) -- (n_g20);
+\draw[undirected,rounded corners=5pt] (n_g10) -- (-3.55,3.35) -- (9.51,3.35) -- (n_g13);
+\draw[undirected,rounded corners=5pt] (n_g01) -- (0.81,7.70) -- (10.69,7.70) -- (10.69,-3.37) -- (5.16,-3.37) -- (n_g22);
+\end{tikzpicture}
+\end{document}

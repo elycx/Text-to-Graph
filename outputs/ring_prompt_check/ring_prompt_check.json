@@ -1,0 +1,352 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s0",
+        "label": "$s_0$"
+      },
+      {
+        "id": "s1",
+        "label": "$s_1$"
+      },
+      {
+        "id": "s2",
+        "label": "$s_2$"
+      },
+      {
+        "id": "s3",
+        "label": "$s_3$"
+      },
+      {
+        "id": "s4",
+        "label": "$s_4$"
+      },
+      {
+        "id": "s5",
+        "label": "$s_5$"
+      },
+      {
+        "id": "g0",
+        "label": "$g_0$"
+      },
+      {
+        "id": "g1",
+        "label": "$g_1$"
+      },
+      {
+        "id": "g2",
+        "label": "$g_2$"
+      },
+      {
+        "id": "g3",
+        "label": "$g_3$"
+      },
+      {
+        "id": "g4",
+        "label": "$g_4$"
+      },
+      {
+        "id": "g5",
+        "label": "$g_5$"
+      },
+      {
+        "id": "o0",
+        "label": "$o_0$"
+      },
+      {
+        "id": "o1",
+        "label": "$o_1$"
+      },
+      {
+        "id": "o2",
+        "label": "$o_2$"
+      },
+      {
+        "id": "o3",
+        "label": "$o_3$"
+      },
+      {
+        "id": "o4",
+        "label": "$o_4$"
+      },
+      {
+        "id": "o5",
+        "label": "$o_5$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "s0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "s0",
+        "target": "g0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "o0",
+        "directed": true
+      },
+      {
+        "source": "o0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "g1",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "o1",
+        "directed": true
+      },
+      {
+        "source": "o1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "g2",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "o2",
+        "directed": true
+      },
+      {
+        "source": "o2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "g3",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "o3",
+        "directed": true
+      },
+      {
+        "source": "o3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "g4",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "o4",
+        "directed": true
+      },
+      {
+        "source": "o4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "g5",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "o5",
+        "directed": true
+      },
+      {
+        "source": "o5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "s2",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s0": [
+          0.0,
+          3.0
+        ],
+        "s1": [
+          2.6,
+          1.5
+        ],
+        "s2": [
+          2.6,
+          -1.5
+        ],
+        "s3": [
+          0.0,
+          -3.0
+        ],
+        "s4": [
+          -2.6,
+          -1.5
+        ],
+        "s5": [
+          -2.6,
+          1.5
+        ],
+        "g0": [
+          0.0,
+          4.2
+        ],
+        "g1": [
+          3.64,
+          2.1
+        ],
+        "g2": [
+          3.64,
+          -2.1
+        ],
+        "g3": [
+          0.0,
+          -4.2
+        ],
+        "g4": [
+          -3.64,
+          -2.1
+        ],
+        "g5": [
+          -3.64,
+          2.1
+        ],
+        "o0": [
+          0.0,
+          5.4
+        ],
+        "o1": [
+          4.68,
+          2.7
+        ],
+        "o2": [
+          4.68,
+          -2.7
+        ],
+        "o3": [
+          0.0,
+          -5.4
+        ],
+        "o4": [
+          -4.68,
+          -2.7
+        ],
+        "o5": [
+          -4.68,
+          2.7
+        ]
+      },
+      "edge_options": {
+        "directed:g0:s3": "out=20,in=20,looseness=2.5",
+        "directed:g1:s4": "out=80,in=80,looseness=2.5",
+        "directed:g2:s5": "out=-80,in=-80,looseness=2.5",
+        "directed:g3:s0": "out=200,in=200,looseness=2.5",
+        "directed:g4:s1": "out=260,in=260,looseness=2.5",
+        "directed:g5:s2": "out=100,in=100,looseness=2.5"
+      },
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\ring_prompt_check\\iteration_0\\ring_prompt_check.tex",
+    "pdf_path": "outputs\\ring_prompt_check\\iteration_0\\ring_prompt_check.pdf",
+    "png_path": "outputs\\ring_prompt_check\\iteration_0\\ring_prompt_check.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "L0_00",
+        "label": "00"
+      },
+      {
+        "id": "L0_01",
+        "label": "01"
+      },
+      {
+        "id": "L0_10",
+        "label": "10"
+      },
+      {
+        "id": "L0_11",
+        "label": "11"
+      },
+      {
+        "id": "L1_00",
+        "label": "00"
+      },
+      {
+        "id": "L1_01",
+        "label": "01"
+      },
+      {
+        "id": "L1_10",
+        "label": "10"
+      },
+      {
+        "id": "L1_11",
+        "label": "11"
+      },
+      {
+        "id": "L2_00",
+        "label": "00"
+      },
+      {
+        "id": "L2_01",
+        "label": "01"
+      },
+      {
+        "id": "L2_10",
+        "label": "10"
+      },
+      {
+        "id": "L2_11",
+        "label": "11"
+      }
+    ],
+    "edges": [
+      {
+        "source": "L0_00",
+        "target": "L1_00",
+        "directed": true
+      },
+      {
+        "source": "L0_00",
+        "target": "L1_01",
+        "directed": true
+      },
+      {
+        "source": "L0_01",
+        "target": "L1_01",
+        "directed": true
+      },
+      {
+        "source": "L0_01",
+        "target": "L1_00",
+        "directed": true
+      },
+      {
+        "source": "L0_10",
+        "target": "L1_10",
+        "directed": true
+      },
+      {
+        "source": "L0_10",
+        "target": "L1_11",
+        "directed": true
+      },
+      {
+        "source": "L0_11",
+        "target": "L1_11",
+        "directed": true
+      },
+      {
+        "source": "L0_11",
+        "target": "L1_10",
+        "directed": true
+      },
+      {
+        "source": "L1_00",
+        "target": "L2_00",
+        "directed": true
+      },
+      {
+        "source": "L1_00",
+        "target": "L2_10",
+        "directed": true
+      },
+      {
+        "source": "L1_01",
+        "target": "L2_01",
+        "directed": true
+      },
+      {
+        "source": "L1_01",
+        "target": "L2_11",
+        "directed": true
+      },
+      {
+        "source": "L1_10",
+        "target": "L2_10",
+        "directed": true
+      },
+      {
+        "source": "L1_10",
+        "target": "L2_00",
+        "directed": true
+      },
+      {
+        "source": "L1_11",
+        "target": "L2_11",
+        "directed": true
+      },
+      {
+        "source": "L1_11",
+        "target": "L2_01",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "L0_00": [
+          0.0,
+          3.0
+        ],
+        "L0_01": [
+          0.0,
+          1.0
+        ],
+        "L0_10": [
+          0.0,
+          -1.0
+        ],
+        "L0_11": [
+          0.0,
+          -3.0
+        ],
+        "L1_00": [
+          2.5,
+          3.0
+        ],
+        "L1_01": [
+          2.5,
+          1.0
+        ],
+        "L1_10": [
+          2.5,
+          -1.0
+        ],
+        "L1_11": [
+          2.5,
+          -3.0
+        ],
+        "L2_00": [
+          5.0,
+          3.0
+        ],
+        "L2_01": [
+          5.0,
+          1.0
+        ],
+        "L2_10": [
+          5.0,
+          -1.0
+        ],
+        "L2_11": [
+          5.0,
+          -3.0
+        ]
+      },
+      "edge_options": {},
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Interpreted as the standard directed 3-layer butterfly network: three levels labeled 0,1,2 with four binary-addressed vertices per level."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Interpreted as the standard directed 3-layer butterfly network: three levels labeled 0,1,2 with four binary-addressed vertices per level."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\butterfly_3layer\\iteration_0\\butterfly_3layer.tex",
+    "pdf_path": "outputs\\prompt_suite\\butterfly_3layer\\iteration_0\\butterfly_3layer.pdf",
+    "png_path": "outputs\\prompt_suite\\butterfly_3layer\\iteration_0\\butterfly_3layer.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

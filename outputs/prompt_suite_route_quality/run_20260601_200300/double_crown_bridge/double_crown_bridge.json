@@ -1,0 +1,503 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "L",
+        "label": "L"
+      },
+      {
+        "id": "l0",
+        "label": "$l_{0}$"
+      },
+      {
+        "id": "l1",
+        "label": "$l_{1}$"
+      },
+      {
+        "id": "l2",
+        "label": "$l_{2}$"
+      },
+      {
+        "id": "l3",
+        "label": "$l_{3}$"
+      },
+      {
+        "id": "l4",
+        "label": "$l_{4}$"
+      },
+      {
+        "id": "l5",
+        "label": "$l_{5}$"
+      },
+      {
+        "id": "R",
+        "label": "R"
+      },
+      {
+        "id": "r0",
+        "label": "$r_{0}$"
+      },
+      {
+        "id": "r1",
+        "label": "$r_{1}$"
+      },
+      {
+        "id": "r2",
+        "label": "$r_{2}$"
+      },
+      {
+        "id": "r3",
+        "label": "$r_{3}$"
+      },
+      {
+        "id": "r4",
+        "label": "$r_{4}$"
+      },
+      {
+        "id": "r5",
+        "label": "$r_{5}$"
+      },
+      {
+        "id": "x0",
+        "label": "$x_{0}$"
+      },
+      {
+        "id": "x1",
+        "label": "$x_{1}$"
+      },
+      {
+        "id": "y0",
+        "label": "$y_{0}$"
+      },
+      {
+        "id": "y1",
+        "label": "$y_{1}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "l0",
+        "target": "l1",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "l3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "l5",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "r0",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "r1",
+        "target": "r2",
+        "directed": false
+      },
+      {
+        "source": "r2",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "r3",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "r4",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "r5",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l0",
+        "target": "x0",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x1",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "y0",
+        "directed": false
+      },
+      {
+        "source": "y0",
+        "target": "y1",
+        "directed": false
+      },
+      {
+        "source": "y1",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "r2",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "L": [
+          -6.7,
+          -0.2
+        ],
+        "l0": [
+          -4.2,
+          0.0
+        ],
+        "l1": [
+          -5.3,
+          3.8
+        ],
+        "l2": [
+          -8.1,
+          1.8
+        ],
+        "l3": [
+          -9.2,
+          -0.8
+        ],
+        "l4": [
+          -7.4,
+          -3.8
+        ],
+        "l5": [
+          -4.6,
+          -1.8
+        ],
+        "R": [
+          6.8,
+          -0.2
+        ],
+        "r0": [
+          9.4,
+          -0.2
+        ],
+        "r1": [
+          8.3,
+          -3.8
+        ],
+        "r2": [
+          5.5,
+          -1.8
+        ],
+        "r3": [
+          4.1,
+          0.0
+        ],
+        "r4": [
+          5.3,
+          3.8
+        ],
+        "r5": [
+          8.1,
+          1.8
+        ],
+        "x0": [
+          -1.8,
+          5.5
+        ],
+        "x1": [
+          2.0,
+          5.5
+        ],
+        "y0": [
+          -3.2,
+          -6.0
+        ],
+        "y1": [
+          3.4,
+          -6.0
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {},
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=4.71, maximum=8.99, moved_fraction=1.00."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=4.71, maximum=8.99, moved_fraction=1.00."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 2.120495225177364,
+    "min_edge_node_clearance": 1.25142112109994,
+    "min_edge_edge_clearance": 0.027388004333838516,
+    "max_close_parallel_length": 0.9502631578947369,
+    "max_clear_detour_ratio": 1.0
+  },
+  "visual_review": {
+    "acceptable": false,
+    "score": 6.5,
+    "issues": [
+      "The edge y1-r0 passes very close to, and appears to graze or overlap, the unrelated node r1 and its label area.",
+      "The lower bridge y0-y1-r0 cuts through the right crown gadget instead of staying outside it, making the r0/r1/R area harder to read.",
+      "The diagonal edge R-r1 and the diagonal bridge edge y1-r0 create a crowded tangle near r1."
+    ],
+    "suggestions": [
+      "Move y1 farther to the lower-right, below and slightly outside r0/r1, so the edge y1-r0 approaches r0 from the outside without passing near r1.",
+      "Alternatively, route y1-r0 with a bend around the outside of the right crown, below r1 and then up to r0.",
+      "If keeping straight edges, move r1 slightly farther down/right or move r0 farther right to increase clearance from the y1-r0 bridge edge."
+    ],
+    "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 6.5,\n  \"issues\": [\n    \"The edge y1-r0 passes very close to, and appears to graze or overlap, the unrelated node r1 and its label area.\",\n    \"The lower bridge y0-y1-r0 cuts through the right crown gadget instead of staying outside it, making the r0/r1/R area harder to read.\",\n    \"The diagonal edge R-r1 and the diagonal bridge edge y1-r0 create a crowded tangle near r1.\"\n  ],\n  \"suggestions\": [\n    \"Move y1 farther to the lower-right, below and slightly outside r0/r1, so the edge y1-r0 approaches r0 from the outside without passing near r1.\",\n    \"Alternatively, route y1-r0 with a bend around the outside of the right crown, below r1 and then up to r0.\",\n    \"If keeping straight edges, move r1 slightly farther down/right or move r0 farther right to increase clearance from the y1-r0 bridge edge.\"\n  ]\n}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite_route_quality\\run_20260601_200300\\double_crown_bridge\\iteration_3\\double_crown_bridge.tex",
+    "pdf_path": "outputs\\prompt_suite_route_quality\\run_20260601_200300\\double_crown_bridge\\iteration_3\\double_crown_bridge.pdf",
+    "png_path": "outputs\\prompt_suite_route_quality\\run_20260601_200300\\double_crown_bridge\\iteration_3\\double_crown_bridge.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.0,
+      "visual_issues": [
+        "Several long twist/matching edges converge through the middle and pass too close to the non-incident node x0; at least one edge appears to touch or cross the x0 node/label, making the label hard to read.",
+        "The central bundle of edges between the two crowns is tangled: multiple unrelated edges cross near x0 and run close together for a visible segment, reducing readability.",
+        "The straight bridge segment l0-x0-x1-r3 lies directly through the same corridor as the twist edges, causing crowding around x0 and the middle of the figure."
+      ],
+      "visual_suggestions": [
+        "Move x0 and x1 slightly above or below the central edge bundle, or route the l0-x0-x1-r3 bridge as a separate shallow arc so it does not pass through the twist-edge crossing area.",
+        "Increase the bend/separation of the twist matching edges l1-r4, l2-r5, l4-r1, and l5-r2 so they occupy distinct upper/lower corridors and avoid x0.",
+        "Keep crossings away from node disks and labels, especially around x0; ensure no non-incident edge passes through or grazes that node."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.162,
+        "min_edge_node_clearance": 0.6800347575451112,
+        "min_edge_edge_clearance": 0.000719690693428401,
+        "max_close_parallel_length": 1.762100732271068,
+        "max_clear_detour_ratio": 1.1847937745891688
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Edges l0-x0 and l1-r4 run too close together for a long segment: close length 1.76.",
+        "Edges l0-x0 and l2-r5 run too close together for a long segment: close length 1.76.",
+        "Edges l0-x0 and l4-r1 run too close together for a long segment: close length 1.76.",
+        "Edges l0-x0 and l5-r2 run too close together for a long segment: close length 1.76.",
+        "Visual review score=5.0: Several long twist/matching edges converge through the middle and pass too close to the non-incident node x0; at least one edge appears to touch or cross the x0 node/label, making the label hard to read.",
+        "Visual review score=5.0: The central bundle of edges between the two crowns is tangled: multiple unrelated edges cross near x0 and run close together for a visible segment, reducing readability.",
+        "Visual review score=5.0: The straight bridge segment l0-x0-x1-r3 lies directly through the same corridor as the twist edges, causing crowding around x0 and the middle of the figure."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "Several twist-matching edges use very large rectangular detours around the entire drawing, making the graph semantics hard to follow.",
+        "The long routed edges create close parallel runs along the top, bottom, and right side for long visible segments.",
+        "On the right crown, the routed matching edges crowd the r1, r2, r4, and r5 region; some vertical and horizontal routed segments pass too close to non-incident nodes and labels.",
+        "The y1-r0 bridge route approaches the right crown diagonally and visually cuts through the r4/r5 area, adding clutter near unrelated nodes and edges.",
+        "The lower bridge path through y0 and y1 is placed very far below the crowns, forcing long detours and making the bridge less readable."
+      ],
+      "visual_suggestions": [
+        "Move y0 and y1 upward closer to the gap between the crowns, and route l3-y0-y1-r0 as a lower bridge with only small bends, avoiding the right crown interior.",
+        "Reroute the twist edges l1-r4, l2-r5, l4-r1, and l5-r2 through the central space between the crowns using separated gentle arcs or short polyline bands instead of enclosing the whole graph.",
+        "Increase spacing around the right crown or move r1, r2, r4, and r5 slightly outward so routed matching edges do not crowd their labels.",
+        "Avoid long shared horizontal/vertical corridors on the outer boundary; assign each long inter-crown edge a distinct, shorter route with clear separation."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.7850000000000001,
+        "min_edge_node_clearance": 0.692,
+        "min_edge_edge_clearance": 0.03624999999999989,
+        "max_close_parallel_length": 6.504776190476188,
+        "max_clear_detour_ratio": 2.840300927303129
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Edge l1-r4 appears over-routed: routed length 25.37 vs direct length 10.13, while a direct or shallow route has node clearance 1.20.",
+        "Edge l5-r2 appears over-routed: routed length 28.77 vs direct length 10.13, while a direct or shallow route has node clearance 1.20.",
+        "Edges l1-r4 and l5-r2 run too close together for a long segment: close length 6.50.",
+        "Edges l4-r1 and l5-r2 run too close together for a long segment: close length 1.85.",
+        "Visual review score=4.0: Several twist-matching edges use very large rectangular detours around the entire drawing, making the graph semantics hard to follow.",
+        "Visual review score=4.0: The long routed edges create close parallel runs along the top, bottom, and right side for long visible segments.",
+        "Visual review score=4.0: On the right crown, the routed matching edges crowd the r1, r2, r4, and r5 region; some vertical and horizontal routed segments pass too close to non-incident nodes and labels.",
+        "Visual review score=4.0: The y1-r0 bridge route approaches the right crown diagonally and visually cuts through the r4/r5 area, adding clutter near unrelated nodes and edges.",
+        "Visual review score=4.0: The lower bridge path through y0 and y1 is placed very far below the crowns, forcing long detours and making the bridge less readable."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "Several long inter-crown twist edges create an avoidable tangle through the middle and around the right crown.",
+        "The bottom routed edge from l4 to r1 runs close to the y0-y1 bridge for a long visible segment and crowds the bottom bridge nodes, especially y0 and y1.",
+        "The y1-r0 bridge route passes very close to the r5/r0 area and visually crowds the right crown boundary.",
+        "Long detouring edges l2-r5 and l4-r1 wrap far around the graph instead of using clearer, shorter routes between the crowns.",
+        "Multiple crossings occur near the right crown nodes r3, r4, r5, and r0, making the right cluster semantics harder to read."
+      ],
+      "visual_suggestions": [
+        "Move the bridge nodes x0,x1 and y0,y1 farther outward from the crowns and separate the upper and lower bridge corridors more clearly.",
+        "Reroute l4-r1 with a shorter lower-middle path that stays below the crown but does not run parallel to y0-y1 for so long.",
+        "Reroute l2-r5 with fewer extreme bends, keeping it away from the right crown labels and avoiding the central tangle.",
+        "Increase spacing among r0, r5, r4, and r3 or move the right crown slightly outward to reduce crossings and edge crowding near those nodes.",
+        "Use distinct vertical lanes for the four twist matching edges so unrelated long edges do not travel close together."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.534362247193561,
+        "min_edge_node_clearance": 0.6606835970263254,
+        "min_edge_edge_clearance": 0.001289693579228507,
+        "max_close_parallel_length": 5.013429001073019,
+        "max_clear_detour_ratio": 1.2450876347265372
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Edge l4-r1 passes too close to unrelated node r5: distance 0.66.",
+        "Edges y1-r0 and l2-r5 run too close together for a long segment: close length 3.75.",
+        "Edges y1-r0 and l4-r1 run too close together for a long segment: close length 3.13.",
+        "Edges l1-r4 and l2-r5 run too close together for a long segment: close length 5.01.",
+        "Visual review score=4.0: Several long inter-crown twist edges create an avoidable tangle through the middle and around the right crown.",
+        "Visual review score=4.0: The bottom routed edge from l4 to r1 runs close to the y0-y1 bridge for a long visible segment and crowds the bottom bridge nodes, especially y0 and y1.",
+        "Visual review score=4.0: The y1-r0 bridge route passes very close to the r5/r0 area and visually crowds the right crown boundary.",
+        "Visual review score=4.0: Long detouring edges l2-r5 and l4-r1 wrap far around the graph instead of using clearer, shorter routes between the crowns.",
+        "Visual review score=4.0: Multiple crossings occur near the right crown nodes r3, r4, r5, and r0, making the right cluster semantics harder to read."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The edge y1-r0 passes very close to, and appears to graze or overlap, the unrelated node r1 and its label area.",
+        "The lower bridge y0-y1-r0 cuts through the right crown gadget instead of staying outside it, making the r0/r1/R area harder to read.",
+        "The diagonal edge R-r1 and the diagonal bridge edge y1-r0 create a crowded tangle near r1."
+      ],
+      "visual_suggestions": [
+        "Move y1 farther to the lower-right, below and slightly outside r0/r1, so the edge y1-r0 approaches r0 from the outside without passing near r1.",
+        "Alternatively, route y1-r0 with a bend around the outside of the right crown, below r1 and then up to r0.",
+        "If keeping straight edges, move r1 slightly farther down/right or move r0 farther right to increase clearance from the y1-r0 bridge edge."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.120495225177364,
+        "min_edge_node_clearance": 1.25142112109994,
+        "min_edge_edge_clearance": 0.027388004333838516,
+        "max_close_parallel_length": 0.9502631578947369,
+        "max_clear_detour_ratio": 1.0
+      },
+      "next_refinement": null,
+      "errors": [
+        "Visual review score=6.5: The edge y1-r0 passes very close to, and appears to graze or overlap, the unrelated node r1 and its label area.",
+        "Visual review score=6.5: The lower bridge y0-y1-r0 cuts through the right crown gadget instead of staying outside it, making the r0/r1/R area harder to read.",
+        "Visual review score=6.5: The diagonal edge R-r1 and the diagonal bridge edge y1-r0 create a crowded tangle near r1."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "u_0",
+        "label": "$u_{0}$"
+      },
+      {
+        "id": "u_1",
+        "label": "$u_{1}$"
+      },
+      {
+        "id": "u_2",
+        "label": "$u_{2}$"
+      },
+      {
+        "id": "u_3",
+        "label": "$u_{3}$"
+      },
+      {
+        "id": "v_0",
+        "label": "$v_{0}$"
+      },
+      {
+        "id": "v_1",
+        "label": "$v_{1}$"
+      },
+      {
+        "id": "v_2",
+        "label": "$v_{2}$"
+      },
+      {
+        "id": "v_3",
+        "label": "$v_{3}$"
+      },
+      {
+        "id": "p",
+        "label": "$p$"
+      },
+      {
+        "id": "q",
+        "label": "$q$"
+      },
+      {
+        "id": "w_0",
+        "label": "$w_{0}$"
+      },
+      {
+        "id": "w_1",
+        "label": "$w_{1}$"
+      },
+      {
+        "id": "w_2",
+        "label": "$w_{2}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "u_0",
+        "target": "p",
+        "directed": false
+      },
+      {
+        "source": "v_0",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "u_1",
+        "target": "p",
+        "directed": false
+      },
+      {
+        "source": "v_1",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "u_2",
+        "target": "p",
+        "directed": false
+      },
+      {
+        "source": "v_2",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "u_3",
+        "target": "p",
+        "directed": false
+      },
+      {
+        "source": "v_3",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "p",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "u_1",
+        "target": "w_0",
+        "directed": false
+      },
+      {
+        "source": "v_0",
+        "target": "w_0",
+        "directed": false
+      },
+      {
+        "source": "u_2",
+        "target": "w_1",
+        "directed": false
+      },
+      {
+        "source": "v_1",
+        "target": "w_1",
+        "directed": false
+      },
+      {
+        "source": "u_3",
+        "target": "w_2",
+        "directed": false
+      },
+      {
+        "source": "v_2",
+        "target": "w_2",
+        "directed": false
+      },
+      {
+        "source": "w_0",
+        "target": "w_1",
+        "directed": false
+      },
+      {
+        "source": "w_1",
+        "target": "w_2",
+        "directed": false
+      },
+      {
+        "source": "u_0",
+        "target": "w_0",
+        "directed": false
+      },
+      {
+        "source": "w_2",
+        "target": "v_3",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "family": "uv_w_bridge",
+      "parameters": {
+        "m": 4
+      },
+      "positions": {
+        "u_0": [
+          -2.175,
+          2.15
+        ],
+        "v_0": [
+          -2.175,
+          -2.15
+        ],
+        "u_1": [
+          -0.7249999999999999,
+          2.15
+        ],
+        "v_1": [
+          -0.7249999999999999,
+          -2.15
+        ],
+        "u_2": [
+          0.7250000000000001,
+          2.15
+        ],
+        "v_2": [
+          0.7250000000000001,
+          -2.15
+        ],
+        "u_3": [
+          2.175,
+          2.15
+        ],
+        "v_3": [
+          2.175,
+          -2.15
+        ],
+        "w_0": [
+          -1.4499999999999997,
+          0.0
+        ],
+        "w_1": [
+          0.0,
+          0.0
+        ],
+        "w_2": [
+          1.4500000000000002,
+          0.0
+        ],
+        "p": [
+          0.0,
+          3.65
+        ],
+        "q": [
+          0.0,
+          -3.65
+        ]
+      },
+      "edge_options": {
+        "undirected:p:q": "out=0,in=0,looseness=2.2"
+      }
+    },
+    "warnings": [
+      "LLM extraction failed; used rule-based extraction. Reason: OpenAI API returned HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
+      "Interpreted T as U union V from the preceding U and V definitions."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "LLM extraction failed; used rule-based extraction. Reason: OpenAI API returned HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
+      "Interpreted T as U union V from the preceding U and V definitions."
+    ]
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\auto_formula_m4\\iteration_0\\auto_formula_m4.tex",
+    "pdf_path": "outputs\\auto_formula_m4\\iteration_0\\auto_formula_m4.pdf",
+    "png_path": "outputs\\auto_formula_m4\\iteration_0\\auto_formula_m4.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A",
+        "label": "A"
+      },
+      {
+        "id": "B",
+        "label": "B"
+      },
+      {
+        "id": "C",
+        "label": "C"
+      },
+      {
+        "id": "D",
+        "label": "D"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A",
+        "target": "B",
+        "directed": true
+      },
+      {
+        "source": "B",
+        "target": "C",
+        "directed": true
+      },
+      {
+        "source": "C",
+        "target": "D",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "linear"
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": null,
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": null,
+      "errors": []
+    }
+  ]
+}

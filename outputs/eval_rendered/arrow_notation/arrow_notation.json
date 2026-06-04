@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "P",
+        "label": "P"
+      },
+      {
+        "id": "Q",
+        "label": "Q"
+      },
+      {
+        "id": "R",
+        "label": "R"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P",
+        "target": "Q",
+        "directed": true
+      },
+      {
+        "source": "Q",
+        "target": "R",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "circular"
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\eval_rendered\\arrow_notation\\iteration_0\\arrow_notation.tex",
+    "pdf_path": "outputs\\eval_rendered\\arrow_notation\\iteration_0\\arrow_notation.pdf",
+    "png_path": "outputs\\eval_rendered\\arrow_notation\\iteration_0\\arrow_notation.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

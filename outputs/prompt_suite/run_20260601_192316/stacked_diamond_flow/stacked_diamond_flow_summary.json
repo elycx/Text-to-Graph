@@ -1,0 +1,448 @@
+{
+  "success": true,
+  "iterations": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s",
+        "label": "s"
+      },
+      {
+        "id": "t",
+        "label": "t"
+      },
+      {
+        "id": "u_0",
+        "label": "$u_{0}$"
+      },
+      {
+        "id": "v_0",
+        "label": "$v_{0}$"
+      },
+      {
+        "id": "a_0",
+        "label": "$a_{0}$"
+      },
+      {
+        "id": "b_0",
+        "label": "$b_{0}$"
+      },
+      {
+        "id": "u_1",
+        "label": "$u_{1}$"
+      },
+      {
+        "id": "v_1",
+        "label": "$v_{1}$"
+      },
+      {
+        "id": "a_1",
+        "label": "$a_{1}$"
+      },
+      {
+        "id": "b_1",
+        "label": "$b_{1}$"
+      },
+      {
+        "id": "u_2",
+        "label": "$u_{2}$"
+      },
+      {
+        "id": "v_2",
+        "label": "$v_{2}$"
+      },
+      {
+        "id": "a_2",
+        "label": "$a_{2}$"
+      },
+      {
+        "id": "b_2",
+        "label": "$b_{2}$"
+      },
+      {
+        "id": "u_3",
+        "label": "$u_{3}$"
+      },
+      {
+        "id": "v_3",
+        "label": "$v_{3}$"
+      },
+      {
+        "id": "a_3",
+        "label": "$a_{3}$"
+      },
+      {
+        "id": "b_3",
+        "label": "$b_{3}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "u_0",
+        "target": "a_0",
+        "directed": true
+      },
+      {
+        "source": "u_0",
+        "target": "b_0",
+        "directed": true
+      },
+      {
+        "source": "a_0",
+        "target": "v_0",
+        "directed": true
+      },
+      {
+        "source": "b_0",
+        "target": "v_0",
+        "directed": true
+      },
+      {
+        "source": "u_1",
+        "target": "a_1",
+        "directed": true
+      },
+      {
+        "source": "u_1",
+        "target": "b_1",
+        "directed": true
+      },
+      {
+        "source": "a_1",
+        "target": "v_1",
+        "directed": true
+      },
+      {
+        "source": "b_1",
+        "target": "v_1",
+        "directed": true
+      },
+      {
+        "source": "u_2",
+        "target": "a_2",
+        "directed": true
+      },
+      {
+        "source": "u_2",
+        "target": "b_2",
+        "directed": true
+      },
+      {
+        "source": "a_2",
+        "target": "v_2",
+        "directed": true
+      },
+      {
+        "source": "b_2",
+        "target": "v_2",
+        "directed": true
+      },
+      {
+        "source": "u_3",
+        "target": "a_3",
+        "directed": true
+      },
+      {
+        "source": "u_3",
+        "target": "b_3",
+        "directed": true
+      },
+      {
+        "source": "a_3",
+        "target": "v_3",
+        "directed": true
+      },
+      {
+        "source": "b_3",
+        "target": "v_3",
+        "directed": true
+      },
+      {
+        "source": "s",
+        "target": "u_0",
+        "directed": true
+      },
+      {
+        "source": "v_0",
+        "target": "u_1",
+        "directed": true
+      },
+      {
+        "source": "v_1",
+        "target": "u_2",
+        "directed": true
+      },
+      {
+        "source": "v_2",
+        "target": "u_3",
+        "directed": true
+      },
+      {
+        "source": "v_3",
+        "target": "t",
+        "directed": true
+      },
+      {
+        "source": "a_0",
+        "target": "b_1",
+        "directed": true
+      },
+      {
+        "source": "b_0",
+        "target": "a_1",
+        "directed": true
+      },
+      {
+        "source": "a_1",
+        "target": "b_2",
+        "directed": true
+      },
+      {
+        "source": "b_1",
+        "target": "a_2",
+        "directed": true
+      },
+      {
+        "source": "a_2",
+        "target": "b_3",
+        "directed": true
+      },
+      {
+        "source": "b_2",
+        "target": "a_3",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s": [
+          -9.0,
+          0.0
+        ],
+        "t": [
+          9.0,
+          0.0
+        ],
+        "u_0": [
+          -6.8478260869565215,
+          2.4782608695652173
+        ],
+        "v_0": [
+          -6.8478260869565215,
+          -2.4782608695652173
+        ],
+        "a_0": [
+          -7.760869565217392,
+          0.0
+        ],
+        "b_0": [
+          -5.934782608695652,
+          0.0
+        ],
+        "u_1": [
+          -2.282608695652174,
+          2.4782608695652173
+        ],
+        "v_1": [
+          -2.282608695652174,
+          -2.4782608695652173
+        ],
+        "a_1": [
+          -3.195652173913044,
+          0.0
+        ],
+        "b_1": [
+          -1.3695652173913044,
+          0.0
+        ],
+        "u_2": [
+          2.282608695652174,
+          2.4782608695652173
+        ],
+        "v_2": [
+          2.282608695652174,
+          -2.4782608695652173
+        ],
+        "a_2": [
+          1.3695652173913044,
+          0.0
+        ],
+        "b_2": [
+          3.195652173913044,
+          0.0
+        ],
+        "u_3": [
+          6.8478260869565215,
+          2.4782608695652173
+        ],
+        "v_3": [
+          6.8478260869565215,
+          -2.4782608695652173
+        ],
+        "a_3": [
+          5.934782608695652,
+          0.0
+        ],
+        "b_3": [
+          7.760869565217392,
+          0.0
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {
+        "directed:a_0:b_1": [
+          [
+            -8.608695652173912,
+            5.739130434782609
+          ],
+          [
+            -0.5217391304347826,
+            5.739130434782609
+          ]
+        ],
+        "directed:b_0:a_1": [
+          [
+            -5.086956521739131,
+            -5.739130434782609
+          ],
+          [
+            -4.043478260869565,
+            -5.739130434782609
+          ]
+        ],
+        "directed:a_1:b_2": [
+          [
+            -4.043478260869565,
+            6.326086956521738
+          ],
+          [
+            4.043478260869565,
+            6.326086956521738
+          ]
+        ],
+        "directed:b_1:a_2": [
+          [
+            -0.5217391304347826,
+            -6.326086956521738
+          ],
+          [
+            0.5217391304347826,
+            -6.326086956521738
+          ]
+        ],
+        "directed:a_2:b_3": [
+          [
+            0.5217391304347826,
+            5.739130434782609
+          ],
+          [
+            8.608695652173912,
+            5.739130434782609
+          ]
+        ],
+        "directed:b_2:a_3": [
+          [
+            4.043478260869565,
+            -5.739130434782609
+          ],
+          [
+            5.086956521739131,
+            -5.739130434782609
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=6.02, maximum=6.66, moved_fraction=1.00."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=6.02, maximum=6.66, moved_fraction=1.00."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.2391304347826084,
+    "min_edge_node_clearance": 0.9355845162691454
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_192316\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_192316\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_192316\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "Several long shortcut routes run very close to non-incident gadget nodes, especially the upper a0->b1/a1->b2/a2->b3 routes near u0, u1, u2, and u3.",
+        "The lower shortcut routes b0->a1, b1->a2, and b2->a3 crowd the lower nodes v0, v1, and v2, making the stacked diamond structure harder to read.",
+        "Some chain diagonals such as v0->u1, v1->u2, and v2->u3 pass close to the adjacent branch nodes a1, a2, and a3, creating local visual ambiguity."
+      ],
+      "visual_suggestions": [
+        "Increase vertical clearance for shortcut routes: move the upper horizontal shortcut tracks farther above the u nodes and the lower tracks farther below the v nodes.",
+        "Route each shortcut with more lateral offset before rising or descending so the vertical portions do not pass close to u/v nodes or branch labels.",
+        "Slightly widen the spacing between consecutive diamond gadgets, or move branch nodes a_k and b_k farther outward from the central chain, to give chain edges and shortcuts more separation."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.7249999999999996,
+        "min_edge_node_clearance": 0.7270083899927422
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=6.5: Several long shortcut routes run very close to non-incident gadget nodes, especially the upper a0->b1/a1->b2/a2->b3 routes near u0, u1, u2, and u3.",
+        "Visual review score=6.5: The lower shortcut routes b0->a1, b1->a2, and b2->a3 crowd the lower nodes v0, v1, and v2, making the stacked diamond structure harder to read.",
+        "Visual review score=6.5: Some chain diagonals such as v0->u1, v1->u2, and v2->u3 pass close to the adjacent branch nodes a1, a2, and a3, creating local visual ambiguity."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 1.2391304347826084,
+        "min_edge_node_clearance": 0.9355845162691454
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ],
+  "id": "stacked_diamond_flow",
+  "title": "Stacked Diamond Flow",
+  "prompt": "Draw a directed artificial flow graph built from four stacked diamond gadgets. Start at s and end at t. For each k=0,1,2,3 create top node uk, bottom node vk, left branch ak, and right branch bk. Add directed edges uk->ak, uk->bk, ak->vk, bk->vk for every k. Chain them with s->u0, v0->u1, v1->u2, v2->u3, v3->t. Add cross-layer directed shortcuts a0->b1, b0->a1, a1->b2, b1->a2, a2->b3, b2->a3. Make layers vertical from left to right.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_192316\\stacked_diamond_flow"
+}

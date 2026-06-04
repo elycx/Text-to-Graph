@@ -1,0 +1,32 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_v000) at (0.00,0.00) {000};
+\node[graphnode] (n_v001) at (2.00,0.00) {001};
+\node[graphnode] (n_v010) at (0.00,2.00) {010};
+\node[graphnode] (n_v011) at (2.00,2.00) {011};
+\node[graphnode] (n_v100) at (1.00,0.80) {100};
+\node[graphnode] (n_v101) at (3.00,0.80) {101};
+\node[graphnode] (n_v110) at (1.00,2.80) {110};
+\node[graphnode] (n_v111) at (3.00,2.80) {111};
+\draw[undirected] (n_v000) -- (n_v001);
+\draw[undirected] (n_v000) -- (n_v010);
+\draw[undirected] (n_v000) -- (n_v100);
+\draw[undirected] (n_v001) -- (n_v011);
+\draw[undirected] (n_v001) -- (n_v101);
+\draw[undirected] (n_v010) -- (n_v011);
+\draw[undirected] (n_v010) -- (n_v110);
+\draw[undirected] (n_v011) -- (n_v111);
+\draw[undirected] (n_v100) -- (n_v101);
+\draw[undirected] (n_v100) -- (n_v110);
+\draw[undirected] (n_v101) -- (n_v111);
+\draw[undirected] (n_v110) -- (n_v111);
+\end{tikzpicture}
+\end{document}

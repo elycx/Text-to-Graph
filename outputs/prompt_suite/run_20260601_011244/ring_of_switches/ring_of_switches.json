@@ -1,0 +1,362 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s0",
+        "label": "$s_0$"
+      },
+      {
+        "id": "s1",
+        "label": "$s_1$"
+      },
+      {
+        "id": "s2",
+        "label": "$s_2$"
+      },
+      {
+        "id": "s3",
+        "label": "$s_3$"
+      },
+      {
+        "id": "s4",
+        "label": "$s_4$"
+      },
+      {
+        "id": "s5",
+        "label": "$s_5$"
+      },
+      {
+        "id": "g0",
+        "label": "$g_0$"
+      },
+      {
+        "id": "g1",
+        "label": "$g_1$"
+      },
+      {
+        "id": "g2",
+        "label": "$g_2$"
+      },
+      {
+        "id": "g3",
+        "label": "$g_3$"
+      },
+      {
+        "id": "g4",
+        "label": "$g_4$"
+      },
+      {
+        "id": "g5",
+        "label": "$g_5$"
+      },
+      {
+        "id": "o0",
+        "label": "$o_0$"
+      },
+      {
+        "id": "o1",
+        "label": "$o_1$"
+      },
+      {
+        "id": "o2",
+        "label": "$o_2$"
+      },
+      {
+        "id": "o3",
+        "label": "$o_3$"
+      },
+      {
+        "id": "o4",
+        "label": "$o_4$"
+      },
+      {
+        "id": "o5",
+        "label": "$o_5$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "s0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "s0",
+        "target": "g0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "o0",
+        "directed": true
+      },
+      {
+        "source": "o0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "g1",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "o1",
+        "directed": true
+      },
+      {
+        "source": "o1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "g2",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "o2",
+        "directed": true
+      },
+      {
+        "source": "o2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "g3",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "o3",
+        "directed": true
+      },
+      {
+        "source": "o3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "g4",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "o4",
+        "directed": true
+      },
+      {
+        "source": "o4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "g5",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "o5",
+        "directed": true
+      },
+      {
+        "source": "o5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "s2",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s0": [
+          7.437,
+          -0.0
+        ],
+        "s1": [
+          1.219,
+          4.069
+        ],
+        "s2": [
+          -0.068,
+          7.002
+        ],
+        "s3": [
+          -7.437,
+          -0.0
+        ],
+        "s4": [
+          -1.219,
+          -4.069
+        ],
+        "s5": [
+          0.068,
+          -7.002
+        ],
+        "g0": [
+          9.981,
+          -0.314
+        ],
+        "g1": [
+          5.054,
+          8.753
+        ],
+        "g2": [
+          -5.054,
+          8.753
+        ],
+        "g3": [
+          -9.981,
+          0.314
+        ],
+        "g4": [
+          -5.054,
+          -8.753
+        ],
+        "g5": [
+          5.054,
+          -8.753
+        ],
+        "o0": [
+          13.324,
+          -0.0
+        ],
+        "o1": [
+          6.662,
+          11.532
+        ],
+        "o2": [
+          -6.662,
+          11.532
+        ],
+        "o3": [
+          -13.324,
+          -0.0
+        ],
+        "o4": [
+          -6.662,
+          -11.532
+        ],
+        "o5": [
+          6.662,
+          -11.532
+        ]
+      },
+      "edge_options": {
+        "directed:g0:s3": "out=90,in=90,looseness=1.45",
+        "directed:g1:s4": "out=150,in=150,looseness=1.45",
+        "directed:g2:s5": "out=30,in=30,looseness=1.45",
+        "directed:g3:s0": "out=270,in=270,looseness=1.45",
+        "directed:g4:s1": "out=330,in=330,looseness=1.45",
+        "directed:g5:s2": "out=210,in=210,looseness=1.45"
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 2.5633048979783886,
+    "min_edge_node_clearance": 0.7617929340053663
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_011244\\ring_of_switches\\iteration_0\\ring_of_switches.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_011244\\ring_of_switches\\iteration_0\\ring_of_switches.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_011244\\ring_of_switches\\iteration_0\\ring_of_switches.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "layout_metrics": {
+        "min_node_distance": 2.5633048979783886,
+        "min_edge_node_clearance": 0.7617929340053663
+      },
+      "errors": []
+    }
+  ]
+}

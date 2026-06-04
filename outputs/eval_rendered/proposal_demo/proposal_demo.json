@@ -1,0 +1,69 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A",
+        "label": "A"
+      },
+      {
+        "id": "B",
+        "label": "B"
+      },
+      {
+        "id": "C",
+        "label": "C"
+      },
+      {
+        "id": "D",
+        "label": "D"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A",
+        "target": "B",
+        "directed": false
+      },
+      {
+        "source": "A",
+        "target": "C",
+        "directed": false
+      },
+      {
+        "source": "C",
+        "target": "D",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "circular"
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\eval_rendered\\proposal_demo\\iteration_0\\proposal_demo.tex",
+    "pdf_path": "outputs\\eval_rendered\\proposal_demo\\iteration_0\\proposal_demo.pdf",
+    "png_path": "outputs\\eval_rendered\\proposal_demo\\iteration_0\\proposal_demo.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

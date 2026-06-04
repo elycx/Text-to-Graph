@@ -1,0 +1,52 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_g00) at (-0.81,4.40) {$g_{00}$};
+\node[graphnode] (n_g01) at (1.36,4.84) {$g_{01}$};
+\node[graphnode] (n_g02) at (4.57,4.82) {$g_{02}$};
+\node[graphnode] (n_g03) at (6.45,4.25) {$g_{03}$};
+\node[graphnode] (n_g10) at (-1.11,1.33) {$g_{10}$};
+\node[graphnode] (n_g11) at (1.18,2.06) {$g_{11}$};
+\node[graphnode] (n_g12) at (4.67,2.03) {$g_{12}$};
+\node[graphnode] (n_g13) at (6.94,1.49) {$g_{13}$};
+\node[graphnode] (n_g20) at (-0.45,-0.35) {$g_{20}$};
+\node[graphnode] (n_g21) at (1.35,-0.66) {$g_{21}$};
+\node[graphnode] (n_g22) at (4.46,-0.59) {$g_{22}$};
+\node[graphnode] (n_g23) at (6.45,-0.35) {$g_{23}$};
+\node[graphnode] (n_H) at (3.00,7.35) {$H$};
+\draw[undirected] (n_g00) -- (n_g01);
+\draw[undirected] (n_g01) -- (n_g02);
+\draw[undirected] (n_g02) -- (n_g03);
+\draw[undirected] (n_g10) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g13);
+\draw[undirected] (n_g20) -- (n_g21);
+\draw[undirected] (n_g21) -- (n_g22);
+\draw[undirected] (n_g22) -- (n_g23);
+\draw[undirected] (n_g00) -- (n_g10);
+\draw[undirected] (n_g01) -- (n_g11);
+\draw[undirected] (n_g02) -- (n_g12);
+\draw[undirected] (n_g03) -- (n_g13);
+\draw[undirected] (n_g10) -- (n_g20);
+\draw[undirected] (n_g11) -- (n_g21);
+\draw[undirected] (n_g12) -- (n_g22);
+\draw[undirected] (n_g13) -- (n_g23);
+\draw[undirected] (n_H) -- (n_g01);
+\draw[undirected] (n_H) -- (n_g02);
+\draw[undirected] (n_H) -- (n_g11);
+\draw[undirected] (n_H) -- (n_g12);
+\draw[undirected] (n_H) -- (n_g21);
+\draw[undirected] (n_H) -- (n_g22);
+\draw[undirected] (n_g00) to[out=180,in=-90,looseness=1.5] (n_g23);
+\draw[undirected] (n_g03) to[out=0,in=-90,looseness=1.5] (n_g20);
+\draw[undirected] (n_g10) to[out=90,in=90,looseness=1.35] (n_g13);
+\draw[undirected] (n_g01) to[out=180,in=180,looseness=1.7] (n_g22);
+\end{tikzpicture}
+\end{document}

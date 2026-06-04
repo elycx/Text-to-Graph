@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "error": "GPT-5 request failed: 500 Server Error: Internal Server Error for url: http://localhost:1455/v1/chat/completions",
+  "history": [],
+  "id": "hubbed_grid_with_teleports",
+  "title": "Hubbed Grid With Teleports",
+  "prompt": "Draw an artificial undirected graph made from a 3 by 4 grid plus teleports. Grid vertices are g00,g01,g02,g03 on the top row, g10,g11,g12,g13 in the middle row, and g20,g21,g22,g23 on the bottom row. Add all horizontal and vertical grid edges. Add hub node H connected to g01,g02,g11,g12,g21,g22. Add teleport edges g00-g23, g03-g20, g10-g13, and g01-g22. Use bends or an outer route for long teleports so the grid remains legible.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_114132\\hubbed_grid_with_teleports"
+}

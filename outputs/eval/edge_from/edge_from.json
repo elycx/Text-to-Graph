@@ -1,0 +1,45 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "Start",
+        "label": "Start"
+      },
+      {
+        "id": "End",
+        "label": "End"
+      }
+    ],
+    "edges": [
+      {
+        "source": "Start",
+        "target": "End",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "star"
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": null,
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": null,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A0",
+        "label": "A0"
+      },
+      {
+        "id": "A1",
+        "label": "A1"
+      },
+      {
+        "id": "A2",
+        "label": "A2"
+      },
+      {
+        "id": "A3",
+        "label": "A3"
+      },
+      {
+        "id": "B0",
+        "label": "B0"
+      },
+      {
+        "id": "B1",
+        "label": "B1"
+      },
+      {
+        "id": "B2",
+        "label": "B2"
+      },
+      {
+        "id": "B3",
+        "label": "B3"
+      },
+      {
+        "id": "C0",
+        "label": "C0"
+      },
+      {
+        "id": "C1",
+        "label": "C1"
+      },
+      {
+        "id": "C2",
+        "label": "C2"
+      },
+      {
+        "id": "C3",
+        "label": "C3"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A0",
+        "target": "A1",
+        "directed": true
+      },
+      {
+        "source": "A0",
+        "target": "A2",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B1",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "B2",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C1",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "A3",
+        "target": "B0",
+        "directed": true
+      },
+      {
+        "source": "B3",
+        "target": "C0",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C3",
+        "target": "A0",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "B0",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A0": [
+          0.0,
+          0.0
+        ],
+        "A1": [
+          1.2,
+          0.8
+        ],
+        "A2": [
+          1.2,
+          -0.8
+        ],
+        "A3": [
+          2.297,
+          -0.321
+        ],
+        "B0": [
+          5.103,
+          0.321
+        ],
+        "B1": [
+          6.2,
+          0.8
+        ],
+        "B2": [
+          6.2,
+          -0.8
+        ],
+        "B3": [
+          7.297,
+          -0.321
+        ],
+        "C0": [
+          9.905,
+          0.405
+        ],
+        "C1": [
+          11.2,
+          0.8
+        ],
+        "C2": [
+          11.2,
+          -0.8
+        ],
+        "C3": [
+          12.4,
+          0.0
+        ]
+      },
+      "edge_options": {
+        "directed:C3:A0": "dashed",
+        "directed:C2:B0": "dashed"
+      },
+      "edge_routes": {
+        "directed:A2:C1": [
+          [
+            3.8,
+            -2.0
+          ],
+          [
+            9.0,
+            -2.0
+          ]
+        ],
+        "directed:C3:A0": [
+          [
+            12.4,
+            2.4
+          ],
+          [
+            0.0,
+            2.4
+          ]
+        ],
+        "directed:C2:B0": [
+          [
+            11.2,
+            -2.3
+          ],
+          [
+            5.0,
+            -2.3
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.1970171260261897,
+    "min_edge_node_clearance": 0.7333284963775916
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_192316\\three_module_dependency\\iteration_0\\three_module_dependency.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_192316\\three_module_dependency\\iteration_0\\three_module_dependency.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_192316\\three_module_dependency\\iteration_0\\three_module_dependency.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 1.1970171260261897,
+        "min_edge_node_clearance": 0.7333284963775916
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ]
+}

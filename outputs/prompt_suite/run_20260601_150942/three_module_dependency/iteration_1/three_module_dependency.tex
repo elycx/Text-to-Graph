@@ -1,0 +1,43 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode,fill=blue!8] (n_A0) at (-9.00,0.00) {A0};
+\node[graphnode,fill=blue!8] (n_A1) at (-7.54,1.24) {A1};
+\node[graphnode,fill=blue!8] (n_A2) at (-7.54,-1.24) {A2};
+\node[graphnode,fill=blue!8] (n_A3) at (-5.94,0.00) {A3};
+\node[graphnode,fill=green!8] (n_B0) at (-2.44,0.00) {B0};
+\node[graphnode,fill=green!8] (n_B1) at (-0.98,1.24) {B1};
+\node[graphnode,fill=green!8] (n_B2) at (-0.98,-1.24) {B2};
+\node[graphnode,fill=green!8] (n_B3) at (0.98,0.00) {B3};
+\node[graphnode,fill=orange!10] (n_C0) at (3.97,0.00) {C0};
+\node[graphnode,fill=orange!10] (n_C1) at (5.79,1.97) {C1};
+\node[graphnode,fill=orange!10] (n_C2) at (5.79,-1.97) {C2};
+\node[graphnode,fill=orange!10] (n_C3) at (7.68,0.00) {C3};
+\draw[directed] (n_A0) -- (n_A1);
+\draw[directed] (n_A0) -- (n_A2);
+\draw[directed] (n_A1) -- (n_A3);
+\draw[directed] (n_A2) -- (n_A3);
+\draw[directed] (n_B0) -- (n_B1);
+\draw[directed] (n_B0) -- (n_B2);
+\draw[directed] (n_B1) -- (n_B3);
+\draw[directed] (n_B2) -- (n_B3);
+\draw[directed] (n_C0) -- (n_C1);
+\draw[directed] (n_C0) -- (n_C2);
+\draw[directed] (n_C1) -- (n_C3);
+\draw[directed] (n_C2) -- (n_C3);
+\draw[directed] (n_A3) -- (n_B0);
+\draw[directed] (n_B3) -- (n_C0);
+\draw[directed,rounded corners=5pt] (n_A1) -- (-6.81,2.99) -- (0.26,2.99) -- (0.26,-1.24) -- (n_B2);
+\draw[directed,rounded corners=5pt] (n_A2) -- (-7.54,-4.01) -- (9.00,-4.01) -- (9.00,3.13) -- (5.79,3.13) -- (n_C1);
+\draw[directed,rounded corners=5pt] (n_B1) -- (-0.98,3.94) -- (8.42,3.94) -- (8.42,-2.84) -- (6.89,-2.84) -- (n_C2);
+\draw[directed,rounded corners=5pt] (n_C3) -- (7.76,5.61) -- (-9.00,5.61) -- (n_A0);
+\draw[directed,rounded corners=5pt] (n_C2) -- (5.79,-5.61) -- (-2.44,-5.61) -- (-2.44,-1.17) -- (n_B0);
+\end{tikzpicture}
+\end{document}

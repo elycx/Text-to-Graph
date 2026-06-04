@@ -1,0 +1,14 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usetikzlibrary{arrows.meta,positioning}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_Left) at (-2.00,0.00) {Left};
+\node[graphnode] (n_Right) at (0.00,0.00) {Right};
+\draw[undirected] (n_Left) -- (n_Right);
+\end{tikzpicture}
+\end{document}

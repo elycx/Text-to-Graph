@@ -1,0 +1,50 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw=black,line width=0.55pt,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  graphedge/.style={draw=black,line width=0.55pt,line cap=round,line join=round},
+  directed/.style={graphedge,-{Stealth[length=2.4mm,width=2.0mm]}},
+  undirected/.style={graphedge}
+}
+\node[graphnode,fill=gray!15] (n_c0) at (-1.00,0.00) {c0};
+\node[graphnode,fill=gray!15] (n_c1) at (2.50,0.00) {c1};
+\node[graphnode,fill=gray!15] (n_c2) at (6.00,0.00) {c2};
+\node[graphnode,fill=gray!15] (n_c3) at (9.50,0.00) {c3};
+\node[graphnode,fill=gray!15] (n_c4) at (13.00,0.00) {c4};
+\node[graphnode] (n_a0) at (0.81,-1.63) {a0};
+\node[graphnode] (n_a1) at (3.46,-1.63) {a1};
+\node[graphnode] (n_a2) at (5.07,-1.63) {a2};
+\node[graphnode] (n_a3) at (7.29,-0.95) {a3};
+\node[graphnode] (n_a4) at (8.21,-1.99) {a4};
+\node[graphnode] (n_a5) at (9.50,-1.63) {a5};
+\node[graphnode] (n_a6) at (11.16,-1.63) {a6};
+\node[graphnode] (n_p0) at (-1.83,-0.95) {p0};
+\node[graphnode] (n_p1) at (6.40,-1.64) {p1};
+\node[graphnode] (n_p2) at (14.27,-0.95) {p2};
+\node[graphnode] (n_z) at (6.00,1.30) {z};
+\draw[undirected] (n_c0) -- (n_c1);
+\draw[undirected] (n_c1) -- (n_c2);
+\draw[undirected] (n_c2) -- (n_c3);
+\draw[undirected] (n_c3) -- (n_c4);
+\draw[undirected] (n_c0) -- (n_a0);
+\draw[undirected] (n_a0) -- (n_c1);
+\draw[undirected] (n_c1) -- (n_a1);
+\draw[undirected] (n_a1) -- (n_a2);
+\draw[undirected] (n_a2) -- (n_c2);
+\draw[undirected] (n_c2) -- (n_a3);
+\draw[undirected] (n_a3) -- (n_a4);
+\draw[undirected] (n_a4) -- (n_a5);
+\draw[undirected] (n_a5) -- (n_c3);
+\draw[undirected] (n_c3) -- (n_a6);
+\draw[undirected] (n_a6) -- (n_c4);
+\draw[undirected] (n_c0) -- (n_p0);
+\draw[undirected] (n_c2) -- (n_p1);
+\draw[undirected] (n_c4) -- (n_p2);
+\draw[undirected] (n_z) -- (n_c1);
+\draw[undirected] (n_z) -- (n_c2);
+\draw[undirected] (n_z) -- (n_c3);
+\end{tikzpicture}
+\end{document}

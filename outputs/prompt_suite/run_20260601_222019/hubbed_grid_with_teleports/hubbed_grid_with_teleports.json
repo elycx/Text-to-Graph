@@ -1,0 +1,540 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "g00",
+        "label": "$g_{00}$"
+      },
+      {
+        "id": "g01",
+        "label": "$g_{01}$"
+      },
+      {
+        "id": "g02",
+        "label": "$g_{02}$"
+      },
+      {
+        "id": "g03",
+        "label": "$g_{03}$"
+      },
+      {
+        "id": "g10",
+        "label": "$g_{10}$"
+      },
+      {
+        "id": "g11",
+        "label": "$g_{11}$"
+      },
+      {
+        "id": "g12",
+        "label": "$g_{12}$"
+      },
+      {
+        "id": "g13",
+        "label": "$g_{13}$"
+      },
+      {
+        "id": "g20",
+        "label": "$g_{20}$"
+      },
+      {
+        "id": "g21",
+        "label": "$g_{21}$"
+      },
+      {
+        "id": "g22",
+        "label": "$g_{22}$"
+      },
+      {
+        "id": "g23",
+        "label": "$g_{23}$"
+      },
+      {
+        "id": "H",
+        "label": "H"
+      }
+    ],
+    "edges": [
+      {
+        "source": "g00",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g03",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g20",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g21",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g22",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g10",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g13",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g22",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "g00": [
+          -11.859,
+          1.81
+        ],
+        "g01": [
+          -5.363,
+          4.626
+        ],
+        "g02": [
+          3.915,
+          5.411
+        ],
+        "g03": [
+          13.316,
+          5.619
+        ],
+        "g10": [
+          -11.921,
+          -0.568
+        ],
+        "g11": [
+          -4.026,
+          -0.568
+        ],
+        "g12": [
+          2.596,
+          -0.299
+        ],
+        "g13": [
+          11.764,
+          -0.568
+        ],
+        "g20": [
+          -11.921,
+          -3.567
+        ],
+        "g21": [
+          -4.026,
+          -7.062
+        ],
+        "g22": [
+          6.767,
+          -8.922
+        ],
+        "g23": [
+          12.072,
+          -5.153
+        ],
+        "H": [
+          -0.66,
+          12.895
+        ]
+      },
+      "edge_options": {
+        "undirected:H:g11": "{'bend': 16}",
+        "undirected:H:g12": "{'bend': -16}"
+      },
+      "edge_routes": {
+        "undirected:H:g21": [
+          [
+            -6.943,
+            9.227
+          ],
+          [
+            -13.447,
+            1.729
+          ],
+          [
+            -13.447,
+            -6.852
+          ],
+          [
+            -4.324,
+            -6.852
+          ]
+        ],
+        "undirected:H:g22": [
+          [
+            6.786,
+            9.227
+          ],
+          [
+            13.29,
+            1.729
+          ],
+          [
+            13.29,
+            -6.852
+          ],
+          [
+            4.167,
+            -6.852
+          ]
+        ],
+        "undirected:g00:g23": [
+          [
+            -15.976,
+            4.078
+          ],
+          [
+            -15.976,
+            -10.104
+          ],
+          [
+            15.819,
+            -10.104
+          ]
+        ],
+        "undirected:g03:g20": [
+          [
+            13.832,
+            4.078
+          ],
+          [
+            13.832,
+            8.143
+          ]
+        ],
+        "undirected:g10:g13": [
+          [
+            -8.389,
+            -2.516
+          ],
+          [
+            8.232,
+            -2.516
+          ]
+        ],
+        "undirected:g01:g22": [
+          [
+            16.0,
+            3.446
+          ],
+          [
+            16.0,
+            -8.297
+          ],
+          [
+            4.528,
+            -8.297
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=2.16, maximum=5.01, moved_fraction=0.77.",
+      "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=2.16, maximum=5.01, moved_fraction=0.77."
+    ]
+  },
+  "layout_validation": {
+    "errors": [
+      "Edge g03-g20 passes too close to unrelated node g11: distance 0.54.",
+      "Edge g01-g22 appears over-routed: routed length 46.94 vs direct length 18.18, while a direct or shallow route has node clearance 2.47."
+    ],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 2.3788081049130465,
+    "min_edge_node_clearance": 0.5378947083672186,
+    "min_edge_edge_clearance": 0.004000149592598872,
+    "max_close_parallel_length": 1.5789999999999997,
+    "max_clear_detour_ratio": 2.581017338469205,
+    "edge_crossings": 21.0
+  },
+  "visual_review": null,
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": false,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\hubbed_grid_with_teleports\\iteration_3\\hubbed_grid_with_teleports.tex",
+    "pdf_path": null,
+    "png_path": null,
+    "error": "!  ==> Fatal error occurred, no output PDF file produced!"
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "The hub spokes from H create a dense bundle through the middle of the grid, with several crossings near grid nodes and labels, especially around g01, g02, g11, g12, and g22.",
+        "The repeated 3 by 4 grid structure is visibly uneven: rows and columns are not well aligned, making the intended grid harder to read.",
+        "The curved teleport edge g01-g22 runs through the central grid area and adds clutter near g12 and g22.",
+        "The outer teleport route from g03 to g20 runs very close to the top row and crosses the H spokes, creating an avoidable tangle.",
+        "The g10-g13 routed edge forms a long horizontal segment through the lower middle of the drawing and crowds the area around g10/g20 and g13."
+      ],
+      "visual_suggestions": [
+        "Place g00-g03, g10-g13, and g20-g23 on a more regular aligned 3 by 4 lattice with consistent row and column spacing.",
+        "Move H higher or slightly centered above the middle columns, and fan or curve its six incident edges so they avoid passing close to non-incident grid nodes and labels.",
+        "Route g01-g22 outside or with a wider bend that avoids the central g11/g12 area.",
+        "Move the g03-g20 teleport farther outside the grid perimeter, with more clearance above the top row and away from the H spokes.",
+        "Route g10-g13 with a cleaner outer path below the middle row or keep it as a straight middle-row chord only if it does not crowd g10, g11, g12, or g13."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.3269355384281707,
+        "min_edge_node_clearance": 0.7612483275011,
+        "min_edge_edge_clearance": 0.01049999999999951,
+        "max_close_parallel_length": 0.9457060234621011,
+        "max_clear_detour_ratio": 1.6387805439718701,
+        "edge_crossings": 21.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=4.0: The hub spokes from H create a dense bundle through the middle of the grid, with several crossings near grid nodes and labels, especially around g01, g02, g11, g12, and g22.",
+        "Visual review score=4.0: The repeated 3 by 4 grid structure is visibly uneven: rows and columns are not well aligned, making the intended grid harder to read.",
+        "Visual review score=4.0: The curved teleport edge g01-g22 runs through the central grid area and adds clutter near g12 and g22.",
+        "Visual review score=4.0: The outer teleport route from g03 to g20 runs very close to the top row and crosses the H spokes, creating an avoidable tangle.",
+        "Visual review score=4.0: The g10-g13 routed edge forms a long horizontal segment through the lower middle of the drawing and crowds the area around g10/g20 and g13."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 3.0,
+      "visual_issues": [
+        "The 3 by 4 grid is visually distorted: g01 is far above the top row while g02 is much lower, so the intended row/column structure is hard to read.",
+        "Several hub edges create avoidable tangles through the grid area, especially H-g11 and H-g12, which cross near central grid edges and make the hub connections hard to follow.",
+        "The routed teleport g01-g22 takes a large left-side detour and then runs across the lower part of the drawing close to bottom-row nodes, adding clutter around g20, g21, and g22.",
+        "The long outer teleport routes g00-g23 and g03-g20 create large rectangular loops around the graph and crowd the bottom/side boundary, making the drawing look chaotic rather than cleanly layered.",
+        "There are many edge crossings in and around the central grid, including crossings near g00, g02, g11, and g12, reducing readability.",
+        "Unrelated long routed edges run near each other for visible segments along the outer left and bottom portions of the figure."
+      ],
+      "visual_suggestions": [
+        "Place the grid vertices in a regular 3-row by 4-column layout: align g00-g03 on one top row, g10-g13 on a middle row, and g20-g23 on a bottom row with even column spacing.",
+        "Move H directly above the center of the grid and route H-g01, H-g02, H-g11, H-g12, H-g21, and H-g22 as short, mostly straight radial edges, avoiding crossings near grid nodes.",
+        "Route teleports g00-g23 and g03-g20 outside the grid with smooth outer arcs or clean perimeter bends, keeping them well separated from bottom-row labels.",
+        "Route g10-g13 as a straight or slightly offset horizontal edge below the middle row, with enough clearance from g10-g13 node labels.",
+        "Route g01-g22 either as a clearly offset diagonal/curved connection or along a separate outer corridor that does not pass close to g20, g21, or g22.",
+        "Increase spacing between outer routed edges so unrelated long edges do not share nearly parallel corridors along the sides or bottom."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 4.652304052832316,
+        "min_edge_node_clearance": 0.6380772042236145,
+        "min_edge_edge_clearance": 0.012286367130816985,
+        "max_close_parallel_length": 0.9401999999999999,
+        "max_clear_detour_ratio": 2.2503003091595395,
+        "edge_crossings": 13.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Edge H-g11 passes too close to unrelated node g00: distance 0.64.",
+        "Visual review score=3.0: The 3 by 4 grid is visually distorted: g01 is far above the top row while g02 is much lower, so the intended row/column structure is hard to read.",
+        "Visual review score=3.0: Several hub edges create avoidable tangles through the grid area, especially H-g11 and H-g12, which cross near central grid edges and make the hub connections hard to follow.",
+        "Visual review score=3.0: The routed teleport g01-g22 takes a large left-side detour and then runs across the lower part of the drawing close to bottom-row nodes, adding clutter around g20, g21, and g22.",
+        "Visual review score=3.0: The long outer teleport routes g00-g23 and g03-g20 create large rectangular loops around the graph and crowd the bottom/side boundary, making the drawing look chaotic rather than cleanly layered.",
+        "Visual review score=3.0: There are many edge crossings in and around the central grid, including crossings near g00, g02, g11, and g12, reducing readability.",
+        "Visual review score=3.0: Unrelated long routed edges run near each other for visible segments along the outer left and bottom portions of the figure."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 3.0,
+      "visual_issues": [
+        "The intended 3 by 4 grid is visually distorted: g01 is far above the top row, and g20, g21, g22, g23 are not aligned on a clear bottom row, making the grid structure hard to read.",
+        "Several long routed teleport edges form large rectangular boxes that crowd the drawing and obscure the grid semantics.",
+        "The g01-g22 teleport route runs across the upper part of the graph and passes close to the g02/g03 area and other edges, creating avoidable tangles.",
+        "The g03-g20 teleport takes a very large outer detour around the top and left side, crossing the visual field near H-related edges and making the layout chaotic.",
+        "Edges from H to grid nodes are long and fan through the central grid area, producing many crossings and crowding around g01, g02, g11, and g12.",
+        "The bottom-right area around g22 and g23 is especially tangled, with multiple routed edges and bends close together.",
+        "Unrelated routed edges run close together for long visible segments along the right and lower outside of the graph."
+      ],
+      "visual_suggestions": [
+        "Place g00-g03, g10-g13, and g20-g23 in three straight, evenly spaced horizontal rows and four aligned columns.",
+        "Move g01 down into the top row and move g20, g21, g22, g23 onto a single bottom row to restore the grid structure.",
+        "Place H centered above the middle columns, closer to g01/g02/g11/g12, and route its six incident edges as short, separated spokes with slight bends to avoid labels.",
+        "Route g00-g23 around the outside using a clean left-bottom-right path with more margin from g20, g21, g22, and g23.",
+        "Route g03-g20 on the opposite outside perimeter, preferably top-right to left side, with enough clearance from H and top-row labels.",
+        "Route g10-g13 as a shallow arc or small-bend path just below the middle row, avoiding g20 and the bottom-row edges.",
+        "Route g01-g22 along the right outside perimeter instead of across the top interior, keeping it away from g02, g03, and H spokes."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 3.0518461625711084,
+        "min_edge_node_clearance": 0.7610000000000001,
+        "min_edge_edge_clearance": 0.006157894736842806,
+        "max_close_parallel_length": 0.9176999999999998,
+        "max_clear_detour_ratio": 2.583913059415192,
+        "edge_crossings": 16.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Edge g01-g22 appears over-routed: routed length 36.57 vs direct length 14.15, while a direct or shallow route has node clearance 1.77.",
+        "Visual review score=3.0: The intended 3 by 4 grid is visually distorted: g01 is far above the top row, and g20, g21, g22, g23 are not aligned on a clear bottom row, making the grid structure hard to read.",
+        "Visual review score=3.0: Several long routed teleport edges form large rectangular boxes that crowd the drawing and obscure the grid semantics.",
+        "Visual review score=3.0: The g01-g22 teleport route runs across the upper part of the graph and passes close to the g02/g03 area and other edges, creating avoidable tangles.",
+        "Visual review score=3.0: The g03-g20 teleport takes a very large outer detour around the top and left side, crossing the visual field near H-related edges and making the layout chaotic.",
+        "Visual review score=3.0: Edges from H to grid nodes are long and fan through the central grid area, producing many crossings and crowding around g01, g02, g11, and g12.",
+        "Visual review score=3.0: The bottom-right area around g22 and g23 is especially tangled, with multiple routed edges and bends close together.",
+        "Visual review score=3.0: Unrelated routed edges run close together for long visible segments along the right and lower outside of the graph."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": false,
+      "visual_ok": false,
+      "visual_score": null,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 2.3788081049130465,
+        "min_edge_node_clearance": 0.5378947083672186,
+        "min_edge_edge_clearance": 0.004000149592598872,
+        "max_close_parallel_length": 1.5789999999999997,
+        "max_clear_detour_ratio": 2.581017338469205,
+        "edge_crossings": 21.0
+      },
+      "next_refinement": null,
+      "errors": [
+        "Edge g03-g20 passes too close to unrelated node g11: distance 0.54.",
+        "Edge g01-g22 appears over-routed: routed length 46.94 vs direct length 18.18, while a direct or shallow route has node clearance 2.47.",
+        "!  ==> Fatal error occurred, no output PDF file produced!"
+      ]
+    }
+  ]
+}

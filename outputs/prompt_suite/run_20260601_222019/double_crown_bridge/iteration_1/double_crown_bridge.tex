@@ -1,0 +1,59 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw=black,line width=0.55pt,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  graphedge/.style={draw=black,line width=0.55pt,line cap=round,line join=round},
+  directed/.style={graphedge,-{Stealth[length=2.4mm,width=2.0mm]}},
+  undirected/.style={graphedge}
+}
+\node[graphnode] (n_L) at (-7.86,-0.03) {L};
+\node[graphnode] (n_l0) at (-4.54,1.43) {l0};
+\node[graphnode] (n_l1) at (-7.21,2.30) {l1};
+\node[graphnode] (n_l2) at (-9.49,0.68) {l2};
+\node[graphnode] (n_l3) at (-8.78,-2.60) {l3};
+\node[graphnode] (n_l4) at (-5.83,-2.08) {l4};
+\node[graphnode] (n_l5) at (-4.99,-0.77) {l5};
+\node[graphnode] (n_R) at (7.86,-0.03) {R};
+\node[graphnode] (n_r0) at (8.74,-1.34) {r0};
+\node[graphnode] (n_r1) at (6.31,-1.97) {r1};
+\node[graphnode] (n_r2) at (3.70,-0.81) {r2};
+\node[graphnode] (n_r3) at (4.47,1.75) {r3};
+\node[graphnode] (n_r4) at (7.02,2.56) {r4};
+\node[graphnode] (n_r5) at (9.49,0.76) {r5};
+\node[graphnode] (n_x0) at (-3.08,5.17) {x0};
+\node[graphnode] (n_x1) at (2.95,4.72) {x1};
+\node[graphnode] (n_y0) at (-2.33,-4.29) {y0};
+\node[graphnode] (n_y1) at (3.70,-4.29) {y1};
+\draw[undirected] (n_l0) -- (n_l1);
+\draw[undirected] (n_l1) -- (n_l2);
+\draw[undirected] (n_l2) -- (n_l3);
+\draw[undirected] (n_l3) -- (n_l4);
+\draw[undirected] (n_l4) -- (n_l5);
+\draw[undirected] (n_l5) -- (n_l0);
+\draw[undirected] (n_L) -- (n_l0);
+\draw[undirected] (n_L) -- (n_l2);
+\draw[undirected] (n_L) -- (n_l4);
+\draw[undirected] (n_r0) -- (n_r1);
+\draw[undirected] (n_r1) -- (n_r2);
+\draw[undirected] (n_r2) -- (n_r3);
+\draw[undirected] (n_r3) -- (n_r4);
+\draw[undirected] (n_r4) -- (n_r5);
+\draw[undirected] (n_r5) -- (n_r0);
+\draw[undirected] (n_R) -- (n_r1);
+\draw[undirected] (n_R) -- (n_r3);
+\draw[undirected] (n_R) -- (n_r5);
+\draw[undirected] (n_l0) -- (n_x0);
+\draw[undirected] (n_x0) -- (n_x1);
+\draw[undirected] (n_x1) -- (n_r3);
+\draw[undirected] (n_l3) -- (n_y0);
+\draw[undirected] (n_y0) -- (n_y1);
+\draw[undirected,rounded corners=5pt] (n_y1) -- (8.37,-3.08) -- (n_r0);
+\draw[undirected] (n_l1) -- (n_r4);
+\draw[undirected,rounded corners=5pt] (n_l2) -- (-8.83,3.58) -- (8.48,3.58) -- (n_r5);
+\draw[undirected] (n_l4) -- (n_r1);
+\draw[undirected] (n_l5) -- (n_r2);
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode,fill=black!10] (n_c0) at (-1.01,0.06) {$c_0$};
+\node[graphnode,fill=black!10] (n_c1) at (2.84,0.06) {$c_1$};
+\node[graphnode,fill=black!10] (n_c2) at (6.68,0.06) {$c_2$};
+\node[graphnode,fill=black!10] (n_c3) at (10.52,0.06) {$c_3$};
+\node[graphnode,fill=black!10] (n_c4) at (14.37,0.06) {$c_4$};
+\node[graphnode] (n_a0) at (0.92,-2.43) {$a_0$};
+\node[graphnode] (n_a1) at (3.61,-3.01) {$a_1$};
+\node[graphnode] (n_a2) at (5.91,-3.01) {$a_2$};
+\node[graphnode] (n_a3) at (7.45,-1.95) {$a_3$};
+\node[graphnode] (n_a4) at (8.60,-3.49) {$a_4$};
+\node[graphnode] (n_a5) at (9.76,-1.95) {$a_5$};
+\node[graphnode] (n_a6) at (12.45,-2.43) {$a_6$};
+\node[graphnode] (n_p0) at (-2.64,1.79) {$p_0$};
+\node[graphnode] (n_p1) at (5.14,2.18) {$p_1$};
+\node[graphnode] (n_p2) at (16.00,1.79) {$p_2$};
+\node[graphnode] (n_z) at (6.68,5.35) {$z$};
+\draw[undirected] (n_c0) -- (n_a0);
+\draw[undirected] (n_a0) -- (n_c1);
+\draw[undirected] (n_c1) -- (n_c0);
+\draw[undirected] (n_c1) -- (n_a1);
+\draw[undirected] (n_a1) -- (n_a2);
+\draw[undirected] (n_a2) -- (n_c2);
+\draw[undirected] (n_c2) -- (n_c1);
+\draw[undirected] (n_c2) -- (n_a3);
+\draw[undirected] (n_a3) -- (n_a4);
+\draw[undirected] (n_a4) -- (n_a5);
+\draw[undirected] (n_a5) -- (n_c3);
+\draw[undirected] (n_c3) -- (n_c2);
+\draw[undirected] (n_c3) -- (n_a6);
+\draw[undirected] (n_a6) -- (n_c4);
+\draw[undirected] (n_c4) -- (n_c3);
+\draw[undirected] (n_c0) -- (n_p0);
+\draw[undirected] (n_c2) -- (n_p1);
+\draw[undirected] (n_c4) -- (n_p2);
+\draw[undirected,rounded corners=5pt] (n_z) -- (3.34,4.59) -- (n_c1);
+\draw[undirected] (n_z) -- (n_c2);
+\draw[undirected,rounded corners=5pt] (n_z) -- (10.03,4.59) -- (n_c3);
+\end{tikzpicture}
+\end{document}

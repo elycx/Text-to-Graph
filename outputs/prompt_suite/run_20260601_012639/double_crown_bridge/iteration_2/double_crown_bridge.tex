@@ -1,0 +1,58 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_L) at (-17.25,0.03) {L};
+\node[graphnode] (n_l0) at (-13.22,0.03) {l0};
+\node[graphnode] (n_l1) at (-15.24,3.52) {l1};
+\node[graphnode] (n_l2) at (-19.26,3.52) {l2};
+\node[graphnode] (n_l3) at (-21.27,0.03) {l3};
+\node[graphnode] (n_l4) at (-19.53,-3.65) {l4};
+\node[graphnode] (n_l5) at (-15.24,-3.45) {l5};
+\node[graphnode] (n_R) at (17.25,0.03) {R};
+\node[graphnode] (n_r0) at (21.27,0.03) {r0};
+\node[graphnode] (n_r1) at (19.26,3.52) {r1};
+\node[graphnode] (n_r2) at (15.24,3.52) {r2};
+\node[graphnode] (n_r3) at (13.81,0.01) {r3};
+\node[graphnode] (n_r4) at (15.24,-3.45) {r4};
+\node[graphnode] (n_r5) at (19.53,-3.65) {r5};
+\node[graphnode] (n_x0) at (-6.35,8.20) {x0};
+\node[graphnode] (n_x1) at (6.33,7.51) {x1};
+\node[graphnode] (n_y0) at (-7.47,-9.74) {y0};
+\node[graphnode] (n_y1) at (7.47,-9.74) {y1};
+\draw[undirected] (n_l0) -- (n_l1);
+\draw[undirected] (n_l1) -- (n_l2);
+\draw[undirected] (n_l2) -- (n_l3);
+\draw[undirected] (n_l3) -- (n_l4);
+\draw[undirected] (n_l4) -- (n_l5);
+\draw[undirected] (n_l5) -- (n_l0);
+\draw[undirected] (n_L) -- (n_l0);
+\draw[undirected] (n_L) -- (n_l2);
+\draw[undirected] (n_L) -- (n_l4);
+\draw[undirected] (n_r0) -- (n_r1);
+\draw[undirected] (n_r1) -- (n_r2);
+\draw[undirected] (n_r2) -- (n_r3);
+\draw[undirected] (n_r3) -- (n_r4);
+\draw[undirected] (n_r4) -- (n_r5);
+\draw[undirected] (n_r5) -- (n_r0);
+\draw[undirected] (n_R) -- (n_r1);
+\draw[undirected] (n_R) -- (n_r3);
+\draw[undirected] (n_R) -- (n_r5);
+\draw[undirected] (n_l0) to[out=45,in=200,looseness=1.05] (n_x0);
+\draw[undirected] (n_x0) -- (n_x1);
+\draw[undirected] (n_r3) to[out=135,in=-20,looseness=1.05] (n_x1);
+\draw[undirected] (n_l3) to[out=-55,in=180,looseness=1.2] (n_y0);
+\draw[undirected] (n_y0) -- (n_y1);
+\draw[undirected] (n_r0) to[out=-125,in=0,looseness=1.2] (n_y1);
+\draw[undirected] (n_l1) to[out=0,in=180,looseness=1.18] (n_r4);
+\draw[undirected] (n_l2) to[out=25,in=155,looseness=1.55] (n_r5);
+\draw[undirected] (n_l4) to[out=-25,in=-155,looseness=1.55] (n_r1);
+\draw[undirected] (n_l5) to[out=0,in=180,looseness=1.18] (n_r2);
+\end{tikzpicture}
+\end{document}

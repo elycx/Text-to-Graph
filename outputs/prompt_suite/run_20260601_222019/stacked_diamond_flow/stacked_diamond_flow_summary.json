@@ -1,0 +1,461 @@
+{
+  "success": true,
+  "iterations": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s",
+        "label": "$s$"
+      },
+      {
+        "id": "t",
+        "label": "$t$"
+      },
+      {
+        "id": "u_0",
+        "label": "$u_{0}$"
+      },
+      {
+        "id": "v_0",
+        "label": "$v_{0}$"
+      },
+      {
+        "id": "a_0",
+        "label": "$a_{0}$"
+      },
+      {
+        "id": "b_0",
+        "label": "$b_{0}$"
+      },
+      {
+        "id": "u_1",
+        "label": "$u_{1}$"
+      },
+      {
+        "id": "v_1",
+        "label": "$v_{1}$"
+      },
+      {
+        "id": "a_1",
+        "label": "$a_{1}$"
+      },
+      {
+        "id": "b_1",
+        "label": "$b_{1}$"
+      },
+      {
+        "id": "u_2",
+        "label": "$u_{2}$"
+      },
+      {
+        "id": "v_2",
+        "label": "$v_{2}$"
+      },
+      {
+        "id": "a_2",
+        "label": "$a_{2}$"
+      },
+      {
+        "id": "b_2",
+        "label": "$b_{2}$"
+      },
+      {
+        "id": "u_3",
+        "label": "$u_{3}$"
+      },
+      {
+        "id": "v_3",
+        "label": "$v_{3}$"
+      },
+      {
+        "id": "a_3",
+        "label": "$a_{3}$"
+      },
+      {
+        "id": "b_3",
+        "label": "$b_{3}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "u_0",
+        "target": "a_0",
+        "directed": true
+      },
+      {
+        "source": "u_0",
+        "target": "b_0",
+        "directed": true
+      },
+      {
+        "source": "a_0",
+        "target": "v_0",
+        "directed": true
+      },
+      {
+        "source": "b_0",
+        "target": "v_0",
+        "directed": true
+      },
+      {
+        "source": "u_1",
+        "target": "a_1",
+        "directed": true
+      },
+      {
+        "source": "u_1",
+        "target": "b_1",
+        "directed": true
+      },
+      {
+        "source": "a_1",
+        "target": "v_1",
+        "directed": true
+      },
+      {
+        "source": "b_1",
+        "target": "v_1",
+        "directed": true
+      },
+      {
+        "source": "u_2",
+        "target": "a_2",
+        "directed": true
+      },
+      {
+        "source": "u_2",
+        "target": "b_2",
+        "directed": true
+      },
+      {
+        "source": "a_2",
+        "target": "v_2",
+        "directed": true
+      },
+      {
+        "source": "b_2",
+        "target": "v_2",
+        "directed": true
+      },
+      {
+        "source": "u_3",
+        "target": "a_3",
+        "directed": true
+      },
+      {
+        "source": "u_3",
+        "target": "b_3",
+        "directed": true
+      },
+      {
+        "source": "a_3",
+        "target": "v_3",
+        "directed": true
+      },
+      {
+        "source": "b_3",
+        "target": "v_3",
+        "directed": true
+      },
+      {
+        "source": "s",
+        "target": "u_0",
+        "directed": true
+      },
+      {
+        "source": "v_0",
+        "target": "u_1",
+        "directed": true
+      },
+      {
+        "source": "v_1",
+        "target": "u_2",
+        "directed": true
+      },
+      {
+        "source": "v_2",
+        "target": "u_3",
+        "directed": true
+      },
+      {
+        "source": "v_3",
+        "target": "t",
+        "directed": true
+      },
+      {
+        "source": "a_0",
+        "target": "b_1",
+        "directed": true
+      },
+      {
+        "source": "b_0",
+        "target": "a_1",
+        "directed": true
+      },
+      {
+        "source": "a_1",
+        "target": "b_2",
+        "directed": true
+      },
+      {
+        "source": "b_1",
+        "target": "a_2",
+        "directed": true
+      },
+      {
+        "source": "a_2",
+        "target": "b_3",
+        "directed": true
+      },
+      {
+        "source": "b_2",
+        "target": "a_3",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s": [
+          -12.0,
+          1.7
+        ],
+        "t": [
+          12.0,
+          -1.7
+        ],
+        "u_0": [
+          -8.1,
+          1.24
+        ],
+        "v_0": [
+          -8.1,
+          -1.7
+        ],
+        "a_0": [
+          -9.788,
+          -2.778
+        ],
+        "b_0": [
+          -6.739,
+          2.213
+        ],
+        "u_1": [
+          -2.7,
+          1.24
+        ],
+        "v_1": [
+          -2.7,
+          -1.7
+        ],
+        "a_1": [
+          -5.018,
+          -3.713
+        ],
+        "b_1": [
+          -1.339,
+          2.213
+        ],
+        "u_2": [
+          2.7,
+          1.24
+        ],
+        "v_2": [
+          2.7,
+          -1.7
+        ],
+        "a_2": [
+          0.942,
+          -3.713
+        ],
+        "b_2": [
+          4.061,
+          2.213
+        ],
+        "u_3": [
+          8.1,
+          1.24
+        ],
+        "v_3": [
+          8.1,
+          -1.7
+        ],
+        "a_3": [
+          6.451,
+          -2.841
+        ],
+        "b_3": [
+          9.771,
+          2.22
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {
+        "directed:a_0:b_1": [
+          [
+            -9.55,
+            3.35
+          ],
+          [
+            -1.25,
+            3.35
+          ]
+        ],
+        "directed:a_1:b_2": [
+          [
+            -4.15,
+            4.15
+          ],
+          [
+            4.15,
+            4.15
+          ]
+        ],
+        "directed:a_2:b_3": [
+          [
+            1.25,
+            3.35
+          ],
+          [
+            9.55,
+            3.35
+          ]
+        ],
+        "directed:b_0:a_1": [
+          [
+            -4.15,
+            -3.35
+          ]
+        ],
+        "directed:b_1:a_2": [
+          [
+            1.25,
+            -4.15
+          ]
+        ],
+        "directed:b_2:a_3": [
+          [
+            6.65,
+            -3.35
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=1.87, maximum=3.38, moved_fraction=0.83.",
+      "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=1.87, maximum=3.38, moved_fraction=0.83."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.6730361621913614,
+    "min_edge_node_clearance": 0.9658231132125503,
+    "min_edge_edge_clearance": 0.03985748995081928,
+    "max_close_parallel_length": 0.6384615384615385,
+    "max_clear_detour_ratio": 1.6740507868378764,
+    "edge_crossings": 8.0
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 7.6,
+    "issues": [],
+    "suggestions": [
+      "If refining further, make the four diamond gadgets more uniform by aligning all u_k and v_k nodes in two consistent rows and spacing a_k/b_k branches evenly.",
+      "The three upper shortcut routes are readable but could be slightly staggered or drawn with smoother bends to reduce the boxy appearance."
+    ],
+    "raw_response": "{\"acceptable\":true,\"score\":7.6,\"issues\":[],\"suggestions\":[\"If refining further, make the four diamond gadgets more uniform by aligning all u_k and v_k nodes in two consistent rows and spacing a_k/b_k branches evenly.\",\"The three upper shortcut routes are readable but could be slightly staggered or drawn with smoother bends to reduce the boxy appearance.\"]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_222019\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.5,
+      "visual_issues": [
+        "The repeated diamond gadgets are not drawn evenly: several gadgets are collapsed or skewed, especially the k=2 and k=3 gadgets.",
+        "In the k=3 gadget, a_3 is nearly on the vertical u_3-v_3 chain, making the diamond structure hard to read and crowding the incident edges.",
+        "The long shortcut routes a_0->b_1 and a_2->b_3 take high detours that crowd the top row near u_1 and u_3 and make the figure less clean.",
+        "The middle region around b_1, a_2, v_1, v_2, and u_2 is tangled, with multiple crossings and diagonal edges close together.",
+        "The layer ordering is visually inconsistent: nodes that should form repeated vertical diamond modules drift left/right unevenly, making the flow harder to follow."
+      ],
+      "visual_suggestions": [
+        "Place each gadget in a consistent diamond: align u_k on a common upper row, v_k on a common lower row, a_k on the left branch, and b_k on the right branch for every k.",
+        "Move a_3 leftward and b_3 rightward relative to the u_3-v_3 centerline so the final diamond opens up clearly.",
+        "Separate the k=2 gadget by moving a_2 left/down slightly and b_2 right/down slightly, with u_2 centered above and v_2 centered below.",
+        "Route shortcuts a_0->b_1, a_1->b_2, and a_2->b_3 with smoother shallow arcs or consistent lanes that stay farther from node labels.",
+        "Increase horizontal spacing between consecutive gadgets to reduce crossings and edge crowding in the middle layers."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.1519800345492104,
+        "min_edge_node_clearance": 0.8029999999999999,
+        "min_edge_edge_clearance": 0.048036757443358176,
+        "max_close_parallel_length": 0.5942731379593058,
+        "max_clear_detour_ratio": 1.4831809584364202,
+        "edge_crossings": 4.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=5.5: The repeated diamond gadgets are not drawn evenly: several gadgets are collapsed or skewed, especially the k=2 and k=3 gadgets.",
+        "Visual review score=5.5: In the k=3 gadget, a_3 is nearly on the vertical u_3-v_3 chain, making the diamond structure hard to read and crowding the incident edges.",
+        "Visual review score=5.5: The long shortcut routes a_0->b_1 and a_2->b_3 take high detours that crowd the top row near u_1 and u_3 and make the figure less clean.",
+        "Visual review score=5.5: The middle region around b_1, a_2, v_1, v_2, and u_2 is tangled, with multiple crossings and diagonal edges close together.",
+        "Visual review score=5.5: The layer ordering is visually inconsistent: nodes that should form repeated vertical diamond modules drift left/right unevenly, making the flow harder to follow."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 7.6,
+      "visual_issues": [],
+      "visual_suggestions": [
+        "If refining further, make the four diamond gadgets more uniform by aligning all u_k and v_k nodes in two consistent rows and spacing a_k/b_k branches evenly.",
+        "The three upper shortcut routes are readable but could be slightly staggered or drawn with smoother bends to reduce the boxy appearance."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.6730361621913614,
+        "min_edge_node_clearance": 0.9658231132125503,
+        "min_edge_edge_clearance": 0.03985748995081928,
+        "max_close_parallel_length": 0.6384615384615385,
+        "max_clear_detour_ratio": 1.6740507868378764,
+        "edge_crossings": 8.0
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ],
+  "id": "stacked_diamond_flow",
+  "title": "Stacked Diamond Flow",
+  "prompt": "Draw a directed artificial flow graph built from four stacked diamond gadgets. Start at s and end at t. For each k=0,1,2,3 create top node uk, bottom node vk, left branch ak, and right branch bk. Add directed edges uk->ak, uk->bk, ak->vk, bk->vk for every k. Chain them with s->u0, v0->u1, v1->u2, v2->u3, v3->t. Add cross-layer directed shortcuts a0->b1, b0->a1, a1->b2, b1->a2, a2->b3, b2->a3. Make layers vertical from left to right.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\stacked_diamond_flow"
+}

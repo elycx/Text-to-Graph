@@ -1,0 +1,175 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "v000",
+        "label": "000"
+      },
+      {
+        "id": "v001",
+        "label": "001"
+      },
+      {
+        "id": "v010",
+        "label": "010"
+      },
+      {
+        "id": "v011",
+        "label": "011"
+      },
+      {
+        "id": "v100",
+        "label": "100"
+      },
+      {
+        "id": "v101",
+        "label": "101"
+      },
+      {
+        "id": "v110",
+        "label": "110"
+      },
+      {
+        "id": "v111",
+        "label": "111"
+      }
+    ],
+    "edges": [
+      {
+        "source": "v000",
+        "target": "v001",
+        "directed": false
+      },
+      {
+        "source": "v000",
+        "target": "v010",
+        "directed": false
+      },
+      {
+        "source": "v000",
+        "target": "v100",
+        "directed": false
+      },
+      {
+        "source": "v001",
+        "target": "v011",
+        "directed": false
+      },
+      {
+        "source": "v001",
+        "target": "v101",
+        "directed": false
+      },
+      {
+        "source": "v010",
+        "target": "v011",
+        "directed": false
+      },
+      {
+        "source": "v010",
+        "target": "v110",
+        "directed": false
+      },
+      {
+        "source": "v011",
+        "target": "v111",
+        "directed": false
+      },
+      {
+        "source": "v100",
+        "target": "v101",
+        "directed": false
+      },
+      {
+        "source": "v100",
+        "target": "v110",
+        "directed": false
+      },
+      {
+        "source": "v101",
+        "target": "v111",
+        "directed": false
+      },
+      {
+        "source": "v110",
+        "target": "v111",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "v000": [
+          0.0,
+          0.0
+        ],
+        "v001": [
+          2.0,
+          0.0
+        ],
+        "v010": [
+          0.0,
+          2.0
+        ],
+        "v011": [
+          2.0,
+          2.0
+        ],
+        "v100": [
+          1.0,
+          0.8
+        ],
+        "v101": [
+          3.0,
+          0.8
+        ],
+        "v110": [
+          1.0,
+          2.8
+        ],
+        "v111": [
+          3.0,
+          2.8
+        ]
+      },
+      "edge_options": {},
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\cube_q3\\iteration_0\\cube_q3.tex",
+    "pdf_path": "outputs\\prompt_suite\\cube_q3\\iteration_0\\cube_q3.pdf",
+    "png_path": "outputs\\prompt_suite\\cube_q3\\iteration_0\\cube_q3.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "L",
+        "label": "L"
+      },
+      {
+        "id": "l0",
+        "label": "$l_{0}$"
+      },
+      {
+        "id": "l1",
+        "label": "$l_{1}$"
+      },
+      {
+        "id": "l2",
+        "label": "$l_{2}$"
+      },
+      {
+        "id": "l3",
+        "label": "$l_{3}$"
+      },
+      {
+        "id": "l4",
+        "label": "$l_{4}$"
+      },
+      {
+        "id": "l5",
+        "label": "$l_{5}$"
+      },
+      {
+        "id": "R",
+        "label": "R"
+      },
+      {
+        "id": "r0",
+        "label": "$r_{0}$"
+      },
+      {
+        "id": "r1",
+        "label": "$r_{1}$"
+      },
+      {
+        "id": "r2",
+        "label": "$r_{2}$"
+      },
+      {
+        "id": "r3",
+        "label": "$r_{3}$"
+      },
+      {
+        "id": "r4",
+        "label": "$r_{4}$"
+      },
+      {
+        "id": "r5",
+        "label": "$r_{5}$"
+      },
+      {
+        "id": "x0",
+        "label": "$x_{0}$"
+      },
+      {
+        "id": "x1",
+        "label": "$x_{1}$"
+      },
+      {
+        "id": "y0",
+        "label": "$y_{0}$"
+      },
+      {
+        "id": "y1",
+        "label": "$y_{1}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "l0",
+        "target": "l1",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "l3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "l5",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "r0",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "r1",
+        "target": "r2",
+        "directed": false
+      },
+      {
+        "source": "r2",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "r3",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "r4",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "r5",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l0",
+        "target": "x0",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x1",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "y0",
+        "directed": false
+      },
+      {
+        "source": "y0",
+        "target": "y1",
+        "directed": false
+      },
+      {
+        "source": "y1",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "r2",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "L": [
+          -4.572,
+          0.009
+        ],
+        "l0": [
+          -1.912,
+          0.393
+        ],
+        "l1": [
+          -3.346,
+          1.509
+        ],
+        "l2": [
+          -6.347,
+          1.033
+        ],
+        "l3": [
+          -6.347,
+          -1.015
+        ],
+        "l4": [
+          -4.572,
+          -2.039
+        ],
+        "l5": [
+          -2.797,
+          -1.015
+        ],
+        "R": [
+          4.531,
+          0.009
+        ],
+        "r0": [
+          6.306,
+          -1.015
+        ],
+        "r1": [
+          4.053,
+          -1.903
+        ],
+        "r2": [
+          1.657,
+          -0.362
+        ],
+        "r3": [
+          2.756,
+          1.033
+        ],
+        "r4": [
+          4.531,
+          2.057
+        ],
+        "r5": [
+          6.306,
+          1.033
+        ],
+        "x0": [
+          -1.156,
+          2.828
+        ],
+        "x1": [
+          2.371,
+          2.828
+        ],
+        "y0": [
+          -2.296,
+          -3.177
+        ],
+        "y1": [
+          3.495,
+          -3.36
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {
+        "undirected:l2:r5": [
+          [
+            -6.278,
+            3.991
+          ],
+          [
+            6.237,
+            3.991
+          ]
+        ],
+        "undirected:l3:y0": [
+          [
+            -5.994,
+            -3.12
+          ]
+        ],
+        "undirected:y1:r0": []
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=0.94, maximum=2.07, moved_fraction=0.56.",
+      "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=0.94, maximum=2.07, moved_fraction=0.56."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.5601964619880406,
+    "min_edge_node_clearance": 0.7613611503674838,
+    "min_edge_edge_clearance": 0.010353228912873111,
+    "max_close_parallel_length": 0.631683125625499,
+    "max_clear_detour_ratio": 1.4567777850770303,
+    "edge_crossings": 2.0,
+    "drawing_width": 12.653,
+    "drawing_height": 6.188,
+    "canvas_area_per_node": 4.349820222222222,
+    "mean_edge_path_length": 3.620286631079663
+  },
+  "visual_review": {
+    "acceptable": false,
+    "score": 6.2,
+    "issues": [
+      "The edge l2-r5 takes a very large detour around the top of the drawing, creating excessive empty space and making the layout less compact than necessary.",
+      "The lower bridge l3-y0-y1-r0 is routed far below the two crowns, producing a long bottom sweep and excessive vertical spread.",
+      "The twist edges l1-r4 and l4-r1 run as long nearly horizontal chords across the whole drawing, visually crowding the central bridge area and weakening the intended two-circular-cluster structure.",
+      "The left crown is noticeably distorted: l0 is pulled inward/rightward and x0 is placed above it in a way that makes the l0-x0 edge cross the upper inter-crown edge region awkwardly."
+    ],
+    "suggestions": [
+      "Route l2-r5 as a clearer upper inter-crown arc with a smaller bend above the crowns rather than around the canvas border.",
+      "Move y0 and y1 upward closer to the gap between the crowns, and route l3-y0-y1-r0 as a lower bridge just below the clusters instead of near the bottom margin.",
+      "Place the left rim nodes more evenly on a circle around L, with l0 on the right side of the left crown and l3 on the lower-left, preserving crown symmetry.",
+      "Place x0 and x1 in the upper central gap between the crowns, aligned with the l0-x0-x1-r3 bridge, while keeping them clear of the l1-r4 twist edge.",
+      "Consider separating the four twist matching edges into gently curved upper/lower bands so they do not form long crowded straight chords through the middle."
+    ],
+    "raw_response": "{\"acceptable\":false,\"score\":6.2,\"issues\":[\"The edge l2-r5 takes a very large detour around the top of the drawing, creating excessive empty space and making the layout less compact than necessary.\",\"The lower bridge l3-y0-y1-r0 is routed far below the two crowns, producing a long bottom sweep and excessive vertical spread.\",\"The twist edges l1-r4 and l4-r1 run as long nearly horizontal chords across the whole drawing, visually crowding the central bridge area and weakening the intended two-circular-cluster structure.\",\"The left crown is noticeably distorted: l0 is pulled inward/rightward and x0 is placed above it in a way that makes the l0-x0 edge cross the upper inter-crown edge region awkwardly.\"],\"suggestions\":[\"Route l2-r5 as a clearer upper inter-crown arc with a smaller bend above the crowns rather than around the canvas border.\",\"Move y0 and y1 upward closer to the gap between the crowns, and route l3-y0-y1-r0 as a lower bridge just below the clusters instead of near the bottom margin.\",\"Place the left rim nodes more evenly on a circle around L, with l0 on the right side of the left crown and l3 on the lower-left, preserving crown symmetry.\",\"Place x0 and x1 in the upper central gap between the crowns, aligned with the l0-x0-x1-r3 bridge, while keeping them clear of the l1-r4 twist edge.\",\"Consider separating the four twist matching edges into gently curved upper/lower bands so they do not form long crowded straight chords through the middle.\"]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\comparison_suite\\run_20260603_232559\\double_crown_bridge\\workflow\\iteration_3\\double_crown_bridge.tex",
+    "pdf_path": "outputs\\comparison_suite\\run_20260603_232559\\double_crown_bridge\\workflow\\iteration_3\\double_crown_bridge.pdf",
+    "png_path": "outputs\\comparison_suite\\run_20260603_232559\\double_crown_bridge\\workflow\\iteration_3\\double_crown_bridge.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "The routed edge l4-r1 takes a long bottom detour and its right vertical segment runs through the right crown area, crossing/crowding the r5-r0 edge and passing too close to r5/r0.",
+        "The routed edge l2-r5 makes an excessive top-and-right detour around the whole graph, creating a very long edge and visually enclosing the drawing instead of using a clearer inter-crown route.",
+        "The two bridge paths are poorly balanced: y0 and y1 are placed far below the crowns, producing a large empty gap and very long l3-y0-y1-r0 edges.",
+        "Several inter-crown edges create a tangled central/right region, especially around x1, r3, r4, r5, and the crossing twist edges.",
+        "The right crown is less readable because r0 is far outside the circular cluster while r1, r5, and R are crowded by long routed and matching edges."
+      ],
+      "visual_suggestions": [
+        "Draw the two crowns as more regular circular clusters with r0 returned to the right crown cycle rather than far to the right.",
+        "Reroute l4-r1 as a shorter lower-middle curve between the crowns, avoiding the r5/r0 area and the right crown interior.",
+        "Reroute l2-r5 as a shorter upper-middle curve rather than a large rectangular detour around the canvas.",
+        "Move y0 and y1 upward closer to the lower gap between the crowns to make the l3-y0-y1-r0 bridge compact while keeping it below the twist edges.",
+        "Space the inter-crown matching edges in separated bands or gentle arcs so they do not bunch around x1/r3/r4/r5."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.3233461376374662,
+        "min_edge_node_clearance": 0.7617867744725926,
+        "min_edge_edge_clearance": 0.02408689873974466,
+        "max_close_parallel_length": 1.2780051022668564,
+        "max_clear_detour_ratio": 1.7920707681614014,
+        "edge_crossings": 6.0,
+        "drawing_width": 16.742,
+        "drawing_height": 7.893,
+        "canvas_area_per_node": 7.341367000000001,
+        "mean_edge_path_length": 4.549781636374428
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=4.0: The routed edge l4-r1 takes a long bottom detour and its right vertical segment runs through the right crown area, crossing/crowding the r5-r0 edge and passing too close to r5/r0.",
+        "Visual review score=4.0: The routed edge l2-r5 makes an excessive top-and-right detour around the whole graph, creating a very long edge and visually enclosing the drawing instead of using a clearer inter-crown route.",
+        "Visual review score=4.0: The two bridge paths are poorly balanced: y0 and y1 are placed far below the crowns, producing a large empty gap and very long l3-y0-y1-r0 edges.",
+        "Visual review score=4.0: Several inter-crown edges create a tangled central/right region, especially around x1, r3, r4, r5, and the crossing twist edges.",
+        "Visual review score=4.0: The right crown is less readable because r0 is far outside the circular cluster while r1, r5, and R are crowded by long routed and matching edges."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.2,
+      "visual_issues": [
+        "Several long inter-crown matching edges create avoidable tangles through the middle of the drawing, making the two-crown structure hard to read.",
+        "The long curved edge from l2 to r5 passes very close to the r4 node/label area, crowding a non-incident node.",
+        "The routed edge from l4 to r1 takes a long low detour and then bends upward through the right crown, crowding the r5/R/r1 region.",
+        "The lower bridge path l3-y0-y1-r0 is excessively spread out, with y0 and y1 far below the crowns and a long diagonal y1-r0 edge crossing back into the right crown.",
+        "The left and right crown rims are uneven and not drawn as clear circular clusters; repeated six-node crown structure is visually distorted.",
+        "Unrelated inter-crown edges run close together or cross in the central area, reducing readability."
+      ],
+      "visual_suggestions": [
+        "Arrange each crown as a more even hexagonal or circular cluster around L and R, keeping rim nodes evenly spaced.",
+        "Move x0,x1 and y0,y1 closer to the horizontal gap between the crowns so the two bridge paths are shorter and more symmetric.",
+        "Reroute l2-r5 and l1-r4 with clearer separated arcs, keeping them away from r4 and other right-crown labels.",
+        "Replace the long low detour for l4-r1 with a shorter, cleaner route through the central gap or a clearly separated outer arc.",
+        "Compact the vertical spread by moving y0 and y1 upward while preserving clearance from the lower crown edges.",
+        "Separate the central matching edges into distinct upper/middle/lower bands to avoid close parallel runs and crowded crossings."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.4036017953821511,
+        "min_edge_node_clearance": 0.7615062885791366,
+        "min_edge_edge_clearance": 0.020407418004830993,
+        "max_close_parallel_length": 1.1242910101509893,
+        "max_clear_detour_ratio": 1.0997022655593123,
+        "edge_crossings": 10.0,
+        "drawing_width": 19.802999999999997,
+        "drawing_height": 9.391,
+        "canvas_area_per_node": 10.331665166666665,
+        "mean_edge_path_length": 5.297891389107088
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=4.2: Several long inter-crown matching edges create avoidable tangles through the middle of the drawing, making the two-crown structure hard to read.",
+        "Visual review score=4.2: The long curved edge from l2 to r5 passes very close to the r4 node/label area, crowding a non-incident node.",
+        "Visual review score=4.2: The routed edge from l4 to r1 takes a long low detour and then bends upward through the right crown, crowding the r5/R/r1 region.",
+        "Visual review score=4.2: The lower bridge path l3-y0-y1-r0 is excessively spread out, with y0 and y1 far below the crowns and a long diagonal y1-r0 edge crossing back into the right crown.",
+        "Visual review score=4.2: The left and right crown rims are uneven and not drawn as clear circular clusters; repeated six-node crown structure is visually distorted.",
+        "Visual review score=4.2: Unrelated inter-crown edges run close together or cross in the central area, reducing readability."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.2,
+      "visual_issues": [
+        "The edge l2-r5 takes an excessive detour around the outer border of the drawing, creating a large enclosing loop and making the layout look artificial and overly spread out.",
+        "The edge l3-y0 also takes an unnecessarily long routed path far to the lower-left before reaching y0, instead of using a shorter clear route below the left crown.",
+        "The two crowns are not drawn as balanced circular clusters: the right rim is especially uneven, with r5 pushed far to the right and r0 low-right, making the crown shape distorted.",
+        "Several inter-crown matching edges are long and nearly horizontal through the middle, contributing to a tangled band between the two clusters.",
+        "The drawing uses a large amount of empty canvas due to the outer detour routes, increasing average edge length without improving readability."
+      ],
+      "visual_suggestions": [
+        "Reroute l2-r5 as a shorter upper arc between the crowns, staying above the nodes but not around the full canvas border.",
+        "Reroute l3-y0 with a direct or single-bend path below the left crown, avoiding the far-left/bottom detour.",
+        "Reposition the right rim nodes r0-r5 more evenly around R to restore a circular crown, keeping r5 closer to the right cluster.",
+        "Keep x0-x1 as the upper bridge and y0-y1 as the lower bridge, but place them closer to the gap between the crowns to reduce edge lengths.",
+        "Slightly compact the two crowns inward while preserving clearance, so the inter-crown matching edges are shorter and easier to follow."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.470005442166797,
+        "min_edge_node_clearance": 0.9240660726342146,
+        "min_edge_edge_clearance": 0.15224621996581686,
+        "max_close_parallel_length": 0.582445970577508,
+        "max_clear_detour_ratio": 1.4982856168126746,
+        "edge_crossings": 2.0,
+        "drawing_width": 14.843,
+        "drawing_height": 7.196,
+        "canvas_area_per_node": 5.933901555555555,
+        "mean_edge_path_length": 4.139734128050162
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=5.2: The edge l2-r5 takes an excessive detour around the outer border of the drawing, creating a large enclosing loop and making the layout look artificial and overly spread out.",
+        "Visual review score=5.2: The edge l3-y0 also takes an unnecessarily long routed path far to the lower-left before reaching y0, instead of using a shorter clear route below the left crown.",
+        "Visual review score=5.2: The two crowns are not drawn as balanced circular clusters: the right rim is especially uneven, with r5 pushed far to the right and r0 low-right, making the crown shape distorted.",
+        "Visual review score=5.2: Several inter-crown matching edges are long and nearly horizontal through the middle, contributing to a tangled band between the two clusters.",
+        "Visual review score=5.2: The drawing uses a large amount of empty canvas due to the outer detour routes, increasing average edge length without improving readability."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.2,
+      "visual_issues": [
+        "The edge l2-r5 takes a very large detour around the top of the drawing, creating excessive empty space and making the layout less compact than necessary.",
+        "The lower bridge l3-y0-y1-r0 is routed far below the two crowns, producing a long bottom sweep and excessive vertical spread.",
+        "The twist edges l1-r4 and l4-r1 run as long nearly horizontal chords across the whole drawing, visually crowding the central bridge area and weakening the intended two-circular-cluster structure.",
+        "The left crown is noticeably distorted: l0 is pulled inward/rightward and x0 is placed above it in a way that makes the l0-x0 edge cross the upper inter-crown edge region awkwardly."
+      ],
+      "visual_suggestions": [
+        "Route l2-r5 as a clearer upper inter-crown arc with a smaller bend above the crowns rather than around the canvas border.",
+        "Move y0 and y1 upward closer to the gap between the crowns, and route l3-y0-y1-r0 as a lower bridge just below the clusters instead of near the bottom margin.",
+        "Place the left rim nodes more evenly on a circle around L, with l0 on the right side of the left crown and l3 on the lower-left, preserving crown symmetry.",
+        "Place x0 and x1 in the upper central gap between the crowns, aligned with the l0-x0-x1-r3 bridge, while keeping them clear of the l1-r4 twist edge.",
+        "Consider separating the four twist matching edges into gently curved upper/lower bands so they do not form long crowded straight chords through the middle."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.5601964619880406,
+        "min_edge_node_clearance": 0.7613611503674838,
+        "min_edge_edge_clearance": 0.010353228912873111,
+        "max_close_parallel_length": 0.631683125625499,
+        "max_clear_detour_ratio": 1.4567777850770303,
+        "edge_crossings": 2.0,
+        "drawing_width": 12.653,
+        "drawing_height": 6.188,
+        "canvas_area_per_node": 4.349820222222222,
+        "mean_edge_path_length": 3.620286631079663
+      },
+      "next_refinement": null,
+      "errors": [
+        "Visual review score=6.2: The edge l2-r5 takes a very large detour around the top of the drawing, creating excessive empty space and making the layout less compact than necessary.",
+        "Visual review score=6.2: The lower bridge l3-y0-y1-r0 is routed far below the two crowns, producing a long bottom sweep and excessive vertical spread.",
+        "Visual review score=6.2: The twist edges l1-r4 and l4-r1 run as long nearly horizontal chords across the whole drawing, visually crowding the central bridge area and weakening the intended two-circular-cluster structure.",
+        "Visual review score=6.2: The left crown is noticeably distorted: l0 is pulled inward/rightward and x0 is placed above it in a way that makes the l0-x0 edge cross the upper inter-crown edge region awkwardly."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw=black,line width=0.55pt,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  graphedge/.style={draw=black,line width=0.55pt,line cap=round,line join=round},
+  directed/.style={graphedge,-{Stealth[length=2.4mm,width=2.0mm]}},
+  undirected/.style={graphedge}
+}
+\node[graphnode] (n_g00) at (-11.86,1.81) {$g_{00}$};
+\node[graphnode] (n_g01) at (-5.36,4.63) {$g_{01}$};
+\node[graphnode] (n_g02) at (3.92,5.41) {$g_{02}$};
+\node[graphnode] (n_g03) at (13.32,5.62) {$g_{03}$};
+\node[graphnode] (n_g10) at (-11.92,-0.57) {$g_{10}$};
+\node[graphnode] (n_g11) at (-4.03,-0.57) {$g_{11}$};
+\node[graphnode] (n_g12) at (2.60,-0.30) {$g_{12}$};
+\node[graphnode] (n_g13) at (11.76,-0.57) {$g_{13}$};
+\node[graphnode] (n_g20) at (-11.92,-3.57) {$g_{20}$};
+\node[graphnode] (n_g21) at (-4.03,-7.06) {$g_{21}$};
+\node[graphnode] (n_g22) at (6.77,-8.92) {$g_{22}$};
+\node[graphnode] (n_g23) at (12.07,-5.15) {$g_{23}$};
+\node[graphnode] (n_H) at (-0.66,12.89) {H};
+\draw[undirected] (n_g00) -- (n_g01);
+\draw[undirected] (n_g01) -- (n_g02);
+\draw[undirected] (n_g02) -- (n_g03);
+\draw[undirected] (n_g10) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g13);
+\draw[undirected] (n_g20) -- (n_g21);
+\draw[undirected] (n_g21) -- (n_g22);
+\draw[undirected] (n_g22) -- (n_g23);
+\draw[undirected] (n_g00) -- (n_g10);
+\draw[undirected] (n_g10) -- (n_g20);
+\draw[undirected] (n_g01) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g21);
+\draw[undirected] (n_g02) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g22);
+\draw[undirected] (n_g03) -- (n_g13);
+\draw[undirected] (n_g13) -- (n_g23);
+\draw[undirected] (n_H) -- (n_g01);
+\draw[undirected] (n_H) -- (n_g02);
+\draw[undirected] (n_H) to[{'bend': 16}] (n_g11);
+\draw[undirected] (n_H) to[{'bend': -16}] (n_g12);
+\draw[undirected,rounded corners=5pt] (n_H) -- (-6.94,9.23) -- (-13.45,1.73) -- (-13.45,-6.85) -- (-4.32,-6.85) -- (n_g21);
+\draw[undirected,rounded corners=5pt] (n_H) -- (6.79,9.23) -- (13.29,1.73) -- (13.29,-6.85) -- (4.17,-6.85) -- (n_g22);
+\draw[undirected,rounded corners=5pt] (n_g00) -- (-15.98,4.08) -- (-15.98,-10.10) -- (15.82,-10.10) -- (n_g23);
+\draw[undirected,rounded corners=5pt] (n_g03) -- (13.83,4.08) -- (13.83,8.14) -- (n_g20);
+\draw[undirected,rounded corners=5pt] (n_g10) -- (-8.39,-2.52) -- (8.23,-2.52) -- (n_g13);
+\draw[undirected,rounded corners=5pt] (n_g01) -- (16.00,3.45) -- (16.00,-8.30) -- (4.53,-8.30) -- (n_g22);
+\end{tikzpicture}
+\end{document}

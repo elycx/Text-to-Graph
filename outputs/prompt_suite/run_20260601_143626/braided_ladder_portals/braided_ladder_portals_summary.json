@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "error": "GPT-5 request failed: GPT-5 API HTTP 500: {\"error\":{\"message\":\"fetch failed: 无法连接 Codex 后端 (chatgpt.com)。请检查网络/VPN，并确认已添加至少一个 Codex 账号。详见配置页或 README。\",\"type\":\"proxy_error\",\"code\":\"internal_error\"}}",
+  "history": [],
+  "id": "braided_ladder_portals",
+  "title": "Braided Ladder With Portals",
+  "prompt": "Draw an artificial undirected graph called a braided ladder with portals. There are two horizontal rails A0-A1-A2-A3-A4-A5 and B0-B1-B2-B3-B4-B5. Add vertical rungs Ai-Bi for i=0..5. Add diagonal braid edges A0-B1, B1-A2, A2-B3, B3-A4, A4-B5, and also B0-A1, A1-B2, B2-A3, A3-B4, B4-A5. Add portal nodes S and T, with S connected to A0 and B0, and T connected to A5 and B5. Make it readable and symmetric.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_143626\\braided_ladder_portals"
+}

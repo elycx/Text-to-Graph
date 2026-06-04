@@ -1,0 +1,448 @@
+{
+  "summary": {
+    "node_accuracy": 1.0,
+    "edge_accuracy": 1.0,
+    "direction_accuracy": 1.0,
+    "node_exact_rate": 1.0,
+    "edge_exact_rate": 1.0,
+    "graph_exact_rate": 1.0,
+    "workflow_success_rate": 1.0,
+    "compilation_success_rate": 1.0
+  },
+  "cases": [
+    {
+      "id": "proposal_demo",
+      "description": "There are four nodes A, B, C, and D. A is connected to B and C. C points to D.",
+      "success": true,
+      "compile_success": true,
+      "warnings": [],
+      "comparison": {
+        "node_accuracy": 1.0,
+        "edge_accuracy": 1.0,
+        "direction_accuracy": 1.0,
+        "node_exact": true,
+        "edge_exact": true,
+        "graph_exact": true,
+        "expected_nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "predicted_nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "expected_edges": [
+          [
+            "directed",
+            "C",
+            "D"
+          ],
+          [
+            "undirected",
+            "A",
+            "B"
+          ],
+          [
+            "undirected",
+            "A",
+            "C"
+          ]
+        ],
+        "predicted_edges": [
+          [
+            "directed",
+            "C",
+            "D"
+          ],
+          [
+            "undirected",
+            "A",
+            "B"
+          ],
+          [
+            "undirected",
+            "A",
+            "C"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "directed_chain",
+      "description": "Create a directed chain A, B, C, D.",
+      "success": true,
+      "compile_success": true,
+      "warnings": [],
+      "comparison": {
+        "node_accuracy": 1.0,
+        "edge_accuracy": 1.0,
+        "direction_accuracy": 1.0,
+        "node_exact": true,
+        "edge_exact": true,
+        "graph_exact": true,
+        "expected_nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "predicted_nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "expected_edges": [
+          [
+            "directed",
+            "A",
+            "B"
+          ],
+          [
+            "directed",
+            "B",
+            "C"
+          ],
+          [
+            "directed",
+            "C",
+            "D"
+          ]
+        ],
+        "predicted_edges": [
+          [
+            "directed",
+            "A",
+            "B"
+          ],
+          [
+            "directed",
+            "B",
+            "C"
+          ],
+          [
+            "directed",
+            "C",
+            "D"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "triangle",
+      "description": "Make a cycle with nodes A, B, and C.",
+      "success": true,
+      "compile_success": true,
+      "warnings": [],
+      "comparison": {
+        "node_accuracy": 1.0,
+        "edge_accuracy": 1.0,
+        "direction_accuracy": 1.0,
+        "node_exact": true,
+        "edge_exact": true,
+        "graph_exact": true,
+        "expected_nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "predicted_nodes": [
+          "A",
+          "B",
+          "C"
+        ],
+        "expected_edges": [
+          [
+            "undirected",
+            "A",
+            "B"
+          ],
+          [
+            "undirected",
+            "A",
+            "C"
+          ],
+          [
+            "undirected",
+            "B",
+            "C"
+          ]
+        ],
+        "predicted_edges": [
+          [
+            "undirected",
+            "A",
+            "B"
+          ],
+          [
+            "undirected",
+            "A",
+            "C"
+          ],
+          [
+            "undirected",
+            "B",
+            "C"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "complete_three",
+      "description": "Build a complete graph on X, Y, and Z.",
+      "success": true,
+      "compile_success": true,
+      "warnings": [],
+      "comparison": {
+        "node_accuracy": 1.0,
+        "edge_accuracy": 1.0,
+        "direction_accuracy": 1.0,
+        "node_exact": true,
+        "edge_exact": true,
+        "graph_exact": true,
+        "expected_nodes": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "predicted_nodes": [
+          "X",
+          "Y",
+          "Z"
+        ],
+        "expected_edges": [
+          [
+            "undirected",
+            "X",
+            "Y"
+          ],
+          [
+            "undirected",
+            "X",
+            "Z"
+          ],
+          [
+            "undirected",
+            "Y",
+            "Z"
+          ]
+        ],
+        "predicted_edges": [
+          [
+            "undirected",
+            "X",
+            "Y"
+          ],
+          [
+            "undirected",
+            "X",
+            "Z"
+          ],
+          [
+            "undirected",
+            "Y",
+            "Z"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "edge_from",
+      "description": "There is an edge from Start to End.",
+      "success": true,
+      "compile_success": true,
+      "warnings": [],
+      "comparison": {
+        "node_accuracy": 1.0,
+        "edge_accuracy": 1.0,
+        "direction_accuracy": 1.0,
+        "node_exact": true,
+        "edge_exact": true,
+        "graph_exact": true,
+        "expected_nodes": [
+          "End",
+          "Start"
+        ],
+        "predicted_nodes": [
+          "End",
+          "Start"
+        ],
+        "expected_edges": [
+          [
+            "directed",
+            "Start",
+            "End"
+          ]
+        ],
+        "predicted_edges": [
+          [
+            "directed",
+            "Start",
+            "End"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "arrow_notation",
+      "description": "Nodes P, Q, and R. P -> Q. Q -- R.",
+      "success": true,
+      "compile_success": true,
+      "warnings": [],
+      "comparison": {
+        "node_accuracy": 1.0,
+        "edge_accuracy": 1.0,
+        "direction_accuracy": 1.0,
+        "node_exact": true,
+        "edge_exact": true,
+        "graph_exact": true,
+        "expected_nodes": [
+          "P",
+          "Q",
+          "R"
+        ],
+        "predicted_nodes": [
+          "P",
+          "Q",
+          "R"
+        ],
+        "expected_edges": [
+          [
+            "directed",
+            "P",
+            "Q"
+          ],
+          [
+            "undirected",
+            "Q",
+            "R"
+          ]
+        ],
+        "predicted_edges": [
+          [
+            "directed",
+            "P",
+            "Q"
+          ],
+          [
+            "undirected",
+            "Q",
+            "R"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "manual_hint",
+      "description": "There are nodes Left and Right. Left is left of Right. Left connects to Right.",
+      "success": true,
+      "compile_success": true,
+      "warnings": [],
+      "comparison": {
+        "node_accuracy": 1.0,
+        "edge_accuracy": 1.0,
+        "direction_accuracy": 1.0,
+        "node_exact": true,
+        "edge_exact": true,
+        "graph_exact": true,
+        "expected_nodes": [
+          "Left",
+          "Right"
+        ],
+        "predicted_nodes": [
+          "Left",
+          "Right"
+        ],
+        "expected_edges": [
+          [
+            "undirected",
+            "Left",
+            "Right"
+          ]
+        ],
+        "predicted_edges": [
+          [
+            "undirected",
+            "Left",
+            "Right"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "layered_dag",
+      "description": "Use a layered layout. A points to B and C. B points to D. C points to D.",
+      "success": true,
+      "compile_success": true,
+      "warnings": [],
+      "comparison": {
+        "node_accuracy": 1.0,
+        "edge_accuracy": 1.0,
+        "direction_accuracy": 1.0,
+        "node_exact": true,
+        "edge_exact": true,
+        "graph_exact": true,
+        "expected_nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "predicted_nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "expected_edges": [
+          [
+            "directed",
+            "A",
+            "B"
+          ],
+          [
+            "directed",
+            "A",
+            "C"
+          ],
+          [
+            "directed",
+            "B",
+            "D"
+          ],
+          [
+            "directed",
+            "C",
+            "D"
+          ]
+        ],
+        "predicted_edges": [
+          [
+            "directed",
+            "A",
+            "B"
+          ],
+          [
+            "directed",
+            "A",
+            "C"
+          ],
+          [
+            "directed",
+            "B",
+            "D"
+          ],
+          [
+            "directed",
+            "C",
+            "D"
+          ]
+        ]
+      }
+    }
+  ]
+}

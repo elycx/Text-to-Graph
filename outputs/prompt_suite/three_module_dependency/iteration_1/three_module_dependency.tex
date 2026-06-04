@@ -1,0 +1,43 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_A0) at (0.00,0.00) {A0};
+\node[graphnode] (n_A1) at (1.80,1.40) {A1};
+\node[graphnode] (n_A2) at (1.61,-1.74) {A2};
+\node[graphnode] (n_A3) at (3.80,0.00) {A3};
+\node[graphnode] (n_B0) at (6.62,-0.67) {B0};
+\node[graphnode] (n_B1) at (9.40,1.40) {B1};
+\node[graphnode] (n_B2) at (8.59,-2.73) {B2};
+\node[graphnode] (n_B3) at (11.40,0.00) {B3};
+\node[graphnode] (n_C0) at (15.20,0.00) {C0};
+\node[graphnode] (n_C1) at (17.00,1.40) {C1};
+\node[graphnode] (n_C2) at (17.23,-1.80) {C2};
+\node[graphnode] (n_C3) at (19.00,0.00) {C3};
+\draw[directed] (n_A0) -- (n_A1);
+\draw[directed] (n_A0) -- (n_A2);
+\draw[directed] (n_A1) -- (n_A3);
+\draw[directed] (n_A2) -- (n_A3);
+\draw[directed] (n_B0) -- (n_B1);
+\draw[directed] (n_B0) -- (n_B2);
+\draw[directed] (n_B1) -- (n_B3);
+\draw[directed] (n_B2) -- (n_B3);
+\draw[directed] (n_C0) -- (n_C1);
+\draw[directed] (n_C0) -- (n_C2);
+\draw[directed] (n_C1) -- (n_C3);
+\draw[directed] (n_C2) -- (n_C3);
+\draw[directed] (n_A3) -- (n_B0);
+\draw[directed] (n_B3) -- (n_C0);
+\draw[directed] (n_A1) to[out=65,in=115,looseness=1.55] (n_B2);
+\draw[directed] (n_A2) to[out=-60,in=-120,looseness=1.45] (n_C1);
+\draw[directed] (n_B1) to[out=65,in=115,looseness=1.55] (n_C2);
+\draw[directed] (n_C3) to[out=210,in=-30,looseness=1.65,dashed] (n_A0);
+\draw[directed] (n_C2) to[out=210,in=-35,looseness=1.35,dashed] (n_B0);
+\end{tikzpicture}
+\end{document}

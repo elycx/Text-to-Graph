@@ -1,0 +1,261 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A0",
+        "label": "A0"
+      },
+      {
+        "id": "A1",
+        "label": "A1"
+      },
+      {
+        "id": "A2",
+        "label": "A2"
+      },
+      {
+        "id": "A3",
+        "label": "A3"
+      },
+      {
+        "id": "B0",
+        "label": "B0"
+      },
+      {
+        "id": "B1",
+        "label": "B1"
+      },
+      {
+        "id": "B2",
+        "label": "B2"
+      },
+      {
+        "id": "B3",
+        "label": "B3"
+      },
+      {
+        "id": "C0",
+        "label": "C0"
+      },
+      {
+        "id": "C1",
+        "label": "C1"
+      },
+      {
+        "id": "C2",
+        "label": "C2"
+      },
+      {
+        "id": "C3",
+        "label": "C3"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A0",
+        "target": "A1",
+        "directed": true
+      },
+      {
+        "source": "A0",
+        "target": "A2",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B1",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "B2",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C1",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "A3",
+        "target": "B0",
+        "directed": true
+      },
+      {
+        "source": "B3",
+        "target": "C0",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C3",
+        "target": "A0",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "B0",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A0": [
+          -1.059,
+          0.013
+        ],
+        "A1": [
+          0.72,
+          0.961
+        ],
+        "A2": [
+          0.345,
+          -1.274
+        ],
+        "A3": [
+          1.439,
+          -0.256
+        ],
+        "B0": [
+          4.756,
+          0.473
+        ],
+        "B1": [
+          6.196,
+          1.3
+        ],
+        "B2": [
+          6.07,
+          -1.507
+        ],
+        "B3": [
+          8.247,
+          -0.515
+        ],
+        "C0": [
+          10.886,
+          0.038
+        ],
+        "C1": [
+          11.565,
+          1.093
+        ],
+        "C2": [
+          12.047,
+          -1.274
+        ],
+        "C3": [
+          13.451,
+          0.013
+        ]
+      },
+      "edge_options": {
+        "directed:C3:A0": "out=125,in=55,looseness=1.55,dashed",
+        "directed:C2:B0": "out=-150,in=-25,looseness=1.35,dashed",
+        "directed:A2:C1": "out=10,in=190,looseness=0.9",
+        "directed:B1:C2": "out=-10,in=170,looseness=0.9"
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.254617870110258,
+    "min_edge_node_clearance": 0.7980798724091458
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_011244\\three_module_dependency\\iteration_0\\three_module_dependency.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_011244\\three_module_dependency\\iteration_0\\three_module_dependency.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_011244\\three_module_dependency\\iteration_0\\three_module_dependency.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "layout_metrics": {
+        "min_node_distance": 1.254617870110258,
+        "min_edge_node_clearance": 0.7980798724091458
+      },
+      "errors": []
+    }
+  ],
+  "id": "three_module_dependency",
+  "title": "Three-Module Dependency Network",
+  "prompt": "Draw a directed artificial dependency graph with three modules A, B, C. Module A has nodes A0,A1,A2,A3 with edges A0->A1, A0->A2, A1->A3, A2->A3. Module B has nodes B0,B1,B2,B3 with edges B0->B1, B0->B2, B1->B3, B2->B3. Module C has nodes C0,C1,C2,C3 with edges C0->C1, C0->C2, C1->C3, C2->C3. Add inter-module edges A3->B0, B3->C0, A1->B2, A2->C1, B1->C2, and feedback monitor edges C3->A0 and C2->B0 drawn as curved dashed-looking outer arcs if possible. Keep modules separated as three rounded-looking clusters using layout only.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_011244\\three_module_dependency"
+}

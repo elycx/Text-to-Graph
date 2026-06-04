@@ -1,0 +1,270 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "U0",
+        "label": "$U_0$"
+      },
+      {
+        "id": "U1",
+        "label": "$U_1$"
+      },
+      {
+        "id": "U2",
+        "label": "$U_2$"
+      },
+      {
+        "id": "V0",
+        "label": "$V_0$"
+      },
+      {
+        "id": "V1",
+        "label": "$V_1$"
+      },
+      {
+        "id": "V2",
+        "label": "$V_2$"
+      },
+      {
+        "id": "r",
+        "label": "$r$"
+      },
+      {
+        "id": "x0",
+        "label": "$x_0$"
+      },
+      {
+        "id": "x1",
+        "label": "$x_1$"
+      },
+      {
+        "id": "x00",
+        "label": "$x_{00}$"
+      },
+      {
+        "id": "x01",
+        "label": "$x_{01}$"
+      },
+      {
+        "id": "x10",
+        "label": "$x_{10}$"
+      },
+      {
+        "id": "x11",
+        "label": "$x_{11}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "U0",
+        "target": "U1",
+        "directed": false
+      },
+      {
+        "source": "U1",
+        "target": "U2",
+        "directed": false
+      },
+      {
+        "source": "U0",
+        "target": "U2",
+        "directed": false
+      },
+      {
+        "source": "V0",
+        "target": "V1",
+        "directed": false
+      },
+      {
+        "source": "V1",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "V0",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "U0",
+        "target": "V0",
+        "directed": false
+      },
+      {
+        "source": "U1",
+        "target": "V1",
+        "directed": false
+      },
+      {
+        "source": "U2",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "U0",
+        "target": "V1",
+        "directed": false
+      },
+      {
+        "source": "U1",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "U2",
+        "target": "V0",
+        "directed": false
+      },
+      {
+        "source": "U1",
+        "target": "r",
+        "directed": false
+      },
+      {
+        "source": "r",
+        "target": "x0",
+        "directed": false
+      },
+      {
+        "source": "r",
+        "target": "x1",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x00",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x01",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "x10",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "x11",
+        "directed": false
+      },
+      {
+        "source": "x01",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "x10",
+        "target": "V0",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "U0": [
+          -5.0,
+          1.5
+        ],
+        "U1": [
+          -3.0,
+          2.5
+        ],
+        "U2": [
+          -1.0,
+          1.5
+        ],
+        "V0": [
+          -5.0,
+          -1.5
+        ],
+        "V1": [
+          -3.0,
+          -2.5
+        ],
+        "V2": [
+          -1.0,
+          -1.5
+        ],
+        "r": [
+          1.2,
+          2.5
+        ],
+        "x0": [
+          3.5,
+          3.7
+        ],
+        "x1": [
+          3.646,
+          0.056
+        ],
+        "x00": [
+          5.8,
+          4.8
+        ],
+        "x01": [
+          5.8,
+          3.2
+        ],
+        "x10": [
+          5.8,
+          1.4
+        ],
+        "x11": [
+          5.8,
+          -0.2
+        ]
+      },
+      "edge_options": {},
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.5999999999999996,
+    "min_edge_node_clearance": 0.7394181982959382
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_011244\\twisted_prism_tree\\iteration_0\\twisted_prism_tree.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_011244\\twisted_prism_tree\\iteration_0\\twisted_prism_tree.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_011244\\twisted_prism_tree\\iteration_0\\twisted_prism_tree.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "layout_metrics": {
+        "min_node_distance": 1.5999999999999996,
+        "min_edge_node_clearance": 0.7394181982959382
+      },
+      "errors": []
+    }
+  ]
+}

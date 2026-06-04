@@ -1,0 +1,496 @@
+{
+  "success": true,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "L",
+        "label": "L"
+      },
+      {
+        "id": "l0",
+        "label": "l0"
+      },
+      {
+        "id": "l1",
+        "label": "l1"
+      },
+      {
+        "id": "l2",
+        "label": "l2"
+      },
+      {
+        "id": "l3",
+        "label": "l3"
+      },
+      {
+        "id": "l4",
+        "label": "l4"
+      },
+      {
+        "id": "l5",
+        "label": "l5"
+      },
+      {
+        "id": "R",
+        "label": "R"
+      },
+      {
+        "id": "r0",
+        "label": "r0"
+      },
+      {
+        "id": "r1",
+        "label": "r1"
+      },
+      {
+        "id": "r2",
+        "label": "r2"
+      },
+      {
+        "id": "r3",
+        "label": "r3"
+      },
+      {
+        "id": "r4",
+        "label": "r4"
+      },
+      {
+        "id": "r5",
+        "label": "r5"
+      },
+      {
+        "id": "x0",
+        "label": "x0"
+      },
+      {
+        "id": "x1",
+        "label": "x1"
+      },
+      {
+        "id": "y0",
+        "label": "y0"
+      },
+      {
+        "id": "y1",
+        "label": "y1"
+      }
+    ],
+    "edges": [
+      {
+        "source": "l0",
+        "target": "l1",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "l3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "l5",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "r0",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "r1",
+        "target": "r2",
+        "directed": false
+      },
+      {
+        "source": "r2",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "r3",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "r4",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "r5",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l0",
+        "target": "x0",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x1",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "y0",
+        "directed": false
+      },
+      {
+        "source": "y0",
+        "target": "y1",
+        "directed": false
+      },
+      {
+        "source": "y1",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "r2",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "L": [
+          -7.0,
+          0.0
+        ],
+        "l0": [
+          -7.0,
+          2.4
+        ],
+        "l1": [
+          -9.0,
+          1.2
+        ],
+        "l2": [
+          -9.0,
+          -1.2
+        ],
+        "l3": [
+          -7.0,
+          -2.4
+        ],
+        "l4": [
+          -5.0,
+          -1.2
+        ],
+        "l5": [
+          -5.0,
+          1.2
+        ],
+        "R": [
+          7.0,
+          0.0
+        ],
+        "r0": [
+          7.0,
+          -2.4
+        ],
+        "r1": [
+          5.0,
+          -1.2
+        ],
+        "r2": [
+          5.0,
+          1.2
+        ],
+        "r3": [
+          7.0,
+          2.4
+        ],
+        "r4": [
+          9.0,
+          1.2
+        ],
+        "r5": [
+          9.0,
+          -1.2
+        ],
+        "x0": [
+          -3.75,
+          6.763
+        ],
+        "x1": [
+          3.75,
+          6.763
+        ],
+        "y0": [
+          -3.75,
+          -6.767
+        ],
+        "y1": [
+          3.75,
+          -6.767
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {
+        "undirected:l1:r4": [
+          [
+            -10.0,
+            4.1
+          ],
+          [
+            10.0,
+            4.1
+          ]
+        ],
+        "undirected:l2:r5": [
+          [
+            -10.0,
+            -4.1
+          ],
+          [
+            10.0,
+            -4.1
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=2.01, maximum=4.59, moved_fraction=0.89.",
+      "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=2.01, maximum=4.59, moved_fraction=0.89."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 2.3323807579381204,
+    "min_edge_node_clearance": 1.6999999999999997,
+    "min_edge_edge_clearance": 0.09876666666666623,
+    "max_close_parallel_length": 0.6048486087494729,
+    "max_clear_detour_ratio": 1.4519524811150657,
+    "edge_crossings": 4.0
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\double_crown_bridge\\iteration_3\\double_crown_bridge.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\double_crown_bridge\\iteration_3\\double_crown_bridge.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_222019\\double_crown_bridge\\iteration_3\\double_crown_bridge.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The central twist matching edges create a fairly tangled bundle between the two crowns, with several crossings in the middle that make the bridge/matching structure harder to read.",
+        "The long edge from l4 to r1 runs across the entire graph and visually crowds the left crown interior before crossing other long matching edges.",
+        "The left crown is not drawn as an even circular cluster: l0 and l5 are pulled inward, making the rim cycle less clear and causing the local crown gadget to look compressed.",
+        "The bottom bridge path l3-y0-y1-r0 takes a very low wide route, visually detached from the two circular clusters and longer than necessary."
+      ],
+      "visual_suggestions": [
+        "Place l0 through l5 more evenly on a circular ring around L, with l0 near upper-right and l5 lower-right but farther from the center to clarify the 6-cycle.",
+        "Place r0 through r5 more evenly around R to match the left crown symmetry.",
+        "Separate the four twist matching edges into a cleaner fan: route l1-r4 and l2-r5 slightly above the center, and l4-r1 and l5-r2 slightly below or with small bends to avoid a dense central crossing bundle.",
+        "Move y0 and y1 upward closer to the gap between crowns, or route l3-y0-y1-r0 with a shallower bend so the lower bridge does not make such a large detour.",
+        "Keep x0 and x1 aligned as an upper bridge path, but ensure it remains clearly separated from the upper twist edges."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.4405339287916823,
+        "min_edge_node_clearance": 0.7611512235308844,
+        "min_edge_edge_clearance": 0.009472599522929214,
+        "max_close_parallel_length": 1.264876987519684,
+        "max_clear_detour_ratio": 1.1284592443550177,
+        "edge_crossings": 10.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=6.5: The central twist matching edges create a fairly tangled bundle between the two crowns, with several crossings in the middle that make the bridge/matching structure harder to read.",
+        "Visual review score=6.5: The long edge from l4 to r1 runs across the entire graph and visually crowds the left crown interior before crossing other long matching edges.",
+        "Visual review score=6.5: The left crown is not drawn as an even circular cluster: l0 and l5 are pulled inward, making the rim cycle less clear and causing the local crown gadget to look compressed.",
+        "Visual review score=6.5: The bottom bridge path l3-y0-y1-r0 takes a very low wide route, visually detached from the two circular clusters and longer than necessary."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The routed edge l2-r5 makes a large rectangular detour around the top of the entire drawing, which is visually distracting and obscures the intended two-crown structure.",
+        "The top l2-r5 route crosses the l0-x0 and x1-r3 bridge edges, adding avoidable tangles near the upper bridge path.",
+        "Several long inter-crown matching edges run nearly horizontally across the middle, making the center area feel crowded and less semantically clear."
+      ],
+      "visual_suggestions": [
+        "Reroute l2-r5 as a smoother upper inter-crown curve between the crowns, below x0/x1 if possible, rather than around the outside top boundary.",
+        "Move x0 and x1 slightly higher or route the l0-x0-x1-r3 bridge as a clean upper arc so it does not cross the l2-r5 matching edge.",
+        "Separate the four twist matching edges vertically into distinct bands: l1-r4 upper, l2-r5 upper-middle, l5-r2 middle-lower, and l4-r1 lower, with enough spacing between them.",
+        "Keep both crowns more circular and symmetric, with bridge nodes placed between the crowns rather than forcing matching edges to detour around the whole figure."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.555579634734268,
+        "min_edge_node_clearance": 0.7621507792776221,
+        "min_edge_edge_clearance": 0.012388888888888783,
+        "max_close_parallel_length": 0.6296,
+        "max_clear_detour_ratio": 1.2266906833578324,
+        "edge_crossings": 4.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=6.5: The routed edge l2-r5 makes a large rectangular detour around the top of the entire drawing, which is visually distracting and obscures the intended two-crown structure.",
+        "Visual review score=6.5: The top l2-r5 route crosses the l0-x0 and x1-r3 bridge edges, adding avoidable tangles near the upper bridge path.",
+        "Visual review score=6.5: Several long inter-crown matching edges run nearly horizontally across the middle, making the center area feel crowded and less semantically clear."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The top bridge edge x0-l0 crosses the l1-r4 matching edge very close to the left crown, crowding the l0/l1 area.",
+        "The top bridge edge x1-r3 crosses the l1-r4 matching edge near the right crown and runs close to the r4-r3 area, making that gadget harder to read.",
+        "The long matching edges l1-r4 and l2-r5 run nearly parallel across much of the drawing, creating a visually heavy band through the middle/top of the graph.",
+        "The lower routed edge l4-r1 makes a long detour beneath the graph and creates an overly wide rectangular path, while the l5-r2 edge is a long straight line through the center; the inter-crown connections feel tangled rather than organized."
+      ],
+      "visual_suggestions": [
+        "Move x0 and x1 higher or route l0-x0-x1-r3 farther above the crowns so its descending segments do not cross the l1-r4 edge near l0/l1 or r3/r4.",
+        "Separate the long twist edges vertically: route l1-r4 higher and l2-r5 slightly lower or with gentle bends so they do not form a close parallel band.",
+        "Consider routing l4-r1 closer to the lower bridge corridor or moving it inward with fewer detour bends, while keeping it clear of l5-r2.",
+        "Space the rim nodes in each crown more evenly on circular arcs so the two crown modules read as symmetric clusters before adding the inter-crown edges."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.5567568853228173,
+        "min_edge_node_clearance": 0.8018830443191906,
+        "min_edge_edge_clearance": 0.021475926777262077,
+        "max_close_parallel_length": 0.5978035203048647,
+        "max_clear_detour_ratio": 1.201103367276815,
+        "edge_crossings": 6.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=6.5: The top bridge edge x0-l0 crosses the l1-r4 matching edge very close to the left crown, crowding the l0/l1 area.",
+        "Visual review score=6.5: The top bridge edge x1-r3 crosses the l1-r4 matching edge near the right crown and runs close to the r4-r3 area, making that gadget harder to read.",
+        "Visual review score=6.5: The long matching edges l1-r4 and l2-r5 run nearly parallel across much of the drawing, creating a visually heavy band through the middle/top of the graph.",
+        "Visual review score=6.5: The lower routed edge l4-r1 makes a long detour beneath the graph and creates an overly wide rectangular path, while the l5-r2 edge is a long straight line through the center; the inter-crown connections feel tangled rather than organized."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 2.3323807579381204,
+        "min_edge_node_clearance": 1.6999999999999997,
+        "min_edge_edge_clearance": 0.09876666666666623,
+        "max_close_parallel_length": 0.6048486087494729,
+        "max_clear_detour_ratio": 1.4519524811150657,
+        "edge_crossings": 4.0
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ]
+}

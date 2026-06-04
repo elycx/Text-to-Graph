@@ -1,0 +1,344 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "L",
+        "label": "L"
+      },
+      {
+        "id": "l0",
+        "label": "l0"
+      },
+      {
+        "id": "l1",
+        "label": "l1"
+      },
+      {
+        "id": "l2",
+        "label": "l2"
+      },
+      {
+        "id": "l3",
+        "label": "l3"
+      },
+      {
+        "id": "l4",
+        "label": "l4"
+      },
+      {
+        "id": "l5",
+        "label": "l5"
+      },
+      {
+        "id": "R",
+        "label": "R"
+      },
+      {
+        "id": "r0",
+        "label": "r0"
+      },
+      {
+        "id": "r1",
+        "label": "r1"
+      },
+      {
+        "id": "r2",
+        "label": "r2"
+      },
+      {
+        "id": "r3",
+        "label": "r3"
+      },
+      {
+        "id": "r4",
+        "label": "r4"
+      },
+      {
+        "id": "r5",
+        "label": "r5"
+      },
+      {
+        "id": "x0",
+        "label": "x0"
+      },
+      {
+        "id": "x1",
+        "label": "x1"
+      },
+      {
+        "id": "y0",
+        "label": "y0"
+      },
+      {
+        "id": "y1",
+        "label": "y1"
+      }
+    ],
+    "edges": [
+      {
+        "source": "l0",
+        "target": "l1",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "l3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "l5",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "r0",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "r1",
+        "target": "r2",
+        "directed": false
+      },
+      {
+        "source": "r2",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "r3",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "r4",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "r5",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l0",
+        "target": "x0",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x1",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "y0",
+        "directed": false
+      },
+      {
+        "source": "y0",
+        "target": "y1",
+        "directed": false
+      },
+      {
+        "source": "y1",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "r2",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "L": [
+          -4.6,
+          0.048
+        ],
+        "l0": [
+          -2.875,
+          0.048
+        ],
+        "l1": [
+          -3.682,
+          1.747
+        ],
+        "l2": [
+          -5.462,
+          1.543
+        ],
+        "l3": [
+          -6.325,
+          0.048
+        ],
+        "l4": [
+          -5.698,
+          -1.671
+        ],
+        "l5": [
+          -3.576,
+          -1.8
+        ],
+        "R": [
+          4.6,
+          0.048
+        ],
+        "r0": [
+          6.325,
+          0.048
+        ],
+        "r1": [
+          5.462,
+          1.543
+        ],
+        "r2": [
+          3.682,
+          1.747
+        ],
+        "r3": [
+          2.875,
+          0.048
+        ],
+        "r4": [
+          3.576,
+          -1.8
+        ],
+        "r5": [
+          5.698,
+          -1.671
+        ],
+        "x0": [
+          -1.725,
+          1.888
+        ],
+        "x1": [
+          1.725,
+          1.888
+        ],
+        "y0": [
+          -1.38,
+          -5.127
+        ],
+        "y1": [
+          1.38,
+          -5.127
+        ]
+      },
+      "edge_options": {},
+      "node_options": {
+        "L": "fill=gray!15",
+        "R": "fill=gray!15",
+        "x0": "fill=blue!10",
+        "x1": "fill=blue!10",
+        "y0": "fill=blue!10",
+        "y1": "fill=blue!10"
+      },
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\double_crown_bridge\\iteration_0\\double_crown_bridge.tex",
+    "pdf_path": "outputs\\prompt_suite\\double_crown_bridge\\iteration_0\\double_crown_bridge.pdf",
+    "png_path": "outputs\\prompt_suite\\double_crown_bridge\\iteration_0\\double_crown_bridge.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

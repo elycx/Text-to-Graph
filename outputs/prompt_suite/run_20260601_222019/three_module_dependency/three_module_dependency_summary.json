@@ -1,0 +1,472 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A0",
+        "label": "A0"
+      },
+      {
+        "id": "A1",
+        "label": "A1"
+      },
+      {
+        "id": "A2",
+        "label": "A2"
+      },
+      {
+        "id": "A3",
+        "label": "A3"
+      },
+      {
+        "id": "B0",
+        "label": "B0"
+      },
+      {
+        "id": "B1",
+        "label": "B1"
+      },
+      {
+        "id": "B2",
+        "label": "B2"
+      },
+      {
+        "id": "B3",
+        "label": "B3"
+      },
+      {
+        "id": "C0",
+        "label": "C0"
+      },
+      {
+        "id": "C1",
+        "label": "C1"
+      },
+      {
+        "id": "C2",
+        "label": "C2"
+      },
+      {
+        "id": "C3",
+        "label": "C3"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A0",
+        "target": "A1",
+        "directed": true
+      },
+      {
+        "source": "A0",
+        "target": "A2",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B1",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "B2",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C1",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "A3",
+        "target": "B0",
+        "directed": true
+      },
+      {
+        "source": "B3",
+        "target": "C0",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C3",
+        "target": "A0",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "B0",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A0": [
+          -8.866,
+          -0.427
+        ],
+        "A1": [
+          -7.358,
+          1.298
+        ],
+        "A2": [
+          -6.581,
+          -1.494
+        ],
+        "A3": [
+          -5.016,
+          -0.427
+        ],
+        "B0": [
+          -2.479,
+          -0.409
+        ],
+        "B1": [
+          0.782,
+          0.138
+        ],
+        "B2": [
+          0.262,
+          -1.013
+        ],
+        "B3": [
+          2.407,
+          -0.361
+        ],
+        "C0": [
+          6.045,
+          -0.427
+        ],
+        "C1": [
+          7.15,
+          0.64
+        ],
+        "C2": [
+          7.932,
+          -2.276
+        ],
+        "C3": [
+          9.175,
+          -0.427
+        ]
+      },
+      "edge_options": {
+        "directed:C3:A0": "",
+        "directed:C2:B0": ""
+      },
+      "edge_routes": {
+        "directed:A1:B2": [
+          [
+            -4.162,
+            1.708
+          ],
+          [
+            -0.534,
+            1.708
+          ],
+          [
+            -0.534,
+            -1.494
+          ]
+        ],
+        "directed:A2:C1": [
+          [
+            -4.375,
+            2.846
+          ]
+        ],
+        "directed:B1:C2": [
+          [
+            2.383,
+            -2.49
+          ],
+          [
+            5.585,
+            -2.49
+          ]
+        ],
+        "directed:C3:A0": [
+          [
+            9.0,
+            4.411
+          ],
+          [
+            -9.0,
+            4.411
+          ]
+        ],
+        "directed:C2:B0": [
+          [
+            -2.455,
+            -4.411
+          ],
+          [
+            -2.455,
+            -0.427
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=0.99, maximum=1.94, moved_fraction=0.58.",
+      "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=0.99, maximum=1.94, moved_fraction=0.58."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.2630126681866654,
+    "min_edge_node_clearance": 0.9116405446929083,
+    "min_edge_edge_clearance": 0.014951015398797124,
+    "max_close_parallel_length": 0.5858529418049273,
+    "max_clear_detour_ratio": 1.5343395256726757,
+    "edge_crossings": 4.0
+  },
+  "visual_review": {
+    "acceptable": false,
+    "score": 6.5,
+    "issues": [
+      "The long A2->C1 edge rises through module A and crosses the local A1->A3 area close to A3, making the A module harder to read.",
+      "The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.",
+      "The C2->B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.",
+      "The C3->A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.",
+      "Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C."
+    ],
+    "suggestions": [
+      "Route A2->C1 outside or above module A so it does not pass close to A3 or cross the A1->A3 region.",
+      "Reposition B0, B1, B2, and B3 into a clearer diamond similar to module A: B0 left, B1 upper-middle, B2 lower-middle, B3 right, with more vertical separation between B1 and B2.",
+      "Draw C2->B0 as a smoother lower outer arc that stays below all modules and approaches B0 from outside without running vertically through the B cluster.",
+      "Draw C3->A0 as a smoother upper curved arc with more margin from the frame and make it visually distinct from ordinary edges if possible.",
+      "Align the three modules in a more regular left-to-right sequence with comparable internal spacing and diamond proportions."
+    ],
+    "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 6.5,\n  \"issues\": [\n    \"The long A2->C1 edge rises through module A and crosses the local A1->A3 area close to A3, making the A module harder to read.\",\n    \"The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.\",\n    \"The C2->B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.\",\n    \"The C3->A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.\",\n    \"Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C.\"\n  ],\n  \"suggestions\": [\n    \"Route A2->C1 outside or above module A so it does not pass close to A3 or cross the A1->A3 region.\",\n    \"Reposition B0, B1, B2, and B3 into a clearer diamond similar to module A: B0 left, B1 upper-middle, B2 lower-middle, B3 right, with more vertical separation between B1 and B2.\",\n    \"Draw C2->B0 as a smoother lower outer arc that stays below all modules and approaches B0 from outside without running vertically through the B cluster.\",\n    \"Draw C3->A0 as a smoother upper curved arc with more margin from the frame and make it visually distinct from ordinary edges if possible.\",\n    \"Align the three modules in a more regular left-to-right sequence with comparable internal spacing and diamond proportions.\"\n  ]\n}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_222019\\three_module_dependency\\iteration_3\\three_module_dependency.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_222019\\three_module_dependency\\iteration_3\\three_module_dependency.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_222019\\three_module_dependency\\iteration_3\\three_module_dependency.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.0,
+      "visual_issues": [
+        "The A2->C1 edge takes a very long bottom-and-right detour and its right vertical segment crowds the C module, especially near C3 and C2, before entering C1.",
+        "The C module is cramped: C1, C3, and C2 are stacked too tightly, making the local arrows and arrowheads crowded.",
+        "The repeated A, B, and C dependency modules are not laid out consistently; C is compressed while A and B are more spread out, making the intended three-module structure less clear.",
+        "Several inter-module edges create avoidable tangles in the middle, especially around B0/B2/B3 and the edges A1->B2, B0->B1, and B3->C0."
+      ],
+      "visual_suggestions": [
+        "Arrange each module as a clearer diamond: node 0 on the left, nodes 1 and 2 vertically separated in the middle, node 3 on the right; apply this pattern consistently for A, B, and C.",
+        "Move C1 upward and C2 downward slightly, and move C3 farther right or lower-right to open space inside the C module.",
+        "Reroute A2->C1 as a smoother outer curve with more clearance from C2/C3, or route it below the modules but keep the vertical return segment farther to the right of the C cluster.",
+        "Keep the feedback arcs C3->A0 and C2->B0 farther outside the main drawing so they read clearly as monitor arcs and do not visually compete with ordinary inter-module edges.",
+        "Increase horizontal spacing between modules B and C, and route B1->C2 and B3->C0 with separated lanes to reduce crowding near C0/C2."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.1921514165574774,
+        "min_edge_node_clearance": 0.8000000000000007,
+        "min_edge_edge_clearance": 0.00021795421747505193,
+        "max_close_parallel_length": 1.2505000000000002,
+        "max_clear_detour_ratio": 1.5751736739343243,
+        "edge_crossings": 5.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=6.0: The A2->C1 edge takes a very long bottom-and-right detour and its right vertical segment crowds the C module, especially near C3 and C2, before entering C1.",
+        "Visual review score=6.0: The C module is cramped: C1, C3, and C2 are stacked too tightly, making the local arrows and arrowheads crowded.",
+        "Visual review score=6.0: The repeated A, B, and C dependency modules are not laid out consistently; C is compressed while A and B are more spread out, making the intended three-module structure less clear.",
+        "Visual review score=6.0: Several inter-module edges create avoidable tangles in the middle, especially around B0/B2/B3 and the edges A1->B2, B0->B1, and B3->C0."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.5,
+      "visual_issues": [
+        "The routed edge A2->C1 takes a very long bottom-and-right detour across the whole graph, creating a prominent enclosing line that obscures the intended three-module structure.",
+        "Near the right side, the A2->C1 routed segment and the outer feedback arc C3->A0 crowd the C1/C3 area, making it hard to distinguish which edge is entering C1 and which is feedback.",
+        "The B module is cramped: B0 and B2 are close, with several edges converging and crossing in the small space between A3, B0, B1, B2, and B3.",
+        "The feedback/monitor arcs are not visually dashed-looking and instead read as solid enclosing boundaries, which makes the graph look boxed in rather than modular."
+      ],
+      "visual_suggestions": [
+        "Reroute A2->C1 as a smoother upper or mid-level curved inter-module edge, or move it outside the modules with more clearance and a less rectangular path.",
+        "Move C1 and C3 slightly inward/left or route the C3->A0 feedback arc farther above the graph so it does not crowd the C1/C3 labels and incoming arrows.",
+        "Increase spacing inside Module B by moving B0 left/down, B2 right/down, and B1 upward so the B0->B2, A1->B2, A3->B0, and B1/B2->B3 edges have clearer separation.",
+        "Make the three modules more evenly repeated: arrange A, B, and C as similar diamond-shaped clusters in separate columns, then route inter-module edges between columns with small bends."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.9625982777940063,
+        "min_edge_node_clearance": 0.8799999999999999,
+        "min_edge_edge_clearance": 0.04335254231024611,
+        "max_close_parallel_length": 1.174283015119382,
+        "max_clear_detour_ratio": 1.6343166012431358,
+        "edge_crossings": 5.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=5.5: The routed edge A2->C1 takes a very long bottom-and-right detour across the whole graph, creating a prominent enclosing line that obscures the intended three-module structure.",
+        "Visual review score=5.5: Near the right side, the A2->C1 routed segment and the outer feedback arc C3->A0 crowd the C1/C3 area, making it hard to distinguish which edge is entering C1 and which is feedback.",
+        "Visual review score=5.5: The B module is cramped: B0 and B2 are close, with several edges converging and crossing in the small space between A3, B0, B1, B2, and B3.",
+        "Visual review score=5.5: The feedback/monitor arcs are not visually dashed-looking and instead read as solid enclosing boundaries, which makes the graph look boxed in rather than modular."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The long A2->C1 routed edge runs close above the A3 node/label and makes the A-module area harder to read.",
+        "The B1->C2 and B3->C0 inter-module edges cross in the central B-C gap, creating an avoidable tangle between the modules.",
+        "The C2->B0 feedback edge takes a long angular detour along the bottom and then rises close to the B cluster, making it look like a structural edge rather than an outer feedback arc.",
+        "The three repeated module diamonds are not evenly aligned or separated; module B is compressed vertically while module C is spread unevenly, reducing the intended modular readability."
+      ],
+      "visual_suggestions": [
+        "Raise or bow the A2->C1 edge farther above A3, or move A3 slightly downward/right to increase clearance.",
+        "Separate the B-to-C inter-module routes: route B3->C0 slightly above and B1->C2 slightly below, or adjust C0/C2 vertically to avoid their crossing.",
+        "Reroute C2->B0 as a smoother dashed-looking outer bottom arc with more clearance from B2/B3 and B0, rather than a vertical segment near the B cluster.",
+        "Arrange A, B, and C as more consistent diamond modules in three columns, with each module's top/source, two middle branches, and bottom/sink spaced evenly."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.1507549695743224,
+        "min_edge_node_clearance": 0.9666059092833392,
+        "min_edge_edge_clearance": 0.045535714285714235,
+        "max_close_parallel_length": 0.588307010742596,
+        "max_clear_detour_ratio": 1.5408477965178964,
+        "edge_crossings": 2.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=6.5: The long A2->C1 routed edge runs close above the A3 node/label and makes the A-module area harder to read.",
+        "Visual review score=6.5: The B1->C2 and B3->C0 inter-module edges cross in the central B-C gap, creating an avoidable tangle between the modules.",
+        "Visual review score=6.5: The C2->B0 feedback edge takes a long angular detour along the bottom and then rises close to the B cluster, making it look like a structural edge rather than an outer feedback arc.",
+        "Visual review score=6.5: The three repeated module diamonds are not evenly aligned or separated; module B is compressed vertically while module C is spread unevenly, reducing the intended modular readability."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The long A2->C1 edge rises through module A and crosses the local A1->A3 area close to A3, making the A module harder to read.",
+        "The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.",
+        "The C2->B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.",
+        "The C3->A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.",
+        "Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C."
+      ],
+      "visual_suggestions": [
+        "Route A2->C1 outside or above module A so it does not pass close to A3 or cross the A1->A3 region.",
+        "Reposition B0, B1, B2, and B3 into a clearer diamond similar to module A: B0 left, B1 upper-middle, B2 lower-middle, B3 right, with more vertical separation between B1 and B2.",
+        "Draw C2->B0 as a smoother lower outer arc that stays below all modules and approaches B0 from outside without running vertically through the B cluster.",
+        "Draw C3->A0 as a smoother upper curved arc with more margin from the frame and make it visually distinct from ordinary edges if possible.",
+        "Align the three modules in a more regular left-to-right sequence with comparable internal spacing and diamond proportions."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.2630126681866654,
+        "min_edge_node_clearance": 0.9116405446929083,
+        "min_edge_edge_clearance": 0.014951015398797124,
+        "max_close_parallel_length": 0.5858529418049273,
+        "max_clear_detour_ratio": 1.5343395256726757,
+        "edge_crossings": 4.0
+      },
+      "next_refinement": null,
+      "errors": [
+        "Visual review score=6.5: The long A2->C1 edge rises through module A and crosses the local A1->A3 area close to A3, making the A module harder to read.",
+        "Visual review score=6.5: The B module is visually compressed and tangled: B0, B1, B2, and B3 are not arranged as a clear diamond-like module, and several inter-module edges crowd the B0/B2 region.",
+        "Visual review score=6.5: The C2->B0 feedback edge takes a long low detour with a vertical segment into B0, visually cutting into the B module instead of reading as a clean outer feedback arc.",
+        "Visual review score=6.5: The C3->A0 feedback edge is an oversized rectangular outer arc close to the figure border and is not visually distinct from ordinary solid edges.",
+        "Visual review score=6.5: Repeated modules A, B, and C are not drawn evenly; C2 is much lower than the rest of module C, and B is flatter and less symmetric than A and C."
+      ]
+    }
+  ],
+  "id": "three_module_dependency",
+  "title": "Three-Module Dependency Network",
+  "prompt": "Draw a directed artificial dependency graph with three modules A, B, C. Module A has nodes A0,A1,A2,A3 with edges A0->A1, A0->A2, A1->A3, A2->A3. Module B has nodes B0,B1,B2,B3 with edges B0->B1, B0->B2, B1->B3, B2->B3. Module C has nodes C0,C1,C2,C3 with edges C0->C1, C0->C2, C1->C3, C2->C3. Add inter-module edges A3->B0, B3->C0, A1->B2, A2->C1, B1->C2, and feedback monitor edges C3->A0 and C2->B0 drawn as curved dashed-looking outer arcs if possible. Keep modules separated as three rounded-looking clusters using layout only.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_222019\\three_module_dependency"
+}

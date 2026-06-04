@@ -1,0 +1,56 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_A0) at (-0.75,1.72) {A0};
+\node[graphnode] (n_A1) at (1.55,1.72) {A1};
+\node[graphnode] (n_A2) at (3.85,1.72) {A2};
+\node[graphnode] (n_A3) at (6.15,1.72) {A3};
+\node[graphnode] (n_A4) at (8.45,1.72) {A4};
+\node[graphnode] (n_A5) at (10.75,1.72) {A5};
+\node[graphnode] (n_B0) at (-0.75,-1.72) {B0};
+\node[graphnode] (n_B1) at (1.55,-1.72) {B1};
+\node[graphnode] (n_B2) at (3.85,-1.72) {B2};
+\node[graphnode] (n_B3) at (6.15,-1.72) {B3};
+\node[graphnode] (n_B4) at (8.45,-1.72) {B4};
+\node[graphnode] (n_B5) at (10.75,-1.72) {B5};
+\node[graphnode] (n_S) at (-3.62,0.00) {S};
+\node[graphnode] (n_T) at (13.62,0.00) {T};
+\draw[undirected] (n_A0) -- (n_A1);
+\draw[undirected] (n_A1) -- (n_A2);
+\draw[undirected] (n_A2) -- (n_A3);
+\draw[undirected] (n_A3) -- (n_A4);
+\draw[undirected] (n_A4) -- (n_A5);
+\draw[undirected] (n_B0) -- (n_B1);
+\draw[undirected] (n_B1) -- (n_B2);
+\draw[undirected] (n_B2) -- (n_B3);
+\draw[undirected] (n_B3) -- (n_B4);
+\draw[undirected] (n_B4) -- (n_B5);
+\draw[undirected] (n_A0) -- (n_B0);
+\draw[undirected] (n_A1) -- (n_B1);
+\draw[undirected] (n_A2) -- (n_B2);
+\draw[undirected] (n_A3) -- (n_B3);
+\draw[undirected] (n_A4) -- (n_B4);
+\draw[undirected] (n_A5) -- (n_B5);
+\draw[undirected] (n_A0) -- (n_B1);
+\draw[undirected] (n_B1) -- (n_A2);
+\draw[undirected] (n_A2) -- (n_B3);
+\draw[undirected] (n_B3) -- (n_A4);
+\draw[undirected] (n_A4) -- (n_B5);
+\draw[undirected] (n_B0) -- (n_A1);
+\draw[undirected] (n_A1) -- (n_B2);
+\draw[undirected] (n_B2) -- (n_A3);
+\draw[undirected] (n_A3) -- (n_B4);
+\draw[undirected] (n_B4) -- (n_A5);
+\draw[undirected] (n_S) -- (n_A0);
+\draw[undirected] (n_S) -- (n_B0);
+\draw[undirected] (n_T) -- (n_A5);
+\draw[undirected] (n_T) -- (n_B5);
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_U0) at (-8.00,2.50) {$U_{0}$};
+\node[graphnode] (n_U1) at (-6.00,4.50) {$U_{1}$};
+\node[graphnode] (n_U2) at (-4.00,2.50) {$U_{2}$};
+\node[graphnode] (n_V0) at (-8.00,-2.50) {$V_{0}$};
+\node[graphnode] (n_V1) at (-5.61,-0.67) {$V_{1}$};
+\node[graphnode] (n_V2) at (-4.00,-2.50) {$V_{2}$};
+\node[graphnode] (n_r) at (-1.20,4.50) {$r$};
+\node[graphnode] (n_x0) at (2.80,7.20) {$x_{0}$};
+\node[graphnode] (n_x1) at (3.20,1.20) {$x_{1}$};
+\node[graphnode] (n_x00) at (6.20,8.60) {$x_{00}$};
+\node[graphnode] (n_x01) at (8.70,6.40) {$x_{01}$};
+\node[graphnode] (n_x10) at (8.00,0.30) {$x_{10}$};
+\node[graphnode] (n_x11) at (6.40,-3.20) {$x_{11}$};
+\draw[undirected] (n_U0) -- (n_U1);
+\draw[undirected] (n_U1) -- (n_U2);
+\draw[undirected] (n_U0) -- (n_U2);
+\draw[undirected] (n_V0) -- (n_V1);
+\draw[undirected] (n_V1) -- (n_V2);
+\draw[undirected] (n_V0) -- (n_V2);
+\draw[undirected] (n_U0) -- (n_V0);
+\draw[undirected] (n_U1) -- (n_V1);
+\draw[undirected] (n_U2) -- (n_V2);
+\draw[undirected] (n_U0) -- (n_V1);
+\draw[undirected] (n_U1) -- (n_V2);
+\draw[undirected] (n_U2) -- (n_V0);
+\draw[undirected] (n_U1) -- (n_r);
+\draw[undirected] (n_r) -- (n_x0);
+\draw[undirected] (n_r) -- (n_x1);
+\draw[undirected] (n_x0) -- (n_x00);
+\draw[undirected] (n_x0) -- (n_x01);
+\draw[undirected] (n_x1) -- (n_x10);
+\draw[undirected] (n_x1) -- (n_x11);
+\draw[undirected] (n_x01) to[out=25,in=205,looseness=1.05] (n_V2);
+\draw[undirected] (n_x10) to[out=335,in=215,looseness=1.15] (n_V0);
+\end{tikzpicture}
+\end{document}

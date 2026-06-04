@@ -1,0 +1,52 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_g00) at (-1.64,6.74) {g00};
+\node[graphnode] (n_g01) at (5.26,6.74) {g01};
+\node[graphnode] (n_g02) at (12.00,7.29) {g02};
+\node[graphnode] (n_g03) at (19.06,6.74) {g03};
+\node[graphnode] (n_g10) at (-1.64,-0.16) {g10};
+\node[graphnode] (n_g11) at (5.26,-0.16) {g11};
+\node[graphnode] (n_g12) at (12.16,-0.16) {g12};
+\node[graphnode] (n_g13) at (19.06,-0.16) {g13};
+\node[graphnode] (n_g20) at (-1.64,-7.06) {g20};
+\node[graphnode] (n_g21) at (5.44,-6.68) {g21};
+\node[graphnode] (n_g22) at (12.16,-7.06) {g22};
+\node[graphnode] (n_g23) at (19.06,-7.06) {g23};
+\node[graphnode,fill=gray!15] (n_H) at (37.46,15.94) {H};
+\draw[undirected] (n_g00) -- (n_g01);
+\draw[undirected] (n_g01) -- (n_g02);
+\draw[undirected] (n_g02) -- (n_g03);
+\draw[undirected] (n_g10) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g13);
+\draw[undirected] (n_g20) -- (n_g21);
+\draw[undirected] (n_g21) -- (n_g22);
+\draw[undirected] (n_g22) -- (n_g23);
+\draw[undirected] (n_g00) -- (n_g10);
+\draw[undirected] (n_g10) -- (n_g20);
+\draw[undirected] (n_g01) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g21);
+\draw[undirected] (n_g02) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g22);
+\draw[undirected] (n_g03) -- (n_g13);
+\draw[undirected] (n_g13) -- (n_g23);
+\draw[undirected] (n_H) to[out=175,in=75,looseness=1.75] (n_g01);
+\draw[undirected] (n_H) to[out=178,in=70,looseness=1.6] (n_g02);
+\draw[undirected] (n_H) to[out=188,in=35,looseness=1.8] (n_g11);
+\draw[undirected] (n_H) to[out=192,in=25,looseness=1.65] (n_g12);
+\draw[undirected] (n_H) to[out=-95,in=-80,looseness=2.05] (n_g21);
+\draw[undirected] (n_H) to[out=-90,in=-75,looseness=1.9] (n_g22);
+\draw[undirected] (n_g00) to[dashed,out=200,in=-40,looseness=2.6] (n_g23);
+\draw[undirected] (n_g03) to[dashed,out=20,in=160,looseness=2.6] (n_g20);
+\draw[undirected] (n_g10) to[dashed,out=-90,in=-90,looseness=3.0] (n_g13);
+\draw[undirected] (n_g01) to[dashed,out=145,in=215,looseness=2.8] (n_g22);
+\end{tikzpicture}
+\end{document}

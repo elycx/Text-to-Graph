@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "Start",
+        "label": "Start"
+      },
+      {
+        "id": "End",
+        "label": "End"
+      }
+    ],
+    "edges": [
+      {
+        "source": "Start",
+        "target": "End",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "star"
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\eval_rendered\\edge_from\\iteration_0\\edge_from.tex",
+    "pdf_path": "outputs\\eval_rendered\\edge_from\\iteration_0\\edge_from.pdf",
+    "png_path": "outputs\\eval_rendered\\edge_from\\iteration_0\\edge_from.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

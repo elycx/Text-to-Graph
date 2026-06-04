@@ -1,0 +1,228 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "v_0_0",
+        "label": "$v_{0,0}$"
+      },
+      {
+        "id": "v_0_1",
+        "label": "$v_{0,1}$"
+      },
+      {
+        "id": "v_0_2",
+        "label": "$v_{0,2}$"
+      },
+      {
+        "id": "v_0_3",
+        "label": "$v_{0,3}$"
+      },
+      {
+        "id": "v_1_0",
+        "label": "$v_{1,0}$"
+      },
+      {
+        "id": "v_1_1",
+        "label": "$v_{1,1}$"
+      },
+      {
+        "id": "v_1_2",
+        "label": "$v_{1,2}$"
+      },
+      {
+        "id": "v_1_3",
+        "label": "$v_{1,3}$"
+      },
+      {
+        "id": "v_2_0",
+        "label": "$v_{2,0}$"
+      },
+      {
+        "id": "v_2_1",
+        "label": "$v_{2,1}$"
+      },
+      {
+        "id": "v_2_2",
+        "label": "$v_{2,2}$"
+      },
+      {
+        "id": "v_2_3",
+        "label": "$v_{2,3}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "v_0_0",
+        "target": "v_1_0",
+        "directed": true
+      },
+      {
+        "source": "v_0_0",
+        "target": "v_1_1",
+        "directed": true
+      },
+      {
+        "source": "v_0_1",
+        "target": "v_1_1",
+        "directed": true
+      },
+      {
+        "source": "v_0_1",
+        "target": "v_1_0",
+        "directed": true
+      },
+      {
+        "source": "v_0_2",
+        "target": "v_1_2",
+        "directed": true
+      },
+      {
+        "source": "v_0_2",
+        "target": "v_1_3",
+        "directed": true
+      },
+      {
+        "source": "v_0_3",
+        "target": "v_1_3",
+        "directed": true
+      },
+      {
+        "source": "v_0_3",
+        "target": "v_1_2",
+        "directed": true
+      },
+      {
+        "source": "v_1_0",
+        "target": "v_2_0",
+        "directed": true
+      },
+      {
+        "source": "v_1_0",
+        "target": "v_2_2",
+        "directed": true
+      },
+      {
+        "source": "v_1_1",
+        "target": "v_2_1",
+        "directed": true
+      },
+      {
+        "source": "v_1_1",
+        "target": "v_2_3",
+        "directed": true
+      },
+      {
+        "source": "v_1_2",
+        "target": "v_2_2",
+        "directed": true
+      },
+      {
+        "source": "v_1_2",
+        "target": "v_2_0",
+        "directed": true
+      },
+      {
+        "source": "v_1_3",
+        "target": "v_2_3",
+        "directed": true
+      },
+      {
+        "source": "v_1_3",
+        "target": "v_2_1",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "v_0_0": [
+          0.0,
+          3.0
+        ],
+        "v_0_1": [
+          0.0,
+          2.0
+        ],
+        "v_0_2": [
+          0.0,
+          1.0
+        ],
+        "v_0_3": [
+          0.0,
+          0.0
+        ],
+        "v_1_0": [
+          2.0,
+          3.0
+        ],
+        "v_1_1": [
+          2.0,
+          2.0
+        ],
+        "v_1_2": [
+          2.0,
+          1.0
+        ],
+        "v_1_3": [
+          2.0,
+          0.0
+        ],
+        "v_2_0": [
+          4.0,
+          3.0
+        ],
+        "v_2_1": [
+          4.0,
+          2.0
+        ],
+        "v_2_2": [
+          4.0,
+          1.0
+        ],
+        "v_2_3": [
+          4.0,
+          0.0
+        ]
+      },
+      "edge_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Interpreted \"3-layer butterfly graph\" as the directed 3-level, 2-dimensional butterfly network with 4 vertices per layer."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Interpreted \"3-layer butterfly graph\" as the directed 3-level, 2-dimensional butterfly network with 4 vertices per layer."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\butterfly_3layer_final\\iteration_0\\butterfly_3layer_final.tex",
+    "pdf_path": "outputs\\butterfly_3layer_final\\iteration_0\\butterfly_3layer_final.pdf",
+    "png_path": "outputs\\butterfly_3layer_final\\iteration_0\\butterfly_3layer_final.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

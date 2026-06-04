@@ -1,0 +1,250 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A0",
+        "label": "A0"
+      },
+      {
+        "id": "A1",
+        "label": "A1"
+      },
+      {
+        "id": "A2",
+        "label": "A2"
+      },
+      {
+        "id": "A3",
+        "label": "A3"
+      },
+      {
+        "id": "B0",
+        "label": "B0"
+      },
+      {
+        "id": "B1",
+        "label": "B1"
+      },
+      {
+        "id": "B2",
+        "label": "B2"
+      },
+      {
+        "id": "B3",
+        "label": "B3"
+      },
+      {
+        "id": "C0",
+        "label": "C0"
+      },
+      {
+        "id": "C1",
+        "label": "C1"
+      },
+      {
+        "id": "C2",
+        "label": "C2"
+      },
+      {
+        "id": "C3",
+        "label": "C3"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A0",
+        "target": "A1",
+        "directed": true
+      },
+      {
+        "source": "A0",
+        "target": "A2",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B1",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "B2",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C1",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "A3",
+        "target": "B0",
+        "directed": true
+      },
+      {
+        "source": "B3",
+        "target": "C0",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C3",
+        "target": "A0",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "B0",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A0": [
+          0.0,
+          0.0
+        ],
+        "A1": [
+          2.065,
+          0.533
+        ],
+        "A2": [
+          1.7,
+          -1.1
+        ],
+        "A3": [
+          3.125,
+          -0.55
+        ],
+        "B0": [
+          5.489,
+          0.171
+        ],
+        "B1": [
+          7.1,
+          1.1
+        ],
+        "B2": [
+          6.938,
+          -1.409
+        ],
+        "B3": [
+          8.68,
+          -0.231
+        ],
+        "C0": [
+          10.68,
+          0.334
+        ],
+        "C1": [
+          12.135,
+          0.533
+        ],
+        "C2": [
+          12.5,
+          -1.1
+        ],
+        "C3": [
+          14.2,
+          0.0
+        ]
+      },
+      "edge_options": {
+        "directed:A1:B2": "out=-10,in=170,looseness=1.15",
+        "directed:A2:C1": "out=-35,in=225,looseness=1.25",
+        "directed:B1:C2": "out=-10,in=170,looseness=1.15",
+        "directed:C3:A0": "out=145,in=35,looseness=1.55,dashed",
+        "directed:C2:B0": "out=-155,in=-25,looseness=1.45,dashed"
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\three_module_dependency\\iteration_0\\three_module_dependency.tex",
+    "pdf_path": "outputs\\prompt_suite\\three_module_dependency\\iteration_0\\three_module_dependency.pdf",
+    "png_path": "outputs\\prompt_suite\\three_module_dependency\\iteration_0\\three_module_dependency.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

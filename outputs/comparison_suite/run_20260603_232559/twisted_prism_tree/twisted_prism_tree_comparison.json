@@ -1,0 +1,713 @@
+{
+  "id": "twisted_prism_tree",
+  "title": "Twisted Prism Tree",
+  "prompt": "Draw an artificial graph combining a triangular prism and a small tree. Prism nodes are top triangle U0,U1,U2, bottom triangle V0,V1,V2, with triangle edges among all U nodes, triangle edges among all V nodes, and vertical edges U0-V0, U1-V1, U2-V2. Add a twisted matching U0-V1, U1-V2, U2-V0. Attach a binary tree root r to U1; r connects to x0 and x1; x0 connects to x00 and x01; x1 connects to x10 and x11. Also connect leaf x01 to V2 and leaf x10 to V0. Draw the prism on the left and the tree on the right.",
+  "case_dir": "outputs\\comparison_suite\\run_20260603_232559\\twisted_prism_tree",
+  "workflow": {
+    "success": true,
+    "iterations": 1,
+    "graph": {
+      "nodes": [
+        {
+          "id": "U0",
+          "label": "$U_0$"
+        },
+        {
+          "id": "U1",
+          "label": "$U_1$"
+        },
+        {
+          "id": "U2",
+          "label": "$U_2$"
+        },
+        {
+          "id": "V0",
+          "label": "$V_0$"
+        },
+        {
+          "id": "V1",
+          "label": "$V_1$"
+        },
+        {
+          "id": "V2",
+          "label": "$V_2$"
+        },
+        {
+          "id": "r",
+          "label": "$r$"
+        },
+        {
+          "id": "x0",
+          "label": "$x_0$"
+        },
+        {
+          "id": "x1",
+          "label": "$x_1$"
+        },
+        {
+          "id": "x00",
+          "label": "$x_{00}$"
+        },
+        {
+          "id": "x01",
+          "label": "$x_{01}$"
+        },
+        {
+          "id": "x10",
+          "label": "$x_{10}$"
+        },
+        {
+          "id": "x11",
+          "label": "$x_{11}$"
+        }
+      ],
+      "edges": [
+        {
+          "source": "U0",
+          "target": "U1",
+          "directed": false
+        },
+        {
+          "source": "U1",
+          "target": "U2",
+          "directed": false
+        },
+        {
+          "source": "U0",
+          "target": "U2",
+          "directed": false
+        },
+        {
+          "source": "V0",
+          "target": "V1",
+          "directed": false
+        },
+        {
+          "source": "V1",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "V0",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "U0",
+          "target": "V0",
+          "directed": false
+        },
+        {
+          "source": "U1",
+          "target": "V1",
+          "directed": false
+        },
+        {
+          "source": "U2",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "U0",
+          "target": "V1",
+          "directed": false
+        },
+        {
+          "source": "U1",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "U2",
+          "target": "V0",
+          "directed": false
+        },
+        {
+          "source": "U1",
+          "target": "r",
+          "directed": false
+        },
+        {
+          "source": "r",
+          "target": "x0",
+          "directed": false
+        },
+        {
+          "source": "r",
+          "target": "x1",
+          "directed": false
+        },
+        {
+          "source": "x0",
+          "target": "x00",
+          "directed": false
+        },
+        {
+          "source": "x0",
+          "target": "x01",
+          "directed": false
+        },
+        {
+          "source": "x1",
+          "target": "x10",
+          "directed": false
+        },
+        {
+          "source": "x1",
+          "target": "x11",
+          "directed": false
+        },
+        {
+          "source": "x01",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "x10",
+          "target": "V0",
+          "directed": false
+        }
+      ],
+      "layout_hints": {
+        "style": "explicit",
+        "positions": {
+          "U0": [
+            -5.994,
+            0.984
+          ],
+          "U1": [
+            -3.47,
+            3.711
+          ],
+          "U2": [
+            -3.573,
+            0.092
+          ],
+          "V0": [
+            -6.366,
+            -3.262
+          ],
+          "V1": [
+            -5.09,
+            -0.165
+          ],
+          "V2": [
+            -2.442,
+            -1.827
+          ],
+          "r": [
+            -0.031,
+            2.316
+          ],
+          "x0": [
+            2.243,
+            2.791
+          ],
+          "x1": [
+            1.725,
+            -0.419
+          ],
+          "x00": [
+            3.234,
+            3.579
+          ],
+          "x01": [
+            3.254,
+            1.748
+          ],
+          "x10": [
+            3.29,
+            -1.368
+          ],
+          "x11": [
+            3.752,
+            0.2
+          ]
+        },
+        "edge_options": {},
+        "edge_routes": {
+          "undirected:V0:x10": [
+            [
+              -1.316,
+              -3.178
+            ]
+          ]
+        },
+        "node_options": {},
+        "disable_auto_expand": true
+      },
+      "warnings": [
+        "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+        "Macro relayout coordinate motion: average=3.87, maximum=4.86, moved_fraction=1.00.",
+        "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+      ]
+    },
+    "graph_validation": {
+      "errors": [],
+      "warnings": [
+        "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+        "Macro relayout coordinate motion: average=3.87, maximum=4.86, moved_fraction=1.00."
+      ]
+    },
+    "layout_validation": {
+      "errors": [],
+      "warnings": []
+    },
+    "layout_metrics": {
+      "min_node_distance": 1.2661062356690298,
+      "min_edge_node_clearance": 0.761769509783276,
+      "min_edge_edge_clearance": 0.011695993820087432,
+      "max_close_parallel_length": 0.8600326221202954,
+      "max_clear_detour_ratio": 1.0162166876153542,
+      "edge_crossings": 3.0,
+      "drawing_width": 10.117999999999999,
+      "drawing_height": 6.973,
+      "canvas_area_per_node": 5.427139538461537,
+      "mean_edge_path_length": 3.590365453096315
+    },
+    "visual_review": {
+      "acceptable": true,
+      "score": 8.0,
+      "issues": [],
+      "suggestions": [
+        "If further polishing is desired, slightly shift U2 left or route U1-V2 with a small bend to increase clearance from the U2 label/node, and make the prism triangle more regular to reduce visual tangle."
+      ],
+      "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[\"If further polishing is desired, slightly shift U2 left or route U1-V2 with a small bend to increase clearance from the U2 label/node, and make the prism triangle more regular to reduce visual tangle.\"]}"
+    },
+    "code_validation": {
+      "errors": [],
+      "warnings": []
+    },
+    "render": {
+      "success": true,
+      "tex_path": "outputs\\comparison_suite\\run_20260603_232559\\twisted_prism_tree\\workflow\\iteration_1\\twisted_prism_tree.tex",
+      "pdf_path": "outputs\\comparison_suite\\run_20260603_232559\\twisted_prism_tree\\workflow\\iteration_1\\twisted_prism_tree.pdf",
+      "png_path": "outputs\\comparison_suite\\run_20260603_232559\\twisted_prism_tree\\workflow\\iteration_1\\twisted_prism_tree.png",
+      "error": ""
+    },
+    "history": [
+      {
+        "iteration": 0,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 5.2,
+        "visual_issues": [
+          "The edge V0--x10 takes a very long bottom-and-right detour, creating a sprawling drawing and a visually distracting outer boundary despite a shorter clear route likely being possible.",
+          "The long V0--x10 route makes the canvas much larger than necessary and leaves a large empty lower region.",
+          "The connector x01--V2 cuts diagonally across the gap between the prism and tree and crosses the r--x1 edge, making the tree attachment area harder to read.",
+          "The tree is somewhat stretched horizontally, especially around x10, which worsens the long connector to V0."
+        ],
+        "visual_suggestions": [
+          "Reroute V0--x10 with a shorter path below the main drawing, using one modest bend near the lower middle instead of dropping far to the bottom-right corner.",
+          "Move x10 and possibly x11 leftward/downward closer to x1 and the prism so the x10--V0 connector is shorter and does not dominate the figure.",
+          "Adjust x01 or route x01--V2 so it avoids crossing r--x1, for example by placing x01 slightly lower or routing the edge around the tree-prism gap.",
+          "Compact the tree module horizontally while preserving clear spacing between x0, x1, and their leaves."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.1502086767191422,
+          "min_edge_node_clearance": 0.899119123098639,
+          "min_edge_edge_clearance": 0.04815287794068606,
+          "max_close_parallel_length": 0.6117370531709047,
+          "max_clear_detour_ratio": 1.3876529435240839,
+          "edge_crossings": 5.0,
+          "drawing_width": 10.169,
+          "drawing_height": 5.672000000000001,
+          "canvas_area_per_node": 4.436812923076923,
+          "mean_edge_path_length": 3.6219577131646354
+        },
+        "next_refinement": "visual_macro_relayout",
+        "errors": [
+          "Visual review score=5.2: The edge V0--x10 takes a very long bottom-and-right detour, creating a sprawling drawing and a visually distracting outer boundary despite a shorter clear route likely being possible.",
+          "Visual review score=5.2: The long V0--x10 route makes the canvas much larger than necessary and leaves a large empty lower region.",
+          "Visual review score=5.2: The connector x01--V2 cuts diagonally across the gap between the prism and tree and crosses the r--x1 edge, making the tree attachment area harder to read.",
+          "Visual review score=5.2: The tree is somewhat stretched horizontally, especially around x10, which worsens the long connector to V0."
+        ]
+      },
+      {
+        "iteration": 1,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": true,
+        "visual_score": 8.0,
+        "visual_issues": [],
+        "visual_suggestions": [
+          "If further polishing is desired, slightly shift U2 left or route U1-V2 with a small bend to increase clearance from the U2 label/node, and make the prism triangle more regular to reduce visual tangle."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.2661062356690298,
+          "min_edge_node_clearance": 0.761769509783276,
+          "min_edge_edge_clearance": 0.011695993820087432,
+          "max_close_parallel_length": 0.8600326221202954,
+          "max_clear_detour_ratio": 1.0162166876153542,
+          "edge_crossings": 3.0,
+          "drawing_width": 10.117999999999999,
+          "drawing_height": 6.973,
+          "canvas_area_per_node": 5.427139538461537,
+          "mean_edge_path_length": 3.590365453096315
+        },
+        "next_refinement": null,
+        "errors": []
+      }
+    ]
+  },
+  "single_prompt": {
+    "success": false,
+    "iterations": 0,
+    "graph": {
+      "nodes": [
+        {
+          "id": "U0",
+          "label": "$U_0$"
+        },
+        {
+          "id": "U1",
+          "label": "$U_1$"
+        },
+        {
+          "id": "U2",
+          "label": "$U_2$"
+        },
+        {
+          "id": "V0",
+          "label": "$V_0$"
+        },
+        {
+          "id": "V1",
+          "label": "$V_1$"
+        },
+        {
+          "id": "V2",
+          "label": "$V_2$"
+        },
+        {
+          "id": "r",
+          "label": "$r$"
+        },
+        {
+          "id": "x0",
+          "label": "$x_0$"
+        },
+        {
+          "id": "x1",
+          "label": "$x_1$"
+        },
+        {
+          "id": "x00",
+          "label": "$x_{00}$"
+        },
+        {
+          "id": "x01",
+          "label": "$x_{01}$"
+        },
+        {
+          "id": "x10",
+          "label": "$x_{10}$"
+        },
+        {
+          "id": "x11",
+          "label": "$x_{11}$"
+        }
+      ],
+      "edges": [
+        {
+          "source": "U0",
+          "target": "U1",
+          "directed": false
+        },
+        {
+          "source": "U1",
+          "target": "U2",
+          "directed": false
+        },
+        {
+          "source": "U0",
+          "target": "U2",
+          "directed": false
+        },
+        {
+          "source": "V0",
+          "target": "V1",
+          "directed": false
+        },
+        {
+          "source": "V1",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "V0",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "U0",
+          "target": "V0",
+          "directed": false
+        },
+        {
+          "source": "U1",
+          "target": "V1",
+          "directed": false
+        },
+        {
+          "source": "U2",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "U0",
+          "target": "V1",
+          "directed": false
+        },
+        {
+          "source": "U1",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "U2",
+          "target": "V0",
+          "directed": false
+        },
+        {
+          "source": "U1",
+          "target": "r",
+          "directed": false
+        },
+        {
+          "source": "r",
+          "target": "x0",
+          "directed": false
+        },
+        {
+          "source": "r",
+          "target": "x1",
+          "directed": false
+        },
+        {
+          "source": "x0",
+          "target": "x00",
+          "directed": false
+        },
+        {
+          "source": "x0",
+          "target": "x01",
+          "directed": false
+        },
+        {
+          "source": "x1",
+          "target": "x10",
+          "directed": false
+        },
+        {
+          "source": "x1",
+          "target": "x11",
+          "directed": false
+        },
+        {
+          "source": "x01",
+          "target": "V2",
+          "directed": false
+        },
+        {
+          "source": "x10",
+          "target": "V0",
+          "directed": false
+        }
+      ],
+      "layout_hints": {
+        "style": "explicit",
+        "positions": {
+          "U0": [
+            -6.0,
+            1.4
+          ],
+          "U1": [
+            -4.0,
+            2.6
+          ],
+          "U2": [
+            -2.0,
+            1.4
+          ],
+          "V0": [
+            -6.0,
+            -1.4
+          ],
+          "V1": [
+            -4.0,
+            -2.6
+          ],
+          "V2": [
+            -2.0,
+            -1.4
+          ],
+          "r": [
+            -0.5,
+            2.6
+          ],
+          "x0": [
+            1.5,
+            3.6
+          ],
+          "x1": [
+            1.5,
+            1.8
+          ],
+          "x00": [
+            3.5,
+            4.4
+          ],
+          "x01": [
+            3.5,
+            3.2
+          ],
+          "x10": [
+            3.5,
+            2.0
+          ],
+          "x11": [
+            3.5,
+            0.8
+          ]
+        },
+        "edge_options": {},
+        "edge_routes": {
+          "undirected:V2:x01": [
+            [
+              4.4,
+              3.2
+            ],
+            [
+              4.4,
+              -2.1
+            ],
+            [
+              -2.0,
+              -2.1
+            ]
+          ],
+          "undirected:V0:x10": [
+            [
+              4.9,
+              2.0
+            ],
+            [
+              4.9,
+              -3.2
+            ],
+            [
+              -6.0,
+              -3.2
+            ]
+          ]
+        },
+        "node_options": {}
+      },
+      "warnings": [
+        "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+      ]
+    },
+    "graph_validation": {
+      "errors": [],
+      "warnings": [
+        "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+      ]
+    },
+    "layout_validation": {
+      "errors": [
+        "Edge x10-V0 passes too close to unrelated node V1: distance 0.60."
+      ],
+      "warnings": []
+    },
+    "layout_metrics": {
+      "min_node_distance": 1.2,
+      "min_edge_node_clearance": 0.6000000000000001,
+      "min_edge_edge_clearance": 0.0,
+      "max_close_parallel_length": 0.6388765649999399,
+      "max_clear_detour_ratio": 1.9127670870956757,
+      "edge_crossings": 8.0,
+      "drawing_width": 9.5,
+      "drawing_height": 7.0,
+      "canvas_area_per_node": 5.115384615384615,
+      "mean_edge_path_length": 4.327917519924457
+    },
+    "visual_review": {
+      "acceptable": false,
+      "score": 5.0,
+      "issues": [
+        "The edges x01--V2 and x10--V0 take very long rectangular detours around the right and bottom of the drawing, making the layout unnecessarily spread out.",
+        "The routed vertical portions of x01--V2 and x10--V0 run close and nearly parallel for a long visible segment on the right side, which creates visual confusion.",
+        "The long bottom route from x10 to V0 behaves like a frame around the graph and draws attention away from the intended prism/tree structure.",
+        "The prism on the left has several crossings and dense diagonals; while mostly readable, it would benefit from slightly more separation or more deliberate routing because the added tree-return edges increase clutter."
+      ],
+      "suggestions": [
+        "Reroute x01--V2 with a shorter path, for example by moving x01 lower/leftward or routing the edge through the gap between the tree and prism rather than around the far right.",
+        "Reroute x10--V0 more directly, preferably with one or two bends through the open middle/bottom area instead of the large outer rectangular route.",
+        "Separate the return edges x01--V2 and x10--V0 so they do not run parallel on the right side; one could route above/between the tree levels and the other below.",
+        "Consider moving the tree slightly closer to the prism and/or placing x01 and x10 nearer the lower side of the tree to shorten their connections to V2 and V0 while keeping labels clear.",
+        "Slightly widen or regularize the prism node positions to reduce the visual tangle among the diagonal matching edges."
+      ],
+      "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 5.0,\n  \"issues\": [\n    \"The edges x01--V2 and x10--V0 take very long rectangular detours around the right and bottom of the drawing, making the layout unnecessarily spread out.\",\n    \"The routed vertical portions of x01--V2 and x10--V0 run close and nearly parallel for a long visible segment on the right side, which creates visual confusion.\",\n    \"The long bottom route from x10 to V0 behaves like a frame around the graph and draws attention away from the intended prism/tree structure.\",\n    \"The prism on the left has several crossings and dense diagonals; while mostly readable, it would benefit from slightly more separation or more deliberate routing because the added tree-return edges increase clutter.\"\n  ],\n  \"suggestions\": [\n    \"Reroute x01--V2 with a shorter path, for example by moving x01 lower/leftward or routing the edge through the gap between the tree and prism rather than around the far right.\",\n    \"Reroute x10--V0 more directly, preferably with one or two bends through the open middle/bottom area instead of the large outer rectangular route.\",\n    \"Separate the return edges x01--V2 and x10--V0 so they do not run parallel on the right side; one could route above/between the tree levels and the other below.\",\n    \"Consider moving the tree slightly closer to the prism and/or placing x01 and x10 nearer the lower side of the tree to shorten their connections to V2 and V0 while keeping labels clear.\",\n    \"Slightly widen or regularize the prism node positions to reduce the visual tangle among the diagonal matching edges.\"\n  ]\n}"
+    },
+    "code_validation": {
+      "errors": [],
+      "warnings": []
+    },
+    "render": {
+      "success": true,
+      "tex_path": "outputs\\comparison_suite\\run_20260603_232559\\twisted_prism_tree\\single_prompt\\twisted_prism_tree.tex",
+      "pdf_path": "outputs\\comparison_suite\\run_20260603_232559\\twisted_prism_tree\\single_prompt\\twisted_prism_tree.pdf",
+      "png_path": "outputs\\comparison_suite\\run_20260603_232559\\twisted_prism_tree\\single_prompt\\twisted_prism_tree.png",
+      "error": ""
+    },
+    "history": [
+      {
+        "iteration": 0,
+        "graph_ok": true,
+        "layout_ok": false,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 5.0,
+        "visual_issues": [
+          "The edges x01--V2 and x10--V0 take very long rectangular detours around the right and bottom of the drawing, making the layout unnecessarily spread out.",
+          "The routed vertical portions of x01--V2 and x10--V0 run close and nearly parallel for a long visible segment on the right side, which creates visual confusion.",
+          "The long bottom route from x10 to V0 behaves like a frame around the graph and draws attention away from the intended prism/tree structure.",
+          "The prism on the left has several crossings and dense diagonals; while mostly readable, it would benefit from slightly more separation or more deliberate routing because the added tree-return edges increase clutter."
+        ],
+        "visual_suggestions": [
+          "Reroute x01--V2 with a shorter path, for example by moving x01 lower/leftward or routing the edge through the gap between the tree and prism rather than around the far right.",
+          "Reroute x10--V0 more directly, preferably with one or two bends through the open middle/bottom area instead of the large outer rectangular route.",
+          "Separate the return edges x01--V2 and x10--V0 so they do not run parallel on the right side; one could route above/between the tree levels and the other below.",
+          "Consider moving the tree slightly closer to the prism and/or placing x01 and x10 nearer the lower side of the tree to shorten their connections to V2 and V0 while keeping labels clear.",
+          "Slightly widen or regularize the prism node positions to reduce the visual tangle among the diagonal matching edges."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.2,
+          "min_edge_node_clearance": 0.6000000000000001,
+          "min_edge_edge_clearance": 0.0,
+          "max_close_parallel_length": 0.6388765649999399,
+          "max_clear_detour_ratio": 1.9127670870956757,
+          "edge_crossings": 8.0,
+          "drawing_width": 9.5,
+          "drawing_height": 7.0,
+          "canvas_area_per_node": 5.115384615384615,
+          "mean_edge_path_length": 4.327917519924457
+        },
+        "errors": [
+          "Edge x10-V0 passes too close to unrelated node V1: distance 0.60.",
+          "Visual review: The edges x01--V2 and x10--V0 take very long rectangular detours around the right and bottom of the drawing, making the layout unnecessarily spread out.",
+          "Visual review: The routed vertical portions of x01--V2 and x10--V0 run close and nearly parallel for a long visible segment on the right side, which creates visual confusion.",
+          "Visual review: The long bottom route from x10 to V0 behaves like a frame around the graph and draws attention away from the intended prism/tree structure.",
+          "Visual review: The prism on the left has several crossings and dense diagonals; while mostly readable, it would benefit from slightly more separation or more deliberate routing because the added tree-return edges increase clutter."
+        ]
+      }
+    ]
+  }
+}

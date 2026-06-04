@@ -1,0 +1,162 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A",
+        "label": "A"
+      },
+      {
+        "id": "B",
+        "label": "B"
+      },
+      {
+        "id": "C",
+        "label": "C"
+      },
+      {
+        "id": "D",
+        "label": "D"
+      },
+      {
+        "id": "T",
+        "label": "top"
+      },
+      {
+        "id": "S",
+        "label": "bottom"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A",
+        "target": "B",
+        "directed": false
+      },
+      {
+        "source": "B",
+        "target": "C",
+        "directed": false
+      },
+      {
+        "source": "C",
+        "target": "D",
+        "directed": false
+      },
+      {
+        "source": "D",
+        "target": "A",
+        "directed": false
+      },
+      {
+        "source": "T",
+        "target": "A",
+        "directed": false
+      },
+      {
+        "source": "T",
+        "target": "B",
+        "directed": false
+      },
+      {
+        "source": "T",
+        "target": "C",
+        "directed": false
+      },
+      {
+        "source": "T",
+        "target": "D",
+        "directed": false
+      },
+      {
+        "source": "S",
+        "target": "A",
+        "directed": false
+      },
+      {
+        "source": "S",
+        "target": "B",
+        "directed": false
+      },
+      {
+        "source": "S",
+        "target": "C",
+        "directed": false
+      },
+      {
+        "source": "S",
+        "target": "D",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A": [
+          -2.0,
+          1.0
+        ],
+        "B": [
+          2.0,
+          1.0
+        ],
+        "C": [
+          2.0,
+          -1.0
+        ],
+        "D": [
+          -2.0,
+          -1.0
+        ],
+        "T": [
+          0.0,
+          0.0
+        ],
+        "S": [
+          0.0,
+          2.8
+        ]
+      },
+      "edge_options": {
+        "undirected:C:S": "out=10,in=-60,looseness=1.35",
+        "undirected:D:S": "out=170,in=-120,looseness=1.35"
+      },
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\octahedral_graph\\iteration_0\\octahedral_graph.tex",
+    "pdf_path": "outputs\\prompt_suite\\octahedral_graph\\iteration_0\\octahedral_graph.pdf",
+    "png_path": "outputs\\prompt_suite\\octahedral_graph\\iteration_0\\octahedral_graph.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "error": "GPT-5 request failed: 500 Server Error: Internal Server Error for url: http://localhost:1455/v1/chat/completions",
+  "history": [],
+  "id": "twisted_prism_tree",
+  "title": "Twisted Prism Tree",
+  "prompt": "Draw an artificial graph combining a triangular prism and a small tree. Prism nodes are top triangle U0,U1,U2, bottom triangle V0,V1,V2, with triangle edges among all U nodes, triangle edges among all V nodes, and vertical edges U0-V0, U1-V1, U2-V2. Add a twisted matching U0-V1, U1-V2, U2-V0. Attach a binary tree root r to U1; r connects to x0 and x1; x0 connects to x00 and x01; x1 connects to x10 and x11. Also connect leaf x01 to V2 and leaf x10 to V0. Draw the prism on the left and the tree on the right.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_114132\\twisted_prism_tree"
+}

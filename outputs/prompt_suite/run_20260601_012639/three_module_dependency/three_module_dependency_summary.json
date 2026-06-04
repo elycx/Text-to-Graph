@@ -1,0 +1,343 @@
+{
+  "success": true,
+  "iterations": 2,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A0",
+        "label": "A0"
+      },
+      {
+        "id": "A1",
+        "label": "A1"
+      },
+      {
+        "id": "A2",
+        "label": "A2"
+      },
+      {
+        "id": "A3",
+        "label": "A3"
+      },
+      {
+        "id": "B0",
+        "label": "B0"
+      },
+      {
+        "id": "B1",
+        "label": "B1"
+      },
+      {
+        "id": "B2",
+        "label": "B2"
+      },
+      {
+        "id": "B3",
+        "label": "B3"
+      },
+      {
+        "id": "C0",
+        "label": "C0"
+      },
+      {
+        "id": "C1",
+        "label": "C1"
+      },
+      {
+        "id": "C2",
+        "label": "C2"
+      },
+      {
+        "id": "C3",
+        "label": "C3"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A0",
+        "target": "A1",
+        "directed": true
+      },
+      {
+        "source": "A0",
+        "target": "A2",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B1",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "B2",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C1",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "A3",
+        "target": "B0",
+        "directed": true
+      },
+      {
+        "source": "B3",
+        "target": "C0",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C3",
+        "target": "A0",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "B0",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A0": [
+          0.0,
+          0.0
+        ],
+        "A1": [
+          1.603,
+          2.215
+        ],
+        "A2": [
+          2.0,
+          -1.7
+        ],
+        "A3": [
+          3.989,
+          -0.34
+        ],
+        "B0": [
+          8.5,
+          0.0
+        ],
+        "B1": [
+          10.7,
+          2.1
+        ],
+        "B2": [
+          11.267,
+          -2.815
+        ],
+        "B3": [
+          13.0,
+          0.0
+        ],
+        "C0": [
+          17.795,
+          0.431
+        ],
+        "C1": [
+          19.714,
+          2.586
+        ],
+        "C2": [
+          19.5,
+          -2.3
+        ],
+        "C3": [
+          21.8,
+          0.0
+        ]
+      },
+      "edge_options": {
+        "directed:A1:B2": "out=-35,in=155,looseness=1.15",
+        "directed:A2:C1": "out=72,in=155,looseness=1.35",
+        "directed:B1:C2": "out=35,in=140,looseness=1.5",
+        "directed:C3:A0": "out=140,in=40,looseness=1.55,dashed",
+        "directed:C2:B0": "out=-140,in=-55,looseness=2.35,dashed"
+      },
+      "node_options": {
+        "A0": "fill=blue!8",
+        "A1": "fill=blue!8",
+        "A2": "fill=blue!8",
+        "A3": "fill=blue!8",
+        "B0": "fill=green!8",
+        "B1": "fill=green!8",
+        "B2": "fill=green!8",
+        "B3": "fill=green!8",
+        "C0": "fill=orange!10",
+        "C1": "fill=orange!10",
+        "C2": "fill=orange!10",
+        "C3": "fill=orange!10"
+      },
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 2.4095063809834576,
+    "min_edge_node_clearance": 0.7049334591215847
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_012639\\three_module_dependency\\iteration_2\\three_module_dependency.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_012639\\three_module_dependency\\iteration_2\\three_module_dependency.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_012639\\three_module_dependency\\iteration_2\\three_module_dependency.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The long edge B1->C2 passes very close to the non-incident B3 node, crowding the top of B3 and making the B module/C module connection harder to read.",
+        "The curved feedback edge C2->B0 runs close to the B2/B3 area and visually adds clutter near the lower middle of the graph.",
+        "Several inter-module edges cross in the central area between A, B, and C, and while most crossings are tolerable, the crossings near B3 are too close to a node."
+      ],
+      "visual_suggestions": [
+        "Reroute B1->C2 with a bend or curve that passes clearly above B3, or move B3 downward/right to create more clearance from that edge.",
+        "Pull the C2->B0 feedback arc farther downward so it stays outside the B module and avoids crowding B2/B3.",
+        "Consider spreading B1, B2, and B3 slightly farther apart vertically/horizontally to reduce the dense crossing region around B3."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.585213234867789,
+        "min_edge_node_clearance": 0.7613807336595633
+      },
+      "errors": [
+        "Visual review score=6.5: The long edge B1->C2 passes very close to the non-incident B3 node, crowding the top of B3 and making the B module/C module connection harder to read.",
+        "Visual review score=6.5: The curved feedback edge C2->B0 runs close to the B2/B3 area and visually adds clutter near the lower middle of the graph.",
+        "Visual review score=6.5: Several inter-module edges cross in the central area between A, B, and C, and while most crossings are tolerable, the crossings near B3 are too close to a node."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.0,
+      "visual_issues": [
+        "The long inter-module edge A2->C1 passes too close to the non-incident B2 node/label area, making the center of the graph crowded.",
+        "Several long inter-module edges tangle in the B2/B3/C0 region, especially A2->C1 crossing near B2 and B3->C0/B1->C2 crossings near the C0 side.",
+        "The feedback edge C2->B0 curves back through the lower middle and approaches the B0/B2 area in a way that adds visual clutter near the B module."
+      ],
+      "visual_suggestions": [
+        "Reroute A2->C1 as a higher or lower outer arc so it avoids passing near B2.",
+        "Move B2 slightly downward or outward from the central crossing region, or move C1 upward, to increase clearance for the A2->C1 edge.",
+        "Route B1->C2 with a wider upper arc or move it farther from the B3->C0 and C0/C2 local edges.",
+        "Make the feedback C2->B0 a clearer lower outer dashed arc with more separation from B2 and the central B-module edges."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.7993801710589121,
+        "min_edge_node_clearance": 0.6801412161045941
+      },
+      "errors": [
+        "Visual review score=6.0: The long inter-module edge A2->C1 passes too close to the non-incident B2 node/label area, making the center of the graph crowded.",
+        "Visual review score=6.0: Several long inter-module edges tangle in the B2/B3/C0 region, especially A2->C1 crossing near B2 and B3->C0/B1->C2 crossings near the C0 side.",
+        "Visual review score=6.0: The feedback edge C2->B0 curves back through the lower middle and approaches the B0/B2 area in a way that adds visual clutter near the B module."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 2.4095063809834576,
+        "min_edge_node_clearance": 0.7049334591215847
+      },
+      "errors": []
+    }
+  ],
+  "id": "three_module_dependency",
+  "title": "Three-Module Dependency Network",
+  "prompt": "Draw a directed artificial dependency graph with three modules A, B, C. Module A has nodes A0,A1,A2,A3 with edges A0->A1, A0->A2, A1->A3, A2->A3. Module B has nodes B0,B1,B2,B3 with edges B0->B1, B0->B2, B1->B3, B2->B3. Module C has nodes C0,C1,C2,C3 with edges C0->C1, C0->C2, C1->C3, C2->C3. Add inter-module edges A3->B0, B3->C0, A1->B2, A2->C1, B1->C2, and feedback monitor edges C3->A0 and C2->B0 drawn as curved dashed-looking outer arcs if possible. Keep modules separated as three rounded-looking clusters using layout only.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_012639\\three_module_dependency"
+}

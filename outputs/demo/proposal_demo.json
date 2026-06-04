@@ -1,0 +1,129 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A",
+        "label": "A"
+      },
+      {
+        "id": "B",
+        "label": "B"
+      },
+      {
+        "id": "C",
+        "label": "C"
+      },
+      {
+        "id": "D",
+        "label": "D"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A",
+        "target": "B",
+        "directed": false
+      },
+      {
+        "source": "A",
+        "target": "C",
+        "directed": false
+      },
+      {
+        "source": "C",
+        "target": "D",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A": [
+          1.1,
+          0.0
+        ],
+        "B": [
+          2.0,
+          1.0
+        ],
+        "C": [
+          2.0,
+          -1.0
+        ],
+        "D": [
+          4.0,
+          -1.0
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {},
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.345362404707371,
+    "min_edge_node_clearance": 1.345362404707371,
+    "min_edge_edge_clearance": 1.3869430814244366,
+    "max_close_parallel_length": 0.0,
+    "max_clear_detour_ratio": 1.0,
+    "edge_crossings": 0.0
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 9.5,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":9.5,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\demo\\iteration_0\\proposal_demo.tex",
+    "pdf_path": "outputs\\demo\\iteration_0\\proposal_demo.pdf",
+    "png_path": "outputs\\demo\\iteration_0\\proposal_demo.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 9.5,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 1.345362404707371,
+        "min_edge_node_clearance": 1.345362404707371,
+        "min_edge_edge_clearance": 1.3869430814244366,
+        "max_close_parallel_length": 0.0,
+        "max_clear_detour_ratio": 1.0,
+        "edge_crossings": 0.0
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ]
+}

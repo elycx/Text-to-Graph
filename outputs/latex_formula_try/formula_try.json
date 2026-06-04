@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "m",
+        "label": "m"
+      },
+      {
+        "id": "1",
+        "label": "1"
+      },
+      {
+        "id": "2",
+        "label": "2"
+      },
+      {
+        "id": "3",
+        "label": "3"
+      }
+    ],
+    "edges": [
+      {
+        "source": "m",
+        "target": "1",
+        "directed": false
+      },
+      {
+        "source": "m",
+        "target": "2",
+        "directed": false
+      },
+      {
+        "source": "m",
+        "target": "3",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "circular"
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": null,
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": null,
+      "errors": []
+    }
+  ]
+}

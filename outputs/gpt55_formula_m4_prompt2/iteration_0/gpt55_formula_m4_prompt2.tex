@@ -1,0 +1,43 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usetikzlibrary{arrows.meta,positioning}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_u_0) at (0.00,2.00) {$u_{0}$};
+\node[graphnode] (n_u_1) at (2.00,2.00) {$u_{1}$};
+\node[graphnode] (n_u_2) at (4.00,2.00) {$u_{2}$};
+\node[graphnode] (n_u_3) at (6.00,2.00) {$u_{3}$};
+\node[graphnode] (n_v_0) at (0.00,-2.00) {$v_{0}$};
+\node[graphnode] (n_v_1) at (2.00,-2.00) {$v_{1}$};
+\node[graphnode] (n_v_2) at (4.00,-2.00) {$v_{2}$};
+\node[graphnode] (n_v_3) at (6.00,-2.00) {$v_{3}$};
+\node[graphnode] (n_w_0) at (1.00,0.00) {$w_{0}$};
+\node[graphnode] (n_w_1) at (3.00,0.00) {$w_{1}$};
+\node[graphnode] (n_w_2) at (5.00,0.00) {$w_{2}$};
+\node[graphnode] (n_p) at (3.00,4.00) {$p$};
+\node[graphnode] (n_q) at (3.00,-4.00) {$q$};
+\draw[undirected] (n_u_0) -- (n_p);
+\draw[undirected] (n_u_1) -- (n_p);
+\draw[undirected] (n_u_2) -- (n_p);
+\draw[undirected] (n_u_3) -- (n_p);
+\draw[undirected] (n_v_0) -- (n_q);
+\draw[undirected] (n_v_1) -- (n_q);
+\draw[undirected] (n_v_2) -- (n_q);
+\draw[undirected] (n_v_3) -- (n_q);
+\draw[undirected] (n_p) to[out=0,in=0,looseness=2.2] (n_q);
+\draw[undirected] (n_u_1) -- (n_w_0);
+\draw[undirected] (n_v_0) -- (n_w_0);
+\draw[undirected] (n_u_2) -- (n_w_1);
+\draw[undirected] (n_v_1) -- (n_w_1);
+\draw[undirected] (n_u_3) -- (n_w_2);
+\draw[undirected] (n_v_2) -- (n_w_2);
+\draw[undirected] (n_w_0) -- (n_w_1);
+\draw[undirected] (n_w_1) -- (n_w_2);
+\draw[undirected] (n_u_0) -- (n_w_0);
+\draw[undirected] (n_w_2) -- (n_v_3);
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_s) at (-5.95,3.45) {s};
+\node[graphnode] (n_u_0) at (-1.35,3.45) {$u_{0}$};
+\node[graphnode] (n_a_0) at (-3.65,0.00) {$a_{0}$};
+\node[graphnode] (n_b_0) at (0.95,0.00) {$b_{0}$};
+\node[graphnode] (n_v_0) at (-1.35,-3.45) {$v_{0}$};
+\node[graphnode] (n_u_1) at (5.55,3.45) {$u_{1}$};
+\node[graphnode] (n_a_1) at (3.25,0.00) {$a_{1}$};
+\node[graphnode] (n_b_1) at (7.85,0.00) {$b_{1}$};
+\node[graphnode] (n_v_1) at (5.55,-3.45) {$v_{1}$};
+\node[graphnode] (n_u_2) at (12.45,3.45) {$u_{2}$};
+\node[graphnode] (n_a_2) at (10.15,0.00) {$a_{2}$};
+\node[graphnode] (n_b_2) at (14.75,0.00) {$b_{2}$};
+\node[graphnode] (n_v_2) at (12.45,-3.45) {$v_{2}$};
+\node[graphnode] (n_u_3) at (19.35,3.45) {$u_{3}$};
+\node[graphnode] (n_a_3) at (17.05,0.00) {$a_{3}$};
+\node[graphnode] (n_b_3) at (21.65,0.00) {$b_{3}$};
+\node[graphnode] (n_v_3) at (19.35,-3.45) {$v_{3}$};
+\node[graphnode] (n_t) at (23.95,-3.45) {t};
+\draw[directed] (n_u_0) -- (n_a_0);
+\draw[directed] (n_u_0) -- (n_b_0);
+\draw[directed] (n_a_0) -- (n_v_0);
+\draw[directed] (n_b_0) -- (n_v_0);
+\draw[directed] (n_u_1) -- (n_a_1);
+\draw[directed] (n_u_1) -- (n_b_1);
+\draw[directed] (n_a_1) -- (n_v_1);
+\draw[directed] (n_b_1) -- (n_v_1);
+\draw[directed] (n_u_2) -- (n_a_2);
+\draw[directed] (n_u_2) -- (n_b_2);
+\draw[directed] (n_a_2) -- (n_v_2);
+\draw[directed] (n_b_2) -- (n_v_2);
+\draw[directed] (n_u_3) -- (n_a_3);
+\draw[directed] (n_u_3) -- (n_b_3);
+\draw[directed] (n_a_3) -- (n_v_3);
+\draw[directed] (n_b_3) -- (n_v_3);
+\draw[directed] (n_s) -- (n_u_0);
+\draw[directed] (n_v_0) to[out=-15,in=195,looseness=1.4] (n_u_1);
+\draw[directed] (n_v_1) to[out=-15,in=195,looseness=1.4] (n_u_2);
+\draw[directed] (n_v_2) to[out=-15,in=195,looseness=1.4] (n_u_3);
+\draw[directed] (n_v_3) -- (n_t);
+\draw[directed] (n_a_0) to[out=110,in=70,looseness=1.8] (n_b_1);
+\draw[directed] (n_b_0) to[out=-45,in=-135,looseness=1.2] (n_a_1);
+\draw[directed] (n_a_1) to[out=110,in=70,looseness=1.8] (n_b_2);
+\draw[directed] (n_b_1) to[out=-45,in=-135,looseness=1.2] (n_a_2);
+\draw[directed] (n_a_2) to[out=110,in=70,looseness=1.8] (n_b_3);
+\draw[directed] (n_b_2) to[out=-45,in=-135,looseness=1.2] (n_a_3);
+\end{tikzpicture}
+\end{document}

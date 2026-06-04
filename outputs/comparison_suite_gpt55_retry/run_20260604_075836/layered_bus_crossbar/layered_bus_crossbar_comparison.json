@@ -1,0 +1,16 @@
+{
+  "id": "layered_bus_crossbar",
+  "title": "Layered Bus Crossbar",
+  "prompt": "Draw a directed artificial crossbar graph with three horizontal buses. The top bus has nodes T0,T1,T2,T3,T4, the middle bus has M0,M1,M2,M3,M4, and the bottom bus has B0,B1,B2,B3,B4. Add directed bus edges Ti->T(i+1), Mi->M(i+1), and Bi->B(i+1) for i=0..3. Add vertical relay edges T0->M0->B0, T2->M2->B2, and T4->M4->B4. Add crisscross transfer edges T0->M2, T1->M3, T2->M4, M0->B2, M1->B3, M2->B4, plus feedback edges B1->M0, B3->M2, and M4->T3 routed outside the buses. Add source S connected to T0,M0,B0 and sink R reached from T4,M4,B4. Keep the buses aligned and compact while routing transfers clearly.",
+  "case_dir": "outputs\\comparison_suite_gpt55_retry\\run_20260604_075836\\layered_bus_crossbar",
+  "workflow": {
+    "success": false,
+    "error": "GPT-5 request failed: HTTPConnectionPool(host='localhost', port=1455): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000167C5A23680>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))",
+    "history": []
+  },
+  "single_prompt": {
+    "success": false,
+    "error": "GPT-5 request failed: HTTPConnectionPool(host='localhost', port=1455): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000167C7CCA580>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))",
+    "history": []
+  }
+}

@@ -1,0 +1,52 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g00) at (-4.87,34.48) {g00};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g01) at (15.83,34.48) {g01};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g02) at (36.53,34.48) {g02};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g03) at (57.23,34.48) {g03};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g10) at (-4.87,-0.02) {g10};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g11) at (15.83,-0.02) {g11};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g12) at (36.53,-0.02) {g12};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g13) at (57.23,-0.02) {g13};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g20) at (-4.87,-34.52) {g20};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g21) at (15.83,-34.52) {g21};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g22) at (36.53,-34.52) {g22};
+\node[graphnode,draw,circle,fill=white,inner sep=3pt,font=\Large] (n_g23) at (57.46,-35.18) {g23};
+\node[graphnode,draw,circle,fill=gray!15,inner sep=4pt,font=\Large\bfseries] (n_H) at (107.83,2.28) {H};
+\draw[undirected] (n_g00) -- (n_g01);
+\draw[undirected] (n_g01) -- (n_g02);
+\draw[undirected] (n_g02) -- (n_g03);
+\draw[undirected] (n_g10) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g13);
+\draw[undirected] (n_g20) -- (n_g21);
+\draw[undirected] (n_g21) -- (n_g22);
+\draw[undirected] (n_g22) -- (n_g23);
+\draw[undirected] (n_g00) -- (n_g10);
+\draw[undirected] (n_g10) -- (n_g20);
+\draw[undirected] (n_g01) -- (n_g11);
+\draw[undirected] (n_g11) -- (n_g21);
+\draw[undirected] (n_g02) -- (n_g12);
+\draw[undirected] (n_g12) -- (n_g22);
+\draw[undirected] (n_g03) -- (n_g13);
+\draw[undirected] (n_g13) -- (n_g23);
+\draw[undirected] (n_H) to[out=145,in=25,looseness=1.75] (n_g01);
+\draw[undirected] (n_H) to[out=155,in=20,looseness=1.45] (n_g02);
+\draw[undirected] (n_H) to[out=235,in=325,looseness=1.85] (n_g11);
+\draw[undirected] (n_H) to[out=130,in=35,looseness=1.45] (n_g12);
+\draw[undirected] (n_H) to[out=220,in=335,looseness=1.45] (n_g21);
+\draw[undirected] (n_H) to[out=205,in=345,looseness=1.25] (n_g22);
+\draw[undirected] (n_g00) to[out=185,in=275,looseness=2.25] (n_g23);
+\draw[undirected] (n_g03) to[out=355,in=265,looseness=2.25] (n_g20);
+\draw[undirected] (n_g10) to[out=95,in=85,looseness=2.05] (n_g13);
+\draw[undirected] (n_g01) to[out=175,in=185,looseness=2.15] (n_g22);
+\end{tikzpicture}
+\end{document}

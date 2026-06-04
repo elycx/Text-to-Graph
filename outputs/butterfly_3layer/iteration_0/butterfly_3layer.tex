@@ -1,0 +1,39 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usetikzlibrary{arrows.meta,positioning}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_v_0_00) at (0.00,3.00) {$00$};
+\node[graphnode] (n_v_0_01) at (0.00,2.00) {$01$};
+\node[graphnode] (n_v_0_10) at (0.00,1.00) {$10$};
+\node[graphnode] (n_v_0_11) at (0.00,0.00) {$11$};
+\node[graphnode] (n_v_1_00) at (2.20,3.00) {$00$};
+\node[graphnode] (n_v_1_01) at (2.20,2.00) {$01$};
+\node[graphnode] (n_v_1_10) at (2.20,1.00) {$10$};
+\node[graphnode] (n_v_1_11) at (2.20,0.00) {$11$};
+\node[graphnode] (n_v_2_00) at (4.40,3.00) {$00$};
+\node[graphnode] (n_v_2_01) at (4.40,2.00) {$01$};
+\node[graphnode] (n_v_2_10) at (4.40,1.00) {$10$};
+\node[graphnode] (n_v_2_11) at (4.40,0.00) {$11$};
+\draw[directed] (n_v_0_00) -- (n_v_1_00);
+\draw[directed] (n_v_0_00) -- (n_v_1_01);
+\draw[directed] (n_v_0_01) -- (n_v_1_01);
+\draw[directed] (n_v_0_01) -- (n_v_1_00);
+\draw[directed] (n_v_0_10) -- (n_v_1_10);
+\draw[directed] (n_v_0_10) -- (n_v_1_11);
+\draw[directed] (n_v_0_11) -- (n_v_1_11);
+\draw[directed] (n_v_0_11) -- (n_v_1_10);
+\draw[directed] (n_v_1_00) -- (n_v_2_00);
+\draw[directed] (n_v_1_00) -- (n_v_2_10);
+\draw[directed] (n_v_1_10) -- (n_v_2_10);
+\draw[directed] (n_v_1_10) -- (n_v_2_00);
+\draw[directed] (n_v_1_01) -- (n_v_2_01);
+\draw[directed] (n_v_1_01) -- (n_v_2_11);
+\draw[directed] (n_v_1_11) -- (n_v_2_11);
+\draw[directed] (n_v_1_11) -- (n_v_2_01);
+\end{tikzpicture}
+\end{document}

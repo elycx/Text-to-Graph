@@ -1,0 +1,312 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "U0",
+        "label": "$U_{0}$"
+      },
+      {
+        "id": "U1",
+        "label": "$U_{1}$"
+      },
+      {
+        "id": "U2",
+        "label": "$U_{2}$"
+      },
+      {
+        "id": "V0",
+        "label": "$V_{0}$"
+      },
+      {
+        "id": "V1",
+        "label": "$V_{1}$"
+      },
+      {
+        "id": "V2",
+        "label": "$V_{2}$"
+      },
+      {
+        "id": "r",
+        "label": "$r$"
+      },
+      {
+        "id": "x0",
+        "label": "$x_{0}$"
+      },
+      {
+        "id": "x1",
+        "label": "$x_{1}$"
+      },
+      {
+        "id": "x00",
+        "label": "$x_{00}$"
+      },
+      {
+        "id": "x01",
+        "label": "$x_{01}$"
+      },
+      {
+        "id": "x10",
+        "label": "$x_{10}$"
+      },
+      {
+        "id": "x11",
+        "label": "$x_{11}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "U0",
+        "target": "U1",
+        "directed": false
+      },
+      {
+        "source": "U1",
+        "target": "U2",
+        "directed": false
+      },
+      {
+        "source": "U0",
+        "target": "U2",
+        "directed": false
+      },
+      {
+        "source": "V0",
+        "target": "V1",
+        "directed": false
+      },
+      {
+        "source": "V1",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "V0",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "U0",
+        "target": "V0",
+        "directed": false
+      },
+      {
+        "source": "U1",
+        "target": "V1",
+        "directed": false
+      },
+      {
+        "source": "U2",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "U0",
+        "target": "V1",
+        "directed": false
+      },
+      {
+        "source": "U1",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "U2",
+        "target": "V0",
+        "directed": false
+      },
+      {
+        "source": "r",
+        "target": "U1",
+        "directed": false
+      },
+      {
+        "source": "r",
+        "target": "x0",
+        "directed": false
+      },
+      {
+        "source": "r",
+        "target": "x1",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x00",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x01",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "x10",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "x11",
+        "directed": false
+      },
+      {
+        "source": "x01",
+        "target": "V2",
+        "directed": false
+      },
+      {
+        "source": "x10",
+        "target": "V0",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "U0": [
+          -4.0,
+          1.8
+        ],
+        "U1": [
+          -2.0,
+          3.0
+        ],
+        "U2": [
+          0.0,
+          1.8
+        ],
+        "V0": [
+          -4.0,
+          -1.8
+        ],
+        "V1": [
+          -2.0,
+          -3.0
+        ],
+        "V2": [
+          0.0,
+          -1.8
+        ],
+        "r": [
+          2.5,
+          2.5
+        ],
+        "x0": [
+          4.5,
+          3.5
+        ],
+        "x1": [
+          4.5,
+          1.5
+        ],
+        "x00": [
+          6.5,
+          4.2
+        ],
+        "x01": [
+          6.5,
+          3.005
+        ],
+        "x10": [
+          6.5,
+          1.867
+        ],
+        "x11": [
+          6.5,
+          0.728
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {
+        "undirected:V2:x01": [
+          [
+            7.4,
+            2.8
+          ],
+          [
+            7.4,
+            -1.2
+          ],
+          [
+            0.8,
+            -1.2
+          ]
+        ],
+        "undirected:V0:x10": [
+          [
+            7.8,
+            2.0
+          ],
+          [
+            7.8,
+            -4.0
+          ],
+          [
+            -4.8,
+            -4.0
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.138,
+    "min_edge_node_clearance": 0.9000000000000004
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_150942\\twisted_prism_tree\\iteration_0\\twisted_prism_tree.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_150942\\twisted_prism_tree\\iteration_0\\twisted_prism_tree.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_150942\\twisted_prism_tree\\iteration_0\\twisted_prism_tree.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 1.138,
+        "min_edge_node_clearance": 0.9000000000000004
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ]
+}

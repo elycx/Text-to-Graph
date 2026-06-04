@@ -1,0 +1,47 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw=black,line width=0.55pt,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  graphedge/.style={draw=black,line width=0.55pt,line cap=round,line join=round},
+  directed/.style={graphedge,-{Stealth[length=2.4mm,width=2.0mm]}},
+  undirected/.style={graphedge}
+}
+\node[graphnode] (n_U0) at (-6.00,1.75) {$U_{0}$};
+\node[graphnode] (n_U1) at (-4.35,3.02) {$U_{1}$};
+\node[graphnode] (n_U2) at (-2.64,1.74) {$U_{2}$};
+\node[graphnode] (n_V0) at (-6.83,-2.00) {$V_{0}$};
+\node[graphnode] (n_V1) at (-4.99,0.66) {$V_{1}$};
+\node[graphnode] (n_V2) at (-2.71,-2.28) {$V_{2}$};
+\node[graphnode] (n_r) at (0.09,2.73) {$r$};
+\node[graphnode] (n_x0) at (0.91,4.18) {$x_{0}$};
+\node[graphnode] (n_x1) at (0.59,1.27) {$x_{1}$};
+\node[graphnode] (n_x00) at (3.84,4.73) {$x_{00}$};
+\node[graphnode] (n_x01) at (3.21,3.57) {$x_{01}$};
+\node[graphnode] (n_x10) at (4.03,2.34) {$x_{10}$};
+\node[graphnode] (n_x11) at (1.98,0.47) {$x_{11}$};
+\draw[undirected] (n_U0) -- (n_U1);
+\draw[undirected] (n_U1) -- (n_U2);
+\draw[undirected] (n_U2) -- (n_U0);
+\draw[undirected] (n_V0) -- (n_V1);
+\draw[undirected] (n_V1) -- (n_V2);
+\draw[undirected] (n_V2) -- (n_V0);
+\draw[undirected] (n_U0) -- (n_V0);
+\draw[undirected] (n_U1) -- (n_V1);
+\draw[undirected] (n_U2) -- (n_V2);
+\draw[undirected] (n_U0) -- (n_V1);
+\draw[undirected] (n_U1) -- (n_V2);
+\draw[undirected] (n_U2) -- (n_V0);
+\draw[undirected] (n_r) -- (n_U1);
+\draw[undirected] (n_r) -- (n_x0);
+\draw[undirected] (n_r) -- (n_x1);
+\draw[undirected] (n_x0) -- (n_x00);
+\draw[undirected] (n_x0) -- (n_x01);
+\draw[undirected] (n_x1) -- (n_x10);
+\draw[undirected] (n_x1) -- (n_x11);
+\draw[undirected,rounded corners=5pt] (n_x01) -- (1.85,5.46) -- (-1.23,4.78) -- (-1.23,-1.60) -- (n_V2);
+\draw[undirected,rounded corners=5pt] (n_x10) -- (2.42,-0.92) -- (-1.00,-3.43) -- (-6.13,-3.20) -- (n_V0);
+\end{tikzpicture}
+\end{document}

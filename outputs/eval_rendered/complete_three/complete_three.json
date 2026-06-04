@@ -1,0 +1,65 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "X",
+        "label": "X"
+      },
+      {
+        "id": "Y",
+        "label": "Y"
+      },
+      {
+        "id": "Z",
+        "label": "Z"
+      }
+    ],
+    "edges": [
+      {
+        "source": "X",
+        "target": "Y",
+        "directed": false
+      },
+      {
+        "source": "X",
+        "target": "Z",
+        "directed": false
+      },
+      {
+        "source": "Y",
+        "target": "Z",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "circular"
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\eval_rendered\\complete_three\\iteration_0\\complete_three.tex",
+    "pdf_path": "outputs\\eval_rendered\\complete_three\\iteration_0\\complete_three.pdf",
+    "png_path": "outputs\\eval_rendered\\complete_three\\iteration_0\\complete_three.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

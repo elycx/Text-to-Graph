@@ -1,0 +1,182 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "empty",
+        "label": "$\\varnothing$"
+      },
+      {
+        "id": "s_1",
+        "label": "$\\{1\\}$"
+      },
+      {
+        "id": "s_2",
+        "label": "$\\{2\\}$"
+      },
+      {
+        "id": "s_3",
+        "label": "$\\{3\\}$"
+      },
+      {
+        "id": "s_12",
+        "label": "$\\{1,2\\}$"
+      },
+      {
+        "id": "s_13",
+        "label": "$\\{1,3\\}$"
+      },
+      {
+        "id": "s_23",
+        "label": "$\\{2,3\\}$"
+      },
+      {
+        "id": "full",
+        "label": "$\\{1,2,3\\}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "empty",
+        "target": "s_1",
+        "directed": true
+      },
+      {
+        "source": "empty",
+        "target": "s_2",
+        "directed": true
+      },
+      {
+        "source": "empty",
+        "target": "s_3",
+        "directed": true
+      },
+      {
+        "source": "s_1",
+        "target": "s_12",
+        "directed": true
+      },
+      {
+        "source": "s_1",
+        "target": "s_13",
+        "directed": true
+      },
+      {
+        "source": "s_2",
+        "target": "s_12",
+        "directed": true
+      },
+      {
+        "source": "s_2",
+        "target": "s_23",
+        "directed": true
+      },
+      {
+        "source": "s_3",
+        "target": "s_13",
+        "directed": true
+      },
+      {
+        "source": "s_3",
+        "target": "s_23",
+        "directed": true
+      },
+      {
+        "source": "s_12",
+        "target": "full",
+        "directed": true
+      },
+      {
+        "source": "s_13",
+        "target": "full",
+        "directed": true
+      },
+      {
+        "source": "s_23",
+        "target": "full",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "empty": [
+          0.0,
+          0.0
+        ],
+        "s_1": [
+          -3.0,
+          1.5
+        ],
+        "s_2": [
+          0.0,
+          1.5
+        ],
+        "s_3": [
+          3.0,
+          1.5
+        ],
+        "s_12": [
+          -3.0,
+          3.0
+        ],
+        "s_13": [
+          0.0,
+          3.0
+        ],
+        "s_23": [
+          3.0,
+          3.0
+        ],
+        "full": [
+          0.0,
+          4.5
+        ]
+      },
+      "edge_options": {
+        "directed:s_1:s_13": "out=20,in=200,looseness=1.15",
+        "directed:s_3:s_13": "out=160,in=-20,looseness=1.15"
+      },
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\boolean_lattice_b3\\iteration_0\\boolean_lattice_b3.tex",
+    "pdf_path": "outputs\\prompt_suite\\boolean_lattice_b3\\iteration_0\\boolean_lattice_b3.pdf",
+    "png_path": "outputs\\prompt_suite\\boolean_lattice_b3\\iteration_0\\boolean_lattice_b3.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ],
+  "id": "boolean_lattice_b3",
+  "title": "Boolean lattice B3",
+  "prompt": "Draw the Hasse diagram of the Boolean lattice B3 ordered by subset inclusion. Use four ranks: empty set, singleton sets, two-element sets, and {1,2,3}. Use upward edges only for cover relations.",
+  "case_dir": "outputs\\prompt_suite\\boolean_lattice_b3"
+}

@@ -1,0 +1,433 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "g00",
+        "label": "g00"
+      },
+      {
+        "id": "g01",
+        "label": "g01"
+      },
+      {
+        "id": "g02",
+        "label": "g02"
+      },
+      {
+        "id": "g03",
+        "label": "g03"
+      },
+      {
+        "id": "g10",
+        "label": "g10"
+      },
+      {
+        "id": "g11",
+        "label": "g11"
+      },
+      {
+        "id": "g12",
+        "label": "g12"
+      },
+      {
+        "id": "g13",
+        "label": "g13"
+      },
+      {
+        "id": "g20",
+        "label": "g20"
+      },
+      {
+        "id": "g21",
+        "label": "g21"
+      },
+      {
+        "id": "g22",
+        "label": "g22"
+      },
+      {
+        "id": "g23",
+        "label": "g23"
+      },
+      {
+        "id": "H",
+        "label": "H"
+      }
+    ],
+    "edges": [
+      {
+        "source": "g00",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g03",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g20",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g21",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g22",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g10",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g13",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g22",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "g00": [
+          -1.125,
+          0.658
+        ],
+        "g01": [
+          4.445,
+          1.321
+        ],
+        "g02": [
+          10.555,
+          1.321
+        ],
+        "g03": [
+          16.125,
+          0.658
+        ],
+        "g10": [
+          -1.125,
+          -6.242
+        ],
+        "g11": [
+          4.625,
+          -6.242
+        ],
+        "g12": [
+          10.375,
+          -6.242
+        ],
+        "g13": [
+          16.125,
+          -6.242
+        ],
+        "g20": [
+          -1.125,
+          -13.142
+        ],
+        "g21": [
+          4.625,
+          -13.142
+        ],
+        "g22": [
+          10.375,
+          -13.142
+        ],
+        "g23": [
+          16.125,
+          -13.142
+        ],
+        "H": [
+          7.5,
+          17.908
+        ]
+      },
+      "edge_options": {
+        "undirected:H:g01": "out=245,in=90,looseness=1.05",
+        "undirected:H:g02": "out=295,in=90,looseness=1.05",
+        "undirected:H:g11": "out=230,in=115,looseness=1.45",
+        "undirected:H:g12": "out=310,in=65,looseness=1.45",
+        "undirected:H:g21": "out=190,in=165,looseness=2.25",
+        "undirected:H:g22": "out=350,in=15,looseness=2.25",
+        "undirected:g00:g23": "out=180,in=270,looseness=3.0",
+        "undirected:g03:g20": "out=0,in=270,looseness=3.0",
+        "undirected:g10:g13": "out=90,in=90,looseness=1.65",
+        "undirected:g01:g22": "out=90,in=0,looseness=2.75"
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 5.609319833990571,
+    "min_edge_node_clearance": 0.7028577982063215
+  },
+  "visual_review": {
+    "acceptable": false,
+    "score": 5.5,
+    "issues": [
+      "Several curved hub edges from H into the grid pass very close to or through the top-row and middle-row grid area, crowding non-incident nodes and labels around g01, g02, g11, and g12.",
+      "The curved teleport edge g01-g22 runs through the interior of the grid and appears to pass close to central nodes/labels, especially near g12.",
+      "The teleport edge g10-g13 arches across the grid interior and adds avoidable tangling near the top of the middle row.",
+      "Labels are very small and are visually crowded by nearby edges, making node identities hard to read."
+    ],
+    "suggestions": [
+      "Move H higher or route H-to-g11, H-to-g12, H-to-g21, and H-to-g22 farther outside the grid so they enter their target nodes without passing near other grid nodes.",
+      "Route g01-g22 outside the right side or with a wider bend below/around the grid instead of through the grid interior.",
+      "Route g10-g13 as a shallow outer arc below or above the row with enough clearance from g11 and g12.",
+      "Increase label size or node spacing slightly so labels remain readable and clear of edges."
+    ],
+    "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 5.5,\n  \"issues\": [\n    \"Several curved hub edges from H into the grid pass very close to or through the top-row and middle-row grid area, crowding non-incident nodes and labels around g01, g02, g11, and g12.\",\n    \"The curved teleport edge g01-g22 runs through the interior of the grid and appears to pass close to central nodes/labels, especially near g12.\",\n    \"The teleport edge g10-g13 arches across the grid interior and adds avoidable tangling near the top of the middle row.\",\n    \"Labels are very small and are visually crowded by nearby edges, making node identities hard to read.\"\n  ],\n  \"suggestions\": [\n    \"Move H higher or route H-to-g11, H-to-g12, H-to-g21, and H-to-g22 farther outside the grid so they enter their target nodes without passing near other grid nodes.\",\n    \"Route g01-g22 outside the right side or with a wider bend below/around the grid instead of through the grid interior.\",\n    \"Route g10-g13 as a shallow outer arc below or above the row with enough clearance from g11 and g12.\",\n    \"Increase label size or node spacing slightly so labels remain readable and clear of edges.\"\n  ]\n}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_012639\\hubbed_grid_with_teleports\\iteration_3\\hubbed_grid_with_teleports.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_012639\\hubbed_grid_with_teleports\\iteration_3\\hubbed_grid_with_teleports.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_012639\\hubbed_grid_with_teleports\\iteration_3\\hubbed_grid_with_teleports.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "The hub spokes from H to lower nodes create a dense tangle through the middle of the grid, with several crossings very close to central grid nodes and labels, especially around g11, g12, g21, and g22.",
+        "The curved teleport edge g01-g22 runs through the central/right part of the grid and appears to pass too close to g12 and the nearby H-g22/H-g12 edges, making the local semantics hard to read.",
+        "The outer teleport routes are not far enough outside the grid: the left-side long curve passes close to g10 and g20, and the right-side long curve passes close to g13 and g23.",
+        "The bottom curved teleport edge g10-g13 crosses the lower part of the drawing near g21 and g22, adding avoidable clutter around the bottom row."
+      ],
+      "visual_suggestions": [
+        "Move H farther upward and spread its incident edges with separate curved routes so that H-g21 and H-g22 do not cut through the central grid cluster.",
+        "Route g01-g22 farther outside the grid, preferably as a high or right-side arc, rather than through the center near g12.",
+        "Push the long teleport edges g00-g23 and g03-g20 farther outside the grid boundary so they do not crowd side-column nodes.",
+        "Route g10-g13 as a clean lower outer arc well below g20-g23, with enough clearance from g21 and g22."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 4.434055592795381,
+        "min_edge_node_clearance": 0.4010370129702536
+      },
+      "errors": [
+        "Edge H-g22 passes too close to unrelated node g12: distance 0.40.",
+        "Edge g01-g22 passes too close to unrelated node g12: distance 0.57.",
+        "Visual review score=4.0: The hub spokes from H to lower nodes create a dense tangle through the middle of the grid, with several crossings very close to central grid nodes and labels, especially around g11, g12, g21, and g22.",
+        "Visual review score=4.0: The curved teleport edge g01-g22 runs through the central/right part of the grid and appears to pass too close to g12 and the nearby H-g22/H-g12 edges, making the local semantics hard to read.",
+        "Visual review score=4.0: The outer teleport routes are not far enough outside the grid: the left-side long curve passes close to g10 and g20, and the right-side long curve passes close to g13 and g23.",
+        "Visual review score=4.0: The bottom curved teleport edge g10-g13 crosses the lower part of the drawing near g21 and g22, adding avoidable clutter around the bottom row."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": false,
+      "visual_ok": false,
+      "visual_score": null,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 6.56742971032047,
+        "min_edge_node_clearance": 0.6923587547531199
+      },
+      "errors": [
+        "!  ==> Fatal error occurred, no output PDF file produced!"
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.5,
+      "visual_issues": [
+        "Several curved hub edges from H into the grid pass too close to non-incident top-row nodes, especially around g01 and g02, making the labels and incident structure harder to read.",
+        "The long curved edge from g01 to g22 runs through the interior of the grid and crowds the central/right grid area near g02, g12, and g13 instead of staying clearly separated.",
+        "The lower teleport arcs create avoidable tangles beneath the grid, with crossings close to the bottom-row nodes g20, g21, g22, and g23.",
+        "The dense bundle of curves around the upper middle of the grid obscures the simple 3 by 4 grid structure."
+      ],
+      "visual_suggestions": [
+        "Move H farther upward and route its edges to g21 and g22 outside the grid sides or with wider bends so they do not pass near g01/g02 labels.",
+        "Reroute the teleport edge g01-g22 as a clear outer arc, preferably above and then around the right side or below the grid, avoiding the central grid nodes.",
+        "Increase the vertical spacing between rows or spread the columns slightly to give the curved hub and teleport edges more clearance.",
+        "Route g00-g23 and g03-g20 farther outside the grid boundary with larger outer arcs so their crossings occur away from bottom-row nodes and labels."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 4.263140626345792,
+        "min_edge_node_clearance": 0.7003950352027671
+      },
+      "errors": [
+        "Visual review score=5.5: Several curved hub edges from H into the grid pass too close to non-incident top-row nodes, especially around g01 and g02, making the labels and incident structure harder to read.",
+        "Visual review score=5.5: The long curved edge from g01 to g22 runs through the interior of the grid and crowds the central/right grid area near g02, g12, and g13 instead of staying clearly separated.",
+        "Visual review score=5.5: The lower teleport arcs create avoidable tangles beneath the grid, with crossings close to the bottom-row nodes g20, g21, g22, and g23.",
+        "Visual review score=5.5: The dense bundle of curves around the upper middle of the grid obscures the simple 3 by 4 grid structure."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.5,
+      "visual_issues": [
+        "Several curved hub edges from H into the grid pass very close to or through the top-row and middle-row grid area, crowding non-incident nodes and labels around g01, g02, g11, and g12.",
+        "The curved teleport edge g01-g22 runs through the interior of the grid and appears to pass close to central nodes/labels, especially near g12.",
+        "The teleport edge g10-g13 arches across the grid interior and adds avoidable tangling near the top of the middle row.",
+        "Labels are very small and are visually crowded by nearby edges, making node identities hard to read."
+      ],
+      "visual_suggestions": [
+        "Move H higher or route H-to-g11, H-to-g12, H-to-g21, and H-to-g22 farther outside the grid so they enter their target nodes without passing near other grid nodes.",
+        "Route g01-g22 outside the right side or with a wider bend below/around the grid instead of through the grid interior.",
+        "Route g10-g13 as a shallow outer arc below or above the row with enough clearance from g11 and g12.",
+        "Increase label size or node spacing slightly so labels remain readable and clear of edges."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 5.609319833990571,
+        "min_edge_node_clearance": 0.7028577982063215
+      },
+      "errors": [
+        "Visual review score=5.5: Several curved hub edges from H into the grid pass very close to or through the top-row and middle-row grid area, crowding non-incident nodes and labels around g01, g02, g11, and g12.",
+        "Visual review score=5.5: The curved teleport edge g01-g22 runs through the interior of the grid and appears to pass close to central nodes/labels, especially near g12.",
+        "Visual review score=5.5: The teleport edge g10-g13 arches across the grid interior and adds avoidable tangling near the top of the middle row.",
+        "Visual review score=5.5: Labels are very small and are visually crowded by nearby edges, making node identities hard to read."
+      ]
+    }
+  ],
+  "id": "hubbed_grid_with_teleports",
+  "title": "Hubbed Grid With Teleports",
+  "prompt": "Draw an artificial undirected graph made from a 3 by 4 grid plus teleports. Grid vertices are g00,g01,g02,g03 on the top row, g10,g11,g12,g13 in the middle row, and g20,g21,g22,g23 on the bottom row. Add all horizontal and vertical grid edges. Add hub node H connected to g01,g02,g11,g12,g21,g22. Add teleport edges g00-g23, g03-g20, g10-g13, and g01-g22. Use bends or an outer route for long teleports so the grid remains legible.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_012639\\hubbed_grid_with_teleports"
+}

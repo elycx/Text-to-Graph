@@ -1,0 +1,332 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A0",
+        "label": "$A_{0}$"
+      },
+      {
+        "id": "A1",
+        "label": "$A_{1}$"
+      },
+      {
+        "id": "A2",
+        "label": "$A_{2}$"
+      },
+      {
+        "id": "A3",
+        "label": "$A_{3}$"
+      },
+      {
+        "id": "A4",
+        "label": "$A_{4}$"
+      },
+      {
+        "id": "A5",
+        "label": "$A_{5}$"
+      },
+      {
+        "id": "B0",
+        "label": "$B_{0}$"
+      },
+      {
+        "id": "B1",
+        "label": "$B_{1}$"
+      },
+      {
+        "id": "B2",
+        "label": "$B_{2}$"
+      },
+      {
+        "id": "B3",
+        "label": "$B_{3}$"
+      },
+      {
+        "id": "B4",
+        "label": "$B_{4}$"
+      },
+      {
+        "id": "B5",
+        "label": "$B_{5}$"
+      },
+      {
+        "id": "S",
+        "label": "$S$"
+      },
+      {
+        "id": "T",
+        "label": "$T$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A0",
+        "target": "A1",
+        "directed": false
+      },
+      {
+        "source": "A1",
+        "target": "A2",
+        "directed": false
+      },
+      {
+        "source": "A2",
+        "target": "A3",
+        "directed": false
+      },
+      {
+        "source": "A3",
+        "target": "A4",
+        "directed": false
+      },
+      {
+        "source": "A4",
+        "target": "A5",
+        "directed": false
+      },
+      {
+        "source": "B0",
+        "target": "B1",
+        "directed": false
+      },
+      {
+        "source": "B1",
+        "target": "B2",
+        "directed": false
+      },
+      {
+        "source": "B2",
+        "target": "B3",
+        "directed": false
+      },
+      {
+        "source": "B3",
+        "target": "B4",
+        "directed": false
+      },
+      {
+        "source": "B4",
+        "target": "B5",
+        "directed": false
+      },
+      {
+        "source": "A0",
+        "target": "B0",
+        "directed": false
+      },
+      {
+        "source": "A1",
+        "target": "B1",
+        "directed": false
+      },
+      {
+        "source": "A2",
+        "target": "B2",
+        "directed": false
+      },
+      {
+        "source": "A3",
+        "target": "B3",
+        "directed": false
+      },
+      {
+        "source": "A4",
+        "target": "B4",
+        "directed": false
+      },
+      {
+        "source": "A5",
+        "target": "B5",
+        "directed": false
+      },
+      {
+        "source": "A0",
+        "target": "B1",
+        "directed": false
+      },
+      {
+        "source": "B1",
+        "target": "A2",
+        "directed": false
+      },
+      {
+        "source": "A2",
+        "target": "B3",
+        "directed": false
+      },
+      {
+        "source": "B3",
+        "target": "A4",
+        "directed": false
+      },
+      {
+        "source": "A4",
+        "target": "B5",
+        "directed": false
+      },
+      {
+        "source": "B0",
+        "target": "A1",
+        "directed": false
+      },
+      {
+        "source": "A1",
+        "target": "B2",
+        "directed": false
+      },
+      {
+        "source": "B2",
+        "target": "A3",
+        "directed": false
+      },
+      {
+        "source": "A3",
+        "target": "B4",
+        "directed": false
+      },
+      {
+        "source": "B4",
+        "target": "A5",
+        "directed": false
+      },
+      {
+        "source": "S",
+        "target": "A0",
+        "directed": false
+      },
+      {
+        "source": "S",
+        "target": "B0",
+        "directed": false
+      },
+      {
+        "source": "T",
+        "target": "A5",
+        "directed": false
+      },
+      {
+        "source": "T",
+        "target": "B5",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A0": [
+          0.0,
+          1.5
+        ],
+        "A1": [
+          2.2,
+          1.5
+        ],
+        "A2": [
+          4.4,
+          1.5
+        ],
+        "A3": [
+          6.6,
+          1.5
+        ],
+        "A4": [
+          8.8,
+          1.5
+        ],
+        "A5": [
+          11.0,
+          1.5
+        ],
+        "B0": [
+          0.0,
+          -1.5
+        ],
+        "B1": [
+          2.2,
+          -1.5
+        ],
+        "B2": [
+          4.4,
+          -1.5
+        ],
+        "B3": [
+          6.6,
+          -1.5
+        ],
+        "B4": [
+          8.8,
+          -1.5
+        ],
+        "B5": [
+          11.0,
+          -1.5
+        ],
+        "S": [
+          -2.2,
+          0.0
+        ],
+        "T": [
+          13.2,
+          0.0
+        ]
+      },
+      "edge_options": {},
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 2.5299999999999994,
+    "min_edge_node_clearance": 2.040204639514934
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 9.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":9.0,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_012639\\braided_ladder_portals\\iteration_0\\braided_ladder_portals.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_012639\\braided_ladder_portals\\iteration_0\\braided_ladder_portals.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_012639\\braided_ladder_portals\\iteration_0\\braided_ladder_portals.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 9.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 2.5299999999999994,
+        "min_edge_node_clearance": 2.040204639514934
+      },
+      "errors": []
+    }
+  ]
+}

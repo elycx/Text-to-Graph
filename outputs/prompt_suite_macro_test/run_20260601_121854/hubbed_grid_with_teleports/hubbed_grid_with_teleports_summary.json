@@ -1,0 +1,427 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "g00",
+        "label": "g00"
+      },
+      {
+        "id": "g01",
+        "label": "g01"
+      },
+      {
+        "id": "g02",
+        "label": "g02"
+      },
+      {
+        "id": "g03",
+        "label": "g03"
+      },
+      {
+        "id": "g10",
+        "label": "g10"
+      },
+      {
+        "id": "g11",
+        "label": "g11"
+      },
+      {
+        "id": "g12",
+        "label": "g12"
+      },
+      {
+        "id": "g13",
+        "label": "g13"
+      },
+      {
+        "id": "g20",
+        "label": "g20"
+      },
+      {
+        "id": "g21",
+        "label": "g21"
+      },
+      {
+        "id": "g22",
+        "label": "g22"
+      },
+      {
+        "id": "g23",
+        "label": "g23"
+      },
+      {
+        "id": "H",
+        "label": "H"
+      }
+    ],
+    "edges": [
+      {
+        "source": "g00",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g03",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g20",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g21",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g22",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g10",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g13",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g22",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "g00": [
+          -4.869,
+          34.477
+        ],
+        "g01": [
+          15.831,
+          34.477
+        ],
+        "g02": [
+          36.531,
+          34.477
+        ],
+        "g03": [
+          57.231,
+          34.477
+        ],
+        "g10": [
+          -4.869,
+          -0.023
+        ],
+        "g11": [
+          15.831,
+          -0.023
+        ],
+        "g12": [
+          36.531,
+          -0.023
+        ],
+        "g13": [
+          57.231,
+          -0.023
+        ],
+        "g20": [
+          -4.869,
+          -34.523
+        ],
+        "g21": [
+          15.831,
+          -34.523
+        ],
+        "g22": [
+          36.531,
+          -34.523
+        ],
+        "g23": [
+          57.464,
+          -35.179
+        ],
+        "H": [
+          107.831,
+          2.277
+        ]
+      },
+      "edge_options": {
+        "undirected:g00:g23": "out=185,in=275,looseness=2.25",
+        "undirected:g03:g20": "out=355,in=265,looseness=2.25",
+        "undirected:g10:g13": "out=95,in=85,looseness=2.05",
+        "undirected:g01:g22": "out=175,in=185,looseness=2.15",
+        "undirected:H:g01": "out=145,in=25,looseness=1.75",
+        "undirected:H:g02": "out=155,in=20,looseness=1.45",
+        "undirected:H:g11": "out=235,in=325,looseness=1.85",
+        "undirected:H:g12": "out=130,in=35,looseness=1.45",
+        "undirected:H:g21": "out=220,in=335,looseness=1.45",
+        "undirected:H:g22": "out=205,in=345,looseness=1.25"
+      },
+      "node_options": {
+        "g00": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g01": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g02": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g03": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g10": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g11": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g12": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g13": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g20": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g21": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g22": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "g23": "draw,circle,fill=white,inner sep=3pt,font=\\Large",
+        "H": "draw,circle,fill=gray!15,inner sep=4pt,font=\\Large\\bfseries"
+      },
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=30.34, maximum=68.47, moved_fraction=1.00.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=30.34, maximum=68.47, moved_fraction=1.00."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 20.7,
+    "min_edge_node_clearance": 0.699287305796256
+  },
+  "visual_review": null,
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": false,
+    "tex_path": "outputs\\prompt_suite_macro_test\\run_20260601_121854\\hubbed_grid_with_teleports\\iteration_3\\hubbed_grid_with_teleports.tex",
+    "pdf_path": null,
+    "png_path": null,
+    "error": "!  ==> Fatal error occurred, no output PDF file produced!"
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.0,
+      "visual_issues": [
+        "The outer teleport edge g03-g20 is routed too close to the unrelated bottom-right node g23, crowding its circle and label area.",
+        "The outer teleport edge g00-g23 is routed too close to the unrelated bottom-left node g20, crowding that node and making the lower-left gadget harder to read.",
+        "The bottom bowed teleport edge g10-g13 runs very close to the bottom row near g20 and g23, creating avoidable crowding around non-incident nodes.",
+        "Several hub spokes from H create a dense central fan and cross the grid near g11 and g12, making the central grid less legible even though most crossings are not directly on labels."
+      ],
+      "visual_suggestions": [
+        "Route g03-g20 farther outside the right side and bottom-left corner so it clears g23 and the bottom row by a wider margin.",
+        "Route g00-g23 farther outside the left side and lower-right corner so it does not crowd g20.",
+        "Move the g10-g13 teleport farther below the grid or use a wider lower arc with more clearance from g20, g21, g22, and g23.",
+        "Consider moving H higher or spreading g01,g02,g11,g12,g21,g22 slightly to reduce the central fan density from the hub spokes."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.0661764203474977,
+        "min_edge_node_clearance": 0.7188675276865769
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=5.0: The outer teleport edge g03-g20 is routed too close to the unrelated bottom-right node g23, crowding its circle and label area.",
+        "Visual review score=5.0: The outer teleport edge g00-g23 is routed too close to the unrelated bottom-left node g20, crowding that node and making the lower-left gadget harder to read.",
+        "Visual review score=5.0: The bottom bowed teleport edge g10-g13 runs very close to the bottom row near g20 and g23, creating avoidable crowding around non-incident nodes.",
+        "Visual review score=5.0: Several hub spokes from H create a dense central fan and cross the grid near g11 and g12, making the central grid less legible even though most crossings are not directly on labels."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": false,
+      "visual_ok": false,
+      "visual_score": null,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 13.047153904204547,
+        "min_edge_node_clearance": 0.5466802783384985
+      },
+      "next_refinement": "text_refinement",
+      "errors": [
+        "Edge H-g11 passes too close to unrelated node g01: distance 0.55.",
+        "Edge H-g12 passes too close to unrelated node g02: distance 0.55.",
+        "Edge H-g21 passes too close to unrelated node g01: distance 0.55.",
+        "Edge H-g22 passes too close to unrelated node g02: distance 0.55.",
+        "!  ==> Fatal error occurred, no output PDF file produced!"
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "Vertex labels are not readable/visible in the rendered figure, so the node identities cannot be checked visually.",
+        "Several long curved teleport/hub edges run through the interior of the grid and crowd non-incident grid nodes, especially near the top row around g01-g03 and the middle/right grid around g12-g13.",
+        "The layout has an avoidable tangle of long arcs over and through the grid, making it difficult to distinguish grid edges from teleport and hub edges.",
+        "Some hub edges from H cross the grid area and pass close to unrelated grid vertices instead of staying clearly outside the grid."
+      ],
+      "visual_suggestions": [
+        "Make all node labels visible and large enough to read; place labels with small offsets if necessary so edges do not cover them.",
+        "Route teleports g00-g23 and g03-g20 farther around the outside of the grid with larger clearance from the top and bottom rows.",
+        "Reroute g10-g13 outside the grid, preferably as a clear upper or lower arc that does not pass near g01, g02, or g03.",
+        "Move H farther to the right and route H-g01, H-g02, H-g11, H-g12, H-g21, and H-g22 as separated fan-like curves that enter the grid from the right without crossing close to g13 or g23.",
+        "Route g01-g22 with a distinct outer bend rather than through the center of the grid."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 7.405975762855291,
+        "min_edge_node_clearance": 0.7611764033516579
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=4.0: Vertex labels are not readable/visible in the rendered figure, so the node identities cannot be checked visually.",
+        "Visual review score=4.0: Several long curved teleport/hub edges run through the interior of the grid and crowd non-incident grid nodes, especially near the top row around g01-g03 and the middle/right grid around g12-g13.",
+        "Visual review score=4.0: The layout has an avoidable tangle of long arcs over and through the grid, making it difficult to distinguish grid edges from teleport and hub edges.",
+        "Visual review score=4.0: Some hub edges from H cross the grid area and pass close to unrelated grid vertices instead of staying clearly outside the grid."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": false,
+      "visual_ok": false,
+      "visual_score": null,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 20.7,
+        "min_edge_node_clearance": 0.699287305796256
+      },
+      "next_refinement": null,
+      "errors": [
+        "!  ==> Fatal error occurred, no output PDF file produced!"
+      ]
+    }
+  ],
+  "id": "hubbed_grid_with_teleports",
+  "title": "Hubbed Grid With Teleports",
+  "prompt": "Draw an artificial undirected graph made from a 3 by 4 grid plus teleports. Grid vertices are g00,g01,g02,g03 on the top row, g10,g11,g12,g13 in the middle row, and g20,g21,g22,g23 on the bottom row. Add all horizontal and vertical grid edges. Add hub node H connected to g01,g02,g11,g12,g21,g22. Add teleport edges g00-g23, g03-g20, g10-g13, and g01-g22. Use bends or an outer route for long teleports so the grid remains legible.",
+  "case_dir": "outputs\\prompt_suite_macro_test\\run_20260601_121854\\hubbed_grid_with_teleports"
+}

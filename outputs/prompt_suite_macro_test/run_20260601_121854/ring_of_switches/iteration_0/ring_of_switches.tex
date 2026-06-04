@@ -1,0 +1,60 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_s0) at (3.51,-1.57) {$s_0$};
+\node[graphnode] (n_s1) at (1.25,3.26) {$s_1$};
+\node[graphnode] (n_s2) at (-1.25,3.26) {$s_2$};
+\node[graphnode] (n_s3) at (-3.47,-1.21) {$s_3$};
+\node[graphnode] (n_s4) at (-1.25,-3.26) {$s_4$};
+\node[graphnode] (n_s5) at (1.25,-3.26) {$s_5$};
+\node[graphnode] (n_g0) at (4.73,-0.69) {$g_0$};
+\node[graphnode] (n_g1) at (3.02,3.82) {$g_1$};
+\node[graphnode] (n_g2) at (-2.71,4.64) {$g_2$};
+\node[graphnode] (n_g3) at (-5.35,0.05) {$g_3$};
+\node[graphnode] (n_g4) at (-3.02,-3.82) {$g_4$};
+\node[graphnode] (n_g5) at (2.71,-4.64) {$g_5$};
+\node[graphnode] (n_o0) at (6.48,-1.24) {$o_0$};
+\node[graphnode] (n_o1) at (4.35,4.97) {$o_1$};
+\node[graphnode] (n_o2) at (-3.91,5.12) {$o_2$};
+\node[graphnode] (n_o3) at (-6.38,-0.86) {$o_3$};
+\node[graphnode] (n_o4) at (-4.35,-4.97) {$o_4$};
+\node[graphnode] (n_o5) at (3.91,-5.12) {$o_5$};
+\draw[directed] (n_s0) -- (n_s1);
+\draw[directed] (n_s1) -- (n_s2);
+\draw[directed] (n_s2) -- (n_s3);
+\draw[directed] (n_s3) -- (n_s4);
+\draw[directed] (n_s4) -- (n_s5);
+\draw[directed] (n_s5) -- (n_s0);
+\draw[directed] (n_s0) -- (n_g0);
+\draw[directed] (n_g0) -- (n_o0);
+\draw[directed] (n_o0) -- (n_s1);
+\draw[directed] (n_s1) -- (n_g1);
+\draw[directed] (n_g1) -- (n_o1);
+\draw[directed] (n_o1) -- (n_s2);
+\draw[directed] (n_s2) -- (n_g2);
+\draw[directed] (n_g2) -- (n_o2);
+\draw[directed] (n_o2) -- (n_s3);
+\draw[directed] (n_s3) -- (n_g3);
+\draw[directed] (n_g3) -- (n_o3);
+\draw[directed] (n_o3) -- (n_s4);
+\draw[directed] (n_s4) -- (n_g4);
+\draw[directed] (n_g4) -- (n_o4);
+\draw[directed] (n_o4) -- (n_s5);
+\draw[directed] (n_s5) -- (n_g5);
+\draw[directed] (n_g5) -- (n_o5);
+\draw[directed] (n_o5) -- (n_s0);
+\draw[directed] (n_g0) to[out=0,in=180,looseness=2.3] (n_s3);
+\draw[directed] (n_g1) to[out=60,in=240,looseness=2.3] (n_s4);
+\draw[directed] (n_g2) to[out=120,in=300,looseness=2.3] (n_s5);
+\draw[directed] (n_g3) to[out=180,in=0,looseness=2.3] (n_s0);
+\draw[directed] (n_g4) to[out=240,in=60,looseness=2.3] (n_s1);
+\draw[directed] (n_g5) to[out=300,in=120,looseness=2.3] (n_s2);
+\end{tikzpicture}
+\end{document}

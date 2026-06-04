@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "error": "GPT-5 macro relayout request failed: GPT-5 API HTTP 500: {\"error\":{\"message\":\"Codex 后端错误 503: upstream connect error or disconnect/reset before headers. reset reason: connection termination\",\"type\":\"proxy_error\",\"code\":\"internal_error\"}}",
+  "history": [],
+  "id": "ring_of_switches",
+  "title": "Ring of Switches With Local Gates",
+  "prompt": "Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0->s1->s2->s3->s4->s5->s0. Each switch si has a local gate gi and output oi, with edges si->gi, gi->oi, and oi->s(i+1 mod 6). Add skip edges g0->s3, g1->s4, g2->s5, g3->s0, g4->s1, g5->s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.",
+  "case_dir": "outputs\\prompt_suite_macro_test\\run_20260601_134428\\ring_of_switches"
+}

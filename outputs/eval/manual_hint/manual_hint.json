@@ -1,0 +1,52 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "Left",
+        "label": "Left"
+      },
+      {
+        "id": "Right",
+        "label": "Right"
+      }
+    ],
+    "edges": [
+      {
+        "source": "Left",
+        "target": "Right",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "manual",
+      "relations": [
+        {
+          "source": "Left",
+          "target": "Right",
+          "relation": "left_of"
+        }
+      ]
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": null,
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": null,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "L",
+        "label": "L"
+      },
+      {
+        "id": "l0",
+        "label": "l0"
+      },
+      {
+        "id": "l1",
+        "label": "l1"
+      },
+      {
+        "id": "l2",
+        "label": "l2"
+      },
+      {
+        "id": "l3",
+        "label": "l3"
+      },
+      {
+        "id": "l4",
+        "label": "l4"
+      },
+      {
+        "id": "l5",
+        "label": "l5"
+      },
+      {
+        "id": "R",
+        "label": "R"
+      },
+      {
+        "id": "r0",
+        "label": "r0"
+      },
+      {
+        "id": "r1",
+        "label": "r1"
+      },
+      {
+        "id": "r2",
+        "label": "r2"
+      },
+      {
+        "id": "r3",
+        "label": "r3"
+      },
+      {
+        "id": "r4",
+        "label": "r4"
+      },
+      {
+        "id": "r5",
+        "label": "r5"
+      },
+      {
+        "id": "x0",
+        "label": "x0"
+      },
+      {
+        "id": "x1",
+        "label": "x1"
+      },
+      {
+        "id": "y0",
+        "label": "y0"
+      },
+      {
+        "id": "y1",
+        "label": "y1"
+      }
+    ],
+    "edges": [
+      {
+        "source": "l0",
+        "target": "l1",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "l3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "l5",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "r0",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "r1",
+        "target": "r2",
+        "directed": false
+      },
+      {
+        "source": "r2",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "r3",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "r4",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "r5",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l0",
+        "target": "x0",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x1",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "y0",
+        "directed": false
+      },
+      {
+        "source": "y0",
+        "target": "y1",
+        "directed": false
+      },
+      {
+        "source": "y1",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "r2",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "L": [
+          -15.0,
+          0.0
+        ],
+        "l0": [
+          -15.0,
+          5.0
+        ],
+        "l1": [
+          -19.33,
+          2.5
+        ],
+        "l2": [
+          -19.33,
+          -2.5
+        ],
+        "l3": [
+          -15.0,
+          -5.0
+        ],
+        "l4": [
+          -10.67,
+          -2.5
+        ],
+        "l5": [
+          -10.67,
+          2.5
+        ],
+        "R": [
+          15.0,
+          0.0
+        ],
+        "r0": [
+          15.0,
+          -5.0
+        ],
+        "r1": [
+          19.33,
+          -2.5
+        ],
+        "r2": [
+          19.33,
+          2.5
+        ],
+        "r3": [
+          15.0,
+          5.0
+        ],
+        "r4": [
+          10.67,
+          2.5
+        ],
+        "r5": [
+          10.67,
+          -2.5
+        ],
+        "x0": [
+          -5.0,
+          13.5
+        ],
+        "x1": [
+          5.0,
+          13.5
+        ],
+        "y0": [
+          -5.0,
+          -13.5
+        ],
+        "y1": [
+          5.0,
+          -13.5
+        ]
+      },
+      "edge_options": {
+        "undirected:l1:r4": "out=12,in=168,looseness=0.75",
+        "undirected:l2:r5": "out=-12,in=-168,looseness=0.75",
+        "undirected:l4:r1": "out=-45,in=-135,looseness=1.15",
+        "undirected:l5:r2": "out=45,in=135,looseness=1.15"
+      },
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 5.749873498608467,
+    "min_edge_node_clearance": 0.8314563133573174
+  },
+  "visual_review": {
+    "acceptable": false,
+    "score": 6.0,
+    "issues": [
+      "The long twist edge from l1 to r4 runs very close to the non-incident node/label l5, making the left crown interior crowded.",
+      "The long twist edge from l2 to r5 similarly passes close to the non-incident node/label l4.",
+      "The upper bridge edge x1-r3 crosses the large upper arc near the right crown, creating a tangle close to r3/r2.",
+      "The lower bridge edge y1-r0 crosses the large lower arc near the right crown, creating a similar tangle close to r0/r1."
+    ],
+    "suggestions": [
+      "Reroute l1-r4 as a higher, more outward arc so it clears l5 and the left crown.",
+      "Reroute l2-r5 as a lower, more outward arc so it clears l4 and the left crown.",
+      "Move x0 and x1 farther upward or curve the l0-x0-x1-r3 bridge outward to avoid crossing the upper twist arc near r3.",
+      "Move y0 and y1 farther downward or curve the l3-y0-y1-r0 bridge outward to avoid crossing the lower twist arc near r0."
+    ],
+    "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 6.0,\n  \"issues\": [\n    \"The long twist edge from l1 to r4 runs very close to the non-incident node/label l5, making the left crown interior crowded.\",\n    \"The long twist edge from l2 to r5 similarly passes close to the non-incident node/label l4.\",\n    \"The upper bridge edge x1-r3 crosses the large upper arc near the right crown, creating a tangle close to r3/r2.\",\n    \"The lower bridge edge y1-r0 crosses the large lower arc near the right crown, creating a similar tangle close to r0/r1.\"\n  ],\n  \"suggestions\": [\n    \"Reroute l1-r4 as a higher, more outward arc so it clears l5 and the left crown.\",\n    \"Reroute l2-r5 as a lower, more outward arc so it clears l4 and the left crown.\",\n    \"Move x0 and x1 farther upward or curve the l0-x0-x1-r3 bridge outward to avoid crossing the upper twist arc near r3.\",\n    \"Move y0 and y1 farther downward or curve the l3-y0-y1-r0 bridge outward to avoid crossing the lower twist arc near r0.\"\n  ]\n}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_114244\\double_crown_bridge\\iteration_3\\double_crown_bridge.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_114244\\double_crown_bridge\\iteration_3\\double_crown_bridge.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_114244\\double_crown_bridge\\iteration_3\\double_crown_bridge.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The long curved edge l4-r1 passes too close to the non-incident node r0, crowding the r0 label/node area.",
+        "The lower bridge/twist region around y1, r0, and r1 is visually crowded, with multiple edges converging and running nearly parallel near r0.",
+        "Some long inter-crown edges create avoidable tangles in the middle, especially where the upper matching/bridge edges cross near x1-r3 and r4."
+      ],
+      "visual_suggestions": [
+        "Move r0 slightly farther downward and/or outward to the lower right to increase clearance from the l4-r1 edge.",
+        "Reroute the l4-r1 matching edge with a wider lower arc that stays clearly below r0, or alternatively route it above r0 with more separation from the right crown edges.",
+        "Increase vertical separation between the upper bridge path x0-x1-r3 and the upper matching edges, for example by moving x0 and x1 slightly higher.",
+        "Consider moving y0 and y1 slightly lower to give the lower bridge path more room and reduce crowding around r0."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.5247673160115167,
+        "min_edge_node_clearance": 0.6918643637769989
+      },
+      "errors": [
+        "Visual review score=6.5: The long curved edge l4-r1 passes too close to the non-incident node r0, crowding the r0 label/node area.",
+        "Visual review score=6.5: The lower bridge/twist region around y1, r0, and r1 is visually crowded, with multiple edges converging and running nearly parallel near r0.",
+        "Visual review score=6.5: Some long inter-crown edges create avoidable tangles in the middle, especially where the upper matching/bridge edges cross near x1-r3 and r4."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.2,
+      "visual_issues": [
+        "The upper long matching edge from l1 to r4 runs very close to the l0 node/label area, making the top-left crown hard to read.",
+        "The long central curved edge from l4 to r1 passes too close to the R node and visually crowds the R-r1 spoke.",
+        "The lower long curved matching edge appears crowded near the l3/l2 side of the left crown, with curves bunching around l3 and the lower bridge start.",
+        "Several long inter-crown arcs overlap the visual space of the two crowns rather than staying in clear outer lanes, creating avoidable tangling."
+      ],
+      "visual_suggestions": [
+        "Route l1-r4 higher above the crowns, or move x0/x1 slightly higher and give the l1-r4 arc a separate upper lane with more clearance from l0.",
+        "Route l4-r1 lower or through a cleaner central lane so it stays well away from the R node and the R-r1 spoke.",
+        "Move the lower matching arc l2-r5 farther downward or separate it from the l3-y0 bridge so it does not crowd l3.",
+        "Consider increasing horizontal spacing between the two crowns and assigning the four twist matching edges to distinct non-overlapping curved lanes."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.9872176017156833,
+        "min_edge_node_clearance": 0.7064092899047062
+      },
+      "errors": [
+        "Visual review score=6.2: The upper long matching edge from l1 to r4 runs very close to the l0 node/label area, making the top-left crown hard to read.",
+        "Visual review score=6.2: The long central curved edge from l4 to r1 passes too close to the R node and visually crowds the R-r1 spoke.",
+        "Visual review score=6.2: The lower long curved matching edge appears crowded near the l3/l2 side of the left crown, with curves bunching around l3 and the lower bridge start.",
+        "Visual review score=6.2: Several long inter-crown arcs overlap the visual space of the two crowns rather than staying in clear outer lanes, creating avoidable tangling."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.0,
+      "visual_issues": [
+        "The long upper matching curve from l5 toward r2 passes very close to the r3 node/label area, making the right crown hard to read.",
+        "The long lower matching curve from l4 toward r1 passes very close to the r0 node/label area.",
+        "The outer top curved edge crowds the x1 node/label, and the outer bottom curved edge crowds the y1 node/label.",
+        "Several long inter-crown curves run through the visual space of the bridge paths, creating avoidable tangles near x1/r3 and y1/r0."
+      ],
+      "visual_suggestions": [
+        "Move x0 and x1 farther upward, and y0 and y1 farther downward, so the bridge paths are clearly separated from the large outer matching arcs.",
+        "Reroute l5-r2 higher or farther outward so it avoids the r3 node/label and the r3-r2 rim edge.",
+        "Reroute l4-r1 lower or farther outward so it avoids the r0 node/label and the r0-r1 rim edge.",
+        "Increase horizontal separation between the two crowns or use distinct routing bands for the four twist matching edges to reduce crowding near the right crown."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 4.595915686781035,
+        "min_edge_node_clearance": 0.6850258449898092
+      },
+      "errors": [
+        "Visual review score=5.0: The long upper matching curve from l5 toward r2 passes very close to the r3 node/label area, making the right crown hard to read.",
+        "Visual review score=5.0: The long lower matching curve from l4 toward r1 passes very close to the r0 node/label area.",
+        "Visual review score=5.0: The outer top curved edge crowds the x1 node/label, and the outer bottom curved edge crowds the y1 node/label.",
+        "Visual review score=5.0: Several long inter-crown curves run through the visual space of the bridge paths, creating avoidable tangles near x1/r3 and y1/r0."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.0,
+      "visual_issues": [
+        "The long twist edge from l1 to r4 runs very close to the non-incident node/label l5, making the left crown interior crowded.",
+        "The long twist edge from l2 to r5 similarly passes close to the non-incident node/label l4.",
+        "The upper bridge edge x1-r3 crosses the large upper arc near the right crown, creating a tangle close to r3/r2.",
+        "The lower bridge edge y1-r0 crosses the large lower arc near the right crown, creating a similar tangle close to r0/r1."
+      ],
+      "visual_suggestions": [
+        "Reroute l1-r4 as a higher, more outward arc so it clears l5 and the left crown.",
+        "Reroute l2-r5 as a lower, more outward arc so it clears l4 and the left crown.",
+        "Move x0 and x1 farther upward or curve the l0-x0-x1-r3 bridge outward to avoid crossing the upper twist arc near r3.",
+        "Move y0 and y1 farther downward or curve the l3-y0-y1-r0 bridge outward to avoid crossing the lower twist arc near r0."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 5.749873498608467,
+        "min_edge_node_clearance": 0.8314563133573174
+      },
+      "errors": [
+        "Visual review score=6.0: The long twist edge from l1 to r4 runs very close to the non-incident node/label l5, making the left crown interior crowded.",
+        "Visual review score=6.0: The long twist edge from l2 to r5 similarly passes close to the non-incident node/label l4.",
+        "Visual review score=6.0: The upper bridge edge x1-r3 crosses the large upper arc near the right crown, creating a tangle close to r3/r2.",
+        "Visual review score=6.0: The lower bridge edge y1-r0 crosses the large lower arc near the right crown, creating a similar tangle close to r0/r1."
+      ]
+    }
+  ],
+  "id": "double_crown_bridge",
+  "title": "Double Crown Bridge",
+  "prompt": "Create a complex artificial graph made from two crowns connected by a bridge. The left crown has center L and rim nodes l0,l1,l2,l3,l4,l5 forming a 6-cycle, with L connected to l0,l2,l4 only. The right crown has center R and rim nodes r0,r1,r2,r3,r4,r5 forming a 6-cycle, with R connected to r1,r3,r5 only. Add bridge path l0-x0-x1-r3 and bridge path l3-y0-y1-r0. Add twist matching edges l1-r4, l2-r5, l4-r1, l5-r2. Draw it as two circular clusters with the bridges between them.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_114244\\double_crown_bridge"
+}

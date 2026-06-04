@@ -1,0 +1,46 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_U0) at (-11.00,1.60) {$U_0$};
+\node[graphnode] (n_U1) at (-8.00,4.60) {$U_1$};
+\node[graphnode] (n_U2) at (-5.00,1.60) {$U_2$};
+\node[graphnode] (n_V0) at (-11.00,-2.00) {$V_0$};
+\node[graphnode] (n_V1) at (-8.00,-4.60) {$V_1$};
+\node[graphnode] (n_V2) at (-5.00,-2.00) {$V_2$};
+\node[graphnode] (n_r) at (-1.00,4.60) {$r$};
+\node[graphnode] (n_x0) at (2.50,7.00) {$x_0$};
+\node[graphnode] (n_x1) at (2.86,2.01) {$x_1$};
+\node[graphnode] (n_x00) at (6.50,8.50) {$x_{00}$};
+\node[graphnode] (n_x01) at (6.50,6.00) {$x_{01}$};
+\node[graphnode] (n_x10) at (6.50,1.00) {$x_{10}$};
+\node[graphnode] (n_x11) at (6.50,-1.80) {$x_{11}$};
+\draw[undirected] (n_U0) -- (n_U1);
+\draw[undirected] (n_U1) -- (n_U2);
+\draw[undirected] (n_U0) -- (n_U2);
+\draw[undirected] (n_V0) -- (n_V1);
+\draw[undirected] (n_V1) -- (n_V2);
+\draw[undirected] (n_V0) -- (n_V2);
+\draw[undirected] (n_U0) -- (n_V0);
+\draw[undirected] (n_U1) -- (n_V1);
+\draw[undirected] (n_U2) -- (n_V2);
+\draw[undirected] (n_U0) to[bend right=18] (n_V1);
+\draw[undirected] (n_U1) to[bend left=18] (n_V2);
+\draw[undirected] (n_U2) to[bend left=16] (n_V0);
+\draw[undirected] (n_U1) -- (n_r);
+\draw[undirected] (n_r) -- (n_x0);
+\draw[undirected] (n_r) -- (n_x1);
+\draw[undirected] (n_x0) -- (n_x00);
+\draw[undirected] (n_x0) -- (n_x01);
+\draw[undirected] (n_x1) -- (n_x10);
+\draw[undirected] (n_x1) -- (n_x11);
+\draw[undirected,rounded corners=5pt] (n_x01) -- (-3.20,-2.00) -- (-3.20,10.50) -- (8.00,10.50) -- (8.00,6.00) -- (n_V2);
+\draw[undirected,rounded corners=5pt] (n_x10) -- (-11.00,-7.00) -- (8.50,-7.00) -- (8.50,1.00) -- (n_V0);
+\end{tikzpicture}
+\end{document}

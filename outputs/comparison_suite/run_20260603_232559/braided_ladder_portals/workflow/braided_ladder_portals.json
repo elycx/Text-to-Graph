@@ -1,0 +1,352 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A0",
+        "label": "$A_0$"
+      },
+      {
+        "id": "A1",
+        "label": "$A_1$"
+      },
+      {
+        "id": "A2",
+        "label": "$A_2$"
+      },
+      {
+        "id": "A3",
+        "label": "$A_3$"
+      },
+      {
+        "id": "A4",
+        "label": "$A_4$"
+      },
+      {
+        "id": "A5",
+        "label": "$A_5$"
+      },
+      {
+        "id": "B0",
+        "label": "$B_0$"
+      },
+      {
+        "id": "B1",
+        "label": "$B_1$"
+      },
+      {
+        "id": "B2",
+        "label": "$B_2$"
+      },
+      {
+        "id": "B3",
+        "label": "$B_3$"
+      },
+      {
+        "id": "B4",
+        "label": "$B_4$"
+      },
+      {
+        "id": "B5",
+        "label": "$B_5$"
+      },
+      {
+        "id": "S",
+        "label": "S"
+      },
+      {
+        "id": "T",
+        "label": "T"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A0",
+        "target": "A1",
+        "directed": false
+      },
+      {
+        "source": "A1",
+        "target": "A2",
+        "directed": false
+      },
+      {
+        "source": "A2",
+        "target": "A3",
+        "directed": false
+      },
+      {
+        "source": "A3",
+        "target": "A4",
+        "directed": false
+      },
+      {
+        "source": "A4",
+        "target": "A5",
+        "directed": false
+      },
+      {
+        "source": "B0",
+        "target": "B1",
+        "directed": false
+      },
+      {
+        "source": "B1",
+        "target": "B2",
+        "directed": false
+      },
+      {
+        "source": "B2",
+        "target": "B3",
+        "directed": false
+      },
+      {
+        "source": "B3",
+        "target": "B4",
+        "directed": false
+      },
+      {
+        "source": "B4",
+        "target": "B5",
+        "directed": false
+      },
+      {
+        "source": "A0",
+        "target": "B0",
+        "directed": false
+      },
+      {
+        "source": "A1",
+        "target": "B1",
+        "directed": false
+      },
+      {
+        "source": "A2",
+        "target": "B2",
+        "directed": false
+      },
+      {
+        "source": "A3",
+        "target": "B3",
+        "directed": false
+      },
+      {
+        "source": "A4",
+        "target": "B4",
+        "directed": false
+      },
+      {
+        "source": "A5",
+        "target": "B5",
+        "directed": false
+      },
+      {
+        "source": "A0",
+        "target": "B1",
+        "directed": false
+      },
+      {
+        "source": "B1",
+        "target": "A2",
+        "directed": false
+      },
+      {
+        "source": "A2",
+        "target": "B3",
+        "directed": false
+      },
+      {
+        "source": "B3",
+        "target": "A4",
+        "directed": false
+      },
+      {
+        "source": "A4",
+        "target": "B5",
+        "directed": false
+      },
+      {
+        "source": "B0",
+        "target": "A1",
+        "directed": false
+      },
+      {
+        "source": "A1",
+        "target": "B2",
+        "directed": false
+      },
+      {
+        "source": "B2",
+        "target": "A3",
+        "directed": false
+      },
+      {
+        "source": "A3",
+        "target": "B4",
+        "directed": false
+      },
+      {
+        "source": "B4",
+        "target": "A5",
+        "directed": false
+      },
+      {
+        "source": "S",
+        "target": "A0",
+        "directed": false
+      },
+      {
+        "source": "S",
+        "target": "B0",
+        "directed": false
+      },
+      {
+        "source": "T",
+        "target": "A5",
+        "directed": false
+      },
+      {
+        "source": "T",
+        "target": "B5",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A0": [
+          0.214,
+          0.876
+        ],
+        "A1": [
+          2.054,
+          0.876
+        ],
+        "A2": [
+          4.354,
+          0.876
+        ],
+        "A3": [
+          6.654,
+          0.876
+        ],
+        "A4": [
+          8.954,
+          0.876
+        ],
+        "A5": [
+          10.976,
+          0.84
+        ],
+        "B0": [
+          -0.535,
+          -0.628
+        ],
+        "B1": [
+          1.487,
+          -0.663
+        ],
+        "B2": [
+          3.787,
+          -0.663
+        ],
+        "B3": [
+          6.087,
+          -0.663
+        ],
+        "B4": [
+          8.387,
+          -0.663
+        ],
+        "B5": [
+          10.227,
+          -0.663
+        ],
+        "S": [
+          -1.95,
+          0.0
+        ],
+        "T": [
+          11.95,
+          0.0
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {},
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.2861866116547773,
+    "min_edge_node_clearance": 0.9237958988811323,
+    "min_edge_edge_clearance": 1.1102230246251565e-16,
+    "max_close_parallel_length": 0.5794291371686447,
+    "max_clear_detour_ratio": 1.0,
+    "edge_crossings": 5.0,
+    "drawing_width": 13.899999999999999,
+    "drawing_height": 1.5390000000000001,
+    "canvas_area_per_node": 1.528007142857143,
+    "mean_edge_path_length": 2.1718982859066376
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.6,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.6,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\comparison_suite\\run_20260603_232559\\braided_ladder_portals\\workflow\\iteration_0\\braided_ladder_portals.tex",
+    "pdf_path": "outputs\\comparison_suite\\run_20260603_232559\\braided_ladder_portals\\workflow\\iteration_0\\braided_ladder_portals.pdf",
+    "png_path": "outputs\\comparison_suite\\run_20260603_232559\\braided_ladder_portals\\workflow\\iteration_0\\braided_ladder_portals.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.6,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 1.2861866116547773,
+        "min_edge_node_clearance": 0.9237958988811323,
+        "min_edge_edge_clearance": 1.1102230246251565e-16,
+        "max_close_parallel_length": 0.5794291371686447,
+        "max_clear_detour_ratio": 1.0,
+        "edge_crossings": 5.0,
+        "drawing_width": 13.899999999999999,
+        "drawing_height": 1.5390000000000001,
+        "canvas_area_per_node": 1.528007142857143,
+        "mean_edge_path_length": 2.1718982859066376
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ]
+}

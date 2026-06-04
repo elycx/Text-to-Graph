@@ -1,0 +1,649 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "F00",
+        "label": "F00"
+      },
+      {
+        "id": "F01",
+        "label": "F01"
+      },
+      {
+        "id": "F02",
+        "label": "F02"
+      },
+      {
+        "id": "F03",
+        "label": "F03"
+      },
+      {
+        "id": "F10",
+        "label": "F10"
+      },
+      {
+        "id": "F11",
+        "label": "F11"
+      },
+      {
+        "id": "F12",
+        "label": "F12"
+      },
+      {
+        "id": "F13",
+        "label": "F13"
+      },
+      {
+        "id": "B00",
+        "label": "B00"
+      },
+      {
+        "id": "B01",
+        "label": "B01"
+      },
+      {
+        "id": "B02",
+        "label": "B02"
+      },
+      {
+        "id": "B03",
+        "label": "B03"
+      },
+      {
+        "id": "B10",
+        "label": "B10"
+      },
+      {
+        "id": "B11",
+        "label": "B11"
+      },
+      {
+        "id": "B12",
+        "label": "B12"
+      },
+      {
+        "id": "B13",
+        "label": "B13"
+      },
+      {
+        "id": "H0",
+        "label": "H0"
+      },
+      {
+        "id": "H1",
+        "label": "H1"
+      }
+    ],
+    "edges": [
+      {
+        "source": "F00",
+        "target": "F01",
+        "directed": false
+      },
+      {
+        "source": "F01",
+        "target": "F02",
+        "directed": false
+      },
+      {
+        "source": "F02",
+        "target": "F03",
+        "directed": false
+      },
+      {
+        "source": "F10",
+        "target": "F11",
+        "directed": false
+      },
+      {
+        "source": "F11",
+        "target": "F12",
+        "directed": false
+      },
+      {
+        "source": "F12",
+        "target": "F13",
+        "directed": false
+      },
+      {
+        "source": "F00",
+        "target": "F10",
+        "directed": false
+      },
+      {
+        "source": "F01",
+        "target": "F11",
+        "directed": false
+      },
+      {
+        "source": "F02",
+        "target": "F12",
+        "directed": false
+      },
+      {
+        "source": "F03",
+        "target": "F13",
+        "directed": false
+      },
+      {
+        "source": "B00",
+        "target": "B01",
+        "directed": false
+      },
+      {
+        "source": "B01",
+        "target": "B02",
+        "directed": false
+      },
+      {
+        "source": "B02",
+        "target": "B03",
+        "directed": false
+      },
+      {
+        "source": "B10",
+        "target": "B11",
+        "directed": false
+      },
+      {
+        "source": "B11",
+        "target": "B12",
+        "directed": false
+      },
+      {
+        "source": "B12",
+        "target": "B13",
+        "directed": false
+      },
+      {
+        "source": "B00",
+        "target": "B10",
+        "directed": false
+      },
+      {
+        "source": "B01",
+        "target": "B11",
+        "directed": false
+      },
+      {
+        "source": "B02",
+        "target": "B12",
+        "directed": false
+      },
+      {
+        "source": "B03",
+        "target": "B13",
+        "directed": false
+      },
+      {
+        "source": "F00",
+        "target": "B00",
+        "directed": false
+      },
+      {
+        "source": "F01",
+        "target": "B01",
+        "directed": false
+      },
+      {
+        "source": "F02",
+        "target": "B02",
+        "directed": false
+      },
+      {
+        "source": "F03",
+        "target": "B03",
+        "directed": false
+      },
+      {
+        "source": "F10",
+        "target": "B10",
+        "directed": false
+      },
+      {
+        "source": "F11",
+        "target": "B11",
+        "directed": false
+      },
+      {
+        "source": "F12",
+        "target": "B12",
+        "directed": false
+      },
+      {
+        "source": "F13",
+        "target": "B13",
+        "directed": false
+      },
+      {
+        "source": "F00",
+        "target": "B11",
+        "directed": false
+      },
+      {
+        "source": "F01",
+        "target": "B12",
+        "directed": false
+      },
+      {
+        "source": "F02",
+        "target": "B13",
+        "directed": false
+      },
+      {
+        "source": "F10",
+        "target": "B01",
+        "directed": false
+      },
+      {
+        "source": "F11",
+        "target": "B02",
+        "directed": false
+      },
+      {
+        "source": "F12",
+        "target": "B03",
+        "directed": false
+      },
+      {
+        "source": "H0",
+        "target": "F00",
+        "directed": false
+      },
+      {
+        "source": "H0",
+        "target": "F10",
+        "directed": false
+      },
+      {
+        "source": "H0",
+        "target": "B00",
+        "directed": false
+      },
+      {
+        "source": "H0",
+        "target": "B10",
+        "directed": false
+      },
+      {
+        "source": "H1",
+        "target": "F03",
+        "directed": false
+      },
+      {
+        "source": "H1",
+        "target": "F13",
+        "directed": false
+      },
+      {
+        "source": "H1",
+        "target": "B03",
+        "directed": false
+      },
+      {
+        "source": "H1",
+        "target": "B13",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "F00": [
+          -10.736,
+          0.145
+        ],
+        "F01": [
+          -7.464,
+          -1.379
+        ],
+        "F02": [
+          -1.386,
+          -2.785
+        ],
+        "F03": [
+          5.989,
+          -1.451
+        ],
+        "F10": [
+          -11.589,
+          -6.21
+        ],
+        "F11": [
+          -6.094,
+          -6.563
+        ],
+        "F12": [
+          1.621,
+          -9.119
+        ],
+        "F13": [
+          7.662,
+          -6.563
+        ],
+        "B00": [
+          -7.246,
+          9.014
+        ],
+        "B01": [
+          -1.205,
+          9.014
+        ],
+        "B02": [
+          4.836,
+          9.014
+        ],
+        "B03": [
+          10.878,
+          9.014
+        ],
+        "B10": [
+          -7.419,
+          4.282
+        ],
+        "B11": [
+          -1.19,
+          4.282
+        ],
+        "B12": [
+          4.921,
+          4.132
+        ],
+        "B13": [
+          10.878,
+          2.229
+        ],
+        "H0": [
+          -13.577,
+          2.039
+        ],
+        "H1": [
+          15.516,
+          0.64
+        ]
+      },
+      "edge_options": {
+        "undirected:B11:F00": "bend left=18",
+        "undirected:B12:F01": "bend left=18",
+        "undirected:B13:F02": "bend left=18"
+      },
+      "edge_routes": {
+        "undirected:B01:F10": [
+          [
+            -15.156,
+            -6.563
+          ],
+          [
+            -15.156,
+            10.632
+          ],
+          [
+            -2.376,
+            10.632
+          ]
+        ],
+        "undirected:B02:F11": [
+          [
+            3.665,
+            11.793
+          ]
+        ],
+        "undirected:B03:F12": [
+          [
+            2.039,
+            -9.584
+          ],
+          [
+            9.707,
+            12.955
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=3.10, maximum=5.56, moved_fraction=1.00.",
+      "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=3.10, maximum=5.56, moved_fraction=1.00."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 3.4144570578643973,
+    "min_edge_node_clearance": 0.7609102017689674,
+    "min_edge_edge_clearance": 0.015532285975858554,
+    "max_close_parallel_length": 1.0973327339180154,
+    "max_clear_detour_ratio": 1.9294755921328555,
+    "edge_crossings": 20.0,
+    "drawing_width": 29.093,
+    "drawing_height": 18.133,
+    "canvas_area_per_node": 29.307964944444443,
+    "mean_edge_path_length": 9.54713008635596
+  },
+  "visual_review": {
+    "acceptable": false,
+    "score": 3.0,
+    "issues": [
+      "Several folded diagonal edges take very long detours, especially F10-B01 routed around the far left and top of the drawing, creating a large empty loop and unnecessary canvas spread.",
+      "The drawing is visually tangled in the middle: long diagonal folded/depth edges between the front and back grids cross repeatedly near F01, F02, F11, B11, B12, F03, and F12.",
+      "Some edges pass too close to unrelated nodes or labels, notably diagonals running near B11/B12 and the dense bundle around F02-F12-B02-B13.",
+      "The front 2x4 grid is not drawn as a clear rectangle: F02 and F12 are displaced, producing skewed rows and long crossing edges.",
+      "The back 2x4 grid is clearer but still distorted at B13, which is pulled down and creates extra crossings with nearby depth and hinge edges.",
+      "Hinge node H1 is placed far to the right, causing long edges to F03, F13, B03, and B13 that spread the drawing and cross/crowd the right-side module.",
+      "The two parallel rectangular grids are not visually distinct enough because depth and folded edges cut through the interior in many directions instead of being routed in orderly bands."
+    ],
+    "suggestions": [
+      "Redraw the front nodes as a compact 2 by 4 rectangular grid with F00-F03 aligned in one row and F10-F13 aligned directly below them.",
+      "Redraw the back nodes as a parallel 2 by 4 rectangular grid offset above or behind the front grid, keeping B00-B03 and B10-B13 evenly aligned.",
+      "Route depth edges Fij-Bij as short, consistent diagonal or vertical connectors between corresponding grid positions.",
+      "Route the folded diagonal edges in a controlled parallel band between the two grids instead of using large external detours; replace the F10-B01 outer rectangular route with a direct or small-bend route.",
+      "Move H0 and H1 closer to the left and right ends of the paired grids, respectively, so their four incident hinge edges are short and do not obscure the grid interiors.",
+      "Move B13 back into alignment with the back bottom row and reduce the rightward spread near H1.",
+      "Increase local clearance around F02, F12, B11, and B12 by separating crossing bundles or routing folded edges around node labels."
+    ],
+    "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 3.0,\n  \"issues\": [\n    \"Several folded diagonal edges take very long detours, especially F10-B01 routed around the far left and top of the drawing, creating a large empty loop and unnecessary canvas spread.\",\n    \"The drawing is visually tangled in the middle: long diagonal folded/depth edges between the front and back grids cross repeatedly near F01, F02, F11, B11, B12, F03, and F12.\",\n    \"Some edges pass too close to unrelated nodes or labels, notably diagonals running near B11/B12 and the dense bundle around F02-F12-B02-B13.\",\n    \"The front 2x4 grid is not drawn as a clear rectangle: F02 and F12 are displaced, producing skewed rows and long crossing edges.\",\n    \"The back 2x4 grid is clearer but still distorted at B13, which is pulled down and creates extra crossings with nearby depth and hinge edges.\",\n    \"Hinge node H1 is placed far to the right, causing long edges to F03, F13, B03, and B13 that spread the drawing and cross/crowd the right-side module.\",\n    \"The two parallel rectangular grids are not visually distinct enough because depth and folded edges cut through the interior in many directions instead of being routed in orderly bands.\"\n  ],\n  \"suggestions\": [\n    \"Redraw the front nodes as a compact 2 by 4 rectangular grid with F00-F03 aligned in one row and F10-F13 aligned directly below them.\",\n    \"Redraw the back nodes as a parallel 2 by 4 rectangular grid offset above or behind the front grid, keeping B00-B03 and B10-B13 evenly aligned.\",\n    \"Route depth edges Fij-Bij as short, consistent diagonal or vertical connectors between corresponding grid positions.\",\n    \"Route the folded diagonal edges in a controlled parallel band between the two grids instead of using large external detours; replace the F10-B01 outer rectangular route with a direct or small-bend route.\",\n    \"Move H0 and H1 closer to the left and right ends of the paired grids, respectively, so their four incident hinge edges are short and do not obscure the grid interiors.\",\n    \"Move B13 back into alignment with the back bottom row and reduce the rightward spread near H1.\",\n    \"Increase local clearance around F02, F12, B11, and B12 by separating crossing bundles or routing folded edges around node labels.\"\n  ]\n}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\folded_cube_lattice\\workflow\\iteration_3\\folded_cube_lattice.tex",
+    "pdf_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\folded_cube_lattice\\workflow\\iteration_3\\folded_cube_lattice.pdf",
+    "png_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\folded_cube_lattice\\workflow\\iteration_3\\folded_cube_lattice.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.4,
+      "visual_issues": [
+        "The drawing is readable overall, but the folded/depth edges create a dense tangle through the middle of the two grids, especially around F01, F02, B11, and B12.",
+        "Several unrelated edges run very close through the central node cluster, making it hard to distinguish the front-grid edges from depth and folded diagonal edges.",
+        "The two 2-by-4 rectangles are only partially regular; the front and back grids are skewed unevenly, so the repeated lattice structure is less clear than it could be.",
+        "H0 and H1 are placed far outward, producing long fan edges and extra horizontal spread without improving clarity much."
+      ],
+      "visual_suggestions": [
+        "Place the front rectangle and back rectangle as two more regular, parallel 2-by-4 grids with evenly spaced columns, so F00/F01/F02/F03 align with B00/B01/B02/B03 and F10/F11/F12/F13 align with B10/B11/B12/B13.",
+        "Increase vertical separation between the front and back rectangles slightly, then route the depth edges mostly as short parallel connectors between corresponding Fij and Bij nodes.",
+        "Route the folded diagonal edges in consistent shallow arcs above or below the grid interiors to avoid the dense crossings around F01-F02-B11-B12.",
+        "Move H0 and H1 inward slightly and arrange their four incident edges as clean fans that do not cut through the nearby grid cells."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.2432634475444053,
+        "min_edge_node_clearance": 0.7342230197677363,
+        "min_edge_edge_clearance": 0.001131823703357904,
+        "max_close_parallel_length": 0.9343981071654571,
+        "max_clear_detour_ratio": 1.021189570174393,
+        "edge_crossings": 23.0,
+        "drawing_width": 14.1,
+        "drawing_height": 6.562,
+        "canvas_area_per_node": 5.140233333333334,
+        "mean_edge_path_length": 3.4133378854314533
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=6.4: The drawing is readable overall, but the folded/depth edges create a dense tangle through the middle of the two grids, especially around F01, F02, B11, and B12.",
+        "Visual review score=6.4: Several unrelated edges run very close through the central node cluster, making it hard to distinguish the front-grid edges from depth and folded diagonal edges.",
+        "Visual review score=6.4: The two 2-by-4 rectangles are only partially regular; the front and back grids are skewed unevenly, so the repeated lattice structure is less clear than it could be.",
+        "Visual review score=6.4: H0 and H1 are placed far outward, producing long fan edges and extra horizontal spread without improving clarity much."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.8,
+      "visual_issues": [
+        "The repeated 2 by 4 front and back grid structure is not visually regular: rows and columns are skewed, especially around F03, F12, B10, B11, and B12, making the folded cube lattice harder to parse.",
+        "The center of the drawing is tangled, with many folded and depth edges crossing near F01, F02, F11, B11, and B12. Several crossings occur close enough to nodes that the incidences are visually ambiguous.",
+        "On the right side, multiple edges from or near B03, F03, F13, and H1 run close together and crowd the F03/F13 area, obscuring the local gadget.",
+        "On the left side, H0 and the corner nodes F00, F10, B00, and B10 are connected by several crossing/nearby edges, making the hinge connections less clear.",
+        "Some depth/folded edges take visually long, curved detours through the middle of the figure where a more consistent direct or small-bend routing would be clearer."
+      ],
+      "visual_suggestions": [
+        "Redraw the front nodes as a clean compact 2 by 4 rectangle, with F00-F03 aligned on one row and F10-F13 aligned directly below them in matching columns.",
+        "Redraw the back nodes as a second clean compact 2 by 4 rectangle above or behind the front rectangle, with B00-B03 and B10-B13 aligned in matching columns.",
+        "Place H0 just outside the left side, centered between the four corner nodes F00, F10, B00, and B10; place H1 symmetrically outside the right side, centered between F03, F13, B03, and B13.",
+        "Route the eight depth edges Fij-Bij with a consistent set of short parallel slanted or vertical segments, avoiding paths that pass through the central grid area.",
+        "Route the six folded diagonal edges as a separate, evenly spaced family of arcs or bends, keeping them away from node labels and avoiding crossings immediately beside F01, F02, F11, B11, and B12.",
+        "Separate the right-side edges incident to B03, F03, F13, and H1 so they do not run nearly parallel or crowd the F03/F13 labels."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.6574055025852912,
+        "min_edge_node_clearance": 0.7391131985188191,
+        "min_edge_edge_clearance": 0.003245605097541942,
+        "max_close_parallel_length": 1.129511655141306,
+        "max_clear_detour_ratio": 1.4604124463560615,
+        "edge_crossings": 23.0,
+        "drawing_width": 16.1,
+        "drawing_height": 8.622,
+        "canvas_area_per_node": 7.7119,
+        "mean_edge_path_length": 4.464526396480715
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=4.8: The repeated 2 by 4 front and back grid structure is not visually regular: rows and columns are skewed, especially around F03, F12, B10, B11, and B12, making the folded cube lattice harder to parse.",
+        "Visual review score=4.8: The center of the drawing is tangled, with many folded and depth edges crossing near F01, F02, F11, B11, and B12. Several crossings occur close enough to nodes that the incidences are visually ambiguous.",
+        "Visual review score=4.8: On the right side, multiple edges from or near B03, F03, F13, and H1 run close together and crowd the F03/F13 area, obscuring the local gadget.",
+        "Visual review score=4.8: On the left side, H0 and the corner nodes F00, F10, B00, and B10 are connected by several crossing/nearby edges, making the hinge connections less clear.",
+        "Visual review score=4.8: Some depth/folded edges take visually long, curved detours through the middle of the figure where a more consistent direct or small-bend routing would be clearer."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.0,
+      "visual_issues": [
+        "The two 2 by 4 rectangles are not visually regular: the front grid is wavy, with F02 and F03 displaced from the F00-F01 top row and F12 displaced below the bottom row.",
+        "Several edges crowd unrelated nodes in the right-middle area, especially around F02, F03, B12, and B13. The B12-B13 edge runs close above F02, and multiple diagonals through this region make labels harder to read.",
+        "The folded/depth edges create a dense tangle in the center, with many crossings concentrated near F01, F11, F12, B02, and B12.",
+        "Some unrelated edges run nearly on top of each other or cross at very shallow angles, making it difficult to distinguish the intended grid, depth, and folded diagonal connections.",
+        "The layout is wider and less compact than necessary while still having local crowding; the hinge nodes are far outward, producing long hinge edges without improving central readability."
+      ],
+      "visual_suggestions": [
+        "Redraw the front rectangle as two straighter horizontal rows: align F00-F01-F02-F03 on one row and F10-F11-F12-F13 on a parallel lower row with even column spacing.",
+        "Keep the back rectangle as a second aligned 2 by 4 grid above or behind the front rectangle, with B00-B01-B02-B03 and B10-B11-B12-B13 evenly spaced and parallel to the front grid.",
+        "Separate the front and back grids slightly more vertically or diagonally so that depth edges Fij-Bij are readable and do not pass close to unrelated labels.",
+        "Route folded diagonal edges with consistent shallow bends outside the main grid cells where possible, especially F01-B12, F02-B13, F11-B02, and F12-B03.",
+        "Move F02 and F03 away from the B12-B13 and B03-B13 edge corridor, or lift the B12-B13/B03-B13 back-grid edges so they do not crowd front-node labels.",
+        "Move H0 and H1 slightly inward and vertically centered beside the corresponding end columns, while keeping their four incident edges fanned cleanly around the end gadgets."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.3591854178146554,
+        "min_edge_node_clearance": 0.7612992220221318,
+        "min_edge_edge_clearance": 0.012940171633867221,
+        "max_close_parallel_length": 0.9228177899614787,
+        "max_clear_detour_ratio": 1.021189570174393,
+        "edge_crossings": 21.0,
+        "drawing_width": 20.044,
+        "drawing_height": 10.727,
+        "canvas_area_per_node": 11.945110444444445,
+        "mean_edge_path_length": 5.247767620005585
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=5.0: The two 2 by 4 rectangles are not visually regular: the front grid is wavy, with F02 and F03 displaced from the F00-F01 top row and F12 displaced below the bottom row.",
+        "Visual review score=5.0: Several edges crowd unrelated nodes in the right-middle area, especially around F02, F03, B12, and B13. The B12-B13 edge runs close above F02, and multiple diagonals through this region make labels harder to read.",
+        "Visual review score=5.0: The folded/depth edges create a dense tangle in the center, with many crossings concentrated near F01, F11, F12, B02, and B12.",
+        "Visual review score=5.0: Some unrelated edges run nearly on top of each other or cross at very shallow angles, making it difficult to distinguish the intended grid, depth, and folded diagonal connections.",
+        "Visual review score=5.0: The layout is wider and less compact than necessary while still having local crowding; the hinge nodes are far outward, producing long hinge edges without improving central readability."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 3.0,
+      "visual_issues": [
+        "Several folded diagonal edges take very long detours, especially F10-B01 routed around the far left and top of the drawing, creating a large empty loop and unnecessary canvas spread.",
+        "The drawing is visually tangled in the middle: long diagonal folded/depth edges between the front and back grids cross repeatedly near F01, F02, F11, B11, B12, F03, and F12.",
+        "Some edges pass too close to unrelated nodes or labels, notably diagonals running near B11/B12 and the dense bundle around F02-F12-B02-B13.",
+        "The front 2x4 grid is not drawn as a clear rectangle: F02 and F12 are displaced, producing skewed rows and long crossing edges.",
+        "The back 2x4 grid is clearer but still distorted at B13, which is pulled down and creates extra crossings with nearby depth and hinge edges.",
+        "Hinge node H1 is placed far to the right, causing long edges to F03, F13, B03, and B13 that spread the drawing and cross/crowd the right-side module.",
+        "The two parallel rectangular grids are not visually distinct enough because depth and folded edges cut through the interior in many directions instead of being routed in orderly bands."
+      ],
+      "visual_suggestions": [
+        "Redraw the front nodes as a compact 2 by 4 rectangular grid with F00-F03 aligned in one row and F10-F13 aligned directly below them.",
+        "Redraw the back nodes as a parallel 2 by 4 rectangular grid offset above or behind the front grid, keeping B00-B03 and B10-B13 evenly aligned.",
+        "Route depth edges Fij-Bij as short, consistent diagonal or vertical connectors between corresponding grid positions.",
+        "Route the folded diagonal edges in a controlled parallel band between the two grids instead of using large external detours; replace the F10-B01 outer rectangular route with a direct or small-bend route.",
+        "Move H0 and H1 closer to the left and right ends of the paired grids, respectively, so their four incident hinge edges are short and do not obscure the grid interiors.",
+        "Move B13 back into alignment with the back bottom row and reduce the rightward spread near H1.",
+        "Increase local clearance around F02, F12, B11, and B12 by separating crossing bundles or routing folded edges around node labels."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 3.4144570578643973,
+        "min_edge_node_clearance": 0.7609102017689674,
+        "min_edge_edge_clearance": 0.015532285975858554,
+        "max_close_parallel_length": 1.0973327339180154,
+        "max_clear_detour_ratio": 1.9294755921328555,
+        "edge_crossings": 20.0,
+        "drawing_width": 29.093,
+        "drawing_height": 18.133,
+        "canvas_area_per_node": 29.307964944444443,
+        "mean_edge_path_length": 9.54713008635596
+      },
+      "next_refinement": null,
+      "errors": [
+        "Visual review score=3.0: Several folded diagonal edges take very long detours, especially F10-B01 routed around the far left and top of the drawing, creating a large empty loop and unnecessary canvas spread.",
+        "Visual review score=3.0: The drawing is visually tangled in the middle: long diagonal folded/depth edges between the front and back grids cross repeatedly near F01, F02, F11, B11, B12, F03, and F12.",
+        "Visual review score=3.0: Some edges pass too close to unrelated nodes or labels, notably diagonals running near B11/B12 and the dense bundle around F02-F12-B02-B13.",
+        "Visual review score=3.0: The front 2x4 grid is not drawn as a clear rectangle: F02 and F12 are displaced, producing skewed rows and long crossing edges.",
+        "Visual review score=3.0: The back 2x4 grid is clearer but still distorted at B13, which is pulled down and creates extra crossings with nearby depth and hinge edges.",
+        "Visual review score=3.0: Hinge node H1 is placed far to the right, causing long edges to F03, F13, B03, and B13 that spread the drawing and cross/crowd the right-side module.",
+        "Visual review score=3.0: The two parallel rectangular grids are not visually distinct enough because depth and folded edges cut through the interior in many directions instead of being routed in orderly bands."
+      ]
+    }
+  ]
+}

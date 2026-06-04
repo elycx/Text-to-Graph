@@ -1,0 +1,83 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw=black,line width=0.55pt,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  graphedge/.style={draw=black,line width=0.55pt,line cap=round,line join=round},
+  directed/.style={graphedge,-{Stealth[length=2.4mm,width=2.0mm]}},
+  undirected/.style={graphedge}
+}
+\node[graphnode] (n_O0) at (-2.19,13.18) {O0};
+\node[graphnode] (n_O1) at (8.39,8.44) {O1};
+\node[graphnode] (n_O2) at (11.98,0.07) {O2};
+\node[graphnode] (n_O3) at (10.16,-6.53) {O3};
+\node[graphnode] (n_O4) at (0.02,-11.88) {O4};
+\node[graphnode] (n_O5) at (-6.40,-12.48) {O5};
+\node[graphnode] (n_O6) at (-11.93,0.07) {O6};
+\node[graphnode] (n_O7) at (-8.34,8.44) {O7};
+\node[graphnode] (n_I0) at (0.36,5.25) {I0};
+\node[graphnode] (n_I1) at (2.82,3.43) {I1};
+\node[graphnode] (n_I2) at (5.13,-0.26) {I2};
+\node[graphnode] (n_I3) at (3.88,-4.13) {I3};
+\node[graphnode] (n_I4) at (-2.94,-7.75) {I4};
+\node[graphnode] (n_I5) at (-3.83,-2.80) {I5};
+\node[graphnode] (n_I6) at (-4.66,-0.01) {I6};
+\node[graphnode] (n_I7) at (-2.28,3.92) {I7};
+\node[graphnode] (n_C0) at (0.28,2.65) {C0};
+\node[graphnode] (n_C1) at (1.09,0.14) {C1};
+\node[graphnode] (n_C2) at (-0.01,-2.25) {C2};
+\node[graphnode] (n_C3) at (-1.96,1.19) {C3};
+\node[graphnode] (n_P) at (4.66,14.56) {P};
+\node[graphnode] (n_Q) at (-4.61,-14.42) {Q};
+\draw[undirected] (n_O0) -- (n_O1);
+\draw[undirected] (n_O1) -- (n_O2);
+\draw[undirected] (n_O2) -- (n_O3);
+\draw[undirected] (n_O3) -- (n_O4);
+\draw[undirected] (n_O4) -- (n_O5);
+\draw[undirected] (n_O5) -- (n_O6);
+\draw[undirected] (n_O6) -- (n_O7);
+\draw[undirected] (n_O7) -- (n_O0);
+\draw[undirected] (n_I0) -- (n_I1);
+\draw[undirected] (n_I1) -- (n_I2);
+\draw[undirected] (n_I2) -- (n_I3);
+\draw[undirected] (n_I3) -- (n_I4);
+\draw[undirected] (n_I4) -- (n_I5);
+\draw[undirected] (n_I5) -- (n_I6);
+\draw[undirected] (n_I6) -- (n_I7);
+\draw[undirected] (n_I7) -- (n_I0);
+\draw[undirected] (n_O0) -- (n_I0);
+\draw[undirected] (n_O1) -- (n_I1);
+\draw[undirected] (n_O2) -- (n_I2);
+\draw[undirected] (n_O3) -- (n_I3);
+\draw[undirected] (n_O4) -- (n_I4);
+\draw[undirected] (n_O5) -- (n_I5);
+\draw[undirected] (n_O6) -- (n_I6);
+\draw[undirected] (n_O7) -- (n_I7);
+\draw[undirected,rounded corners=5pt] (n_I0) -- (5.08,5.13) -- (7.15,0.07) -- (n_O3);
+\draw[undirected,rounded corners=5pt] (n_I1) -- (7.15,0.07) -- (5.08,-4.99) -- (n_O4);
+\draw[undirected,rounded corners=5pt] (n_I2) -- (5.08,-4.99) -- (n_O5);
+\draw[undirected,rounded corners=5pt] (n_I3) -- (0.02,-7.06) -- (-5.03,-4.99) -- (n_O6);
+\draw[undirected,rounded corners=5pt] (n_I4) -- (-5.03,-4.99) -- (-7.10,0.07) -- (n_O7);
+\draw[undirected,rounded corners=5pt] (n_I5) -- (-7.10,0.07) -- (-5.03,5.13) -- (n_O0);
+\draw[undirected,rounded corners=5pt] (n_I6) -- (-5.03,5.13) -- (0.02,7.20) -- (n_O1);
+\draw[undirected,rounded corners=5pt] (n_I7) -- (0.02,7.20) -- (5.08,5.13) -- (n_O2);
+\draw[undirected] (n_C0) -- (n_C1);
+\draw[undirected] (n_C1) -- (n_C2);
+\draw[undirected] (n_C2) -- (n_C3);
+\draw[undirected] (n_C3) -- (n_C0);
+\draw[undirected] (n_C0) -- (n_I0);
+\draw[undirected,rounded corners=5pt] (n_C0) -- (2.90,1.56) -- (2.90,-3.95) -- (n_I4);
+\draw[undirected] (n_C1) -- (n_I1);
+\draw[undirected,rounded corners=5pt] (n_C1) -- (0.37,-5.10) -- (-2.73,-5.10) -- (n_I5);
+\draw[undirected] (n_C2) -- (n_I2);
+\draw[undirected] (n_C2) to[bend right=14] (n_I6);
+\draw[undirected,rounded corners=5pt] (n_C3) -- (-2.85,-1.65) -- (-0.32,-5.33) -- (2.78,-4.53) -- (n_I3);
+\draw[undirected] (n_C3) -- (n_I7);
+\draw[undirected] (n_P) -- (n_O0);
+\draw[undirected] (n_P) -- (n_O1);
+\draw[undirected] (n_Q) -- (n_O4);
+\draw[undirected] (n_Q) -- (n_O5);
+\end{tikzpicture}
+\end{document}

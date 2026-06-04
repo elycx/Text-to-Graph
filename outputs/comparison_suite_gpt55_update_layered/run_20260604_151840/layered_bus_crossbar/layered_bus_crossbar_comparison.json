@@ -1,0 +1,1070 @@
+{
+  "id": "layered_bus_crossbar",
+  "title": "Layered Bus Crossbar",
+  "prompt": "Draw a directed artificial crossbar graph with three horizontal buses. The top bus has nodes T0,T1,T2,T3,T4, the middle bus has M0,M1,M2,M3,M4, and the bottom bus has B0,B1,B2,B3,B4. Add directed bus edges Ti->T(i+1), Mi->M(i+1), and Bi->B(i+1) for i=0..3. Add vertical relay edges T0->M0->B0, T2->M2->B2, and T4->M4->B4. Add crisscross transfer edges T0->M2, T1->M3, T2->M4, M0->B2, M1->B3, M2->B4, plus feedback edges B1->M0, B3->M2, and M4->T3 routed outside the buses. Add source S connected to T0,M0,B0 and sink R reached from T4,M4,B4. Keep the buses aligned and compact while routing transfers clearly.",
+  "case_dir": "outputs\\comparison_suite_gpt55_update_layered\\run_20260604_151840\\layered_bus_crossbar",
+  "workflow": {
+    "success": false,
+    "iterations": 3,
+    "graph": {
+      "nodes": [
+        {
+          "id": "S",
+          "label": "S"
+        },
+        {
+          "id": "R",
+          "label": "R"
+        },
+        {
+          "id": "T0",
+          "label": "$T_0$"
+        },
+        {
+          "id": "T1",
+          "label": "$T_1$"
+        },
+        {
+          "id": "T2",
+          "label": "$T_2$"
+        },
+        {
+          "id": "T3",
+          "label": "$T_3$"
+        },
+        {
+          "id": "T4",
+          "label": "$T_4$"
+        },
+        {
+          "id": "M0",
+          "label": "$M_0$"
+        },
+        {
+          "id": "M1",
+          "label": "$M_1$"
+        },
+        {
+          "id": "M2",
+          "label": "$M_2$"
+        },
+        {
+          "id": "M3",
+          "label": "$M_3$"
+        },
+        {
+          "id": "M4",
+          "label": "$M_4$"
+        },
+        {
+          "id": "B0",
+          "label": "$B_0$"
+        },
+        {
+          "id": "B1",
+          "label": "$B_1$"
+        },
+        {
+          "id": "B2",
+          "label": "$B_2$"
+        },
+        {
+          "id": "B3",
+          "label": "$B_3$"
+        },
+        {
+          "id": "B4",
+          "label": "$B_4$"
+        }
+      ],
+      "edges": [
+        {
+          "source": "T0",
+          "target": "T1",
+          "directed": true
+        },
+        {
+          "source": "T1",
+          "target": "T2",
+          "directed": true
+        },
+        {
+          "source": "T2",
+          "target": "T3",
+          "directed": true
+        },
+        {
+          "source": "T3",
+          "target": "T4",
+          "directed": true
+        },
+        {
+          "source": "M0",
+          "target": "M1",
+          "directed": true
+        },
+        {
+          "source": "M1",
+          "target": "M2",
+          "directed": true
+        },
+        {
+          "source": "M2",
+          "target": "M3",
+          "directed": true
+        },
+        {
+          "source": "M3",
+          "target": "M4",
+          "directed": true
+        },
+        {
+          "source": "B0",
+          "target": "B1",
+          "directed": true
+        },
+        {
+          "source": "B1",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "B2",
+          "target": "B3",
+          "directed": true
+        },
+        {
+          "source": "B3",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "T0",
+          "target": "M0",
+          "directed": true
+        },
+        {
+          "source": "M0",
+          "target": "B0",
+          "directed": true
+        },
+        {
+          "source": "T2",
+          "target": "M2",
+          "directed": true
+        },
+        {
+          "source": "M2",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "T4",
+          "target": "M4",
+          "directed": true
+        },
+        {
+          "source": "M4",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "T0",
+          "target": "M2",
+          "directed": true
+        },
+        {
+          "source": "T1",
+          "target": "M3",
+          "directed": true
+        },
+        {
+          "source": "T2",
+          "target": "M4",
+          "directed": true
+        },
+        {
+          "source": "M0",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "M1",
+          "target": "B3",
+          "directed": true
+        },
+        {
+          "source": "M2",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "B1",
+          "target": "M0",
+          "directed": true
+        },
+        {
+          "source": "B3",
+          "target": "M2",
+          "directed": true
+        },
+        {
+          "source": "M4",
+          "target": "T3",
+          "directed": true
+        },
+        {
+          "source": "S",
+          "target": "T0",
+          "directed": true
+        },
+        {
+          "source": "S",
+          "target": "M0",
+          "directed": true
+        },
+        {
+          "source": "S",
+          "target": "B0",
+          "directed": true
+        },
+        {
+          "source": "T4",
+          "target": "R",
+          "directed": true
+        },
+        {
+          "source": "M4",
+          "target": "R",
+          "directed": true
+        },
+        {
+          "source": "B4",
+          "target": "R",
+          "directed": true
+        }
+      ],
+      "layout_hints": {
+        "style": "explicit",
+        "positions": {
+          "S": [
+            -2.5,
+            -1.1
+          ],
+          "R": [
+            11.98,
+            0.0
+          ],
+          "T0": [
+            -0.77,
+            3.57
+          ],
+          "T1": [
+            1.81,
+            3.57
+          ],
+          "T2": [
+            4.55,
+            3.57
+          ],
+          "T3": [
+            6.464,
+            4.208
+          ],
+          "T4": [
+            8.47,
+            2.832
+          ],
+          "M0": [
+            -1.1,
+            0.0
+          ],
+          "M1": [
+            1.2,
+            0.0
+          ],
+          "M2": [
+            3.784,
+            1.096
+          ],
+          "M3": [
+            8.0,
+            0.0
+          ],
+          "M4": [
+            10.3,
+            0.0
+          ],
+          "B0": [
+            0.133,
+            -2.279
+          ],
+          "B1": [
+            2.3,
+            -3.9
+          ],
+          "B2": [
+            4.6,
+            -2.8
+          ],
+          "B3": [
+            8.004,
+            -3.444
+          ],
+          "B4": [
+            9.2,
+            -2.8
+          ]
+        },
+        "edge_options": {},
+        "edge_routes": {
+          "directed:B1:M0": [
+            [
+              -1.15,
+              -4.25
+            ],
+            [
+              -1.15,
+              -0.75
+            ]
+          ],
+          "directed:B3:M2": [
+            [
+              5.65,
+              -0.75
+            ]
+          ],
+          "directed:M4:T3": [
+            [
+              10.35,
+              0.75
+            ],
+            [
+              10.35,
+              4.45
+            ],
+            [
+              6.9,
+              4.45
+            ]
+          ]
+        },
+        "node_options": {},
+        "disable_auto_expand": true
+      },
+      "warnings": [
+        "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+        "Fresh global relayout: all three bus rows are straight, evenly spaced, and vertically aligned at relay columns 0, 2, and 4.",
+        "Feedback edges B1->M0, B3->M2, and M4->T3 are routed through distinct outside corridors to reduce central tangles and avoid crowding the bus labels.",
+        "Macro relayout coordinate motion: average=1.08, maximum=2.32, moved_fraction=0.59.",
+        "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+      ]
+    },
+    "graph_validation": {
+      "errors": [],
+      "warnings": [
+        "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+        "Fresh global relayout: all three bus rows are straight, evenly spaced, and vertically aligned at relay columns 0, 2, and 4.",
+        "Feedback edges B1->M0, B3->M2, and M4->T3 are routed through distinct outside corridors to reduce central tangles and avoid crowding the bus labels.",
+        "Macro relayout coordinate motion: average=1.08, maximum=2.32, moved_fraction=0.59."
+      ]
+    },
+    "layout_validation": {
+      "errors": [],
+      "warnings": []
+    },
+    "layout_metrics": {
+      "min_node_distance": 1.3583637215414728,
+      "min_edge_node_clearance": 0.9306966226979436,
+      "min_edge_edge_clearance": 0.007895743662968545,
+      "max_close_parallel_length": 0.6123902534211392,
+      "max_clear_detour_ratio": 1.491962270825521,
+      "edge_crossings": 4.0,
+      "drawing_width": 14.48,
+      "drawing_height": 8.108,
+      "canvas_area_per_node": 6.906108235294119,
+      "mean_edge_path_length": 4.0177716440469915
+    },
+    "visual_review": {
+      "acceptable": false,
+      "score": 5.0,
+      "issues": [
+        "The three bus rows are not kept horizontal or evenly aligned: T3 and T4 break the top row, M2 is pulled far above the middle row, and B1/B3 are much lower than the other bottom nodes.",
+        "The drawing is visually tangled around M2/M3/M4, with several long diagonal transfer edges converging and crossing in a way that makes the crossbar structure hard to read.",
+        "The edge T2->M4 runs close to M3 and visually crowds the middle bus area.",
+        "The outside feedback route M4->T3 creates a large detour around the upper-right side and interacts visually with the T4/M4/R edges.",
+        "The layout is more spread out and irregular than necessary for a repeated 3-by-5 bus structure."
+      ],
+      "suggestions": [
+        "Place T0-T4, M0-M4, and B0-B4 on three straight horizontal rows with consistent column spacing, especially aligning relay columns 0, 2, and 4 vertically.",
+        "Move M2 back onto the middle bus row and move B1 and B3 up onto the bottom bus row to restore the crossbar grid.",
+        "Route crisscross transfer edges with shallow bends or separated diagonal corridors so they do not cluster around M2/M3/M4.",
+        "Reroute M4->T3 outside the buses with a shorter upper or right-side loop that stays farther from T4->R and T4->M4.",
+        "Keep S just to the left of the three row starts and R just to the right of the three row ends, with short direct fan-in/fan-out edges."
+      ],
+      "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 5.0,\n  \"issues\": [\n    \"The three bus rows are not kept horizontal or evenly aligned: T3 and T4 break the top row, M2 is pulled far above the middle row, and B1/B3 are much lower than the other bottom nodes.\",\n    \"The drawing is visually tangled around M2/M3/M4, with several long diagonal transfer edges converging and crossing in a way that makes the crossbar structure hard to read.\",\n    \"The edge T2->M4 runs close to M3 and visually crowds the middle bus area.\",\n    \"The outside feedback route M4->T3 creates a large detour around the upper-right side and interacts visually with the T4/M4/R edges.\",\n    \"The layout is more spread out and irregular than necessary for a repeated 3-by-5 bus structure.\"\n  ],\n  \"suggestions\": [\n    \"Place T0-T4, M0-M4, and B0-B4 on three straight horizontal rows with consistent column spacing, especially aligning relay columns 0, 2, and 4 vertically.\",\n    \"Move M2 back onto the middle bus row and move B1 and B3 up onto the bottom bus row to restore the crossbar grid.\",\n    \"Route crisscross transfer edges with shallow bends or separated diagonal corridors so they do not cluster around M2/M3/M4.\",\n    \"Reroute M4->T3 outside the buses with a shorter upper or right-side loop that stays farther from T4->R and T4->M4.\",\n    \"Keep S just to the left of the three row starts and R just to the right of the three row ends, with short direct fan-in/fan-out edges.\"\n  ]\n}"
+    },
+    "code_validation": {
+      "errors": [],
+      "warnings": []
+    },
+    "render": {
+      "success": true,
+      "tex_path": "outputs\\comparison_suite_gpt55_update_layered\\run_20260604_151840\\layered_bus_crossbar\\workflow\\iteration_3\\layered_bus_crossbar.tex",
+      "pdf_path": "outputs\\comparison_suite_gpt55_update_layered\\run_20260604_151840\\layered_bus_crossbar\\workflow\\iteration_3\\layered_bus_crossbar.pdf",
+      "png_path": "outputs\\comparison_suite_gpt55_update_layered\\run_20260604_151840\\layered_bus_crossbar\\workflow\\iteration_3\\layered_bus_crossbar.png",
+      "error": ""
+    },
+    "history": [
+      {
+        "iteration": 0,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 6.2,
+        "visual_issues": [
+          "The three buses are not drawn as clean horizontal rows: T3 is raised above the top bus, M2 is raised above the middle bus, and the bottom row is uneven with B1/B2 lower than B0/B3/B4.",
+          "The bottom bus is overly stretched, especially the large gaps from B2 to B3 and B3 to B4, creating long bus edges and a less compact drawing.",
+          "Several transfer and feedback edges form a visually tangled central region around M0, M1, M2, B1, and B2.",
+          "The diagonal edge from M1 to B3 passes through the central lower area close to B2 and contributes to ambiguity with nearby edges.",
+          "The feedback routing from B1 to M0 runs very close and nearly parallel to the M0-to-B2 edge for a noticeable segment, making direction and edge identity harder to read.",
+          "The outside feedback edge M4 to T3 is not clearly routed outside the buses; it cuts diagonally through the upper-right transfer region."
+        ],
+        "visual_suggestions": [
+          "Place T0 through T4 on one evenly spaced horizontal top row, including lowering T3 back into alignment.",
+          "Place M0 through M4 on one evenly spaced horizontal middle row, lowering M2 to align with the other middle nodes.",
+          "Place B0 through B4 on one evenly spaced horizontal bottom row and compact the large gaps around B2-B3-B4.",
+          "Route feedback edges B1->M0 and B3->M2 with clearer outside bends below the bottom bus or beside the buses, rather than close to incident transfer edges.",
+          "Route M4->T3 outside the upper-right bus region with a distinct bend above the top bus to avoid cutting through the transfer-edge cluster.",
+          "Use consistent column alignment for relay columns T0/M0/B0, T2/M2/B2, and T4/M4/B4 to make the crossbar structure easier to read."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.581612152204199,
+          "min_edge_node_clearance": 1.0562214583214748,
+          "min_edge_edge_clearance": 0.10695751842039505,
+          "max_close_parallel_length": 0.6008826100921137,
+          "max_clear_detour_ratio": 1.1701883305194858,
+          "edge_crossings": 2.0,
+          "drawing_width": 14.392000000000001,
+          "drawing_height": 7.577,
+          "canvas_area_per_node": 6.41459905882353,
+          "mean_edge_path_length": 3.842514120436995
+        },
+        "next_refinement": "visual_macro_relayout",
+        "errors": [
+          "Visual review score=6.2: The three buses are not drawn as clean horizontal rows: T3 is raised above the top bus, M2 is raised above the middle bus, and the bottom row is uneven with B1/B2 lower than B0/B3/B4.",
+          "Visual review score=6.2: The bottom bus is overly stretched, especially the large gaps from B2 to B3 and B3 to B4, creating long bus edges and a less compact drawing.",
+          "Visual review score=6.2: Several transfer and feedback edges form a visually tangled central region around M0, M1, M2, B1, and B2.",
+          "Visual review score=6.2: The diagonal edge from M1 to B3 passes through the central lower area close to B2 and contributes to ambiguity with nearby edges.",
+          "Visual review score=6.2: The feedback routing from B1 to M0 runs very close and nearly parallel to the M0-to-B2 edge for a noticeable segment, making direction and edge identity harder to read.",
+          "Visual review score=6.2: The outside feedback edge M4 to T3 is not clearly routed outside the buses; it cuts diagonally through the upper-right transfer region."
+        ]
+      },
+      {
+        "iteration": 1,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 4.0,
+        "visual_issues": [
+          "The intended three horizontal buses are not preserved: T2/T3, M2/M4, and most bottom nodes are vertically displaced, making the repeated crossbar structure visually chaotic.",
+          "Several transfer edges crowd the central M2 area; diagonals into and out of M2 converge tightly and make it difficult to distinguish incident edges from nearby passing edges.",
+          "The edge from T1 toward M3 runs through the central region very close to M2 and contributes to label/node crowding.",
+          "The edge from T2 toward M4 and other diagonals to the right side create a dense tangle near M3/M4/R.",
+          "The feedback edge M4->T3 takes a large outside detour around the right side even though a shorter above-bus route would be clearer.",
+          "The bottom bus is uneven and spread downward, producing long slanted bus edges instead of a clear horizontal B0-B4 row.",
+          "The drawing is more spread out than necessary, with long average edge lengths and large empty regions while still having central crowding."
+        ],
+        "visual_suggestions": [
+          "Re-establish three straight horizontal rows: place T0-T4 on one top line, M0-M4 on one middle line, and B0-B4 on one bottom line with even column spacing.",
+          "Move T3 down into the top bus between T2 and T4, move M2 down to the middle bus, move M4 up to the middle bus, and align B0-B4 into a consistent bottom row.",
+          "Route vertical relay edges T0-M0-B0, T2-M2-B2, and T4-M4-B4 as straight vertical column edges.",
+          "Route crisscross transfer edges as clean diagonals between adjacent rows with enough separation from M2, M3, M4, and labels; avoid sending unrelated diagonals through the central M2 neighborhood.",
+          "Route B1->M0 and B3->M2 outside the lower bus with clear orthogonal bends and consistent offset below the bottom row.",
+          "Route M4->T3 above the top bus with a shorter, cleaner bend rather than the large right-side loop.",
+          "Place S just left of the three row starts and R just right of the three row ends to reduce edge length while keeping clear fan-in/fan-out spacing."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.4879274175846076,
+          "min_edge_node_clearance": 0.8769688643951096,
+          "min_edge_edge_clearance": 0.05320090523299552,
+          "max_close_parallel_length": 0.6112410428437766,
+          "max_clear_detour_ratio": 1.5623605167260932,
+          "edge_crossings": 4.0,
+          "drawing_width": 14.72,
+          "drawing_height": 8.719999999999999,
+          "canvas_area_per_node": 7.550494117647058,
+          "mean_edge_path_length": 4.096929923624143
+        },
+        "next_refinement": "visual_macro_relayout",
+        "errors": [
+          "Visual review score=4.0: The intended three horizontal buses are not preserved: T2/T3, M2/M4, and most bottom nodes are vertically displaced, making the repeated crossbar structure visually chaotic.",
+          "Visual review score=4.0: Several transfer edges crowd the central M2 area; diagonals into and out of M2 converge tightly and make it difficult to distinguish incident edges from nearby passing edges.",
+          "Visual review score=4.0: The edge from T1 toward M3 runs through the central region very close to M2 and contributes to label/node crowding.",
+          "Visual review score=4.0: The edge from T2 toward M4 and other diagonals to the right side create a dense tangle near M3/M4/R.",
+          "Visual review score=4.0: The feedback edge M4->T3 takes a large outside detour around the right side even though a shorter above-bus route would be clearer.",
+          "Visual review score=4.0: The bottom bus is uneven and spread downward, producing long slanted bus edges instead of a clear horizontal B0-B4 row.",
+          "Visual review score=4.0: The drawing is more spread out than necessary, with long average edge lengths and large empty regions while still having central crowding."
+        ]
+      },
+      {
+        "iteration": 2,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 6.4,
+        "visual_issues": [
+          "The three bus rows are visibly uneven: the top nodes T0,T1,T2,T3,T4 are not on a common horizontal line, and the bottom nodes B0,B1,B2,B3,B4 are also staggered. This weakens the intended crossbar structure.",
+          "The vertical relay columns are not consistently aligned: T0-M0-B0 and T2-M2-B2 are noticeably slanted rather than forming clear columns.",
+          "The outside feedback edge M4->T3 runs close to the top bus region near T3/T4 and visually crowds the T3-T4 area.",
+          "Several transfer and feedback edges create avoidable diagonal tangles around M0, M2, B1, and B3, making the repeated crossbar pattern harder to read than necessary.",
+          "The layout is somewhat over-spread vertically while still not using the space to create clean, even rows and columns."
+        ],
+        "visual_suggestions": [
+          "Place T0 through T4 on one straight horizontal row, M0 through M4 on a second row, and B0 through B4 on a third row with even column spacing.",
+          "Align T0/M0/B0, T2/M2/B2, and T4/M4/B4 vertically so the relay edges are straight and visually distinct.",
+          "Route M4->T3 farther above the top bus with a cleaner outside arc or orthogonal path, keeping it away from the T3 and T4 labels.",
+          "Route B1->M0 and B3->M2 through clearer outside corridors below or between rows, rather than letting them contribute to the central diagonal tangle.",
+          "After alignment, compact the drawing slightly by reducing unnecessary vertical gaps while preserving clearance between diagonal transfer edges and node labels."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.8027201668589614,
+          "min_edge_node_clearance": 1.0496662608171436,
+          "min_edge_edge_clearance": 0.09369319512824296,
+          "max_close_parallel_length": 0.6057850362992483,
+          "max_clear_detour_ratio": 1.362702325461368,
+          "edge_crossings": 2.0,
+          "drawing_width": 14.139999999999999,
+          "drawing_height": 9.11,
+          "canvas_area_per_node": 7.577376470588234,
+          "mean_edge_path_length": 3.9785713837575343
+        },
+        "next_refinement": "visual_macro_relayout",
+        "errors": [
+          "Visual review score=6.4: The three bus rows are visibly uneven: the top nodes T0,T1,T2,T3,T4 are not on a common horizontal line, and the bottom nodes B0,B1,B2,B3,B4 are also staggered. This weakens the intended crossbar structure.",
+          "Visual review score=6.4: The vertical relay columns are not consistently aligned: T0-M0-B0 and T2-M2-B2 are noticeably slanted rather than forming clear columns.",
+          "Visual review score=6.4: The outside feedback edge M4->T3 runs close to the top bus region near T3/T4 and visually crowds the T3-T4 area.",
+          "Visual review score=6.4: Several transfer and feedback edges create avoidable diagonal tangles around M0, M2, B1, and B3, making the repeated crossbar pattern harder to read than necessary.",
+          "Visual review score=6.4: The layout is somewhat over-spread vertically while still not using the space to create clean, even rows and columns."
+        ]
+      },
+      {
+        "iteration": 3,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 5.0,
+        "visual_issues": [
+          "The three bus rows are not kept horizontal or evenly aligned: T3 and T4 break the top row, M2 is pulled far above the middle row, and B1/B3 are much lower than the other bottom nodes.",
+          "The drawing is visually tangled around M2/M3/M4, with several long diagonal transfer edges converging and crossing in a way that makes the crossbar structure hard to read.",
+          "The edge T2->M4 runs close to M3 and visually crowds the middle bus area.",
+          "The outside feedback route M4->T3 creates a large detour around the upper-right side and interacts visually with the T4/M4/R edges.",
+          "The layout is more spread out and irregular than necessary for a repeated 3-by-5 bus structure."
+        ],
+        "visual_suggestions": [
+          "Place T0-T4, M0-M4, and B0-B4 on three straight horizontal rows with consistent column spacing, especially aligning relay columns 0, 2, and 4 vertically.",
+          "Move M2 back onto the middle bus row and move B1 and B3 up onto the bottom bus row to restore the crossbar grid.",
+          "Route crisscross transfer edges with shallow bends or separated diagonal corridors so they do not cluster around M2/M3/M4.",
+          "Reroute M4->T3 outside the buses with a shorter upper or right-side loop that stays farther from T4->R and T4->M4.",
+          "Keep S just to the left of the three row starts and R just to the right of the three row ends, with short direct fan-in/fan-out edges."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.3583637215414728,
+          "min_edge_node_clearance": 0.9306966226979436,
+          "min_edge_edge_clearance": 0.007895743662968545,
+          "max_close_parallel_length": 0.6123902534211392,
+          "max_clear_detour_ratio": 1.491962270825521,
+          "edge_crossings": 4.0,
+          "drawing_width": 14.48,
+          "drawing_height": 8.108,
+          "canvas_area_per_node": 6.906108235294119,
+          "mean_edge_path_length": 4.0177716440469915
+        },
+        "next_refinement": null,
+        "errors": [
+          "Visual review score=5.0: The three bus rows are not kept horizontal or evenly aligned: T3 and T4 break the top row, M2 is pulled far above the middle row, and B1/B3 are much lower than the other bottom nodes.",
+          "Visual review score=5.0: The drawing is visually tangled around M2/M3/M4, with several long diagonal transfer edges converging and crossing in a way that makes the crossbar structure hard to read.",
+          "Visual review score=5.0: The edge T2->M4 runs close to M3 and visually crowds the middle bus area.",
+          "Visual review score=5.0: The outside feedback route M4->T3 creates a large detour around the upper-right side and interacts visually with the T4/M4/R edges.",
+          "Visual review score=5.0: The layout is more spread out and irregular than necessary for a repeated 3-by-5 bus structure."
+        ]
+      }
+    ]
+  },
+  "single_prompt": {
+    "success": false,
+    "iterations": 0,
+    "graph": {
+      "nodes": [
+        {
+          "id": "S",
+          "label": "S"
+        },
+        {
+          "id": "T0",
+          "label": "$T_{0}$"
+        },
+        {
+          "id": "T1",
+          "label": "$T_{1}$"
+        },
+        {
+          "id": "T2",
+          "label": "$T_{2}$"
+        },
+        {
+          "id": "T3",
+          "label": "$T_{3}$"
+        },
+        {
+          "id": "T4",
+          "label": "$T_{4}$"
+        },
+        {
+          "id": "M0",
+          "label": "$M_{0}$"
+        },
+        {
+          "id": "M1",
+          "label": "$M_{1}$"
+        },
+        {
+          "id": "M2",
+          "label": "$M_{2}$"
+        },
+        {
+          "id": "M3",
+          "label": "$M_{3}$"
+        },
+        {
+          "id": "M4",
+          "label": "$M_{4}$"
+        },
+        {
+          "id": "B0",
+          "label": "$B_{0}$"
+        },
+        {
+          "id": "B1",
+          "label": "$B_{1}$"
+        },
+        {
+          "id": "B2",
+          "label": "$B_{2}$"
+        },
+        {
+          "id": "B3",
+          "label": "$B_{3}$"
+        },
+        {
+          "id": "B4",
+          "label": "$B_{4}$"
+        },
+        {
+          "id": "R",
+          "label": "R"
+        }
+      ],
+      "edges": [
+        {
+          "source": "T0",
+          "target": "T1",
+          "directed": true
+        },
+        {
+          "source": "T1",
+          "target": "T2",
+          "directed": true
+        },
+        {
+          "source": "T2",
+          "target": "T3",
+          "directed": true
+        },
+        {
+          "source": "T3",
+          "target": "T4",
+          "directed": true
+        },
+        {
+          "source": "M0",
+          "target": "M1",
+          "directed": true
+        },
+        {
+          "source": "M1",
+          "target": "M2",
+          "directed": true
+        },
+        {
+          "source": "M2",
+          "target": "M3",
+          "directed": true
+        },
+        {
+          "source": "M3",
+          "target": "M4",
+          "directed": true
+        },
+        {
+          "source": "B0",
+          "target": "B1",
+          "directed": true
+        },
+        {
+          "source": "B1",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "B2",
+          "target": "B3",
+          "directed": true
+        },
+        {
+          "source": "B3",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "T0",
+          "target": "M0",
+          "directed": true
+        },
+        {
+          "source": "M0",
+          "target": "B0",
+          "directed": true
+        },
+        {
+          "source": "T2",
+          "target": "M2",
+          "directed": true
+        },
+        {
+          "source": "M2",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "T4",
+          "target": "M4",
+          "directed": true
+        },
+        {
+          "source": "M4",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "T0",
+          "target": "M2",
+          "directed": true
+        },
+        {
+          "source": "T1",
+          "target": "M3",
+          "directed": true
+        },
+        {
+          "source": "T2",
+          "target": "M4",
+          "directed": true
+        },
+        {
+          "source": "M0",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "M1",
+          "target": "B3",
+          "directed": true
+        },
+        {
+          "source": "M2",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "B1",
+          "target": "M0",
+          "directed": true
+        },
+        {
+          "source": "B3",
+          "target": "M2",
+          "directed": true
+        },
+        {
+          "source": "M4",
+          "target": "T3",
+          "directed": true
+        },
+        {
+          "source": "S",
+          "target": "T0",
+          "directed": true
+        },
+        {
+          "source": "S",
+          "target": "M0",
+          "directed": true
+        },
+        {
+          "source": "S",
+          "target": "B0",
+          "directed": true
+        },
+        {
+          "source": "T4",
+          "target": "R",
+          "directed": true
+        },
+        {
+          "source": "M4",
+          "target": "R",
+          "directed": true
+        },
+        {
+          "source": "B4",
+          "target": "R",
+          "directed": true
+        }
+      ],
+      "layout_hints": {
+        "style": "explicit",
+        "positions": {
+          "S": [
+            -2.0,
+            0.0
+          ],
+          "T0": [
+            0.0,
+            2.0
+          ],
+          "T1": [
+            2.0,
+            2.0
+          ],
+          "T2": [
+            4.0,
+            2.0
+          ],
+          "T3": [
+            6.0,
+            2.0
+          ],
+          "T4": [
+            8.0,
+            2.0
+          ],
+          "M0": [
+            0.0,
+            0.0
+          ],
+          "M1": [
+            2.0,
+            0.0
+          ],
+          "M2": [
+            4.0,
+            0.0
+          ],
+          "M3": [
+            6.0,
+            0.0
+          ],
+          "M4": [
+            8.0,
+            0.0
+          ],
+          "B0": [
+            0.0,
+            -2.0
+          ],
+          "B1": [
+            2.0,
+            -2.0
+          ],
+          "B2": [
+            4.0,
+            -2.0
+          ],
+          "B3": [
+            6.0,
+            -2.0
+          ],
+          "B4": [
+            8.0,
+            -2.0
+          ],
+          "R": [
+            10.0,
+            0.0
+          ]
+        },
+        "edge_options": {},
+        "edge_routes": {
+          "directed:B1:M0": [
+            [
+              1.2,
+              -3.2
+            ],
+            [
+              -0.8,
+              -3.2
+            ],
+            [
+              -0.8,
+              -0.5
+            ]
+          ],
+          "directed:B3:M2": [
+            [
+              6.0,
+              -3.2
+            ],
+            [
+              3.2,
+              -3.2
+            ],
+            [
+              3.2,
+              -0.5
+            ]
+          ],
+          "directed:M4:T3": [
+            [
+              9.0,
+              0.8
+            ],
+            [
+              9.0,
+              3.2
+            ],
+            [
+              6.0,
+              3.2
+            ]
+          ]
+        },
+        "node_options": {}
+      },
+      "warnings": [
+        "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+      ]
+    },
+    "graph_validation": {
+      "errors": [],
+      "warnings": [
+        "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+      ]
+    },
+    "layout_validation": {
+      "errors": [
+        "Edge B1-M0 passes too close to unrelated node B0: distance 0.20.",
+        "Edge B3-M2 appears over-routed: routed length 7.39 vs direct length 3.25, while a direct or shallow route has node clearance 1.63.",
+        "Edge M4-T3 passes too close to unrelated node T4: distance 0.40."
+      ],
+      "warnings": []
+    },
+    "layout_metrics": {
+      "min_node_distance": 2.299999999999999,
+      "min_edge_node_clearance": 0.2000000000000004,
+      "min_edge_edge_clearance": 0.021428571428571797,
+      "max_close_parallel_length": 0.9000000000000001,
+      "max_clear_detour_ratio": 2.272604736079246,
+      "edge_crossings": 6.0,
+      "drawing_width": 13.799999999999997,
+      "drawing_height": 4.6,
+      "canvas_area_per_node": 3.7341176470588224,
+      "mean_edge_path_length": 3.356720432074191
+    },
+    "visual_review": {
+      "acceptable": false,
+      "score": 5.5,
+      "issues": [
+        "The outside feedback edge B1->M0 runs very close to B0 and the vertical M0->B0 area, crowding the left relay column.",
+        "The outside feedback edge B3->M2 rises close to B2 and creates a cramped local tangle around B2/M2.",
+        "The outside feedback edge M4->T3 hugs the T4/M4 relay column and runs close in parallel to T4->M4 for a visible segment, making the right side hard to read.",
+        "Several transfer diagonals converge tightly around M2 and B2, with low clearance between edges and nearby nodes/labels.",
+        "The graph is generally aligned, but the external return routes are too close to anchor gadgets and should be given more separation."
+      ],
+      "suggestions": [
+        "Route B1->M0 farther below B0 before turning upward, or move its vertical return farther left so it does not crowd B0 and M0->B0.",
+        "Route B3->M2 farther below the bottom bus and bring it up closer to M2 from the left or right with more clearance from B2.",
+        "Move the M4->T3 outside route farther to the right and above T4 before returning to T3, avoiding the close parallel run beside T4->M4.",
+        "Add small offsets or bends to the central transfer edges entering M2 and B2 so they do not bunch tightly around those nodes.",
+        "Keep the three bus rows aligned, but increase local clearance around the three relay columns T0/M0/B0, T2/M2/B2, and T4/M4/B4."
+      ],
+      "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 5.5,\n  \"issues\": [\n    \"The outside feedback edge B1->M0 runs very close to B0 and the vertical M0->B0 area, crowding the left relay column.\",\n    \"The outside feedback edge B3->M2 rises close to B2 and creates a cramped local tangle around B2/M2.\",\n    \"The outside feedback edge M4->T3 hugs the T4/M4 relay column and runs close in parallel to T4->M4 for a visible segment, making the right side hard to read.\",\n    \"Several transfer diagonals converge tightly around M2 and B2, with low clearance between edges and nearby nodes/labels.\",\n    \"The graph is generally aligned, but the external return routes are too close to anchor gadgets and should be given more separation.\"\n  ],\n  \"suggestions\": [\n    \"Route B1->M0 farther below B0 before turning upward, or move its vertical return farther left so it does not crowd B0 and M0->B0.\",\n    \"Route B3->M2 farther below the bottom bus and bring it up closer to M2 from the left or right with more clearance from B2.\",\n    \"Move the M4->T3 outside route farther to the right and above T4 before returning to T3, avoiding the close parallel run beside T4->M4.\",\n    \"Add small offsets or bends to the central transfer edges entering M2 and B2 so they do not bunch tightly around those nodes.\",\n    \"Keep the three bus rows aligned, but increase local clearance around the three relay columns T0/M0/B0, T2/M2/B2, and T4/M4/B4.\"\n  ]\n}"
+    },
+    "code_validation": {
+      "errors": [],
+      "warnings": []
+    },
+    "render": {
+      "success": true,
+      "tex_path": "outputs\\comparison_suite_gpt55_update_layered\\run_20260604_151840\\layered_bus_crossbar\\single_prompt\\layered_bus_crossbar.tex",
+      "pdf_path": "outputs\\comparison_suite_gpt55_update_layered\\run_20260604_151840\\layered_bus_crossbar\\single_prompt\\layered_bus_crossbar.pdf",
+      "png_path": "outputs\\comparison_suite_gpt55_update_layered\\run_20260604_151840\\layered_bus_crossbar\\single_prompt\\layered_bus_crossbar.png",
+      "error": ""
+    },
+    "history": [
+      {
+        "iteration": 0,
+        "graph_ok": true,
+        "layout_ok": false,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 5.5,
+        "visual_issues": [
+          "The outside feedback edge B1->M0 runs very close to B0 and the vertical M0->B0 area, crowding the left relay column.",
+          "The outside feedback edge B3->M2 rises close to B2 and creates a cramped local tangle around B2/M2.",
+          "The outside feedback edge M4->T3 hugs the T4/M4 relay column and runs close in parallel to T4->M4 for a visible segment, making the right side hard to read.",
+          "Several transfer diagonals converge tightly around M2 and B2, with low clearance between edges and nearby nodes/labels.",
+          "The graph is generally aligned, but the external return routes are too close to anchor gadgets and should be given more separation."
+        ],
+        "visual_suggestions": [
+          "Route B1->M0 farther below B0 before turning upward, or move its vertical return farther left so it does not crowd B0 and M0->B0.",
+          "Route B3->M2 farther below the bottom bus and bring it up closer to M2 from the left or right with more clearance from B2.",
+          "Move the M4->T3 outside route farther to the right and above T4 before returning to T3, avoiding the close parallel run beside T4->M4.",
+          "Add small offsets or bends to the central transfer edges entering M2 and B2 so they do not bunch tightly around those nodes.",
+          "Keep the three bus rows aligned, but increase local clearance around the three relay columns T0/M0/B0, T2/M2/B2, and T4/M4/B4."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 2.299999999999999,
+          "min_edge_node_clearance": 0.2000000000000004,
+          "min_edge_edge_clearance": 0.021428571428571797,
+          "max_close_parallel_length": 0.9000000000000001,
+          "max_clear_detour_ratio": 2.272604736079246,
+          "edge_crossings": 6.0,
+          "drawing_width": 13.799999999999997,
+          "drawing_height": 4.6,
+          "canvas_area_per_node": 3.7341176470588224,
+          "mean_edge_path_length": 3.356720432074191
+        },
+        "errors": [
+          "Edge B1-M0 passes too close to unrelated node B0: distance 0.20.",
+          "Edge B3-M2 appears over-routed: routed length 7.39 vs direct length 3.25, while a direct or shallow route has node clearance 1.63.",
+          "Edge M4-T3 passes too close to unrelated node T4: distance 0.40.",
+          "Visual review: The outside feedback edge B1->M0 runs very close to B0 and the vertical M0->B0 area, crowding the left relay column.",
+          "Visual review: The outside feedback edge B3->M2 rises close to B2 and creates a cramped local tangle around B2/M2.",
+          "Visual review: The outside feedback edge M4->T3 hugs the T4/M4 relay column and runs close in parallel to T4->M4 for a visible segment, making the right side hard to read.",
+          "Visual review: Several transfer diagonals converge tightly around M2 and B2, with low clearance between edges and nearby nodes/labels.",
+          "Visual review: The graph is generally aligned, but the external return routes are too close to anchor gadgets and should be given more separation."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "c0",
+        "label": "$c_{0}$"
+      },
+      {
+        "id": "c1",
+        "label": "$c_{1}$"
+      },
+      {
+        "id": "c2",
+        "label": "$c_{2}$"
+      },
+      {
+        "id": "c3",
+        "label": "$c_{3}$"
+      },
+      {
+        "id": "c4",
+        "label": "$c_{4}$"
+      },
+      {
+        "id": "a0",
+        "label": "$a_{0}$"
+      },
+      {
+        "id": "a1",
+        "label": "$a_{1}$"
+      },
+      {
+        "id": "a2",
+        "label": "$a_{2}$"
+      },
+      {
+        "id": "a3",
+        "label": "$a_{3}$"
+      },
+      {
+        "id": "a4",
+        "label": "$a_{4}$"
+      },
+      {
+        "id": "a5",
+        "label": "$a_{5}$"
+      },
+      {
+        "id": "a6",
+        "label": "$a_{6}$"
+      },
+      {
+        "id": "p0",
+        "label": "$p_{0}$"
+      },
+      {
+        "id": "p1",
+        "label": "$p_{1}$"
+      },
+      {
+        "id": "p2",
+        "label": "$p_{2}$"
+      },
+      {
+        "id": "z",
+        "label": "$z$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "c0",
+        "target": "a0",
+        "directed": false
+      },
+      {
+        "source": "a0",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "c1",
+        "target": "c0",
+        "directed": false
+      },
+      {
+        "source": "c1",
+        "target": "a1",
+        "directed": false
+      },
+      {
+        "source": "a1",
+        "target": "a2",
+        "directed": false
+      },
+      {
+        "source": "a2",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "c2",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "c2",
+        "target": "a3",
+        "directed": false
+      },
+      {
+        "source": "a3",
+        "target": "a4",
+        "directed": false
+      },
+      {
+        "source": "a4",
+        "target": "a5",
+        "directed": false
+      },
+      {
+        "source": "a5",
+        "target": "c3",
+        "directed": false
+      },
+      {
+        "source": "c3",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "c3",
+        "target": "a6",
+        "directed": false
+      },
+      {
+        "source": "a6",
+        "target": "c4",
+        "directed": false
+      },
+      {
+        "source": "c4",
+        "target": "c3",
+        "directed": false
+      },
+      {
+        "source": "c0",
+        "target": "p0",
+        "directed": false
+      },
+      {
+        "source": "c2",
+        "target": "p1",
+        "directed": false
+      },
+      {
+        "source": "c4",
+        "target": "p2",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c3",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "c0": [
+          -0.914,
+          0.105
+        ],
+        "c1": [
+          2.536,
+          0.105
+        ],
+        "c2": [
+          5.986,
+          0.105
+        ],
+        "c3": [
+          9.436,
+          0.105
+        ],
+        "c4": [
+          12.886,
+          0.105
+        ],
+        "a0": [
+          0.811,
+          -1.85
+        ],
+        "a1": [
+          3.456,
+          -1.965
+        ],
+        "a2": [
+          5.066,
+          -1.965
+        ],
+        "a3": [
+          6.714,
+          -1.677
+        ],
+        "a4": [
+          7.711,
+          -2.713
+        ],
+        "a5": [
+          8.803,
+          -1.677
+        ],
+        "a6": [
+          11.161,
+          -1.85
+        ],
+        "p0": [
+          -1.834,
+          1.542
+        ],
+        "p1": [
+          5.986,
+          -3.977
+        ],
+        "p2": [
+          13.806,
+          1.542
+        ],
+        "z": [
+          5.986,
+          2.865
+        ]
+      },
+      "edge_options": {},
+      "node_options": {
+        "c0": "fill=blue!10",
+        "c1": "fill=blue!10",
+        "c2": "fill=blue!10",
+        "c3": "fill=blue!10",
+        "c4": "fill=blue!10",
+        "z": "fill=green!10",
+        "p0": "fill=orange!10",
+        "p1": "fill=orange!10",
+        "p2": "fill=orange!10"
+      },
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.4378125747120172,
+    "min_edge_node_clearance": 0.7280000000000006
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_011244\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_011244\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_011244\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "layout_metrics": {
+        "min_node_distance": 1.4378125747120172,
+        "min_edge_node_clearance": 0.7280000000000006
+      },
+      "errors": []
+    }
+  ],
+  "id": "cactus_chain_with_spikes",
+  "title": "Cactus Chain With Spikes",
+  "prompt": "Draw a cactus-like artificial graph. Use articulation nodes c0,c1,c2,c3,c4 in a horizontal chain. Around c0,c1 make a triangle c0-a0-c1-c0. Around c1,c2 make a square c1-a1-a2-c2-c1. Around c2,c3 make a pentagon c2-a3-a4-a5-c3-c2. Around c3,c4 make another triangle c3-a6-c4-c3. Add spike leaves p0 attached to c0, p1 attached to c2, p2 attached to c4, and add a top connector z attached to c1,c2,c3. Make the block structure visually obvious.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_011244\\cactus_chain_with_spikes"
+}

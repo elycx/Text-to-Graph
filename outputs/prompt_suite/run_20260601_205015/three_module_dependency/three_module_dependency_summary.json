@@ -1,0 +1,319 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "A0",
+        "label": "A0"
+      },
+      {
+        "id": "A1",
+        "label": "A1"
+      },
+      {
+        "id": "A2",
+        "label": "A2"
+      },
+      {
+        "id": "A3",
+        "label": "A3"
+      },
+      {
+        "id": "B0",
+        "label": "B0"
+      },
+      {
+        "id": "B1",
+        "label": "B1"
+      },
+      {
+        "id": "B2",
+        "label": "B2"
+      },
+      {
+        "id": "B3",
+        "label": "B3"
+      },
+      {
+        "id": "C0",
+        "label": "C0"
+      },
+      {
+        "id": "C1",
+        "label": "C1"
+      },
+      {
+        "id": "C2",
+        "label": "C2"
+      },
+      {
+        "id": "C3",
+        "label": "C3"
+      }
+    ],
+    "edges": [
+      {
+        "source": "A0",
+        "target": "A1",
+        "directed": true
+      },
+      {
+        "source": "A0",
+        "target": "A2",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "A3",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B1",
+        "directed": true
+      },
+      {
+        "source": "B0",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "B2",
+        "target": "B3",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "C0",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C1",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "C3",
+        "directed": true
+      },
+      {
+        "source": "A3",
+        "target": "B0",
+        "directed": true
+      },
+      {
+        "source": "B3",
+        "target": "C0",
+        "directed": true
+      },
+      {
+        "source": "A1",
+        "target": "B2",
+        "directed": true
+      },
+      {
+        "source": "A2",
+        "target": "C1",
+        "directed": true
+      },
+      {
+        "source": "B1",
+        "target": "C2",
+        "directed": true
+      },
+      {
+        "source": "C3",
+        "target": "A0",
+        "directed": true
+      },
+      {
+        "source": "C2",
+        "target": "B0",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "A0": [
+          0.0,
+          0.0
+        ],
+        "A1": [
+          2.22,
+          1.82
+        ],
+        "A2": [
+          1.5,
+          -1.1
+        ],
+        "A3": [
+          2.941,
+          -0.161
+        ],
+        "B0": [
+          5.281,
+          -1.261
+        ],
+        "B1": [
+          7.318,
+          1.282
+        ],
+        "B2": [
+          7.822,
+          -0.962
+        ],
+        "B3": [
+          10.033,
+          -1.253
+        ],
+        "C0": [
+          11.892,
+          0.952
+        ],
+        "C1": [
+          13.5,
+          1.1
+        ],
+        "C2": [
+          13.5,
+          -1.1
+        ],
+        "C3": [
+          15.0,
+          0.0
+        ]
+      },
+      "edge_options": {
+        "directed:C3:A0": "",
+        "directed:C2:B0": ""
+      },
+      "edge_routes": {
+        "directed:C3:A0": [
+          [
+            15.0,
+            3.2
+          ],
+          [
+            7.5,
+            4.2
+          ],
+          [
+            0.0,
+            3.2
+          ]
+        ],
+        "directed:C2:B0": [
+          [
+            13.5,
+            -3.4
+          ],
+          [
+            9.75,
+            -4.0
+          ],
+          [
+            6.0,
+            -3.4
+          ]
+        ],
+        "directed:A2:C1": [
+          [
+            4.5,
+            -2.3
+          ],
+          [
+            10.5,
+            -2.3
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.6147965816163972,
+    "min_edge_node_clearance": 1.039,
+    "min_edge_edge_clearance": 0.09957159867660374,
+    "max_close_parallel_length": 0.6045751492669138,
+    "max_clear_detour_ratio": 1.4782420062137454,
+    "edge_crossings": 5.0
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\n  \"acceptable\": true,\n  \"score\": 8.0,\n  \"issues\": [],\n  \"suggestions\": []\n}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_205015\\three_module_dependency\\iteration_0\\three_module_dependency.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_205015\\three_module_dependency\\iteration_0\\three_module_dependency.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_205015\\three_module_dependency\\iteration_0\\three_module_dependency.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 1.6147965816163972,
+        "min_edge_node_clearance": 1.039,
+        "min_edge_edge_clearance": 0.09957159867660374,
+        "max_close_parallel_length": 0.6045751492669138,
+        "max_clear_detour_ratio": 1.4782420062137454,
+        "edge_crossings": 5.0
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ],
+  "id": "three_module_dependency",
+  "title": "Three-Module Dependency Network",
+  "prompt": "Draw a directed artificial dependency graph with three modules A, B, C. Module A has nodes A0,A1,A2,A3 with edges A0->A1, A0->A2, A1->A3, A2->A3. Module B has nodes B0,B1,B2,B3 with edges B0->B1, B0->B2, B1->B3, B2->B3. Module C has nodes C0,C1,C2,C3 with edges C0->C1, C0->C2, C1->C3, C2->C3. Add inter-module edges A3->B0, B3->C0, A1->B2, A2->C1, B1->C2, and feedback monitor edges C3->A0 and C2->B0 drawn as curved dashed-looking outer arcs if possible. Keep modules separated as three rounded-looking clusters using layout only.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_205015\\three_module_dependency"
+}

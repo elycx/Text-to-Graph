@@ -1,0 +1,212 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "v_000",
+        "label": "000"
+      },
+      {
+        "id": "v_001",
+        "label": "001"
+      },
+      {
+        "id": "v_010",
+        "label": "010"
+      },
+      {
+        "id": "v_011",
+        "label": "011"
+      },
+      {
+        "id": "v_100",
+        "label": "100"
+      },
+      {
+        "id": "v_101",
+        "label": "101"
+      },
+      {
+        "id": "v_110",
+        "label": "110"
+      },
+      {
+        "id": "v_111",
+        "label": "111"
+      }
+    ],
+    "edges": [
+      {
+        "source": "v_000",
+        "target": "v_000",
+        "directed": true
+      },
+      {
+        "source": "v_000",
+        "target": "v_001",
+        "directed": true
+      },
+      {
+        "source": "v_001",
+        "target": "v_010",
+        "directed": true
+      },
+      {
+        "source": "v_001",
+        "target": "v_011",
+        "directed": true
+      },
+      {
+        "source": "v_010",
+        "target": "v_100",
+        "directed": true
+      },
+      {
+        "source": "v_010",
+        "target": "v_101",
+        "directed": true
+      },
+      {
+        "source": "v_011",
+        "target": "v_110",
+        "directed": true
+      },
+      {
+        "source": "v_011",
+        "target": "v_111",
+        "directed": true
+      },
+      {
+        "source": "v_100",
+        "target": "v_000",
+        "directed": true
+      },
+      {
+        "source": "v_100",
+        "target": "v_001",
+        "directed": true
+      },
+      {
+        "source": "v_101",
+        "target": "v_010",
+        "directed": true
+      },
+      {
+        "source": "v_101",
+        "target": "v_011",
+        "directed": true
+      },
+      {
+        "source": "v_110",
+        "target": "v_100",
+        "directed": true
+      },
+      {
+        "source": "v_110",
+        "target": "v_101",
+        "directed": true
+      },
+      {
+        "source": "v_111",
+        "target": "v_110",
+        "directed": true
+      },
+      {
+        "source": "v_111",
+        "target": "v_111",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "v_000": [
+          0.0,
+          3.0
+        ],
+        "v_001": [
+          2.12,
+          2.12
+        ],
+        "v_011": [
+          3.0,
+          0.0
+        ],
+        "v_111": [
+          2.12,
+          -2.12
+        ],
+        "v_110": [
+          0.0,
+          -3.0
+        ],
+        "v_100": [
+          -2.12,
+          -2.12
+        ],
+        "v_010": [
+          -3.0,
+          0.0
+        ],
+        "v_101": [
+          -2.12,
+          2.12
+        ]
+      },
+      "edge_options": {
+        "directed:v_000:v_000": "loop above, \"0\"",
+        "directed:v_000:v_001": "bend left=8, \"1\"",
+        "directed:v_001:v_010": "bend left=10, \"0\"",
+        "directed:v_001:v_011": "bend left=8, \"1\"",
+        "directed:v_010:v_100": "bend left=10, \"0\"",
+        "directed:v_010:v_101": "bend left=8, \"1\"",
+        "directed:v_011:v_110": "bend left=10, \"0\"",
+        "directed:v_011:v_111": "bend left=8, \"1\"",
+        "directed:v_100:v_000": "bend left=10, \"0\"",
+        "directed:v_100:v_001": "bend left=12, \"1\"",
+        "directed:v_101:v_010": "bend left=8, \"0\"",
+        "directed:v_101:v_011": "bend left=10, \"1\"",
+        "directed:v_110:v_100": "bend left=8, \"0\"",
+        "directed:v_110:v_101": "bend left=10, \"1\"",
+        "directed:v_111:v_110": "bend left=8, \"0\"",
+        "directed:v_111:v_111": "loop below, \"1\""
+      },
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\debruijn_b23\\iteration_0\\debruijn_b23.tex",
+    "pdf_path": "outputs\\prompt_suite\\debruijn_b23\\iteration_0\\debruijn_b23.pdf",
+    "png_path": "outputs\\prompt_suite\\debruijn_b23\\iteration_0\\debruijn_b23.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

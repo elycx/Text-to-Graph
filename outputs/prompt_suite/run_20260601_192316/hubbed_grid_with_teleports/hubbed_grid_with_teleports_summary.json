@@ -1,0 +1,376 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "g00",
+        "label": "$g_{00}$"
+      },
+      {
+        "id": "g01",
+        "label": "$g_{01}$"
+      },
+      {
+        "id": "g02",
+        "label": "$g_{02}$"
+      },
+      {
+        "id": "g03",
+        "label": "$g_{03}$"
+      },
+      {
+        "id": "g10",
+        "label": "$g_{10}$"
+      },
+      {
+        "id": "g11",
+        "label": "$g_{11}$"
+      },
+      {
+        "id": "g12",
+        "label": "$g_{12}$"
+      },
+      {
+        "id": "g13",
+        "label": "$g_{13}$"
+      },
+      {
+        "id": "g20",
+        "label": "$g_{20}$"
+      },
+      {
+        "id": "g21",
+        "label": "$g_{21}$"
+      },
+      {
+        "id": "g22",
+        "label": "$g_{22}$"
+      },
+      {
+        "id": "g23",
+        "label": "$g_{23}$"
+      },
+      {
+        "id": "H",
+        "label": "$H$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "g00",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g03",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g20",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g21",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g22",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g10",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g13",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g22",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "g00": [
+          -0.562,
+          0.252
+        ],
+        "g01": [
+          2.136,
+          0.309
+        ],
+        "g02": [
+          5.448,
+          0.182
+        ],
+        "g03": [
+          7.762,
+          0.252
+        ],
+        "g10": [
+          -0.562,
+          -2.048
+        ],
+        "g11": [
+          2.033,
+          -1.992
+        ],
+        "g12": [
+          5.467,
+          -1.992
+        ],
+        "g13": [
+          7.762,
+          -2.048
+        ],
+        "g20": [
+          -0.562,
+          -4.348
+        ],
+        "g21": [
+          2.312,
+          -4.348
+        ],
+        "g22": [
+          5.188,
+          -4.348
+        ],
+        "g23": [
+          8.062,
+          -4.348
+        ],
+        "H": [
+          3.75,
+          2.782
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {
+        "undirected:g00:g23": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            8.5,
+            1.0
+          ],
+          [
+            8.5,
+            -5.0
+          ]
+        ],
+        "undirected:g03:g20": [
+          [
+            8.9,
+            1.4
+          ],
+          [
+            -1.4,
+            1.4
+          ],
+          [
+            -1.4,
+            -5.0
+          ]
+        ],
+        "undirected:g10:g13": [
+          [
+            0.0,
+            -3.0
+          ],
+          [
+            7.5,
+            -3.0
+          ]
+        ],
+        "undirected:g01:g22": [
+          [
+            2.5,
+            0.9
+          ],
+          [
+            6.2,
+            0.9
+          ],
+          [
+            6.2,
+            -4.8
+          ]
+        ]
+      },
+      "node_options": {
+        "H": "fill=yellow!20"
+      },
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 2.174083025093568,
+    "min_edge_node_clearance": 0.6818129764899515
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [
+      "If refining further, slightly spread the hub spokes or raise H a bit to reduce visual density near the top-center, but the current layout remains readable."
+    ],
+    "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[\"If refining further, slightly spread the hub spokes or raise H a bit to reduce visual density near the top-center, but the current layout remains readable.\"]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_192316\\hubbed_grid_with_teleports\\iteration_0\\hubbed_grid_with_teleports.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_192316\\hubbed_grid_with_teleports\\iteration_0\\hubbed_grid_with_teleports.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_192316\\hubbed_grid_with_teleports\\iteration_0\\hubbed_grid_with_teleports.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [
+        "If refining further, slightly spread the hub spokes or raise H a bit to reduce visual density near the top-center, but the current layout remains readable."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.174083025093568,
+        "min_edge_node_clearance": 0.6818129764899515
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ],
+  "id": "hubbed_grid_with_teleports",
+  "title": "Hubbed Grid With Teleports",
+  "prompt": "Draw an artificial undirected graph made from a 3 by 4 grid plus teleports. Grid vertices are g00,g01,g02,g03 on the top row, g10,g11,g12,g13 in the middle row, and g20,g21,g22,g23 on the bottom row. Add all horizontal and vertical grid edges. Add hub node H connected to g01,g02,g11,g12,g21,g22. Add teleport edges g00-g23, g03-g20, g10-g13, and g01-g22. Use bends or an outer route for long teleports so the grid remains legible.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_192316\\hubbed_grid_with_teleports"
+}

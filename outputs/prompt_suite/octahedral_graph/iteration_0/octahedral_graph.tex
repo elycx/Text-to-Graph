@@ -1,0 +1,30 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_A) at (-2.00,1.00) {A};
+\node[graphnode] (n_B) at (2.00,1.00) {B};
+\node[graphnode] (n_C) at (2.00,-1.00) {C};
+\node[graphnode] (n_D) at (-2.00,-1.00) {D};
+\node[graphnode] (n_T) at (0.00,0.00) {top};
+\node[graphnode] (n_S) at (0.00,2.80) {bottom};
+\draw[undirected] (n_A) -- (n_B);
+\draw[undirected] (n_B) -- (n_C);
+\draw[undirected] (n_C) -- (n_D);
+\draw[undirected] (n_D) -- (n_A);
+\draw[undirected] (n_T) -- (n_A);
+\draw[undirected] (n_T) -- (n_B);
+\draw[undirected] (n_T) -- (n_C);
+\draw[undirected] (n_T) -- (n_D);
+\draw[undirected] (n_S) -- (n_A);
+\draw[undirected] (n_S) -- (n_B);
+\draw[undirected] (n_S) to[out=10,in=-60,looseness=1.35] (n_C);
+\draw[undirected] (n_S) to[out=170,in=-120,looseness=1.35] (n_D);
+\end{tikzpicture}
+\end{document}

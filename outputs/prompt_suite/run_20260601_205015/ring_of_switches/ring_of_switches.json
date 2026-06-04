@@ -1,0 +1,658 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s0",
+        "label": "$s_0$"
+      },
+      {
+        "id": "s1",
+        "label": "$s_1$"
+      },
+      {
+        "id": "s2",
+        "label": "$s_2$"
+      },
+      {
+        "id": "s3",
+        "label": "$s_3$"
+      },
+      {
+        "id": "s4",
+        "label": "$s_4$"
+      },
+      {
+        "id": "s5",
+        "label": "$s_5$"
+      },
+      {
+        "id": "g0",
+        "label": "$g_0$"
+      },
+      {
+        "id": "g1",
+        "label": "$g_1$"
+      },
+      {
+        "id": "g2",
+        "label": "$g_2$"
+      },
+      {
+        "id": "g3",
+        "label": "$g_3$"
+      },
+      {
+        "id": "g4",
+        "label": "$g_4$"
+      },
+      {
+        "id": "g5",
+        "label": "$g_5$"
+      },
+      {
+        "id": "o0",
+        "label": "$o_0$"
+      },
+      {
+        "id": "o1",
+        "label": "$o_1$"
+      },
+      {
+        "id": "o2",
+        "label": "$o_2$"
+      },
+      {
+        "id": "o3",
+        "label": "$o_3$"
+      },
+      {
+        "id": "o4",
+        "label": "$o_4$"
+      },
+      {
+        "id": "o5",
+        "label": "$o_5$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "s0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "s0",
+        "target": "g0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "o0",
+        "directed": true
+      },
+      {
+        "source": "o0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "g1",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "o1",
+        "directed": true
+      },
+      {
+        "source": "o1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "g2",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "o2",
+        "directed": true
+      },
+      {
+        "source": "o2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "g3",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "o3",
+        "directed": true
+      },
+      {
+        "source": "o3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "g4",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "o4",
+        "directed": true
+      },
+      {
+        "source": "o4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "g5",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "o5",
+        "directed": true
+      },
+      {
+        "source": "o5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "s2",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s0": [
+          -0.384,
+          3.462
+        ],
+        "s1": [
+          4.679,
+          1.731
+        ],
+        "s2": [
+          4.281,
+          -1.409
+        ],
+        "s3": [
+          0.946,
+          -4.232
+        ],
+        "s4": [
+          -4.427,
+          -1.731
+        ],
+        "s5": [
+          -5.427,
+          1.731
+        ],
+        "g0": [
+          1.005,
+          6.963
+        ],
+        "g1": [
+          6.624,
+          4.459
+        ],
+        "g2": [
+          6.624,
+          -3.539
+        ],
+        "g3": [
+          1.005,
+          -6.043
+        ],
+        "g4": [
+          -6.826,
+          -3.546
+        ],
+        "g5": [
+          -6.826,
+          4.466
+        ],
+        "o0": [
+          3.062,
+          3.498
+        ],
+        "o1": [
+          5.603,
+          -0.007
+        ],
+        "o2": [
+          3.054,
+          -3.505
+        ],
+        "o3": [
+          -3.67,
+          -3.368
+        ],
+        "o4": [
+          -5.811,
+          -0.007
+        ],
+        "o5": [
+          -3.678,
+          3.359
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {
+        "directed:g0:s3": [
+          [
+            1.004,
+            6.092
+          ],
+          [
+            8.688,
+            6.092
+          ],
+          [
+            8.688,
+            -4.431
+          ],
+          [
+            0.831,
+            -4.431
+          ]
+        ],
+        "directed:g1:s4": [
+          [
+            5.227,
+            4.015
+          ],
+          [
+            1.419,
+            7.754
+          ],
+          [
+            -7.719,
+            6.646
+          ],
+          [
+            -7.719,
+            -1.731
+          ]
+        ],
+        "directed:g2:s5": [
+          [
+            5.227,
+            -4.015
+          ],
+          [
+            1.419,
+            -9.0
+          ],
+          [
+            -8.688,
+            -7.338
+          ],
+          [
+            -8.688,
+            1.731
+          ]
+        ],
+        "directed:g3:s0": [
+          [
+            -1.627,
+            -4.985
+          ],
+          [
+            -1.627,
+            3.704
+          ]
+        ],
+        "directed:g4:s1": [
+          [
+            -5.435,
+            -4.015
+          ],
+          [
+            -1.627,
+            -7.754
+          ],
+          [
+            7.512,
+            -6.646
+          ],
+          [
+            7.512,
+            1.731
+          ]
+        ],
+        "directed:g5:s2": [
+          [
+            -5.435,
+            4.015
+          ],
+          [
+            -1.627,
+            9.0
+          ],
+          [
+            8.481,
+            7.338
+          ],
+          [
+            8.481,
+            -1.731
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=2.11, maximum=3.07, moved_fraction=1.00.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=2.11, maximum=3.07, moved_fraction=1.00."
+    ]
+  },
+  "layout_validation": {
+    "errors": [
+      "Edge g0-s3 appears over-routed: routed length 27.16 vs direct length 11.20, while a direct or shallow route has node clearance 1.37.",
+      "Edge g2-s5 appears over-routed: routed length 30.32 vs direct length 13.15, while a direct or shallow route has node clearance 1.01.",
+      "Edges g0-s3 and g5-s2 run too close together for a long segment: close length 8.13."
+    ],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.7799157283422158,
+    "min_edge_node_clearance": 0.7354153840051871,
+    "min_edge_edge_clearance": 0.0019347826086966169,
+    "max_close_parallel_length": 8.1308275862069,
+    "max_clear_detour_ratio": 2.487878925397312,
+    "edge_crossings": 11.0
+  },
+  "visual_review": {
+    "acceptable": false,
+    "score": 5.0,
+    "issues": [
+      "Several skip edges take very long rectangular detours around the outside, making the drawing look tangled and harder to read than necessary.",
+      "On the right side, multiple unrelated long routed skip edges run nearly parallel and close together for a long visible segment, especially the outer vertical routes near g1, s1, s2, and g2.",
+      "The g0->s3 skip route runs horizontally across the upper-right area and passes close to the g1 gadget, visually crowding that local structure.",
+      "The g3->s0 skip route cuts through the central-left interior and crosses/crowds edges near s4, o3, and g3, obscuring the local anchor gadget.",
+      "The left and lower outer skip routes create avoidable crossings and long diagonals near g4, s4, s5, and g5, making the semantics of the skip edges hard to follow."
+    ],
+    "suggestions": [
+      "Route all skip edges on cleaner separated outer arcs, with one clockwise and one counterclockwise lane rather than overlapping rectangular box paths.",
+      "Move the right-side bridge routes farther outward from g1, s1, s2, and g2, and separate the parallel vertical segments so they do not run close together.",
+      "Reroute g0->s3 farther outside the top-right quadrant or around the top perimeter so it does not pass close to g1.",
+      "Reroute g3->s0 outside the lower-left/top-left perimeter instead of through the interior near s4, o3, and g3.",
+      "Increase spacing between each switch and its gate/output gadget slightly, especially around s3/g3/o3 and s4/g4/o4, so local edges remain visually distinct from skip routes."
+    ],
+    "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 5.0,\n  \"issues\": [\n    \"Several skip edges take very long rectangular detours around the outside, making the drawing look tangled and harder to read than necessary.\",\n    \"On the right side, multiple unrelated long routed skip edges run nearly parallel and close together for a long visible segment, especially the outer vertical routes near g1, s1, s2, and g2.\",\n    \"The g0->s3 skip route runs horizontally across the upper-right area and passes close to the g1 gadget, visually crowding that local structure.\",\n    \"The g3->s0 skip route cuts through the central-left interior and crosses/crowds edges near s4, o3, and g3, obscuring the local anchor gadget.\",\n    \"The left and lower outer skip routes create avoidable crossings and long diagonals near g4, s4, s5, and g5, making the semantics of the skip edges hard to follow.\"\n  ],\n  \"suggestions\": [\n    \"Route all skip edges on cleaner separated outer arcs, with one clockwise and one counterclockwise lane rather than overlapping rectangular box paths.\",\n    \"Move the right-side bridge routes farther outward from g1, s1, s2, and g2, and separate the parallel vertical segments so they do not run close together.\",\n    \"Reroute g0->s3 farther outside the top-right quadrant or around the top perimeter so it does not pass close to g1.\",\n    \"Reroute g3->s0 outside the lower-left/top-left perimeter instead of through the interior near s4, o3, and g3.\",\n    \"Increase spacing between each switch and its gate/output gadget slightly, especially around s3/g3/o3 and s4/g4/o4, so local edges remain visually distinct from skip routes.\"\n  ]\n}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_205015\\ring_of_switches\\iteration_3\\ring_of_switches.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_205015\\ring_of_switches\\iteration_3\\ring_of_switches.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_205015\\ring_of_switches\\iteration_3\\ring_of_switches.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "The six skip edges form a large tangled outer web with many crossings, making the directed semantics hard to follow.",
+        "Several skip edges take very long detours around the opposite side of the graph even though clearer exterior routes are possible.",
+        "Unrelated outer skip edges run nearly parallel and close together for long visible segments, especially along the left and right sides.",
+        "The top gadget around s0/g0/o0 is crowded: multiple long edges pass close to o0 and g0, and the local edge directions are hard to distinguish.",
+        "The right-side gadgets around s1/g1/o1 and s2/g2/o2 are crowded by exterior skip routes passing close to the local nodes and labels.",
+        "The bottom gadget around s3/g3/o3 is crossed or closely approached by long skip routes, obscuring the local s3-g3-o3 structure.",
+        "The left-lower gadget around s4/g4/o4 is visually cluttered by long routed edges passing close to the local output and gate area."
+      ],
+      "visual_suggestions": [
+        "Route each skip edge on a distinct exterior lane farther outside the circular switch cycle, avoiding paths that cut back across local gate/output gadgets.",
+        "Move the output nodes slightly closer to their associated switches and keep each s_i/g_i/o_i gadget compact so exterior skip edges can pass outside them.",
+        "Move o0 farther above g0 or route all top skip edges above o0 with more clearance.",
+        "Move the right-side bridge routes farther outward to the right of o1 and o2 so they do not crowd the s1/g1 and s2/g2 local gadgets.",
+        "Move the left-side bridge routes farther outward to the left of o4 and o5 so they do not crowd the s4/g4 and s5/g5 local gadgets.",
+        "Separate the outer skip-edge lanes so unrelated edges do not run close and parallel along the same side of the figure.",
+        "Prefer shorter clockwise or counterclockwise exterior arcs for skip edges instead of large detours that loop around most of the graph."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.3501592498664743,
+        "min_edge_node_clearance": 0.7615035411385201,
+        "min_edge_edge_clearance": 0.0012737166071827204,
+        "max_close_parallel_length": 3.4783804284637876,
+        "max_clear_detour_ratio": 2.549391340184118,
+        "edge_crossings": 48.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Edge g0-s3 appears over-routed: routed length 25.02 vs direct length 10.60, while a direct or shallow route has node clearance 1.40.",
+        "Edge g2-s5 appears over-routed: routed length 30.52 vs direct length 11.97, while a direct or shallow route has node clearance 0.93.",
+        "Edges g0-s3 and g1-s4 run too close together for a long segment: close length 2.46.",
+        "Edges g0-s3 and g4-s1 run too close together for a long segment: close length 2.78.",
+        "Edges g0-s3 and g5-s2 run too close together for a long segment: close length 3.47.",
+        "Edges g1-s4 and g2-s5 run too close together for a long segment: close length 2.53.",
+        "Edges g1-s4 and g3-s0 run too close together for a long segment: close length 3.16.",
+        "Edges g1-s4 and g5-s2 run too close together for a long segment: close length 2.12.",
+        "Edges g2-s5 and g3-s0 run too close together for a long segment: close length 3.48.",
+        "Edges g3-s0 and g4-s1 run too close together for a long segment: close length 2.18.",
+        "Edges g4-s1 and g5-s2 run too close together for a long segment: close length 2.53.",
+        "Visual review score=4.0: The six skip edges form a large tangled outer web with many crossings, making the directed semantics hard to follow.",
+        "Visual review score=4.0: Several skip edges take very long detours around the opposite side of the graph even though clearer exterior routes are possible.",
+        "Visual review score=4.0: Unrelated outer skip edges run nearly parallel and close together for long visible segments, especially along the left and right sides.",
+        "Visual review score=4.0: The top gadget around s0/g0/o0 is crowded: multiple long edges pass close to o0 and g0, and the local edge directions are hard to distinguish.",
+        "Visual review score=4.0: The right-side gadgets around s1/g1/o1 and s2/g2/o2 are crowded by exterior skip routes passing close to the local nodes and labels.",
+        "Visual review score=4.0: The bottom gadget around s3/g3/o3 is crossed or closely approached by long skip routes, obscuring the local s3-g3-o3 structure.",
+        "Visual review score=4.0: The left-lower gadget around s4/g4/o4 is visually cluttered by long routed edges passing close to the local output and gate area."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "Several long skip edges are routed as large polygonal detours and cross through or very near unrelated local gadgets, making the graph hard to read.",
+        "The top skip route from the left/top side toward s2 runs close to the g0/o0/s0 area and visually crowds the top local gadget.",
+        "On the right side, long skip routes pass close to the s1/g1/o1 and s2/g2/o2 local gadgets, with crossings occurring near nodes rather than in open space.",
+        "On the left side, multiple unrelated edges run close together for long visible segments around the s5/g5/o5 and s4/g4/o4 clusters.",
+        "The bottom region is tangled: routes near g3, o3, s3, o2, and g2 cross and crowd the local nodes, obscuring the intended local switch-gate-output structure.",
+        "Some skip edges take excessive detours around the whole drawing even where a cleaner exterior arc with fewer bends would be possible."
+      ],
+      "visual_suggestions": [
+        "Place the six switch nodes on a more regular, larger hexagon and keep each gate/output pair radially outward from its switch to preserve clear local gadgets.",
+        "Route each skip edge on a distinct exterior lane outside all local nodes, avoiding paths that cut between a switch and its gate/output.",
+        "Move the top local nodes g0, o0, o5 slightly inward or outward as a group so exterior skip routes do not pass close to their labels.",
+        "Separate the right-side skip routes farther outside the s1/g1/o1 and s2/g2/o2 clusters, especially the routes ending at s1 and s2.",
+        "Separate the left-side skip routes farther outside the s4/g4/o4 and s5/g5/o5 clusters to avoid long near-parallel segments.",
+        "Reroute bottom skip edges around the outside below g3/o3/o2/g2 rather than through the bottom local gadget area."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.7131529412168665,
+        "min_edge_node_clearance": 0.7618250894430245,
+        "min_edge_edge_clearance": 0.0015060175851582627,
+        "max_close_parallel_length": 3.4748316712112994,
+        "max_clear_detour_ratio": 2.3848027345070224,
+        "edge_crossings": 24.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Edges g0-s3 and g4-s1 run too close together for a long segment: close length 3.47.",
+        "Edges g0-s3 and g5-s2 run too close together for a long segment: close length 1.88.",
+        "Edges g1-s4 and g5-s2 run too close together for a long segment: close length 1.89.",
+        "Edges g2-s5 and g4-s1 run too close together for a long segment: close length 1.89.",
+        "Edges g3-s0 and g4-s1 run too close together for a long segment: close length 2.18.",
+        "Visual review score=4.0: Several long skip edges are routed as large polygonal detours and cross through or very near unrelated local gadgets, making the graph hard to read.",
+        "Visual review score=4.0: The top skip route from the left/top side toward s2 runs close to the g0/o0/s0 area and visually crowds the top local gadget.",
+        "Visual review score=4.0: On the right side, long skip routes pass close to the s1/g1/o1 and s2/g2/o2 local gadgets, with crossings occurring near nodes rather than in open space.",
+        "Visual review score=4.0: On the left side, multiple unrelated edges run close together for long visible segments around the s5/g5/o5 and s4/g4/o4 clusters.",
+        "Visual review score=4.0: The bottom region is tangled: routes near g3, o3, s3, o2, and g2 cross and crowd the local nodes, obscuring the intended local switch-gate-output structure.",
+        "Visual review score=4.0: Some skip edges take excessive detours around the whole drawing even where a cleaner exterior arc with fewer bends would be possible."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.0,
+      "visual_issues": [
+        "Several outside skip routes pass too close to unrelated nodes and labels, especially the top skip segment that runs very near the g0 node/label.",
+        "The right-side outside vertical route crowds the local g1/o1/s2 area and makes the incoming skip edge to s2 hard to distinguish from local edges.",
+        "The bottom outside routes pass close to the g3 and s3 local gadget, creating visual clutter around the s3-g3-o3 area.",
+        "Multiple long outer skip edges run close together or cross at shallow angles for visible stretches, making the intended skip-edge routing difficult to read."
+      ],
+      "visual_suggestions": [
+        "Move the top outer bridge routes farther outward above g0, or bend them so they clear the g0 label by a wider margin.",
+        "Push the right-side vertical skip routes farther right to separate them from g1, o1, and s2.",
+        "Push the bottom bridge routes farther below g3/s3 or route them around the lower perimeter with more clearance.",
+        "Separate the outer skip routes into distinct lanes so unrelated long edges do not run nearly parallel or cross close to local gadgets."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.9269800206540804,
+        "min_edge_node_clearance": 0.7617818345006936,
+        "min_edge_edge_clearance": 0.009648033676090075,
+        "max_close_parallel_length": 2.5222820561371906,
+        "max_clear_detour_ratio": 2.862402535646108,
+        "edge_crossings": 18.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Edge g3-s0 appears over-routed: routed length 34.32 vs direct length 12.03, while a direct or shallow route has node clearance 1.20.",
+        "Edges g1-s4 and g5-s2 run too close together for a long segment: close length 2.52.",
+        "Edges g2-s5 and g4-s1 run too close together for a long segment: close length 2.52.",
+        "Visual review score=5.0: Several outside skip routes pass too close to unrelated nodes and labels, especially the top skip segment that runs very near the g0 node/label.",
+        "Visual review score=5.0: The right-side outside vertical route crowds the local g1/o1/s2 area and makes the incoming skip edge to s2 hard to distinguish from local edges.",
+        "Visual review score=5.0: The bottom outside routes pass close to the g3 and s3 local gadget, creating visual clutter around the s3-g3-o3 area.",
+        "Visual review score=5.0: Multiple long outer skip edges run close together or cross at shallow angles for visible stretches, making the intended skip-edge routing difficult to read."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.0,
+      "visual_issues": [
+        "Several skip edges take very long rectangular detours around the outside, making the drawing look tangled and harder to read than necessary.",
+        "On the right side, multiple unrelated long routed skip edges run nearly parallel and close together for a long visible segment, especially the outer vertical routes near g1, s1, s2, and g2.",
+        "The g0->s3 skip route runs horizontally across the upper-right area and passes close to the g1 gadget, visually crowding that local structure.",
+        "The g3->s0 skip route cuts through the central-left interior and crosses/crowds edges near s4, o3, and g3, obscuring the local anchor gadget.",
+        "The left and lower outer skip routes create avoidable crossings and long diagonals near g4, s4, s5, and g5, making the semantics of the skip edges hard to follow."
+      ],
+      "visual_suggestions": [
+        "Route all skip edges on cleaner separated outer arcs, with one clockwise and one counterclockwise lane rather than overlapping rectangular box paths.",
+        "Move the right-side bridge routes farther outward from g1, s1, s2, and g2, and separate the parallel vertical segments so they do not run close together.",
+        "Reroute g0->s3 farther outside the top-right quadrant or around the top perimeter so it does not pass close to g1.",
+        "Reroute g3->s0 outside the lower-left/top-left perimeter instead of through the interior near s4, o3, and g3.",
+        "Increase spacing between each switch and its gate/output gadget slightly, especially around s3/g3/o3 and s4/g4/o4, so local edges remain visually distinct from skip routes."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.7799157283422158,
+        "min_edge_node_clearance": 0.7354153840051871,
+        "min_edge_edge_clearance": 0.0019347826086966169,
+        "max_close_parallel_length": 8.1308275862069,
+        "max_clear_detour_ratio": 2.487878925397312,
+        "edge_crossings": 11.0
+      },
+      "next_refinement": null,
+      "errors": [
+        "Edge g0-s3 appears over-routed: routed length 27.16 vs direct length 11.20, while a direct or shallow route has node clearance 1.37.",
+        "Edge g2-s5 appears over-routed: routed length 30.32 vs direct length 13.15, while a direct or shallow route has node clearance 1.01.",
+        "Edges g0-s3 and g5-s2 run too close together for a long segment: close length 8.13.",
+        "Visual review score=5.0: Several skip edges take very long rectangular detours around the outside, making the drawing look tangled and harder to read than necessary.",
+        "Visual review score=5.0: On the right side, multiple unrelated long routed skip edges run nearly parallel and close together for a long visible segment, especially the outer vertical routes near g1, s1, s2, and g2.",
+        "Visual review score=5.0: The g0->s3 skip route runs horizontally across the upper-right area and passes close to the g1 gadget, visually crowding that local structure.",
+        "Visual review score=5.0: The g3->s0 skip route cuts through the central-left interior and crosses/crowds edges near s4, o3, and g3, obscuring the local anchor gadget.",
+        "Visual review score=5.0: The left and lower outer skip routes create avoidable crossings and long diagonals near g4, s4, s5, and g5, making the semantics of the skip edges hard to follow."
+      ]
+    }
+  ]
+}

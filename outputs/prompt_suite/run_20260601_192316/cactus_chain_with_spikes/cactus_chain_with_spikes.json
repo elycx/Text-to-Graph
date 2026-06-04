@@ -1,0 +1,307 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "c0",
+        "label": "$c_{0}$"
+      },
+      {
+        "id": "c1",
+        "label": "$c_{1}$"
+      },
+      {
+        "id": "c2",
+        "label": "$c_{2}$"
+      },
+      {
+        "id": "c3",
+        "label": "$c_{3}$"
+      },
+      {
+        "id": "c4",
+        "label": "$c_{4}$"
+      },
+      {
+        "id": "a0",
+        "label": "$a_{0}$"
+      },
+      {
+        "id": "a1",
+        "label": "$a_{1}$"
+      },
+      {
+        "id": "a2",
+        "label": "$a_{2}$"
+      },
+      {
+        "id": "a3",
+        "label": "$a_{3}$"
+      },
+      {
+        "id": "a4",
+        "label": "$a_{4}$"
+      },
+      {
+        "id": "a5",
+        "label": "$a_{5}$"
+      },
+      {
+        "id": "a6",
+        "label": "$a_{6}$"
+      },
+      {
+        "id": "p0",
+        "label": "$p_{0}$"
+      },
+      {
+        "id": "p1",
+        "label": "$p_{1}$"
+      },
+      {
+        "id": "p2",
+        "label": "$p_{2}$"
+      },
+      {
+        "id": "z",
+        "label": "$z$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "c0",
+        "target": "a0",
+        "directed": false
+      },
+      {
+        "source": "a0",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "c1",
+        "target": "c0",
+        "directed": false
+      },
+      {
+        "source": "c1",
+        "target": "a1",
+        "directed": false
+      },
+      {
+        "source": "a1",
+        "target": "a2",
+        "directed": false
+      },
+      {
+        "source": "a2",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "c2",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "c2",
+        "target": "a3",
+        "directed": false
+      },
+      {
+        "source": "a3",
+        "target": "a4",
+        "directed": false
+      },
+      {
+        "source": "a4",
+        "target": "a5",
+        "directed": false
+      },
+      {
+        "source": "a5",
+        "target": "c3",
+        "directed": false
+      },
+      {
+        "source": "c3",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "c3",
+        "target": "a6",
+        "directed": false
+      },
+      {
+        "source": "a6",
+        "target": "c4",
+        "directed": false
+      },
+      {
+        "source": "c4",
+        "target": "c3",
+        "directed": false
+      },
+      {
+        "source": "c0",
+        "target": "p0",
+        "directed": false
+      },
+      {
+        "source": "c2",
+        "target": "p1",
+        "directed": false
+      },
+      {
+        "source": "c4",
+        "target": "p2",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c3",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "c0": [
+          -0.914,
+          0.153
+        ],
+        "c1": [
+          2.536,
+          0.153
+        ],
+        "c2": [
+          5.986,
+          0.153
+        ],
+        "c3": [
+          9.436,
+          0.153
+        ],
+        "c4": [
+          12.886,
+          0.153
+        ],
+        "a0": [
+          0.811,
+          -1.917
+        ],
+        "a1": [
+          3.341,
+          -1.917
+        ],
+        "a2": [
+          5.181,
+          -1.917
+        ],
+        "a3": [
+          6.714,
+          -1.687
+        ],
+        "a4": [
+          7.711,
+          -2.78
+        ],
+        "a5": [
+          8.803,
+          -1.687
+        ],
+        "a6": [
+          11.161,
+          -1.917
+        ],
+        "p0": [
+          -1.949,
+          -1.515
+        ],
+        "p1": [
+          5.986,
+          -3.815
+        ],
+        "p2": [
+          13.921,
+          -1.515
+        ],
+        "z": [
+          5.986,
+          3.603
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {},
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.479411369430423,
+    "min_edge_node_clearance": 0.7280000000000006
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.5,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.5,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_192316\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_192316\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_192316\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.5,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 1.479411369430423,
+        "min_edge_node_clearance": 0.7280000000000006
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s",
+        "label": "s"
+      },
+      {
+        "id": "t",
+        "label": "t"
+      },
+      {
+        "id": "u_0",
+        "label": "$u_{0}$"
+      },
+      {
+        "id": "v_0",
+        "label": "$v_{0}$"
+      },
+      {
+        "id": "a_0",
+        "label": "$a_{0}$"
+      },
+      {
+        "id": "b_0",
+        "label": "$b_{0}$"
+      },
+      {
+        "id": "u_1",
+        "label": "$u_{1}$"
+      },
+      {
+        "id": "v_1",
+        "label": "$v_{1}$"
+      },
+      {
+        "id": "a_1",
+        "label": "$a_{1}$"
+      },
+      {
+        "id": "b_1",
+        "label": "$b_{1}$"
+      },
+      {
+        "id": "u_2",
+        "label": "$u_{2}$"
+      },
+      {
+        "id": "v_2",
+        "label": "$v_{2}$"
+      },
+      {
+        "id": "a_2",
+        "label": "$a_{2}$"
+      },
+      {
+        "id": "b_2",
+        "label": "$b_{2}$"
+      },
+      {
+        "id": "u_3",
+        "label": "$u_{3}$"
+      },
+      {
+        "id": "v_3",
+        "label": "$v_{3}$"
+      },
+      {
+        "id": "a_3",
+        "label": "$a_{3}$"
+      },
+      {
+        "id": "b_3",
+        "label": "$b_{3}$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "u_0",
+        "target": "a_0",
+        "directed": true
+      },
+      {
+        "source": "u_0",
+        "target": "b_0",
+        "directed": true
+      },
+      {
+        "source": "a_0",
+        "target": "v_0",
+        "directed": true
+      },
+      {
+        "source": "b_0",
+        "target": "v_0",
+        "directed": true
+      },
+      {
+        "source": "u_1",
+        "target": "a_1",
+        "directed": true
+      },
+      {
+        "source": "u_1",
+        "target": "b_1",
+        "directed": true
+      },
+      {
+        "source": "a_1",
+        "target": "v_1",
+        "directed": true
+      },
+      {
+        "source": "b_1",
+        "target": "v_1",
+        "directed": true
+      },
+      {
+        "source": "u_2",
+        "target": "a_2",
+        "directed": true
+      },
+      {
+        "source": "u_2",
+        "target": "b_2",
+        "directed": true
+      },
+      {
+        "source": "a_2",
+        "target": "v_2",
+        "directed": true
+      },
+      {
+        "source": "b_2",
+        "target": "v_2",
+        "directed": true
+      },
+      {
+        "source": "u_3",
+        "target": "a_3",
+        "directed": true
+      },
+      {
+        "source": "u_3",
+        "target": "b_3",
+        "directed": true
+      },
+      {
+        "source": "a_3",
+        "target": "v_3",
+        "directed": true
+      },
+      {
+        "source": "b_3",
+        "target": "v_3",
+        "directed": true
+      },
+      {
+        "source": "s",
+        "target": "u_0",
+        "directed": true
+      },
+      {
+        "source": "v_0",
+        "target": "u_1",
+        "directed": true
+      },
+      {
+        "source": "v_1",
+        "target": "u_2",
+        "directed": true
+      },
+      {
+        "source": "v_2",
+        "target": "u_3",
+        "directed": true
+      },
+      {
+        "source": "v_3",
+        "target": "t",
+        "directed": true
+      },
+      {
+        "source": "a_0",
+        "target": "b_1",
+        "directed": true
+      },
+      {
+        "source": "b_0",
+        "target": "a_1",
+        "directed": true
+      },
+      {
+        "source": "a_1",
+        "target": "b_2",
+        "directed": true
+      },
+      {
+        "source": "b_1",
+        "target": "a_2",
+        "directed": true
+      },
+      {
+        "source": "a_2",
+        "target": "b_3",
+        "directed": true
+      },
+      {
+        "source": "b_2",
+        "target": "a_3",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s": [
+          -3.15,
+          2.76
+        ],
+        "t": [
+          22.15,
+          -2.76
+        ],
+        "u_0": [
+          0.875,
+          2.76
+        ],
+        "v_0": [
+          0.875,
+          -2.76
+        ],
+        "a_0": [
+          -0.505,
+          0.805
+        ],
+        "b_0": [
+          2.057,
+          -0.599
+        ],
+        "u_1": [
+          6.625,
+          2.76
+        ],
+        "v_1": [
+          6.625,
+          -2.76
+        ],
+        "a_1": [
+          5.443,
+          0.599
+        ],
+        "b_1": [
+          7.807,
+          -0.599
+        ],
+        "u_2": [
+          12.375,
+          2.76
+        ],
+        "v_2": [
+          12.375,
+          -2.76
+        ],
+        "a_2": [
+          11.193,
+          0.599
+        ],
+        "b_2": [
+          13.557,
+          -0.599
+        ],
+        "u_3": [
+          18.125,
+          2.76
+        ],
+        "v_3": [
+          18.125,
+          -2.76
+        ],
+        "a_3": [
+          16.943,
+          0.599
+        ],
+        "b_3": [
+          19.505,
+          -0.805
+        ]
+      },
+      "edge_options": {},
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 2.3929949853687527,
+    "min_edge_node_clearance": 0.7403453798276438
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_011244\\stacked_diamond_flow\\iteration_0\\stacked_diamond_flow.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_011244\\stacked_diamond_flow\\iteration_0\\stacked_diamond_flow.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_011244\\stacked_diamond_flow\\iteration_0\\stacked_diamond_flow.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "layout_metrics": {
+        "min_node_distance": 2.3929949853687527,
+        "min_edge_node_clearance": 0.7403453798276438
+      },
+      "errors": []
+    }
+  ],
+  "id": "stacked_diamond_flow",
+  "title": "Stacked Diamond Flow",
+  "prompt": "Draw a directed artificial flow graph built from four stacked diamond gadgets. Start at s and end at t. For each k=0,1,2,3 create top node uk, bottom node vk, left branch ak, and right branch bk. Add directed edges uk->ak, uk->bk, ak->vk, bk->vk for every k. Chain them with s->u0, v0->u1, v1->u2, v2->u3, v3->t. Add cross-layer directed shortcuts a0->b1, b0->a1, a1->b2, b1->a2, a2->b3, b2->a3. Make layers vertical from left to right.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_011244\\stacked_diamond_flow"
+}

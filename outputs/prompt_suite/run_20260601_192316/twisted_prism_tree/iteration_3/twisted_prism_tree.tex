@@ -1,0 +1,46 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_U0) at (-8.44,0.94) {$U_0$};
+\node[graphnode] (n_U1) at (-6.07,3.17) {$U_1$};
+\node[graphnode] (n_U2) at (-3.56,0.94) {$U_2$};
+\node[graphnode] (n_V0) at (-8.44,-2.27) {$V_0$};
+\node[graphnode] (n_V1) at (-6.00,-4.08) {$V_1$};
+\node[graphnode] (n_V2) at (-3.47,-1.75) {$V_2$};
+\node[graphnode] (n_r) at (0.21,2.20) {$r$};
+\node[graphnode] (n_x0) at (3.21,4.01) {$x_0$};
+\node[graphnode] (n_x1) at (3.21,-0.10) {$x_1$};
+\node[graphnode] (n_x00) at (5.79,4.85) {$x_{00}$};
+\node[graphnode] (n_x01) at (8.09,3.52) {$x_{01}$};
+\node[graphnode] (n_x10) at (8.09,-2.83) {$x_{10}$};
+\node[graphnode] (n_x11) at (5.86,0.87) {$x_{11}$};
+\draw[undirected] (n_U0) -- (n_U1);
+\draw[undirected] (n_U1) -- (n_U2);
+\draw[undirected] (n_U0) -- (n_U2);
+\draw[undirected] (n_V0) -- (n_V1);
+\draw[undirected] (n_V1) -- (n_V2);
+\draw[undirected] (n_V0) -- (n_V2);
+\draw[undirected] (n_U0) -- (n_V0);
+\draw[undirected] (n_U1) -- (n_V1);
+\draw[undirected] (n_U2) -- (n_V2);
+\draw[undirected] (n_U0) to[bend right=22] (n_V1);
+\draw[undirected] (n_U1) to[bend left=18] (n_V2);
+\draw[undirected] (n_U2) to[bend left=22] (n_V0);
+\draw[undirected] (n_U1) -- (n_r);
+\draw[undirected] (n_r) -- (n_x0);
+\draw[undirected] (n_r) -- (n_x1);
+\draw[undirected] (n_x0) -- (n_x00);
+\draw[undirected] (n_x0) -- (n_x01);
+\draw[undirected] (n_x1) -- (n_x10);
+\draw[undirected] (n_x1) -- (n_x11);
+\draw[undirected,rounded corners=5pt] (n_x01) -- (-1.81,-1.29) -- (-1.81,6.04) -- (9.00,6.04) -- (9.00,3.73) -- (n_V2);
+\draw[undirected,rounded corners=5pt] (n_x10) -- (-9.00,-3.52) -- (-9.00,-6.04) -- (9.00,-6.04) -- (9.00,-2.96) -- (n_V0);
+\end{tikzpicture}
+\end{document}

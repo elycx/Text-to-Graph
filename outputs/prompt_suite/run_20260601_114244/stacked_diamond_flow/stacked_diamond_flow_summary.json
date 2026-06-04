@@ -1,0 +1,388 @@
+{
+  "success": true,
+  "iterations": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s",
+        "label": "$s$"
+      },
+      {
+        "id": "u_0",
+        "label": "$u_0$"
+      },
+      {
+        "id": "v_0",
+        "label": "$v_0$"
+      },
+      {
+        "id": "a_0",
+        "label": "$a_0$"
+      },
+      {
+        "id": "b_0",
+        "label": "$b_0$"
+      },
+      {
+        "id": "u_1",
+        "label": "$u_1$"
+      },
+      {
+        "id": "v_1",
+        "label": "$v_1$"
+      },
+      {
+        "id": "a_1",
+        "label": "$a_1$"
+      },
+      {
+        "id": "b_1",
+        "label": "$b_1$"
+      },
+      {
+        "id": "u_2",
+        "label": "$u_2$"
+      },
+      {
+        "id": "v_2",
+        "label": "$v_2$"
+      },
+      {
+        "id": "a_2",
+        "label": "$a_2$"
+      },
+      {
+        "id": "b_2",
+        "label": "$b_2$"
+      },
+      {
+        "id": "u_3",
+        "label": "$u_3$"
+      },
+      {
+        "id": "v_3",
+        "label": "$v_3$"
+      },
+      {
+        "id": "a_3",
+        "label": "$a_3$"
+      },
+      {
+        "id": "b_3",
+        "label": "$b_3$"
+      },
+      {
+        "id": "t",
+        "label": "$t$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "u_0",
+        "target": "a_0",
+        "directed": true
+      },
+      {
+        "source": "u_0",
+        "target": "b_0",
+        "directed": true
+      },
+      {
+        "source": "a_0",
+        "target": "v_0",
+        "directed": true
+      },
+      {
+        "source": "b_0",
+        "target": "v_0",
+        "directed": true
+      },
+      {
+        "source": "u_1",
+        "target": "a_1",
+        "directed": true
+      },
+      {
+        "source": "u_1",
+        "target": "b_1",
+        "directed": true
+      },
+      {
+        "source": "a_1",
+        "target": "v_1",
+        "directed": true
+      },
+      {
+        "source": "b_1",
+        "target": "v_1",
+        "directed": true
+      },
+      {
+        "source": "u_2",
+        "target": "a_2",
+        "directed": true
+      },
+      {
+        "source": "u_2",
+        "target": "b_2",
+        "directed": true
+      },
+      {
+        "source": "a_2",
+        "target": "v_2",
+        "directed": true
+      },
+      {
+        "source": "b_2",
+        "target": "v_2",
+        "directed": true
+      },
+      {
+        "source": "u_3",
+        "target": "a_3",
+        "directed": true
+      },
+      {
+        "source": "u_3",
+        "target": "b_3",
+        "directed": true
+      },
+      {
+        "source": "a_3",
+        "target": "v_3",
+        "directed": true
+      },
+      {
+        "source": "b_3",
+        "target": "v_3",
+        "directed": true
+      },
+      {
+        "source": "s",
+        "target": "u_0",
+        "directed": true
+      },
+      {
+        "source": "v_0",
+        "target": "u_1",
+        "directed": true
+      },
+      {
+        "source": "v_1",
+        "target": "u_2",
+        "directed": true
+      },
+      {
+        "source": "v_2",
+        "target": "u_3",
+        "directed": true
+      },
+      {
+        "source": "v_3",
+        "target": "t",
+        "directed": true
+      },
+      {
+        "source": "a_0",
+        "target": "b_1",
+        "directed": true
+      },
+      {
+        "source": "b_0",
+        "target": "a_1",
+        "directed": true
+      },
+      {
+        "source": "a_1",
+        "target": "b_2",
+        "directed": true
+      },
+      {
+        "source": "b_1",
+        "target": "a_2",
+        "directed": true
+      },
+      {
+        "source": "a_2",
+        "target": "b_3",
+        "directed": true
+      },
+      {
+        "source": "b_2",
+        "target": "a_3",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s": [
+          -5.0,
+          3.0
+        ],
+        "u_0": [
+          0.0,
+          3.0
+        ],
+        "v_0": [
+          0.0,
+          -3.0
+        ],
+        "a_0": [
+          -2.4,
+          0.0
+        ],
+        "b_0": [
+          2.4,
+          0.0
+        ],
+        "u_1": [
+          8.0,
+          3.0
+        ],
+        "v_1": [
+          8.0,
+          -3.0
+        ],
+        "a_1": [
+          5.6,
+          0.0
+        ],
+        "b_1": [
+          10.4,
+          0.0
+        ],
+        "u_2": [
+          16.0,
+          3.0
+        ],
+        "v_2": [
+          16.0,
+          -3.0
+        ],
+        "a_2": [
+          13.6,
+          0.0
+        ],
+        "b_2": [
+          18.4,
+          0.0
+        ],
+        "u_3": [
+          24.0,
+          3.0
+        ],
+        "v_3": [
+          24.0,
+          -3.0
+        ],
+        "a_3": [
+          21.6,
+          0.0
+        ],
+        "b_3": [
+          26.4,
+          0.0
+        ],
+        "t": [
+          29.0,
+          -3.0
+        ]
+      },
+      "edge_options": {
+        "directed:a_0:b_1": "out=90,in=90,looseness=3.2",
+        "directed:a_1:b_2": "out=90,in=90,looseness=3.2",
+        "directed:a_2:b_3": "out=90,in=90,looseness=3.2",
+        "directed:b_0:a_1": "out=-90,in=-90,looseness=3.2",
+        "directed:b_1:a_2": "out=-90,in=-90,looseness=3.2",
+        "directed:b_2:a_3": "out=-90,in=-90,looseness=3.2"
+      },
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 3.6799999999999997,
+    "min_edge_node_clearance": 1.1039999999999988
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_114244\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_114244\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_114244\\stacked_diamond_flow\\iteration_1\\stacked_diamond_flow.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.0,
+      "visual_issues": [
+        "The large upper shortcut arcs pass too close to unrelated top nodes, especially the a0->b1 arc near u_0 and the a1->b2 arc near u_1/u_2, making node-edge separation marginal.",
+        "Several long shortcut arcs create avoidable tangles around the diamond tops and bottoms; some crossings occur close to node labels rather than in open space.",
+        "The lower shortcut arcs between b_k and a_{k+1} run close to bottom chain/diamond nodes such as v_0, v_1, and v_2, crowding the local gadget structure."
+      ],
+      "visual_suggestions": [
+        "Route the upper shortcut edges higher above the diamonds with greater looseness or larger vertical clearance so they do not pass near u_k nodes or labels.",
+        "Route the lower shortcut edges farther below the diamonds to clear v_k nodes and the bottom chain edges.",
+        "Increase horizontal spacing between consecutive diamond gadgets or move the branch nodes a_k and b_k slightly outward to give shortcut arcs more room between layers."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.0582633456387454,
+        "min_edge_node_clearance": 0.6885034170663226
+      },
+      "errors": [
+        "Visual review score=6.0: The large upper shortcut arcs pass too close to unrelated top nodes, especially the a0->b1 arc near u_0 and the a1->b2 arc near u_1/u_2, making node-edge separation marginal.",
+        "Visual review score=6.0: Several long shortcut arcs create avoidable tangles around the diamond tops and bottoms; some crossings occur close to node labels rather than in open space.",
+        "Visual review score=6.0: The lower shortcut arcs between b_k and a_{k+1} run close to bottom chain/diamond nodes such as v_0, v_1, and v_2, crowding the local gadget structure."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 3.6799999999999997,
+        "min_edge_node_clearance": 1.1039999999999988
+      },
+      "errors": []
+    }
+  ],
+  "id": "stacked_diamond_flow",
+  "title": "Stacked Diamond Flow",
+  "prompt": "Draw a directed artificial flow graph built from four stacked diamond gadgets. Start at s and end at t. For each k=0,1,2,3 create top node uk, bottom node vk, left branch ak, and right branch bk. Add directed edges uk->ak, uk->bk, ak->vk, bk->vk for every k. Chain them with s->u0, v0->u1, v1->u2, v2->u3, v3->t. Add cross-layer directed shortcuts a0->b1, b0->a1, a1->b2, b1->a2, a2->b3, b2->a3. Make layers vertical from left to right.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_114244\\stacked_diamond_flow"
+}

@@ -1,0 +1,299 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "g00",
+        "label": "g00"
+      },
+      {
+        "id": "g01",
+        "label": "g01"
+      },
+      {
+        "id": "g02",
+        "label": "g02"
+      },
+      {
+        "id": "g03",
+        "label": "g03"
+      },
+      {
+        "id": "g10",
+        "label": "g10"
+      },
+      {
+        "id": "g11",
+        "label": "g11"
+      },
+      {
+        "id": "g12",
+        "label": "g12"
+      },
+      {
+        "id": "g13",
+        "label": "g13"
+      },
+      {
+        "id": "g20",
+        "label": "g20"
+      },
+      {
+        "id": "g21",
+        "label": "g21"
+      },
+      {
+        "id": "g22",
+        "label": "g22"
+      },
+      {
+        "id": "g23",
+        "label": "g23"
+      },
+      {
+        "id": "H",
+        "label": "H"
+      }
+    ],
+    "edges": [
+      {
+        "source": "g00",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g03",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g20",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g21",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g22",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g10",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "g11",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "g02",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "g12",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g13",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g01",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g02",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g11",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g12",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g21",
+        "directed": false
+      },
+      {
+        "source": "H",
+        "target": "g22",
+        "directed": false
+      },
+      {
+        "source": "g00",
+        "target": "g23",
+        "directed": false
+      },
+      {
+        "source": "g03",
+        "target": "g20",
+        "directed": false
+      },
+      {
+        "source": "g10",
+        "target": "g13",
+        "directed": false
+      },
+      {
+        "source": "g01",
+        "target": "g22",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "g00": [
+          -0.45,
+          0.249
+        ],
+        "g01": [
+          1.129,
+          -0.463
+        ],
+        "g02": [
+          4.871,
+          -0.463
+        ],
+        "g03": [
+          6.45,
+          0.249
+        ],
+        "g10": [
+          0.025,
+          -1.625
+        ],
+        "g11": [
+          1.347,
+          -1.968
+        ],
+        "g12": [
+          4.652,
+          -1.963
+        ],
+        "g13": [
+          5.975,
+          -1.625
+        ],
+        "g20": [
+          -0.45,
+          -4.351
+        ],
+        "g21": [
+          1.516,
+          -4.743
+        ],
+        "g22": [
+          4.484,
+          -4.743
+        ],
+        "g23": [
+          6.45,
+          -4.351
+        ],
+        "H": [
+          3.0,
+          3.009
+        ]
+      },
+      "edge_options": {
+        "undirected:g00:g23": "out=180,in=-90,looseness=1.6",
+        "undirected:g03:g20": "out=0,in=-90,looseness=1.6",
+        "undirected:g10:g13": "out=90,in=90,looseness=1.8",
+        "undirected:g01:g22": "out=-20,in=110,looseness=1.25"
+      },
+      "node_options": {
+        "H": "fill=yellow!20"
+      },
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\hubbed_grid_with_teleports\\iteration_0\\hubbed_grid_with_teleports.tex",
+    "pdf_path": "outputs\\prompt_suite\\hubbed_grid_with_teleports\\iteration_0\\hubbed_grid_with_teleports.pdf",
+    "png_path": "outputs\\prompt_suite\\hubbed_grid_with_teleports\\iteration_0\\hubbed_grid_with_teleports.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

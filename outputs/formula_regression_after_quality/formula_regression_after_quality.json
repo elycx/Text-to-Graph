@@ -1,0 +1,264 @@
+{
+  "success": true,
+  "iterations": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "u_0",
+        "label": "$u_{0}$"
+      },
+      {
+        "id": "u_1",
+        "label": "$u_{1}$"
+      },
+      {
+        "id": "u_2",
+        "label": "$u_{2}$"
+      },
+      {
+        "id": "u_3",
+        "label": "$u_{3}$"
+      },
+      {
+        "id": "v_0",
+        "label": "$v_{0}$"
+      },
+      {
+        "id": "v_1",
+        "label": "$v_{1}$"
+      },
+      {
+        "id": "v_2",
+        "label": "$v_{2}$"
+      },
+      {
+        "id": "v_3",
+        "label": "$v_{3}$"
+      },
+      {
+        "id": "w_0",
+        "label": "$w_{0}$"
+      },
+      {
+        "id": "w_1",
+        "label": "$w_{1}$"
+      },
+      {
+        "id": "w_2",
+        "label": "$w_{2}$"
+      },
+      {
+        "id": "p",
+        "label": "$p$"
+      },
+      {
+        "id": "q",
+        "label": "$q$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "u_0",
+        "target": "p",
+        "directed": false
+      },
+      {
+        "source": "u_1",
+        "target": "p",
+        "directed": false
+      },
+      {
+        "source": "u_2",
+        "target": "p",
+        "directed": false
+      },
+      {
+        "source": "u_3",
+        "target": "p",
+        "directed": false
+      },
+      {
+        "source": "v_0",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "v_1",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "v_2",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "v_3",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "p",
+        "target": "q",
+        "directed": false
+      },
+      {
+        "source": "u_1",
+        "target": "w_0",
+        "directed": false
+      },
+      {
+        "source": "v_0",
+        "target": "w_0",
+        "directed": false
+      },
+      {
+        "source": "u_2",
+        "target": "w_1",
+        "directed": false
+      },
+      {
+        "source": "v_1",
+        "target": "w_1",
+        "directed": false
+      },
+      {
+        "source": "u_3",
+        "target": "w_2",
+        "directed": false
+      },
+      {
+        "source": "v_2",
+        "target": "w_2",
+        "directed": false
+      },
+      {
+        "source": "w_0",
+        "target": "w_1",
+        "directed": false
+      },
+      {
+        "source": "w_1",
+        "target": "w_2",
+        "directed": false
+      },
+      {
+        "source": "u_0",
+        "target": "w_0",
+        "directed": false
+      },
+      {
+        "source": "w_2",
+        "target": "v_3",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "u_0": [
+          0.0,
+          2.0
+        ],
+        "u_1": [
+          2.0,
+          2.4
+        ],
+        "u_2": [
+          4.0,
+          2.4
+        ],
+        "u_3": [
+          6.0,
+          2.0
+        ],
+        "v_0": [
+          0.0,
+          -2.0
+        ],
+        "v_1": [
+          2.0,
+          -2.4
+        ],
+        "v_2": [
+          4.0,
+          -2.4
+        ],
+        "v_3": [
+          6.0,
+          -2.0
+        ],
+        "w_0": [
+          1.0,
+          0.0
+        ],
+        "w_1": [
+          3.0,
+          0.0
+        ],
+        "w_2": [
+          5.0,
+          0.0
+        ],
+        "p": [
+          3.0,
+          5.2
+        ],
+        "q": [
+          3.0,
+          -5.2
+        ]
+      },
+      "edge_options": {
+        "undirected:p:q": "out=180,in=180,looseness=1.8"
+      }
+    },
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1.",
+      "The symbol T was referenced in V(G) but not explicitly defined; interpreted T as U \u222a V."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1.",
+      "The symbol T was referenced in V(G) but not explicitly defined; interpreted T as U \u222a V."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\formula_regression_after_quality\\iteration_1\\formula_regression_after_quality.tex",
+    "pdf_path": "outputs\\formula_regression_after_quality\\iteration_1\\formula_regression_after_quality.pdf",
+    "png_path": "outputs\\formula_regression_after_quality\\iteration_1\\formula_regression_after_quality.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": false,
+      "code_ok": true,
+      "render_ok": false,
+      "errors": [
+        "Edge u_3-p passes too close to unrelated node u_2: distance 0.37.",
+        "Edge v_3-q passes too close to unrelated node v_2: distance 0.37."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

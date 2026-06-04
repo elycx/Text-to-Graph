@@ -1,0 +1,17 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usetikzlibrary{arrows.meta,positioning}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw,thick,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  directed/.style={-{Stealth[length=2.4mm]},thick},
+  undirected/.style={thick}
+}
+\node[graphnode] (n_X) at (0.00,1.65) {X};
+\node[graphnode] (n_Y) at (-1.43,-0.82) {Y};
+\node[graphnode] (n_Z) at (1.43,-0.83) {Z};
+\draw[undirected] (n_X) -- (n_Y);
+\draw[undirected] (n_X) -- (n_Z);
+\draw[undirected] (n_Y) -- (n_Z);
+\end{tikzpicture}
+\end{document}

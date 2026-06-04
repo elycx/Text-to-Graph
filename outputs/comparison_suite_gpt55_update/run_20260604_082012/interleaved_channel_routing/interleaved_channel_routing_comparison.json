@@ -1,0 +1,1142 @@
+{
+  "id": "interleaved_channel_routing",
+  "title": "Interleaved Channel Routing",
+  "prompt": "Draw a directed artificial routing graph with two vertical terminal columns and a middle channel. Left terminals are L0,L1,L2,L3,L4 from top to bottom; right terminals are R0,R1,R2,R3,R4 from top to bottom. Middle channel nodes are A0,A1,A2,A3,A4 and B0,B1,B2,B3,B4 arranged as two compact staggered columns. Add directed edges Li->Ai and Bi->Ri for every i. Add channel edges A0->B1, A1->B3, A2->B0, A3->B4, A4->B2. Add balancing edges A0->A1->A2->A3->A4 and B0->B1->B2->B3->B4. Add bypass edges L0->B4, L4->B0, A1->R3, and A3->R1 routed outside the channel. Make the terminal columns straight, keep the channel compact, and avoid long edge segments running close together.",
+  "case_dir": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\interleaved_channel_routing",
+  "workflow": {
+    "success": false,
+    "iterations": 3,
+    "graph": {
+      "nodes": [
+        {
+          "id": "L0",
+          "label": "L0"
+        },
+        {
+          "id": "L1",
+          "label": "L1"
+        },
+        {
+          "id": "L2",
+          "label": "L2"
+        },
+        {
+          "id": "L3",
+          "label": "L3"
+        },
+        {
+          "id": "L4",
+          "label": "L4"
+        },
+        {
+          "id": "R0",
+          "label": "R0"
+        },
+        {
+          "id": "R1",
+          "label": "R1"
+        },
+        {
+          "id": "R2",
+          "label": "R2"
+        },
+        {
+          "id": "R3",
+          "label": "R3"
+        },
+        {
+          "id": "R4",
+          "label": "R4"
+        },
+        {
+          "id": "A0",
+          "label": "A0"
+        },
+        {
+          "id": "A1",
+          "label": "A1"
+        },
+        {
+          "id": "A2",
+          "label": "A2"
+        },
+        {
+          "id": "A3",
+          "label": "A3"
+        },
+        {
+          "id": "A4",
+          "label": "A4"
+        },
+        {
+          "id": "B0",
+          "label": "B0"
+        },
+        {
+          "id": "B1",
+          "label": "B1"
+        },
+        {
+          "id": "B2",
+          "label": "B2"
+        },
+        {
+          "id": "B3",
+          "label": "B3"
+        },
+        {
+          "id": "B4",
+          "label": "B4"
+        }
+      ],
+      "edges": [
+        {
+          "source": "L0",
+          "target": "A0",
+          "directed": true
+        },
+        {
+          "source": "L1",
+          "target": "A1",
+          "directed": true
+        },
+        {
+          "source": "L2",
+          "target": "A2",
+          "directed": true
+        },
+        {
+          "source": "L3",
+          "target": "A3",
+          "directed": true
+        },
+        {
+          "source": "L4",
+          "target": "A4",
+          "directed": true
+        },
+        {
+          "source": "B0",
+          "target": "R0",
+          "directed": true
+        },
+        {
+          "source": "B1",
+          "target": "R1",
+          "directed": true
+        },
+        {
+          "source": "B2",
+          "target": "R2",
+          "directed": true
+        },
+        {
+          "source": "B3",
+          "target": "R3",
+          "directed": true
+        },
+        {
+          "source": "B4",
+          "target": "R4",
+          "directed": true
+        },
+        {
+          "source": "A0",
+          "target": "B1",
+          "directed": true
+        },
+        {
+          "source": "A1",
+          "target": "B3",
+          "directed": true
+        },
+        {
+          "source": "A2",
+          "target": "B0",
+          "directed": true
+        },
+        {
+          "source": "A3",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "A4",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "A0",
+          "target": "A1",
+          "directed": true
+        },
+        {
+          "source": "A1",
+          "target": "A2",
+          "directed": true
+        },
+        {
+          "source": "A2",
+          "target": "A3",
+          "directed": true
+        },
+        {
+          "source": "A3",
+          "target": "A4",
+          "directed": true
+        },
+        {
+          "source": "B0",
+          "target": "B1",
+          "directed": true
+        },
+        {
+          "source": "B1",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "B2",
+          "target": "B3",
+          "directed": true
+        },
+        {
+          "source": "B3",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "L0",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "L4",
+          "target": "B0",
+          "directed": true
+        },
+        {
+          "source": "A1",
+          "target": "R3",
+          "directed": true
+        },
+        {
+          "source": "A3",
+          "target": "R1",
+          "directed": true
+        }
+      ],
+      "layout_hints": {
+        "style": "explicit",
+        "positions": {
+          "L0": [
+            -11.933,
+            9.918
+          ],
+          "L1": [
+            -11.722,
+            4.485
+          ],
+          "L2": [
+            -11.046,
+            0.195
+          ],
+          "L3": [
+            -11.661,
+            -5.437
+          ],
+          "L4": [
+            -12.898,
+            -9.76
+          ],
+          "R0": [
+            13.571,
+            10.126
+          ],
+          "R1": [
+            13.571,
+            5.153
+          ],
+          "R2": [
+            13.571,
+            0.179
+          ],
+          "R3": [
+            13.571,
+            -4.794
+          ],
+          "R4": [
+            13.571,
+            -9.768
+          ],
+          "A0": [
+            -1.672,
+            10.021
+          ],
+          "A1": [
+            -4.244,
+            5.795
+          ],
+          "A2": [
+            -4.244,
+            0.179
+          ],
+          "A3": [
+            -4.244,
+            -5.436
+          ],
+          "A4": [
+            -4.244,
+            -9.557
+          ],
+          "B0": [
+            3.171,
+            10.126
+          ],
+          "B1": [
+            3.171,
+            4.701
+          ],
+          "B2": [
+            3.171,
+            -0.725
+          ],
+          "B3": [
+            3.171,
+            -6.151
+          ],
+          "B4": [
+            3.171,
+            -11.577
+          ]
+        },
+        "edge_options": {
+          "directed:A0:B1": "bend left=12",
+          "directed:A3:B4": "bend right=10"
+        },
+        "edge_routes": {
+          "directed:A2:B0": [
+            [
+              -1.441,
+              2.621
+            ],
+            [
+              1.091,
+              6.6
+            ]
+          ],
+          "directed:A1:B3": [
+            [
+              -1.441,
+              2.802
+            ]
+          ],
+          "directed:A4:B2": [
+            [
+              -1.441,
+              -6.603
+            ],
+            [
+              1.091,
+              -2.082
+            ]
+          ],
+          "directed:L0:B4": [
+            [
+              -16.0,
+              10.759
+            ],
+            [
+              -16.0,
+              -11.486
+            ],
+            [
+              1.815,
+              -11.486
+            ]
+          ],
+          "directed:L4:B0": [
+            [
+              -13.558,
+              -10.401
+            ],
+            [
+              -13.558,
+              11.845
+            ],
+            [
+              1.815,
+              11.845
+            ]
+          ],
+          "directed:A1:R3": [
+            [
+              -1.26,
+              7.052
+            ],
+            [
+              10.677,
+              -5.789
+            ]
+          ],
+          "directed:A3:R1": [
+            [
+              -1.26,
+              -6.693
+            ],
+            [
+              9.23,
+              -6.693
+            ],
+            [
+              9.23,
+              6.148
+            ],
+            [
+              10.677,
+              6.148
+            ]
+          ]
+        },
+        "node_options": {},
+        "disable_auto_expand": true
+      },
+      "warnings": [
+        "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+        "Macro relayout coordinate motion: average=2.45, maximum=4.96, moved_fraction=0.90.",
+        "Applied local geometry-aware layout polishing to reduce overlaps and improve alignment."
+      ]
+    },
+    "graph_validation": {
+      "errors": [],
+      "warnings": [
+        "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+        "Macro relayout coordinate motion: average=2.45, maximum=4.96, moved_fraction=0.90."
+      ]
+    },
+    "layout_validation": {
+      "errors": [
+        "Edge A3-R1 passes too close to unrelated node B3: distance 0.54."
+      ],
+      "warnings": []
+    },
+    "layout_metrics": {
+      "min_node_distance": 4.121,
+      "min_edge_node_clearance": 0.5419999999999998,
+      "min_edge_edge_clearance": 0.000600000000000378,
+      "max_close_parallel_length": 0.9563099276311788,
+      "max_clear_detour_ratio": 1.734691496024899,
+      "edge_crossings": 13.0,
+      "drawing_width": 26.469,
+      "drawing_height": 21.703,
+      "canvas_area_per_node": 28.722835350000004,
+      "mean_edge_path_length": 12.290626383384128
+    },
+    "visual_review": {
+      "acceptable": false,
+      "score": 4.0,
+      "issues": [
+        "The A3->R1 bypass route runs too close to the non-incident B3 node/label along its long horizontal segment, nearly touching the B3 circle.",
+        "The A3->R1 and A1->R3 bypasses create a large right-side tangle, with long routed segments crossing through the middle channel and making the intended outside routing hard to read.",
+        "The outer left bypass routes L0->B4 and L4->B0 are excessively large detours and expand the canvas substantially; they also pass close to the L0/L4 terminal area.",
+        "Several channel edges cross in the compact middle region, and the crossing pattern is visually busy around A1/A2/B1/B2/B3.",
+        "The left terminal column is not straight: L0-L4 are horizontally uneven, especially L4, weakening the requested terminal-column structure."
+      ],
+      "suggestions": [
+        "Move the A3->R1 horizontal bypass farther below B3 or route it around the right side with more clearance before rising to R1.",
+        "Route A1->R3 and A3->R1 as separated outside-right bypasses, using distinct vertical tracks so they do not cross or crowd the B column.",
+        "Straighten the left terminal column by aligning L0,L1,L2,L3,L4 to a common x-coordinate with even vertical spacing.",
+        "Bring the outer left bypass tracks closer to the graph while maintaining clearance, or use two separated but less extreme outside-left tracks for L0->B4 and L4->B0.",
+        "Rebalance the A/B channel columns with even vertical spacing and adjust the internal channel edge bends to reduce crossings near A1/A2/B1/B2/B3."
+      ],
+      "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 4.0,\n  \"issues\": [\n    \"The A3->R1 bypass route runs too close to the non-incident B3 node/label along its long horizontal segment, nearly touching the B3 circle.\",\n    \"The A3->R1 and A1->R3 bypasses create a large right-side tangle, with long routed segments crossing through the middle channel and making the intended outside routing hard to read.\",\n    \"The outer left bypass routes L0->B4 and L4->B0 are excessively large detours and expand the canvas substantially; they also pass close to the L0/L4 terminal area.\",\n    \"Several channel edges cross in the compact middle region, and the crossing pattern is visually busy around A1/A2/B1/B2/B3.\",\n    \"The left terminal column is not straight: L0-L4 are horizontally uneven, especially L4, weakening the requested terminal-column structure.\"\n  ],\n  \"suggestions\": [\n    \"Move the A3->R1 horizontal bypass farther below B3 or route it around the right side with more clearance before rising to R1.\",\n    \"Route A1->R3 and A3->R1 as separated outside-right bypasses, using distinct vertical tracks so they do not cross or crowd the B column.\",\n    \"Straighten the left terminal column by aligning L0,L1,L2,L3,L4 to a common x-coordinate with even vertical spacing.\",\n    \"Bring the outer left bypass tracks closer to the graph while maintaining clearance, or use two separated but less extreme outside-left tracks for L0->B4 and L4->B0.\",\n    \"Rebalance the A/B channel columns with even vertical spacing and adjust the internal channel edge bends to reduce crossings near A1/A2/B1/B2/B3.\"\n  ]\n}"
+    },
+    "code_validation": {
+      "errors": [],
+      "warnings": []
+    },
+    "render": {
+      "success": true,
+      "tex_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\interleaved_channel_routing\\workflow\\iteration_3\\interleaved_channel_routing.tex",
+      "pdf_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\interleaved_channel_routing\\workflow\\iteration_3\\interleaved_channel_routing.pdf",
+      "png_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\interleaved_channel_routing\\workflow\\iteration_3\\interleaved_channel_routing.png",
+      "error": ""
+    },
+    "history": [
+      {
+        "iteration": 0,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 5.0,
+        "visual_issues": [
+          "The right-side bypass routes A1->R3 and A3->R1 form large rectangular detours that crowd the R1 and R3 nodes; the outer vertical segment near R3 is especially close to an unrelated terminal.",
+          "The left-side bypass L4->B0 takes a very long outside detour and runs along the left terminal column, making the drawing less compact and harder to read.",
+          "The middle channel is visually tangled: several diagonal channel edges cross in the A/B area, and some crossings occur close to B1, B2, and B3.",
+          "The repeated terminal/module structure is uneven: right terminals are not aligned in a straight column, and the A column is irregular with A3 pulled far left, increasing edge crossings and detours.",
+          "Bypass routes and channel routes create long edge segments that visually frame or cut through the drawing rather than staying clearly separated from the main channel."
+        ],
+        "visual_suggestions": [
+          "Align R0-R4 into a straight vertical column and keep L0-L4 in a straight vertical column with even spacing.",
+          "Regularize the A and B channel columns into two compact staggered vertical columns; move A3 closer to the A column instead of leaving it far left.",
+          "Reroute A1->R3 and A3->R1 farther outside the right terminal column or use separated lanes so they do not crowd R1/R3.",
+          "Reroute L4->B0 with a shorter, cleaner outside path or a separated left-side lane that avoids running close to the left terminals.",
+          "Reduce the central tangle by spacing A/B nodes evenly and routing diagonal channel edges with small bends where needed to keep crossings away from node disks and labels."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.3652842194942414,
+          "min_edge_node_clearance": 0.7784093342846324,
+          "min_edge_edge_clearance": 0.017955548551417934,
+          "max_close_parallel_length": 0.6342364385621502,
+          "max_clear_detour_ratio": 1.7116330459020166,
+          "edge_crossings": 17.0,
+          "drawing_width": 6.654,
+          "drawing_height": 12.497,
+          "canvas_area_per_node": 4.1577519,
+          "mean_edge_path_length": 4.837196127856281
+        },
+        "next_refinement": "visual_macro_relayout",
+        "errors": [
+          "Visual review score=5.0: The right-side bypass routes A1->R3 and A3->R1 form large rectangular detours that crowd the R1 and R3 nodes; the outer vertical segment near R3 is especially close to an unrelated terminal.",
+          "Visual review score=5.0: The left-side bypass L4->B0 takes a very long outside detour and runs along the left terminal column, making the drawing less compact and harder to read.",
+          "Visual review score=5.0: The middle channel is visually tangled: several diagonal channel edges cross in the A/B area, and some crossings occur close to B1, B2, and B3.",
+          "Visual review score=5.0: The repeated terminal/module structure is uneven: right terminals are not aligned in a straight column, and the A column is irregular with A3 pulled far left, increasing edge crossings and detours.",
+          "Visual review score=5.0: Bypass routes and channel routes create long edge segments that visually frame or cut through the drawing rather than staying clearly separated from the main channel."
+        ]
+      },
+      {
+        "iteration": 1,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": false,
+        "visual_ok": false,
+        "visual_score": null,
+        "visual_issues": [],
+        "visual_suggestions": [],
+        "layout_metrics": {
+          "min_node_distance": 1.152090274240695,
+          "min_edge_node_clearance": 0.8129999999999997,
+          "min_edge_edge_clearance": 0.009615384615385025,
+          "max_close_parallel_length": 0.9298356037493939,
+          "max_clear_detour_ratio": 1.755097238570107,
+          "edge_crossings": 20.0,
+          "drawing_width": 15.604,
+          "drawing_height": 10.724,
+          "canvas_area_per_node": 8.366864799999998,
+          "mean_edge_path_length": 6.744116561614238
+        },
+        "next_refinement": "text_refinement",
+        "errors": [
+          "!  ==> Fatal error occurred, no output PDF file produced!"
+        ]
+      },
+      {
+        "iteration": 2,
+        "graph_ok": true,
+        "layout_ok": true,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 6.2,
+        "visual_issues": [
+          "The middle channel is fairly tangled: several diagonal channel/bypass edges cross in the A1-A3/B1-B3 region, and some crossings occur close to B2 and B3, making the routing semantics harder to read.",
+          "The right-side outside routes crowd the R-column area. The A3->R1 bypass and L0->B4 outside route create prominent long vertical/horizontal detours close to the R nodes and nearby terminal edges.",
+          "The L0->B4 and L4->B0 bypasses form very large rectangular detours around the drawing, increasing average edge length and canvas usage more than necessary.",
+          "Some unrelated edge segments run nearly on top of each other or very close for visible portions, especially around the right-side bypass/terminal region, consistent with the very low edge-edge clearance metric."
+        ],
+        "visual_suggestions": [
+          "Route L0->B4 and L4->B0 farther outside the terminal columns or use clearer separate lanes so they do not crowd the R column or cross the left terminal-to-channel edges so prominently.",
+          "Give A1->R3 and A3->R1 distinct bypass lanes, preferably above/below the channel or farther outside, rather than through the dense B2/B3 area.",
+          "Spread B1, B2, and B3 slightly or adjust the diagonal channel edges so crossings occur in open space rather than close to node circles.",
+          "Compact the excessive left-to-middle gap slightly while preserving clear terminal columns, reducing long straight Li->Ai edges and overall canvas area.",
+          "Keep the A and B columns more evenly staggered and use consistent routing lanes for repeated channel edges to make the artificial routing structure easier to follow."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 2.2980000000000005,
+          "min_edge_node_clearance": 0.7616386184721609,
+          "min_edge_edge_clearance": 0.010238636363635756,
+          "max_close_parallel_length": 1.2346818822808496,
+          "max_clear_detour_ratio": 2.017585311098021,
+          "edge_crossings": 15.0,
+          "drawing_width": 17.999000000000002,
+          "drawing_height": 14.935,
+          "canvas_area_per_node": 13.440753250000004,
+          "mean_edge_path_length": 8.8742740180818
+        },
+        "next_refinement": "visual_macro_relayout",
+        "errors": [
+          "Visual review score=6.2: The middle channel is fairly tangled: several diagonal channel/bypass edges cross in the A1-A3/B1-B3 region, and some crossings occur close to B2 and B3, making the routing semantics harder to read.",
+          "Visual review score=6.2: The right-side outside routes crowd the R-column area. The A3->R1 bypass and L0->B4 outside route create prominent long vertical/horizontal detours close to the R nodes and nearby terminal edges.",
+          "Visual review score=6.2: The L0->B4 and L4->B0 bypasses form very large rectangular detours around the drawing, increasing average edge length and canvas usage more than necessary.",
+          "Visual review score=6.2: Some unrelated edge segments run nearly on top of each other or very close for visible portions, especially around the right-side bypass/terminal region, consistent with the very low edge-edge clearance metric."
+        ]
+      },
+      {
+        "iteration": 3,
+        "graph_ok": true,
+        "layout_ok": false,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 4.0,
+        "visual_issues": [
+          "The A3->R1 bypass route runs too close to the non-incident B3 node/label along its long horizontal segment, nearly touching the B3 circle.",
+          "The A3->R1 and A1->R3 bypasses create a large right-side tangle, with long routed segments crossing through the middle channel and making the intended outside routing hard to read.",
+          "The outer left bypass routes L0->B4 and L4->B0 are excessively large detours and expand the canvas substantially; they also pass close to the L0/L4 terminal area.",
+          "Several channel edges cross in the compact middle region, and the crossing pattern is visually busy around A1/A2/B1/B2/B3.",
+          "The left terminal column is not straight: L0-L4 are horizontally uneven, especially L4, weakening the requested terminal-column structure."
+        ],
+        "visual_suggestions": [
+          "Move the A3->R1 horizontal bypass farther below B3 or route it around the right side with more clearance before rising to R1.",
+          "Route A1->R3 and A3->R1 as separated outside-right bypasses, using distinct vertical tracks so they do not cross or crowd the B column.",
+          "Straighten the left terminal column by aligning L0,L1,L2,L3,L4 to a common x-coordinate with even vertical spacing.",
+          "Bring the outer left bypass tracks closer to the graph while maintaining clearance, or use two separated but less extreme outside-left tracks for L0->B4 and L4->B0.",
+          "Rebalance the A/B channel columns with even vertical spacing and adjust the internal channel edge bends to reduce crossings near A1/A2/B1/B2/B3."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 4.121,
+          "min_edge_node_clearance": 0.5419999999999998,
+          "min_edge_edge_clearance": 0.000600000000000378,
+          "max_close_parallel_length": 0.9563099276311788,
+          "max_clear_detour_ratio": 1.734691496024899,
+          "edge_crossings": 13.0,
+          "drawing_width": 26.469,
+          "drawing_height": 21.703,
+          "canvas_area_per_node": 28.722835350000004,
+          "mean_edge_path_length": 12.290626383384128
+        },
+        "next_refinement": null,
+        "errors": [
+          "Edge A3-R1 passes too close to unrelated node B3: distance 0.54.",
+          "Visual review score=4.0: The A3->R1 bypass route runs too close to the non-incident B3 node/label along its long horizontal segment, nearly touching the B3 circle.",
+          "Visual review score=4.0: The A3->R1 and A1->R3 bypasses create a large right-side tangle, with long routed segments crossing through the middle channel and making the intended outside routing hard to read.",
+          "Visual review score=4.0: The outer left bypass routes L0->B4 and L4->B0 are excessively large detours and expand the canvas substantially; they also pass close to the L0/L4 terminal area.",
+          "Visual review score=4.0: Several channel edges cross in the compact middle region, and the crossing pattern is visually busy around A1/A2/B1/B2/B3.",
+          "Visual review score=4.0: The left terminal column is not straight: L0-L4 are horizontally uneven, especially L4, weakening the requested terminal-column structure."
+        ]
+      }
+    ]
+  },
+  "single_prompt": {
+    "success": false,
+    "iterations": 0,
+    "graph": {
+      "nodes": [
+        {
+          "id": "L0",
+          "label": "L0"
+        },
+        {
+          "id": "L1",
+          "label": "L1"
+        },
+        {
+          "id": "L2",
+          "label": "L2"
+        },
+        {
+          "id": "L3",
+          "label": "L3"
+        },
+        {
+          "id": "L4",
+          "label": "L4"
+        },
+        {
+          "id": "R0",
+          "label": "R0"
+        },
+        {
+          "id": "R1",
+          "label": "R1"
+        },
+        {
+          "id": "R2",
+          "label": "R2"
+        },
+        {
+          "id": "R3",
+          "label": "R3"
+        },
+        {
+          "id": "R4",
+          "label": "R4"
+        },
+        {
+          "id": "A0",
+          "label": "A0"
+        },
+        {
+          "id": "A1",
+          "label": "A1"
+        },
+        {
+          "id": "A2",
+          "label": "A2"
+        },
+        {
+          "id": "A3",
+          "label": "A3"
+        },
+        {
+          "id": "A4",
+          "label": "A4"
+        },
+        {
+          "id": "B0",
+          "label": "B0"
+        },
+        {
+          "id": "B1",
+          "label": "B1"
+        },
+        {
+          "id": "B2",
+          "label": "B2"
+        },
+        {
+          "id": "B3",
+          "label": "B3"
+        },
+        {
+          "id": "B4",
+          "label": "B4"
+        }
+      ],
+      "edges": [
+        {
+          "source": "L0",
+          "target": "A0",
+          "directed": true
+        },
+        {
+          "source": "L1",
+          "target": "A1",
+          "directed": true
+        },
+        {
+          "source": "L2",
+          "target": "A2",
+          "directed": true
+        },
+        {
+          "source": "L3",
+          "target": "A3",
+          "directed": true
+        },
+        {
+          "source": "L4",
+          "target": "A4",
+          "directed": true
+        },
+        {
+          "source": "B0",
+          "target": "R0",
+          "directed": true
+        },
+        {
+          "source": "B1",
+          "target": "R1",
+          "directed": true
+        },
+        {
+          "source": "B2",
+          "target": "R2",
+          "directed": true
+        },
+        {
+          "source": "B3",
+          "target": "R3",
+          "directed": true
+        },
+        {
+          "source": "B4",
+          "target": "R4",
+          "directed": true
+        },
+        {
+          "source": "A0",
+          "target": "B1",
+          "directed": true
+        },
+        {
+          "source": "A1",
+          "target": "B3",
+          "directed": true
+        },
+        {
+          "source": "A2",
+          "target": "B0",
+          "directed": true
+        },
+        {
+          "source": "A3",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "A4",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "A0",
+          "target": "A1",
+          "directed": true
+        },
+        {
+          "source": "A1",
+          "target": "A2",
+          "directed": true
+        },
+        {
+          "source": "A2",
+          "target": "A3",
+          "directed": true
+        },
+        {
+          "source": "A3",
+          "target": "A4",
+          "directed": true
+        },
+        {
+          "source": "B0",
+          "target": "B1",
+          "directed": true
+        },
+        {
+          "source": "B1",
+          "target": "B2",
+          "directed": true
+        },
+        {
+          "source": "B2",
+          "target": "B3",
+          "directed": true
+        },
+        {
+          "source": "B3",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "L0",
+          "target": "B4",
+          "directed": true
+        },
+        {
+          "source": "L4",
+          "target": "B0",
+          "directed": true
+        },
+        {
+          "source": "A1",
+          "target": "R3",
+          "directed": true
+        },
+        {
+          "source": "A3",
+          "target": "R1",
+          "directed": true
+        }
+      ],
+      "layout_hints": {
+        "style": "explicit",
+        "positions": {
+          "L0": [
+            0.0,
+            6.4
+          ],
+          "L1": [
+            0.0,
+            4.8
+          ],
+          "L2": [
+            0.0,
+            3.2
+          ],
+          "L3": [
+            0.0,
+            1.6
+          ],
+          "L4": [
+            0.0,
+            0.0
+          ],
+          "R0": [
+            7.0,
+            6.4
+          ],
+          "R1": [
+            7.0,
+            4.8
+          ],
+          "R2": [
+            7.0,
+            3.2
+          ],
+          "R3": [
+            7.0,
+            1.6
+          ],
+          "R4": [
+            7.0,
+            0.0
+          ],
+          "A0": [
+            2.4,
+            6.4
+          ],
+          "A1": [
+            2.4,
+            4.8
+          ],
+          "A2": [
+            2.4,
+            3.2
+          ],
+          "A3": [
+            2.4,
+            1.6
+          ],
+          "A4": [
+            2.4,
+            0.0
+          ],
+          "B0": [
+            4.2,
+            5.6
+          ],
+          "B1": [
+            4.2,
+            4.0
+          ],
+          "B2": [
+            4.2,
+            2.4
+          ],
+          "B3": [
+            4.2,
+            0.8
+          ],
+          "B4": [
+            4.2,
+            -0.8
+          ]
+        },
+        "edge_options": {},
+        "edge_routes": {
+          "directed:L0:B4": [
+            [
+              0.8,
+              7.3
+            ],
+            [
+              5.2,
+              7.3
+            ],
+            [
+              5.2,
+              -1.5
+            ],
+            [
+              4.6,
+              -1.5
+            ]
+          ],
+          "directed:L4:B0": [
+            [
+              -0.9,
+              -1.2
+            ],
+            [
+              -0.9,
+              7.1
+            ],
+            [
+              3.9,
+              7.1
+            ]
+          ],
+          "directed:A1:R3": [
+            [
+              1.7,
+              5.0
+            ],
+            [
+              1.7,
+              7.8
+            ],
+            [
+              7.8,
+              7.8
+            ],
+            [
+              7.8,
+              1.6
+            ]
+          ],
+          "directed:A3:R1": [
+            [
+              1.7,
+              1.4
+            ],
+            [
+              1.7,
+              -1.8
+            ],
+            [
+              8.2,
+              -1.8
+            ],
+            [
+              8.2,
+              4.8
+            ]
+          ]
+        },
+        "node_options": {}
+      },
+      "warnings": [
+        "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+      ]
+    },
+    "graph_validation": {
+      "errors": [],
+      "warnings": [
+        "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+      ]
+    },
+    "layout_validation": {
+      "errors": [
+        "Edge L0-B4 passes too close to unrelated node A0: distance 0.39.",
+        "Edge L4-B0 passes too close to unrelated node L0: distance 0.19.",
+        "Edge L4-B0 passes too close to unrelated node L1: distance 0.39.",
+        "Edge L4-B0 passes too close to unrelated node L2: distance 0.39.",
+        "Edge L4-B0 passes too close to unrelated node L3: distance 0.39.",
+        "Edge L4-B0 passes too close to unrelated node A0: distance 0.19.",
+        "Edge A1-R3 passes too close to unrelated node R0: distance 0.26.",
+        "Edge A1-R3 passes too close to unrelated node R1: distance 0.26.",
+        "Edge A1-R3 passes too close to unrelated node R2: distance 0.26.",
+        "Edge A1-R3 passes too close to unrelated node A0: distance 0.55.",
+        "Edge A3-R1 passes too close to unrelated node R2: distance 0.66.",
+        "Edge A3-R1 passes too close to unrelated node R3: distance 0.66.",
+        "Edge A3-R1 passes too close to unrelated node R4: distance 0.66.",
+        "Edge A3-R1 passes too close to unrelated node A4: distance 0.55.",
+        "Edge A3-R1 passes too close to unrelated node B4: distance 0.43.",
+        "Edges L0-A0 and L4-B0 run too close together for a long segment: close length 2.76.",
+        "Edges L0-B4 and L4-B0 run too close together for a long segment: close length 4.82."
+      ],
+      "warnings": []
+    },
+    "layout_metrics": {
+      "min_node_distance": 1.839999999999999,
+      "min_edge_node_clearance": 0.1899999999999995,
+      "min_edge_edge_clearance": 0.0,
+      "max_close_parallel_length": 4.823963986625425,
+      "max_clear_detour_ratio": 2.725464666999986,
+      "edge_crossings": 14.0,
+      "drawing_width": 8.049999999999999,
+      "drawing_height": 8.28,
+      "canvas_area_per_node": 3.332699999999999,
+      "mean_edge_path_length": 4.750668598807623
+    },
+    "visual_review": {
+      "acceptable": false,
+      "score": 4.0,
+      "issues": [
+        "The outside bypass routes create large rectangular detours and dominate the drawing, especially L0->B4, L4->B0, A1->R3, and A3->R1.",
+        "The right-side bypass vertical segments run very close to the right terminal column and crowd R1, R2, and R3, making the arrowheads and intended targets harder to distinguish.",
+        "There are long unrelated edge segments running close together along the right outside boundary.",
+        "The L4->B0 outside route runs close to the left terminal column and contributes to visual clutter around L0 and L4.",
+        "The channel has several internal crossings and near-passes; while some crossings are expected, the compact middle area becomes somewhat tangled around A1/A2/B0/B1/B2/B3.",
+        "The layout is more spread out than necessary because bypasses are routed far outside the main graph, increasing edge length and empty border area."
+      ],
+      "suggestions": [
+        "Route L0->B4 and L4->B0 on separate, shorter outer lanes that stay farther from terminal nodes and avoid forming a large enclosing rectangle.",
+        "Move the A1->R3 and A3->R1 bypass routes farther from the right terminal labels or route one above and one below with clearly separated lanes, avoiding long parallel vertical runs near R1/R2/R3.",
+        "Keep the left and right terminal columns straight, but bring the bypass lanes slightly inward or use small-bend routes that do not crowd node circles.",
+        "Increase spacing or stagger the middle A/B channel slightly to reduce near-passes around A1/A2/B0/B1/B2/B3 while keeping the channel compact.",
+        "Reduce unnecessary detour height at the top and bottom so the drawing is more compact without sacrificing clearance."
+      ],
+      "raw_response": "{\n  \"acceptable\": false,\n  \"score\": 4.0,\n  \"issues\": [\n    \"The outside bypass routes create large rectangular detours and dominate the drawing, especially L0->B4, L4->B0, A1->R3, and A3->R1.\",\n    \"The right-side bypass vertical segments run very close to the right terminal column and crowd R1, R2, and R3, making the arrowheads and intended targets harder to distinguish.\",\n    \"There are long unrelated edge segments running close together along the right outside boundary.\",\n    \"The L4->B0 outside route runs close to the left terminal column and contributes to visual clutter around L0 and L4.\",\n    \"The channel has several internal crossings and near-passes; while some crossings are expected, the compact middle area becomes somewhat tangled around A1/A2/B0/B1/B2/B3.\",\n    \"The layout is more spread out than necessary because bypasses are routed far outside the main graph, increasing edge length and empty border area.\"\n  ],\n  \"suggestions\": [\n    \"Route L0->B4 and L4->B0 on separate, shorter outer lanes that stay farther from terminal nodes and avoid forming a large enclosing rectangle.\",\n    \"Move the A1->R3 and A3->R1 bypass routes farther from the right terminal labels or route one above and one below with clearly separated lanes, avoiding long parallel vertical runs near R1/R2/R3.\",\n    \"Keep the left and right terminal columns straight, but bring the bypass lanes slightly inward or use small-bend routes that do not crowd node circles.\",\n    \"Increase spacing or stagger the middle A/B channel slightly to reduce near-passes around A1/A2/B0/B1/B2/B3 while keeping the channel compact.\",\n    \"Reduce unnecessary detour height at the top and bottom so the drawing is more compact without sacrificing clearance.\"\n  ]\n}"
+    },
+    "code_validation": {
+      "errors": [],
+      "warnings": []
+    },
+    "render": {
+      "success": true,
+      "tex_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\interleaved_channel_routing\\single_prompt\\interleaved_channel_routing.tex",
+      "pdf_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\interleaved_channel_routing\\single_prompt\\interleaved_channel_routing.pdf",
+      "png_path": "outputs\\comparison_suite_gpt55_update\\run_20260604_082012\\interleaved_channel_routing\\single_prompt\\interleaved_channel_routing.png",
+      "error": ""
+    },
+    "history": [
+      {
+        "iteration": 0,
+        "graph_ok": true,
+        "layout_ok": false,
+        "code_ok": true,
+        "render_ok": true,
+        "visual_ok": false,
+        "visual_score": 4.0,
+        "visual_issues": [
+          "The outside bypass routes create large rectangular detours and dominate the drawing, especially L0->B4, L4->B0, A1->R3, and A3->R1.",
+          "The right-side bypass vertical segments run very close to the right terminal column and crowd R1, R2, and R3, making the arrowheads and intended targets harder to distinguish.",
+          "There are long unrelated edge segments running close together along the right outside boundary.",
+          "The L4->B0 outside route runs close to the left terminal column and contributes to visual clutter around L0 and L4.",
+          "The channel has several internal crossings and near-passes; while some crossings are expected, the compact middle area becomes somewhat tangled around A1/A2/B0/B1/B2/B3.",
+          "The layout is more spread out than necessary because bypasses are routed far outside the main graph, increasing edge length and empty border area."
+        ],
+        "visual_suggestions": [
+          "Route L0->B4 and L4->B0 on separate, shorter outer lanes that stay farther from terminal nodes and avoid forming a large enclosing rectangle.",
+          "Move the A1->R3 and A3->R1 bypass routes farther from the right terminal labels or route one above and one below with clearly separated lanes, avoiding long parallel vertical runs near R1/R2/R3.",
+          "Keep the left and right terminal columns straight, but bring the bypass lanes slightly inward or use small-bend routes that do not crowd node circles.",
+          "Increase spacing or stagger the middle A/B channel slightly to reduce near-passes around A1/A2/B0/B1/B2/B3 while keeping the channel compact.",
+          "Reduce unnecessary detour height at the top and bottom so the drawing is more compact without sacrificing clearance."
+        ],
+        "layout_metrics": {
+          "min_node_distance": 1.839999999999999,
+          "min_edge_node_clearance": 0.1899999999999995,
+          "min_edge_edge_clearance": 0.0,
+          "max_close_parallel_length": 4.823963986625425,
+          "max_clear_detour_ratio": 2.725464666999986,
+          "edge_crossings": 14.0,
+          "drawing_width": 8.049999999999999,
+          "drawing_height": 8.28,
+          "canvas_area_per_node": 3.332699999999999,
+          "mean_edge_path_length": 4.750668598807623
+        },
+        "errors": [
+          "Edge L0-B4 passes too close to unrelated node A0: distance 0.39.",
+          "Edge L4-B0 passes too close to unrelated node L0: distance 0.19.",
+          "Edge L4-B0 passes too close to unrelated node L1: distance 0.39.",
+          "Edge L4-B0 passes too close to unrelated node L2: distance 0.39.",
+          "Edge L4-B0 passes too close to unrelated node L3: distance 0.39.",
+          "Edge L4-B0 passes too close to unrelated node A0: distance 0.19.",
+          "Edge A1-R3 passes too close to unrelated node R0: distance 0.26.",
+          "Edge A1-R3 passes too close to unrelated node R1: distance 0.26.",
+          "Edge A1-R3 passes too close to unrelated node R2: distance 0.26.",
+          "Edge A1-R3 passes too close to unrelated node A0: distance 0.55.",
+          "Edge A3-R1 passes too close to unrelated node R2: distance 0.66.",
+          "Edge A3-R1 passes too close to unrelated node R3: distance 0.66.",
+          "Edge A3-R1 passes too close to unrelated node R4: distance 0.66.",
+          "Edge A3-R1 passes too close to unrelated node A4: distance 0.55.",
+          "Edge A3-R1 passes too close to unrelated node B4: distance 0.43.",
+          "Edges L0-A0 and L4-B0 run too close together for a long segment: close length 2.76.",
+          "Edges L0-B4 and L4-B0 run too close together for a long segment: close length 4.82.",
+          "Visual review: The outside bypass routes create large rectangular detours and dominate the drawing, especially L0->B4, L4->B0, A1->R3, and A3->R1.",
+          "Visual review: The right-side bypass vertical segments run very close to the right terminal column and crowd R1, R2, and R3, making the arrowheads and intended targets harder to distinguish.",
+          "Visual review: There are long unrelated edge segments running close together along the right outside boundary.",
+          "Visual review: The L4->B0 outside route runs close to the left terminal column and contributes to visual clutter around L0 and L4.",
+          "Visual review: The channel has several internal crossings and near-passes; while some crossings are expected, the compact middle area becomes somewhat tangled around A1/A2/B0/B1/B2/B3.",
+          "Visual review: The layout is more spread out than necessary because bypasses are routed far outside the main graph, increasing edge length and empty border area."
+        ]
+      }
+    ]
+  }
+}

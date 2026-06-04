@@ -1,0 +1,44 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw=black,line width=0.55pt,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  graphedge/.style={draw=black,line width=0.55pt,line cap=round,line join=round},
+  directed/.style={graphedge,-{Stealth[length=2.4mm,width=2.0mm]}},
+  undirected/.style={graphedge}
+}
+\node[graphnode] (n_A0) at (-11.00,0.00) {A0};
+\node[graphnode] (n_A1) at (-8.54,2.00) {A1};
+\node[graphnode] (n_A2) at (-9.32,-2.32) {A2};
+\node[graphnode] (n_A3) at (-7.00,0.00) {A3};
+\node[graphnode] (n_B0) at (-2.90,-1.10) {B0};
+\node[graphnode] (n_B1) at (-0.23,1.67) {B1};
+\node[graphnode] (n_B2) at (-1.00,-0.62) {B2};
+\node[graphnode] (n_B3) at (1.60,-1.60) {B3};
+\node[graphnode] (n_C0) at (5.03,0.77) {C0};
+\node[graphnode] (n_C1) at (10.06,2.87) {C1};
+\node[graphnode] (n_C2) at (9.00,-2.92) {C2};
+\node[graphnode] (n_C3) at (10.52,0.32) {C3};
+\draw[directed] (n_A0) -- (n_A1);
+\draw[directed] (n_A0) -- (n_A2);
+\draw[directed] (n_A1) -- (n_A3);
+\draw[directed] (n_A2) -- (n_A3);
+\draw[directed] (n_B0) -- (n_B1);
+\draw[directed] (n_B0) -- (n_B2);
+\draw[directed] (n_B1) -- (n_B3);
+\draw[directed] (n_B2) -- (n_B3);
+\draw[directed] (n_C0) -- (n_C1);
+\draw[directed] (n_C0) -- (n_C2);
+\draw[directed] (n_C1) -- (n_C3);
+\draw[directed] (n_C2) -- (n_C3);
+\draw[directed] (n_A3) -- (n_B0);
+\draw[directed] (n_B3) -- (n_C0);
+\draw[directed] (n_A1) -- (n_B2);
+\draw[directed,rounded corners=5pt] (n_A2) -- (-9.00,-3.80) -- (11.70,-3.80) -- (11.70,2.90) -- (n_C1);
+\draw[directed] (n_B1) -- (n_C2);
+\draw[directed,rounded corners=5pt] (n_C3) -- (11.80,5.50) -- (-11.80,5.50) -- (n_A0);
+\draw[directed,rounded corners=5pt] (n_C2) -- (8.80,-5.50) -- (-3.80,-5.50) -- (n_B0);
+\end{tikzpicture}
+\end{document}

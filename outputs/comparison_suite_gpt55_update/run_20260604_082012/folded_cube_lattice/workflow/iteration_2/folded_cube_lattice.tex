@@ -1,0 +1,73 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw=black,line width=0.55pt,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  graphedge/.style={draw=black,line width=0.55pt,line cap=round,line join=round},
+  directed/.style={graphedge,-{Stealth[length=2.4mm,width=2.0mm]}},
+  undirected/.style={graphedge}
+}
+\node[graphnode] (n_F00) at (-6.83,-1.42) {F00};
+\node[graphnode] (n_F01) at (-1.70,-1.22) {F01};
+\node[graphnode] (n_F02) at (4.71,-0.18) {F02};
+\node[graphnode] (n_F03) at (6.51,-1.61) {F03};
+\node[graphnode] (n_F10) at (-5.74,-3.90) {F10};
+\node[graphnode] (n_F11) at (0.27,-3.90) {F11};
+\node[graphnode] (n_F12) at (3.19,-4.69) {F12};
+\node[graphnode] (n_F13) at (7.69,-3.90) {F13};
+\node[graphnode] (n_B00) at (-5.17,5.01) {B00};
+\node[graphnode] (n_B01) at (-0.93,5.71) {B01};
+\node[graphnode] (n_B02) at (3.16,5.53) {B02};
+\node[graphnode] (n_B03) at (7.66,6.04) {B03};
+\node[graphnode] (n_B10) at (-4.97,0.74) {B10};
+\node[graphnode] (n_B11) at (-0.62,0.71) {B11};
+\node[graphnode] (n_B12) at (3.68,0.71) {B12};
+\node[graphnode] (n_B13) at (8.31,0.71) {B13};
+\node[graphnode] (n_H0) at (-9.52,-0.05) {H0};
+\node[graphnode] (n_H1) at (10.52,-0.05) {H1};
+\draw[undirected] (n_F00) -- (n_F01);
+\draw[undirected] (n_F01) -- (n_F02);
+\draw[undirected] (n_F02) -- (n_F03);
+\draw[undirected] (n_F10) -- (n_F11);
+\draw[undirected] (n_F11) -- (n_F12);
+\draw[undirected] (n_F12) -- (n_F13);
+\draw[undirected] (n_F00) -- (n_F10);
+\draw[undirected] (n_F01) -- (n_F11);
+\draw[undirected] (n_F02) -- (n_F12);
+\draw[undirected] (n_F03) -- (n_F13);
+\draw[undirected] (n_B00) -- (n_B01);
+\draw[undirected] (n_B01) -- (n_B02);
+\draw[undirected] (n_B02) -- (n_B03);
+\draw[undirected] (n_B10) -- (n_B11);
+\draw[undirected] (n_B11) -- (n_B12);
+\draw[undirected] (n_B12) -- (n_B13);
+\draw[undirected] (n_B00) -- (n_B10);
+\draw[undirected] (n_B01) -- (n_B11);
+\draw[undirected] (n_B02) -- (n_B12);
+\draw[undirected] (n_B03) -- (n_B13);
+\draw[undirected] (n_F00) -- (n_B00);
+\draw[undirected] (n_F01) -- (n_B01);
+\draw[undirected] (n_F02) -- (n_B02);
+\draw[undirected] (n_F03) -- (n_B03);
+\draw[undirected] (n_F10) -- (n_B10);
+\draw[undirected] (n_F11) -- (n_B11);
+\draw[undirected] (n_F12) -- (n_B12);
+\draw[undirected] (n_F13) -- (n_B13);
+\draw[undirected] (n_F00) to[bend left=18] (n_B11);
+\draw[undirected] (n_F01) to[bend left=18] (n_B12);
+\draw[undirected] (n_F02) to[bend left=18] (n_B13);
+\draw[undirected] (n_F10) to[bend right=18] (n_B01);
+\draw[undirected] (n_F11) to[bend right=18] (n_B02);
+\draw[undirected] (n_F12) to[bend right=18] (n_B03);
+\draw[undirected] (n_H0) -- (n_F00);
+\draw[undirected] (n_H0) -- (n_F10);
+\draw[undirected] (n_H0) -- (n_B00);
+\draw[undirected] (n_H0) -- (n_B10);
+\draw[undirected] (n_H1) -- (n_F03);
+\draw[undirected] (n_H1) -- (n_F13);
+\draw[undirected] (n_H1) -- (n_B03);
+\draw[undirected] (n_H1) -- (n_B13);
+\end{tikzpicture}
+\end{document}

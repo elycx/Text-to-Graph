@@ -1,0 +1,519 @@
+{
+  "success": false,
+  "iterations": 3,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s0",
+        "label": "$s_0$"
+      },
+      {
+        "id": "s1",
+        "label": "$s_1$"
+      },
+      {
+        "id": "s2",
+        "label": "$s_2$"
+      },
+      {
+        "id": "s3",
+        "label": "$s_3$"
+      },
+      {
+        "id": "s4",
+        "label": "$s_4$"
+      },
+      {
+        "id": "s5",
+        "label": "$s_5$"
+      },
+      {
+        "id": "g0",
+        "label": "$g_0$"
+      },
+      {
+        "id": "g1",
+        "label": "$g_1$"
+      },
+      {
+        "id": "g2",
+        "label": "$g_2$"
+      },
+      {
+        "id": "g3",
+        "label": "$g_3$"
+      },
+      {
+        "id": "g4",
+        "label": "$g_4$"
+      },
+      {
+        "id": "g5",
+        "label": "$g_5$"
+      },
+      {
+        "id": "o0",
+        "label": "$o_0$"
+      },
+      {
+        "id": "o1",
+        "label": "$o_1$"
+      },
+      {
+        "id": "o2",
+        "label": "$o_2$"
+      },
+      {
+        "id": "o3",
+        "label": "$o_3$"
+      },
+      {
+        "id": "o4",
+        "label": "$o_4$"
+      },
+      {
+        "id": "o5",
+        "label": "$o_5$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "s0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "s0",
+        "target": "g0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "o0",
+        "directed": true
+      },
+      {
+        "source": "o0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "g1",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "o1",
+        "directed": true
+      },
+      {
+        "source": "o1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "g2",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "o2",
+        "directed": true
+      },
+      {
+        "source": "o2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "g3",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "o3",
+        "directed": true
+      },
+      {
+        "source": "o3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "g4",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "o4",
+        "directed": true
+      },
+      {
+        "source": "o4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "g5",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "o5",
+        "directed": true
+      },
+      {
+        "source": "o5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "s2",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s0": [
+          13.181,
+          -0.0
+        ],
+        "s1": [
+          7.0,
+          12.124
+        ],
+        "s2": [
+          -7.0,
+          12.124
+        ],
+        "s3": [
+          -13.181,
+          0.0
+        ],
+        "s4": [
+          -7.0,
+          -12.124
+        ],
+        "s5": [
+          7.0,
+          -12.124
+        ],
+        "g0": [
+          32.0,
+          0.0
+        ],
+        "g1": [
+          16.0,
+          27.713
+        ],
+        "g2": [
+          -16.0,
+          27.713
+        ],
+        "g3": [
+          -32.0,
+          0.0
+        ],
+        "g4": [
+          -16.0,
+          -27.713
+        ],
+        "g5": [
+          16.0,
+          -27.713
+        ],
+        "o0": [
+          25.981,
+          15.0
+        ],
+        "o1": [
+          0.0,
+          30.0
+        ],
+        "o2": [
+          -25.981,
+          15.0
+        ],
+        "o3": [
+          -25.981,
+          -15.0
+        ],
+        "o4": [
+          0.0,
+          -30.0
+        ],
+        "o5": [
+          25.981,
+          -15.0
+        ]
+      },
+      "edge_options": {
+        "directed:s0:s1": "bend left=5, line width=0.7pt",
+        "directed:s1:s2": "bend left=5, line width=0.7pt",
+        "directed:s2:s3": "bend left=5, line width=0.7pt",
+        "directed:s3:s4": "bend left=5, line width=0.7pt",
+        "directed:s4:s5": "bend left=5, line width=0.7pt",
+        "directed:s5:s0": "bend left=5, line width=0.7pt",
+        "directed:s0:g0": "out=0,in=180, line width=0.7pt",
+        "directed:g0:o0": "out=135,in=15, looseness=0.9, line width=0.7pt",
+        "directed:o0:s1": "out=200,in=20, looseness=0.9, line width=0.7pt",
+        "directed:s1:g1": "out=60,in=240, line width=0.7pt",
+        "directed:g1:o1": "out=195,in=60, looseness=0.9, line width=0.7pt",
+        "directed:o1:s2": "out=250,in=85, looseness=0.9, line width=0.7pt",
+        "directed:s2:g2": "out=120,in=300, line width=0.7pt",
+        "directed:g2:o2": "out=240,in=120, looseness=0.9, line width=0.7pt",
+        "directed:o2:s3": "out=330,in=120, looseness=0.9, line width=0.7pt",
+        "directed:s3:g3": "out=180,in=0, line width=0.7pt",
+        "directed:g3:o3": "out=315,in=165, looseness=0.9, line width=0.7pt",
+        "directed:o3:s4": "out=30,in=200, looseness=0.9, line width=0.7pt",
+        "directed:s4:g4": "out=240,in=60, line width=0.7pt",
+        "directed:g4:o4": "out=15,in=240, looseness=0.9, line width=0.7pt",
+        "directed:o4:s5": "out=70,in=275, looseness=0.9, line width=0.7pt",
+        "directed:s5:g5": "out=300,in=120, line width=0.7pt",
+        "directed:g5:o5": "out=60,in=300, looseness=0.9, line width=0.7pt",
+        "directed:o5:s0": "out=150,in=300, looseness=0.9, line width=0.7pt",
+        "directed:g0:s3": "out=92,in=88, looseness=3.2, line width=0.8pt",
+        "directed:g1:s4": "out=158,in=122, looseness=3.0, line width=0.8pt",
+        "directed:g2:s5": "out=22,in=58, looseness=3.0, line width=0.8pt",
+        "directed:g3:s0": "out=268,in=272, looseness=3.2, line width=0.8pt",
+        "directed:g4:s1": "out=338,in=302, looseness=3.0, line width=0.8pt",
+        "directed:g5:s2": "out=202,in=238, looseness=3.0, line width=0.8pt"
+      },
+      "node_options": {
+        "s0": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "s1": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "s2": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "s3": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "s4": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "s5": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "g0": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "g1": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "g2": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "g3": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "g4": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "g5": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "o0": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "o1": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "o2": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "o3": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "o4": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm",
+        "o5": "font=\\Large, circle, draw, fill=white, inner sep=2pt, minimum size=8mm"
+      },
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=10.83, maximum=14.50, moved_fraction=1.00.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=10.83, maximum=14.50, moved_fraction=1.00."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 13.608678738217021,
+    "min_edge_node_clearance": 0.7523708931719931
+  },
+  "visual_review": null,
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": false,
+    "tex_path": "outputs\\prompt_suite_macro_test\\run_20260601_121854\\ring_of_switches\\iteration_3\\ring_of_switches.tex",
+    "pdf_path": null,
+    "png_path": null,
+    "error": "!  ==> Fatal error occurred, no output PDF file produced!"
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 3.0,
+      "visual_issues": [
+        "Several long skip edges are routed through the middle of the graph rather than around the outside, creating a dense tangle that makes direction and incidence hard to read.",
+        "The horizontal skip edge across the middle from the left side toward s0 passes very close to or through the labels/nodes around s3, g0, and o0.",
+        "Multiple diagonal long edges cross near the central switches s0, s1, s2, s4, and s5, crowding node boundaries and labels.",
+        "The local gate/output gadgets are not visually separated from the skip-edge routes; for example the g5/o5 area and g2/o2 area are crossed or crowded by long diagonal edges.",
+        "Some satellite nodes are too close to their incident and non-incident edges, especially around s3-g3-o3 and s0-g0-o0."
+      ],
+      "visual_suggestions": [
+        "Route all skip edges g0->s3, g1->s4, g2->s5, g3->s0, g4->s1, and g5->s2 as large outer arcs outside the circular switch ring, avoiding the center entirely.",
+        "Move each gate/output pair farther outward radially from its switch so local gadgets have clear space and are not crossed by skip edges.",
+        "Increase the radius of the switch cycle and separate the six local gadgets more evenly around the circle.",
+        "Reroute the middle horizontal edge near s3 and s0 away from the node labels, preferably as an exterior curve below or above the entire graph.",
+        "Use stronger curvature or intermediate bend points for long edges so crossings occur in open whitespace, not near nodes or labels."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.2911398065275501,
+        "min_edge_node_clearance": 0.7111423691518293
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=3.0: Several long skip edges are routed through the middle of the graph rather than around the outside, creating a dense tangle that makes direction and incidence hard to read.",
+        "Visual review score=3.0: The horizontal skip edge across the middle from the left side toward s0 passes very close to or through the labels/nodes around s3, g0, and o0.",
+        "Visual review score=3.0: Multiple diagonal long edges cross near the central switches s0, s1, s2, s4, and s5, crowding node boundaries and labels.",
+        "Visual review score=3.0: The local gate/output gadgets are not visually separated from the skip-edge routes; for example the g5/o5 area and g2/o2 area are crossed or crowded by long diagonal edges.",
+        "Visual review score=3.0: Some satellite nodes are too close to their incident and non-incident edges, especially around s3-g3-o3 and s0-g0-o0."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 5.0,
+      "visual_issues": [
+        "Several skip edges are routed through the interior instead of cleanly around the outside, creating avoidable tangles near the switch cycle.",
+        "The long curved skip edge across the upper half passes very close to the top local nodes and labels around g1/o1/g2.",
+        "On the right side, multiple edges converge and cross near g0, o0, and s0, making the local gadget hard to read.",
+        "On the left side, long skip edges crowd the s3/g3/o3 area and create crossings close to node labels.",
+        "The bottom long skip curves cross through the lower local gadgets around g4/o4/g5 rather than staying outside."
+      ],
+      "visual_suggestions": [
+        "Route all skip edges farther outside the circular layout with larger-radius arcs, keeping them away from the local gate/output nodes.",
+        "Move gate/output satellites slightly farther radially outward from their switches to separate local edges from the switch cycle.",
+        "Separate the right-side local gadget around s0/g0/o0 from the incoming skip curves by moving g0 and o0 outward/rightward.",
+        "Move g3/o3 and g4/o4 slightly outward on the left and lower-left to reduce crowding from long skip edges.",
+        "Use consistent clockwise or counterclockwise outer routing for skip edges so they do not cut through the interior switch ring."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 2.999933999273985,
+        "min_edge_node_clearance": 0.6926421849286295
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=5.0: Several skip edges are routed through the interior instead of cleanly around the outside, creating avoidable tangles near the switch cycle.",
+        "Visual review score=5.0: The long curved skip edge across the upper half passes very close to the top local nodes and labels around g1/o1/g2.",
+        "Visual review score=5.0: On the right side, multiple edges converge and cross near g0, o0, and s0, making the local gadget hard to read.",
+        "Visual review score=5.0: On the left side, long skip edges crowd the s3/g3/o3 area and create crossings close to node labels.",
+        "Visual review score=5.0: The bottom long skip curves cross through the lower local gadgets around g4/o4/g5 rather than staying outside."
+      ]
+    },
+    {
+      "iteration": 2,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 4.0,
+      "visual_issues": [
+        "Node labels are not legible in the rendered figure, making the graph semantics hard to read.",
+        "Several long skip edges form oversized loops that re-enter or crowd the main circular gadget instead of staying clearly outside.",
+        "The large skip arcs create avoidable tangles and crossings near the central switch cycle, especially around the upper-right, lower-right, upper-left, and lower-left switch/gate/output clusters.",
+        "Some long curved edges pass very close to unrelated nodes and local edges, reducing readability even though the nodes are well separated."
+      ],
+      "visual_suggestions": [
+        "Render node labels larger and ensure they are visible next to or inside the node markers.",
+        "Route all skip edges farther outside the six local gadgets with larger radial clearance before bending toward their targets.",
+        "Move gates and outputs slightly farther outward from their switches to open space between the local gadgets and the central switch cycle.",
+        "Reroute g1->s4 and g2->s5 as exterior arcs that avoid crossing through the central region.",
+        "Reroute g4->s1 and g5->s2 similarly around the outside rather than letting them cut back across nearby gadgets.",
+        "Reduce the size of the vertical skip loops g0->s3 and g3->s0 or shift them farther outward so they do not crowd the top and bottom local clusters."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 8.499812997942955,
+        "min_edge_node_clearance": 0.9761726283605853
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=4.0: Node labels are not legible in the rendered figure, making the graph semantics hard to read.",
+        "Visual review score=4.0: Several long skip edges form oversized loops that re-enter or crowd the main circular gadget instead of staying clearly outside.",
+        "Visual review score=4.0: The large skip arcs create avoidable tangles and crossings near the central switch cycle, especially around the upper-right, lower-right, upper-left, and lower-left switch/gate/output clusters.",
+        "Visual review score=4.0: Some long curved edges pass very close to unrelated nodes and local edges, reducing readability even though the nodes are well separated."
+      ]
+    },
+    {
+      "iteration": 3,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": false,
+      "visual_ok": false,
+      "visual_score": null,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 13.608678738217021,
+        "min_edge_node_clearance": 0.7523708931719931
+      },
+      "next_refinement": null,
+      "errors": [
+        "!  ==> Fatal error occurred, no output PDF file produced!"
+      ]
+    }
+  ]
+}

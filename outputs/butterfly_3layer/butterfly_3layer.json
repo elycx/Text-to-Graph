@@ -1,0 +1,228 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "v_0_00",
+        "label": "$00$"
+      },
+      {
+        "id": "v_0_01",
+        "label": "$01$"
+      },
+      {
+        "id": "v_0_10",
+        "label": "$10$"
+      },
+      {
+        "id": "v_0_11",
+        "label": "$11$"
+      },
+      {
+        "id": "v_1_00",
+        "label": "$00$"
+      },
+      {
+        "id": "v_1_01",
+        "label": "$01$"
+      },
+      {
+        "id": "v_1_10",
+        "label": "$10$"
+      },
+      {
+        "id": "v_1_11",
+        "label": "$11$"
+      },
+      {
+        "id": "v_2_00",
+        "label": "$00$"
+      },
+      {
+        "id": "v_2_01",
+        "label": "$01$"
+      },
+      {
+        "id": "v_2_10",
+        "label": "$10$"
+      },
+      {
+        "id": "v_2_11",
+        "label": "$11$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "v_0_00",
+        "target": "v_1_00",
+        "directed": true
+      },
+      {
+        "source": "v_0_00",
+        "target": "v_1_01",
+        "directed": true
+      },
+      {
+        "source": "v_0_01",
+        "target": "v_1_01",
+        "directed": true
+      },
+      {
+        "source": "v_0_01",
+        "target": "v_1_00",
+        "directed": true
+      },
+      {
+        "source": "v_0_10",
+        "target": "v_1_10",
+        "directed": true
+      },
+      {
+        "source": "v_0_10",
+        "target": "v_1_11",
+        "directed": true
+      },
+      {
+        "source": "v_0_11",
+        "target": "v_1_11",
+        "directed": true
+      },
+      {
+        "source": "v_0_11",
+        "target": "v_1_10",
+        "directed": true
+      },
+      {
+        "source": "v_1_00",
+        "target": "v_2_00",
+        "directed": true
+      },
+      {
+        "source": "v_1_00",
+        "target": "v_2_10",
+        "directed": true
+      },
+      {
+        "source": "v_1_10",
+        "target": "v_2_10",
+        "directed": true
+      },
+      {
+        "source": "v_1_10",
+        "target": "v_2_00",
+        "directed": true
+      },
+      {
+        "source": "v_1_01",
+        "target": "v_2_01",
+        "directed": true
+      },
+      {
+        "source": "v_1_01",
+        "target": "v_2_11",
+        "directed": true
+      },
+      {
+        "source": "v_1_11",
+        "target": "v_2_11",
+        "directed": true
+      },
+      {
+        "source": "v_1_11",
+        "target": "v_2_01",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "v_0_00": [
+          0.0,
+          3.0
+        ],
+        "v_0_01": [
+          0.0,
+          2.0
+        ],
+        "v_0_10": [
+          0.0,
+          1.0
+        ],
+        "v_0_11": [
+          0.0,
+          0.0
+        ],
+        "v_1_00": [
+          2.2,
+          3.0
+        ],
+        "v_1_01": [
+          2.2,
+          2.0
+        ],
+        "v_1_10": [
+          2.2,
+          1.0
+        ],
+        "v_1_11": [
+          2.2,
+          0.0
+        ],
+        "v_2_00": [
+          4.4,
+          3.0
+        ],
+        "v_2_01": [
+          4.4,
+          2.0
+        ],
+        "v_2_10": [
+          4.4,
+          1.0
+        ],
+        "v_2_11": [
+          4.4,
+          0.0
+        ]
+      },
+      "edge_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Interpreted '3-layer butterfly graph' as the standard directed butterfly network with three vertical layers and four vertices per layer (binary labels 00, 01, 10, 11)."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1.",
+      "Interpreted '3-layer butterfly graph' as the standard directed butterfly network with three vertical layers and four vertices per layer (binary labels 00, 01, 10, 11)."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\butterfly_3layer\\iteration_0\\butterfly_3layer.tex",
+    "pdf_path": "outputs\\butterfly_3layer\\iteration_0\\butterfly_3layer.pdf",
+    "png_path": "outputs\\butterfly_3layer\\iteration_0\\butterfly_3layer.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

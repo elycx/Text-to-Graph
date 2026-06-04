@@ -1,0 +1,148 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "a1",
+        "label": "$a_1$"
+      },
+      {
+        "id": "a2",
+        "label": "$a_2$"
+      },
+      {
+        "id": "a3",
+        "label": "$a_3$"
+      },
+      {
+        "id": "b1",
+        "label": "$b_1$"
+      },
+      {
+        "id": "b2",
+        "label": "$b_2$"
+      },
+      {
+        "id": "b3",
+        "label": "$b_3$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "a1",
+        "target": "b1",
+        "directed": false
+      },
+      {
+        "source": "a1",
+        "target": "b2",
+        "directed": false
+      },
+      {
+        "source": "a1",
+        "target": "b3",
+        "directed": false
+      },
+      {
+        "source": "a2",
+        "target": "b1",
+        "directed": false
+      },
+      {
+        "source": "a2",
+        "target": "b2",
+        "directed": false
+      },
+      {
+        "source": "a2",
+        "target": "b3",
+        "directed": false
+      },
+      {
+        "source": "a3",
+        "target": "b1",
+        "directed": false
+      },
+      {
+        "source": "a3",
+        "target": "b2",
+        "directed": false
+      },
+      {
+        "source": "a3",
+        "target": "b3",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "a1": [
+          0.0,
+          2.0
+        ],
+        "a2": [
+          0.0,
+          0.0
+        ],
+        "a3": [
+          0.0,
+          -2.0
+        ],
+        "b1": [
+          4.0,
+          2.0
+        ],
+        "b2": [
+          4.0,
+          0.0
+        ],
+        "b3": [
+          4.0,
+          -2.0
+        ]
+      },
+      "edge_options": {},
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\k33_bipartite\\iteration_0\\k33_bipartite.tex",
+    "pdf_path": "outputs\\prompt_suite\\k33_bipartite\\iteration_0\\k33_bipartite.pdf",
+    "png_path": "outputs\\prompt_suite\\k33_bipartite\\iteration_0\\k33_bipartite.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ],
+  "id": "k33_bipartite",
+  "title": "Complete bipartite graph K3,3",
+  "prompt": "Draw the complete bipartite graph K3,3 with left part {a1,a2,a3} and right part {b1,b2,b3}. Make it clear and symmetric, even though crossings are unavoidable.",
+  "case_dir": "outputs\\prompt_suite\\k33_bipartite"
+}

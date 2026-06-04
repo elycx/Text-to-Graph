@@ -1,0 +1,114 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "q0",
+        "label": "$q_0$"
+      },
+      {
+        "id": "q1",
+        "label": "$q_1$"
+      },
+      {
+        "id": "q2",
+        "label": "$q_2$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "q0",
+        "target": "q0",
+        "directed": true
+      },
+      {
+        "source": "q0",
+        "target": "q1",
+        "directed": true
+      },
+      {
+        "source": "q1",
+        "target": "q2",
+        "directed": true
+      },
+      {
+        "source": "q1",
+        "target": "q0",
+        "directed": true
+      },
+      {
+        "source": "q2",
+        "target": "q1",
+        "directed": true
+      },
+      {
+        "source": "q2",
+        "target": "q2",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "q0": [
+          0.0,
+          2.0
+        ],
+        "q1": [
+          -2.0,
+          0.0
+        ],
+        "q2": [
+          2.0,
+          0.0
+        ]
+      },
+      "edge_options": {
+        "directed:q0:q0": "loop above, \"0\"",
+        "directed:q0:q1": "bend left=15, \"1\"",
+        "directed:q1:q2": "bend left=15, \"0\"",
+        "directed:q1:q0": "bend left=15, \"1\"",
+        "directed:q2:q1": "bend left=15, \"0\"",
+        "directed:q2:q2": "loop right, \"1\""
+      },
+      "node_options": {
+        "q0": "initial, accepting"
+      }
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\dfa_library_check2\\iteration_0\\dfa_library_check2.tex",
+    "pdf_path": "outputs\\dfa_library_check2\\iteration_0\\dfa_library_check2.pdf",
+    "png_path": "outputs\\dfa_library_check2\\iteration_0\\dfa_library_check2.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

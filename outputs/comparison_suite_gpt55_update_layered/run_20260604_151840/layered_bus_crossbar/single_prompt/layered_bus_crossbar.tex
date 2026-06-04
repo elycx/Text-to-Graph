@@ -1,0 +1,63 @@
+\documentclass[tikz,border=8pt]{standalone}
+\usepackage{amsmath,amssymb}
+\usetikzlibrary{arrows.meta,automata,positioning,quotes}
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzset{
+  graphnode/.style={circle,draw=black,line width=0.55pt,minimum size=8mm,inner sep=1pt,font=\sffamily},
+  graphedge/.style={draw=black,line width=0.55pt,line cap=round,line join=round},
+  directed/.style={graphedge,-{Stealth[length=2.4mm,width=2.0mm]}},
+  undirected/.style={graphedge}
+}
+\node[graphnode] (n_S) at (-2.90,0.00) {S};
+\node[graphnode] (n_T0) at (-0.60,2.30) {$T_{0}$};
+\node[graphnode] (n_T1) at (1.70,2.30) {$T_{1}$};
+\node[graphnode] (n_T2) at (4.00,2.30) {$T_{2}$};
+\node[graphnode] (n_T3) at (6.30,2.30) {$T_{3}$};
+\node[graphnode] (n_T4) at (8.60,2.30) {$T_{4}$};
+\node[graphnode] (n_M0) at (-0.60,0.00) {$M_{0}$};
+\node[graphnode] (n_M1) at (1.70,0.00) {$M_{1}$};
+\node[graphnode] (n_M2) at (4.00,0.00) {$M_{2}$};
+\node[graphnode] (n_M3) at (6.30,0.00) {$M_{3}$};
+\node[graphnode] (n_M4) at (8.60,0.00) {$M_{4}$};
+\node[graphnode] (n_B0) at (-0.60,-2.30) {$B_{0}$};
+\node[graphnode] (n_B1) at (1.70,-2.30) {$B_{1}$};
+\node[graphnode] (n_B2) at (4.00,-2.30) {$B_{2}$};
+\node[graphnode] (n_B3) at (6.30,-2.30) {$B_{3}$};
+\node[graphnode] (n_B4) at (8.60,-2.30) {$B_{4}$};
+\node[graphnode] (n_R) at (10.90,0.00) {R};
+\draw[directed] (n_T0) -- (n_T1);
+\draw[directed] (n_T1) -- (n_T2);
+\draw[directed] (n_T2) -- (n_T3);
+\draw[directed] (n_T3) -- (n_T4);
+\draw[directed] (n_M0) -- (n_M1);
+\draw[directed] (n_M1) -- (n_M2);
+\draw[directed] (n_M2) -- (n_M3);
+\draw[directed] (n_M3) -- (n_M4);
+\draw[directed] (n_B0) -- (n_B1);
+\draw[directed] (n_B1) -- (n_B2);
+\draw[directed] (n_B2) -- (n_B3);
+\draw[directed] (n_B3) -- (n_B4);
+\draw[directed] (n_T0) -- (n_M0);
+\draw[directed] (n_M0) -- (n_B0);
+\draw[directed] (n_T2) -- (n_M2);
+\draw[directed] (n_M2) -- (n_B2);
+\draw[directed] (n_T4) -- (n_M4);
+\draw[directed] (n_M4) -- (n_B4);
+\draw[directed] (n_T0) -- (n_M2);
+\draw[directed] (n_T1) -- (n_M3);
+\draw[directed] (n_T2) -- (n_M4);
+\draw[directed] (n_M0) -- (n_B2);
+\draw[directed] (n_M1) -- (n_B3);
+\draw[directed] (n_M2) -- (n_B4);
+\draw[directed,rounded corners=5pt] (n_B1) -- (1.20,-3.20) -- (-0.80,-3.20) -- (-0.80,-0.50) -- (n_M0);
+\draw[directed,rounded corners=5pt] (n_B3) -- (6.00,-3.20) -- (3.20,-3.20) -- (3.20,-0.50) -- (n_M2);
+\draw[directed,rounded corners=5pt] (n_M4) -- (9.00,0.80) -- (9.00,3.20) -- (6.00,3.20) -- (n_T3);
+\draw[directed] (n_S) -- (n_T0);
+\draw[directed] (n_S) -- (n_M0);
+\draw[directed] (n_S) -- (n_B0);
+\draw[directed] (n_T4) -- (n_R);
+\draw[directed] (n_M4) -- (n_R);
+\draw[directed] (n_B4) -- (n_R);
+\end{tikzpicture}
+\end{document}

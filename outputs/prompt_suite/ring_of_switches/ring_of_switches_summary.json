@@ -1,0 +1,387 @@
+{
+  "success": true,
+  "iterations": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "s0",
+        "label": "$s_0$"
+      },
+      {
+        "id": "s1",
+        "label": "$s_1$"
+      },
+      {
+        "id": "s2",
+        "label": "$s_2$"
+      },
+      {
+        "id": "s3",
+        "label": "$s_3$"
+      },
+      {
+        "id": "s4",
+        "label": "$s_4$"
+      },
+      {
+        "id": "s5",
+        "label": "$s_5$"
+      },
+      {
+        "id": "g0",
+        "label": "$g_0$"
+      },
+      {
+        "id": "g1",
+        "label": "$g_1$"
+      },
+      {
+        "id": "g2",
+        "label": "$g_2$"
+      },
+      {
+        "id": "g3",
+        "label": "$g_3$"
+      },
+      {
+        "id": "g4",
+        "label": "$g_4$"
+      },
+      {
+        "id": "g5",
+        "label": "$g_5$"
+      },
+      {
+        "id": "o0",
+        "label": "$o_0$"
+      },
+      {
+        "id": "o1",
+        "label": "$o_1$"
+      },
+      {
+        "id": "o2",
+        "label": "$o_2$"
+      },
+      {
+        "id": "o3",
+        "label": "$o_3$"
+      },
+      {
+        "id": "o4",
+        "label": "$o_4$"
+      },
+      {
+        "id": "o5",
+        "label": "$o_5$"
+      }
+    ],
+    "edges": [
+      {
+        "source": "s0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "s0",
+        "target": "g0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "o0",
+        "directed": true
+      },
+      {
+        "source": "o0",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "s1",
+        "target": "g1",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "o1",
+        "directed": true
+      },
+      {
+        "source": "o1",
+        "target": "s2",
+        "directed": true
+      },
+      {
+        "source": "s2",
+        "target": "g2",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "o2",
+        "directed": true
+      },
+      {
+        "source": "o2",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "s3",
+        "target": "g3",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "o3",
+        "directed": true
+      },
+      {
+        "source": "o3",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "s4",
+        "target": "g4",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "o4",
+        "directed": true
+      },
+      {
+        "source": "o4",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "s5",
+        "target": "g5",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "o5",
+        "directed": true
+      },
+      {
+        "source": "o5",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g0",
+        "target": "s3",
+        "directed": true
+      },
+      {
+        "source": "g1",
+        "target": "s4",
+        "directed": true
+      },
+      {
+        "source": "g2",
+        "target": "s5",
+        "directed": true
+      },
+      {
+        "source": "g3",
+        "target": "s0",
+        "directed": true
+      },
+      {
+        "source": "g4",
+        "target": "s1",
+        "directed": true
+      },
+      {
+        "source": "g5",
+        "target": "s2",
+        "directed": true
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "s0": [
+          0.0,
+          4.6
+        ],
+        "s1": [
+          3.979,
+          2.3
+        ],
+        "s2": [
+          3.979,
+          -2.3
+        ],
+        "s3": [
+          0.0,
+          -4.6
+        ],
+        "s4": [
+          -3.979,
+          -2.3
+        ],
+        "s5": [
+          -3.979,
+          2.3
+        ],
+        "g0": [
+          0.0,
+          6.67
+        ],
+        "g1": [
+          6.149,
+          3.356
+        ],
+        "g2": [
+          6.103,
+          -3.219
+        ],
+        "g3": [
+          0.0,
+          -6.67
+        ],
+        "g4": [
+          -6.149,
+          -3.356
+        ],
+        "g5": [
+          -6.103,
+          3.219
+        ],
+        "o0": [
+          3.68,
+          6.382
+        ],
+        "o1": [
+          8.045,
+          0.128
+        ],
+        "o2": [
+          3.814,
+          -6.75
+        ],
+        "o3": [
+          -3.68,
+          -6.382
+        ],
+        "o4": [
+          -8.045,
+          -0.128
+        ],
+        "o5": [
+          -3.814,
+          6.75
+        ]
+      },
+      "edge_options": {
+        "directed:g0:s3": "out=180,in=180,looseness=2.6",
+        "directed:g1:s4": "out=110,in=230,looseness=2.3",
+        "directed:g2:s5": "out=250,in=130,looseness=2.3",
+        "directed:g3:s0": "out=0,in=0,looseness=2.6",
+        "directed:g4:s1": "out=290,in=50,looseness=2.3",
+        "directed:g5:s2": "out=70,in=310,looseness=2.3"
+      },
+      "node_options": {
+        "s0": "draw,circle,fill=blue!10",
+        "s1": "draw,circle,fill=blue!10",
+        "s2": "draw,circle,fill=blue!10",
+        "s3": "draw,circle,fill=blue!10",
+        "s4": "draw,circle,fill=blue!10",
+        "s5": "draw,circle,fill=blue!10",
+        "g0": "draw,rectangle,rounded corners,fill=orange!15",
+        "g1": "draw,rectangle,rounded corners,fill=orange!15",
+        "g2": "draw,rectangle,rounded corners,fill=orange!15",
+        "g3": "draw,rectangle,rounded corners,fill=orange!15",
+        "g4": "draw,rectangle,rounded corners,fill=orange!15",
+        "g5": "draw,rectangle,rounded corners,fill=orange!15",
+        "o0": "draw,rectangle,fill=green!10",
+        "o1": "draw,rectangle,fill=green!10",
+        "o2": "draw,rectangle,fill=green!10",
+        "o3": "draw,rectangle,fill=green!10",
+        "o4": "draw,rectangle,fill=green!10",
+        "o5": "draw,rectangle,fill=green!10"
+      },
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph refined by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\ring_of_switches\\iteration_1\\ring_of_switches.tex",
+    "pdf_path": "outputs\\prompt_suite\\ring_of_switches\\iteration_1\\ring_of_switches.pdf",
+    "png_path": "outputs\\prompt_suite\\ring_of_switches\\iteration_1\\ring_of_switches.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": false,
+      "errors": [
+        "!  ==> Fatal error occurred, no output PDF file produced!"
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ],
+  "id": "ring_of_switches",
+  "title": "Ring of Switches With Local Gates",
+  "prompt": "Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0->s1->s2->s3->s4->s5->s0. Each switch si has a local gate gi and output oi, with edges si->gi, gi->oi, and oi->s(i+1 mod 6). Add skip edges g0->s3, g1->s4, g2->s5, g3->s0, g4->s1, g5->s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.",
+  "case_dir": "outputs\\prompt_suite\\ring_of_switches"
+}

@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "error": "GPT-5 request failed: 500 Server Error: Internal Server Error for url: http://localhost:1455/v1/chat/completions",
+  "history": [],
+  "id": "ring_of_switches",
+  "title": "Ring of Switches With Local Gates",
+  "prompt": "Draw an artificial mixed-looking directed graph, but represent every edge as directed. There are six switch nodes s0,s1,s2,s3,s4,s5 in a directed cycle s0->s1->s2->s3->s4->s5->s0. Each switch si has a local gate gi and output oi, with edges si->gi, gi->oi, and oi->s(i+1 mod 6). Add skip edges g0->s3, g1->s4, g2->s5, g3->s0, g4->s1, g5->s2. Use a circular layout with gates and outputs near their switch, and route skip edges around the outside.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_114132\\ring_of_switches"
+}

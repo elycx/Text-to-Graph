@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "Left",
+        "label": "Left"
+      },
+      {
+        "id": "Right",
+        "label": "Right"
+      }
+    ],
+    "edges": [
+      {
+        "source": "Left",
+        "target": "Right",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "manual",
+      "relations": [
+        {
+          "source": "Left",
+          "target": "Right",
+          "relation": "left_of"
+        }
+      ]
+    },
+    "warnings": []
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\eval_rendered\\manual_hint\\iteration_0\\manual_hint.tex",
+    "pdf_path": "outputs\\eval_rendered\\manual_hint\\iteration_0\\manual_hint.pdf",
+    "png_path": "outputs\\eval_rendered\\manual_hint\\iteration_0\\manual_hint.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "success": true,
+  "iterations": 0,
+  "graph": {
+    "nodes": [
+      {
+        "id": "c0",
+        "label": "c0"
+      },
+      {
+        "id": "c1",
+        "label": "c1"
+      },
+      {
+        "id": "c2",
+        "label": "c2"
+      },
+      {
+        "id": "c3",
+        "label": "c3"
+      },
+      {
+        "id": "c4",
+        "label": "c4"
+      },
+      {
+        "id": "a0",
+        "label": "a0"
+      },
+      {
+        "id": "a1",
+        "label": "a1"
+      },
+      {
+        "id": "a2",
+        "label": "a2"
+      },
+      {
+        "id": "a3",
+        "label": "a3"
+      },
+      {
+        "id": "a4",
+        "label": "a4"
+      },
+      {
+        "id": "a5",
+        "label": "a5"
+      },
+      {
+        "id": "a6",
+        "label": "a6"
+      },
+      {
+        "id": "p0",
+        "label": "p0"
+      },
+      {
+        "id": "p1",
+        "label": "p1"
+      },
+      {
+        "id": "p2",
+        "label": "p2"
+      },
+      {
+        "id": "z",
+        "label": "z"
+      }
+    ],
+    "edges": [
+      {
+        "source": "c0",
+        "target": "a0",
+        "directed": false
+      },
+      {
+        "source": "a0",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "c1",
+        "target": "c0",
+        "directed": false
+      },
+      {
+        "source": "c1",
+        "target": "a1",
+        "directed": false
+      },
+      {
+        "source": "a1",
+        "target": "a2",
+        "directed": false
+      },
+      {
+        "source": "a2",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "c2",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "c2",
+        "target": "a3",
+        "directed": false
+      },
+      {
+        "source": "a3",
+        "target": "a4",
+        "directed": false
+      },
+      {
+        "source": "a4",
+        "target": "a5",
+        "directed": false
+      },
+      {
+        "source": "a5",
+        "target": "c3",
+        "directed": false
+      },
+      {
+        "source": "c3",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "c3",
+        "target": "a6",
+        "directed": false
+      },
+      {
+        "source": "a6",
+        "target": "c4",
+        "directed": false
+      },
+      {
+        "source": "c4",
+        "target": "c3",
+        "directed": false
+      },
+      {
+        "source": "p0",
+        "target": "c0",
+        "directed": false
+      },
+      {
+        "source": "p1",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "p2",
+        "target": "c4",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c1",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c2",
+        "directed": false
+      },
+      {
+        "source": "z",
+        "target": "c3",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "c0": [
+          0.0,
+          0.0
+        ],
+        "c1": [
+          3.0,
+          0.0
+        ],
+        "c2": [
+          6.0,
+          0.0
+        ],
+        "c3": [
+          9.0,
+          0.0
+        ],
+        "c4": [
+          12.0,
+          0.0
+        ],
+        "a0": [
+          1.5,
+          -1.6
+        ],
+        "a1": [
+          3.8,
+          1.7
+        ],
+        "a2": [
+          5.2,
+          1.7
+        ],
+        "a3": [
+          6.7,
+          -1.6
+        ],
+        "a4": [
+          7.5,
+          -2.5
+        ],
+        "a5": [
+          8.3,
+          -1.6
+        ],
+        "a6": [
+          10.5,
+          1.7
+        ],
+        "p0": [
+          -0.9,
+          1.3
+        ],
+        "p1": [
+          6.0,
+          -3.8
+        ],
+        "p2": [
+          12.9,
+          -1.3
+        ],
+        "z": [
+          6.0,
+          4.5
+        ]
+      },
+      "edge_options": {
+        "undirected:c1:z": "out=100,in=180,looseness=1.15",
+        "undirected:c3:z": "out=80,in=0,looseness=1.15"
+      },
+      "node_options": {}
+    },
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph extracted by gpt-5.5 at http://localhost:1455/v1."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.tex",
+    "pdf_path": "outputs\\prompt_suite\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.pdf",
+    "png_path": "outputs\\prompt_suite\\cactus_chain_with_spikes\\iteration_0\\cactus_chain_with_spikes.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "errors": []
+    }
+  ]
+}

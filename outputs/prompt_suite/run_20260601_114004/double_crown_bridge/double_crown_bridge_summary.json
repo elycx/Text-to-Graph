@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "error": "The openai package is not installed. Run: python -m pip install -e .",
+  "history": [],
+  "id": "double_crown_bridge",
+  "title": "Double Crown Bridge",
+  "prompt": "Create a complex artificial graph made from two crowns connected by a bridge. The left crown has center L and rim nodes l0,l1,l2,l3,l4,l5 forming a 6-cycle, with L connected to l0,l2,l4 only. The right crown has center R and rim nodes r0,r1,r2,r3,r4,r5 forming a 6-cycle, with R connected to r1,r3,r5 only. Add bridge path l0-x0-x1-r3 and bridge path l3-y0-y1-r0. Add twist matching edges l1-r4, l2-r5, l4-r1, l5-r2. Draw it as two circular clusters with the bridges between them.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_114004\\double_crown_bridge"
+}

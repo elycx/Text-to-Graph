@@ -1,0 +1,451 @@
+{
+  "success": true,
+  "iterations": 1,
+  "graph": {
+    "nodes": [
+      {
+        "id": "L",
+        "label": "L"
+      },
+      {
+        "id": "l0",
+        "label": "l0"
+      },
+      {
+        "id": "l1",
+        "label": "l1"
+      },
+      {
+        "id": "l2",
+        "label": "l2"
+      },
+      {
+        "id": "l3",
+        "label": "l3"
+      },
+      {
+        "id": "l4",
+        "label": "l4"
+      },
+      {
+        "id": "l5",
+        "label": "l5"
+      },
+      {
+        "id": "R",
+        "label": "R"
+      },
+      {
+        "id": "r0",
+        "label": "r0"
+      },
+      {
+        "id": "r1",
+        "label": "r1"
+      },
+      {
+        "id": "r2",
+        "label": "r2"
+      },
+      {
+        "id": "r3",
+        "label": "r3"
+      },
+      {
+        "id": "r4",
+        "label": "r4"
+      },
+      {
+        "id": "r5",
+        "label": "r5"
+      },
+      {
+        "id": "x0",
+        "label": "x0"
+      },
+      {
+        "id": "x1",
+        "label": "x1"
+      },
+      {
+        "id": "y0",
+        "label": "y0"
+      },
+      {
+        "id": "y1",
+        "label": "y1"
+      }
+    ],
+    "edges": [
+      {
+        "source": "l0",
+        "target": "l1",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "l3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "l5",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l0",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l2",
+        "directed": false
+      },
+      {
+        "source": "L",
+        "target": "l4",
+        "directed": false
+      },
+      {
+        "source": "r0",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "r1",
+        "target": "r2",
+        "directed": false
+      },
+      {
+        "source": "r2",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "r3",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "r4",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "r5",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "R",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l0",
+        "target": "x0",
+        "directed": false
+      },
+      {
+        "source": "x0",
+        "target": "x1",
+        "directed": false
+      },
+      {
+        "source": "x1",
+        "target": "r3",
+        "directed": false
+      },
+      {
+        "source": "l3",
+        "target": "y0",
+        "directed": false
+      },
+      {
+        "source": "y0",
+        "target": "y1",
+        "directed": false
+      },
+      {
+        "source": "y1",
+        "target": "r0",
+        "directed": false
+      },
+      {
+        "source": "l1",
+        "target": "r4",
+        "directed": false
+      },
+      {
+        "source": "l2",
+        "target": "r5",
+        "directed": false
+      },
+      {
+        "source": "l4",
+        "target": "r1",
+        "directed": false
+      },
+      {
+        "source": "l5",
+        "target": "r2",
+        "directed": false
+      }
+    ],
+    "layout_hints": {
+      "style": "explicit",
+      "positions": {
+        "L": [
+          -6.9,
+          0.022
+        ],
+        "l0": [
+          -4.112,
+          -0.033
+        ],
+        "l1": [
+          -5.058,
+          -1.482
+        ],
+        "l2": [
+          -6.766,
+          -1.645
+        ],
+        "l3": [
+          -8.751,
+          -1.697
+        ],
+        "l4": [
+          -7.24,
+          1.627
+        ],
+        "l5": [
+          -5.189,
+          1.567
+        ],
+        "R": [
+          6.9,
+          0.022
+        ],
+        "r0": [
+          9.124,
+          -1.733
+        ],
+        "r1": [
+          7.242,
+          1.622
+        ],
+        "r2": [
+          5.193,
+          1.559
+        ],
+        "r3": [
+          3.589,
+          -0.243
+        ],
+        "r4": [
+          5.059,
+          -1.477
+        ],
+        "r5": [
+          7.227,
+          -1.642
+        ],
+        "x0": [
+          -2.849,
+          2.565
+        ],
+        "x1": [
+          2.07,
+          2.61
+        ],
+        "y0": [
+          -3.45,
+          -4.348
+        ],
+        "y1": [
+          3.45,
+          -4.348
+        ]
+      },
+      "edge_options": {},
+      "edge_routes": {
+        "undirected:l4:r1": [
+          [
+            -6.4,
+            3.55
+          ],
+          [
+            0.0,
+            3.75
+          ],
+          [
+            6.4,
+            3.55
+          ]
+        ],
+        "undirected:l2:r5": [
+          [
+            -6.4,
+            -2.55
+          ],
+          [
+            0.0,
+            -2.75
+          ],
+          [
+            6.4,
+            -2.55
+          ]
+        ],
+        "undirected:y1:r0": [
+          [
+            7.7,
+            -3.8
+          ],
+          [
+            8.9,
+            -1.75
+          ],
+          [
+            8.9,
+            0.0
+          ]
+        ]
+      },
+      "node_options": {},
+      "disable_auto_expand": true
+    },
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=1.97, maximum=3.96, moved_fraction=0.83.",
+      "Applied local geometry-aware node-position nudging to reduce node-edge overlap."
+    ]
+  },
+  "graph_validation": {
+    "errors": [],
+    "warnings": [
+      "Graph macro-relayout by gpt-5.5 at http://localhost:1455/v1.",
+      "Macro relayout coordinate motion: average=1.97, maximum=3.96, moved_fraction=0.83."
+    ]
+  },
+  "layout_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "layout_metrics": {
+    "min_node_distance": 1.6361430255329148,
+    "min_edge_node_clearance": 0.8766549289260592,
+    "min_edge_edge_clearance": 0.060451265256778026,
+    "max_close_parallel_length": 0.5876685972257571,
+    "max_clear_detour_ratio": 1.1744612228982998,
+    "edge_crossings": 2.0
+  },
+  "visual_review": {
+    "acceptable": true,
+    "score": 8.0,
+    "issues": [],
+    "suggestions": [],
+    "raw_response": "{\"acceptable\":true,\"score\":8.0,\"issues\":[],\"suggestions\":[]}"
+  },
+  "code_validation": {
+    "errors": [],
+    "warnings": []
+  },
+  "render": {
+    "success": true,
+    "tex_path": "outputs\\prompt_suite\\run_20260601_205015\\double_crown_bridge\\iteration_1\\double_crown_bridge.tex",
+    "pdf_path": "outputs\\prompt_suite\\run_20260601_205015\\double_crown_bridge\\iteration_1\\double_crown_bridge.pdf",
+    "png_path": "outputs\\prompt_suite\\run_20260601_205015\\double_crown_bridge\\iteration_1\\double_crown_bridge.png",
+    "error": ""
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": false,
+      "visual_score": 6.5,
+      "visual_issues": [
+        "The right-side lower bridge edge y1-r0 takes a long diagonal route that passes close to the unrelated r5 area and visually competes with the right crown edges.",
+        "Several inter-crown twist edges form a dense central tangle; the curved l4-r1 and l2-r5 routes run close together for a long visible segment and are hard to distinguish.",
+        "The bottom bridge y0-y1 is placed very far below the crowns, creating unnecessarily long detouring edges l3-y0 and y1-r0 rather than a compact bridge between the clusters.",
+        "The top bridge node x0 is high above the main inter-crown corridor, making l0-x0-x1-r3 cross through the same central region as the twist edges instead of reading as a clean bridge path."
+      ],
+      "visual_suggestions": [
+        "Move y0 and y1 upward and inward so the l3-y0-y1-r0 bridge sits just below the two crowns, reducing the long diagonal y1-r0 edge.",
+        "Route y1-r0 outside or below the right crown so it does not crowd r5 and the r5-r0/R-r5 edges.",
+        "Separate the twist matching edges into clearer lanes: route l4-r1 higher, l2-r5 lower, and keep l1-r4/l5-r2 closer to the middle to reduce long parallel crowding.",
+        "Move x0 slightly downward and x1 slightly left/up, or route l0-x0-x1-r3 as a distinct upper bridge arc separated from the twist edges."
+      ],
+      "layout_metrics": {
+        "min_node_distance": 1.3633084757310063,
+        "min_edge_node_clearance": 0.7610646641734284,
+        "min_edge_edge_clearance": 0.0066859467689417505,
+        "max_close_parallel_length": 0.9337506693438029,
+        "max_clear_detour_ratio": 1.0211895701743932,
+        "edge_crossings": 10.0
+      },
+      "next_refinement": "visual_macro_relayout",
+      "errors": [
+        "Visual review score=6.5: The right-side lower bridge edge y1-r0 takes a long diagonal route that passes close to the unrelated r5 area and visually competes with the right crown edges.",
+        "Visual review score=6.5: Several inter-crown twist edges form a dense central tangle; the curved l4-r1 and l2-r5 routes run close together for a long visible segment and are hard to distinguish.",
+        "Visual review score=6.5: The bottom bridge y0-y1 is placed very far below the crowns, creating unnecessarily long detouring edges l3-y0 and y1-r0 rather than a compact bridge between the clusters.",
+        "Visual review score=6.5: The top bridge node x0 is high above the main inter-crown corridor, making l0-x0-x1-r3 cross through the same central region as the twist edges instead of reading as a clean bridge path."
+      ]
+    },
+    {
+      "iteration": 1,
+      "graph_ok": true,
+      "layout_ok": true,
+      "code_ok": true,
+      "render_ok": true,
+      "visual_ok": true,
+      "visual_score": 8.0,
+      "visual_issues": [],
+      "visual_suggestions": [],
+      "layout_metrics": {
+        "min_node_distance": 1.6361430255329148,
+        "min_edge_node_clearance": 0.8766549289260592,
+        "min_edge_edge_clearance": 0.060451265256778026,
+        "max_close_parallel_length": 0.5876685972257571,
+        "max_clear_detour_ratio": 1.1744612228982998,
+        "edge_crossings": 2.0
+      },
+      "next_refinement": null,
+      "errors": []
+    }
+  ],
+  "id": "double_crown_bridge",
+  "title": "Double Crown Bridge",
+  "prompt": "Create a complex artificial graph made from two crowns connected by a bridge. The left crown has center L and rim nodes l0,l1,l2,l3,l4,l5 forming a 6-cycle, with L connected to l0,l2,l4 only. The right crown has center R and rim nodes r0,r1,r2,r3,r4,r5 forming a 6-cycle, with R connected to r1,r3,r5 only. Add bridge path l0-x0-x1-r3 and bridge path l3-y0-y1-r0. Add twist matching edges l1-r4, l2-r5, l4-r1, l5-r2. Draw it as two circular clusters with the bridges between them.",
+  "case_dir": "outputs\\prompt_suite\\run_20260601_205015\\double_crown_bridge"
+}
