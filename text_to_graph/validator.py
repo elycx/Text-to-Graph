@@ -166,7 +166,20 @@ def layout_quality_metrics(spec: GraphSpec) -> dict[str, float | None]:
     max_close_parallel_length: float | None = None
     max_clear_detour_ratio: float | None = None
     edge_crossings = 0
+    drawing_width: float | None = None
+    drawing_height: float | None = None
+    canvas_area_per_node: float | None = None
+    mean_edge_path_length: float | None = None
+    total_edge_path_length = 0.0
+    edge_path_count = 0
     edge_paths: list[tuple[Edge, list[tuple[float, float]]]] = []
+
+    if positions:
+        xs = [x for x, _ in positions.values()]
+        ys = [y for _, y in positions.values()]
+        drawing_width = max(xs) - min(xs)
+        drawing_height = max(ys) - min(ys)
+        canvas_area_per_node = (drawing_width * drawing_height) / max(1, len(positions))
 
     for index, left in enumerate(node_ids):
         for right in node_ids[index + 1 :]:
@@ -187,6 +200,8 @@ def layout_quality_metrics(spec: GraphSpec) -> dict[str, float | None]:
         )
         edge_paths.append((edge, path))
         route_length = polyline_length(path)
+        total_edge_path_length += route_length
+        edge_path_count += 1
         straight_length = distance(positions[edge.source], positions[edge.target])
         if straight_length > 0:
             ratio = route_length / straight_length
@@ -214,6 +229,9 @@ def layout_quality_metrics(spec: GraphSpec) -> dict[str, float | None]:
                     current if min_edge_edge_clearance is None else min(min_edge_edge_clearance, current)
                 )
 
+    if edge_path_count:
+        mean_edge_path_length = total_edge_path_length / edge_path_count
+
     return {
         "min_node_distance": min_node_distance,
         "min_edge_node_clearance": min_edge_node_clearance,
@@ -221,6 +239,10 @@ def layout_quality_metrics(spec: GraphSpec) -> dict[str, float | None]:
         "max_close_parallel_length": max_close_parallel_length,
         "max_clear_detour_ratio": max_clear_detour_ratio,
         "edge_crossings": float(edge_crossings),
+        "drawing_width": drawing_width,
+        "drawing_height": drawing_height,
+        "canvas_area_per_node": canvas_area_per_node,
+        "mean_edge_path_length": mean_edge_path_length,
     }
 
 

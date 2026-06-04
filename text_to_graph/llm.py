@@ -124,6 +124,8 @@ Output rules:
 - For layered or indexed graph families, align layers cleanly and route long hub edges around the outside.
 - For dense artificial graphs, increase spacing generously instead of compressing the layout.
 - Prefer balanced, orderly layouts: align nodes that naturally form rows or columns, keep repeated modules equally spaced, and use approximate mirror or rotational symmetry when the graph structure suggests it.
+- Prefer compact readability over empty spread. A graph may be close together and still beautiful if node-node, edge-node, and edge-edge clearances remain healthy.
+- Do not make the drawing larger just to improve visual score. Use only as much whitespace as needed for clear labels and routes.
 - Keep routed edges orderly too: prefer short horizontal, vertical, diagonal, or gently curved corridors over irregular zigzags.
 - If a small similarly named local group can remove crossings by moving inward, outward, upward, or downward, move the nodes instead of adding large bends.
 - For ring, wheel, or circular gadget layouts, put local satellite nodes radially outward from their anchor and route long skip edges on a larger outer radius. Do not let long skip edges cut through local node labels.
@@ -158,9 +160,11 @@ Be strict about:
 - edges that take a very long detour even though a direct or small-bend route would be clear;
 - two unrelated edges that run close together for a long visible segment.
 - visibly chaotic placement when the graph has repeated modules, symmetric substructures, layers, rows, columns, or ring-like order that could be drawn more evenly.
+- layouts that are excessively spread out with large empty gaps, long average edges, or a high canvas-area-per-node when a more compact readable drawing would work.
 
 Ordinary edge crossings are acceptable only when the graph remains clearly readable and the crossings do not occur near nodes or labels.
-If a figure needs another iteration, set acceptable=false and give concrete, local suggestions such as aligning a named row/column, spacing a repeated group evenly, moving a named pair/group inward or outward, or rerouting specific long edges.
+Do not reward size by itself: a compact graph with comfortable clearance should score as well as, or better than, a sprawling graph with the same readability.
+If a figure needs another iteration, set acceptable=false and give concrete, local suggestions such as aligning a named row/column, spacing a repeated group evenly, moving a named pair/group inward or outward, compacting an over-spread region, or rerouting specific long edges.
 """
 
 MACRO_RELAYOUT_SYSTEM_PROMPT = """You are the macro-relayout module in a Text-to-Graph feedback loop.
@@ -178,7 +182,8 @@ Hard requirements:
 - For small similarly named bridge or connector groups, consider moving the whole local group before adding curvature: squeeze inward to clear external corridors, or move outward to separate crossing diagonals from nearby edges.
 - Improve global order whenever possible: align natural rows/columns, preserve equal spacing inside repeated modules, center paired substructures around a shared axis, and make ring-like layouts evenly spaced around their center.
 - Keep waypoint corridors visually organized. Prefer shared horizontal/vertical levels only when they do not create long near-overlaps; otherwise use separated parallel levels with consistent spacing.
-- Prefer larger, cleaner drawings over compact drawings. Empty whitespace is acceptable.
+- Prefer compact, clean drawings over unnecessarily large drawings. Empty whitespace is useful only when it improves readability.
+- Avoid solving visual issues by repeatedly expanding the whole coordinate frame. First try local group moves, route simplification, alignment, and compact separation.
 - Keep coordinates practical for TikZ: use a canvas roughly within x,y = -14..14, never beyond -18..18.
 - Typical adjacent spacing should be 1.6 to 4.0 coordinate units. Do not use 20+ unit gaps.
 - Keep edge looseness moderate, usually 0.8 to 1.3. Avoid huge loops made only by looseness.
@@ -635,6 +640,7 @@ def _build_macro_relayout_prompt(
             "For over-routed edges, remove unnecessary waypoints and use a straight or small-bend route when node clearance allows it.",
             "For edge pairs that run too close for a long segment, assign separate compact corridors or simplify one of the two routes.",
             "Improve symmetry and order: align natural rows/columns, even out repeated groups, and use consistent waypoint levels when that does not create overlaps.",
+            "Avoid unnecessary expansion: if canvas_area_per_node or mean_edge_path_length is high, try compacting groups while preserving safe clearance.",
             "Use explicit coordinates for every node.",
             "",
             "params:",
@@ -668,6 +674,7 @@ def _build_visual_review_prompt(
             "Decide whether the layout is visually acceptable or another iteration should modify node coordinates and edge routing.",
             "Focus on the actual image, not only the JSON.",
             "Set acceptable=false if any edge appears to overlap or pass too close to an unrelated node or label.",
+            "Use the computed compactness metrics carefully: very low clearance is bad, but very high canvas_area_per_node or mean_edge_path_length can also be bad when the graph could be compact and readable.",
             "",
             "original graph description:",
             text,

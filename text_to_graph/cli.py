@@ -8,7 +8,16 @@ import sys
 from pathlib import Path
 
 from .evaluate import evaluate_benchmark
-from .llm import DEFAULT_API_KEY, DEFAULT_BASE_URL, DEFAULT_MODEL, LLMClientConfig, LLMGraphError, check_health, list_models
+from .llm import (
+    DEFAULT_API_KEY,
+    DEFAULT_BASE_URL,
+    DEFAULT_HEALTH_URL,
+    DEFAULT_MODEL,
+    LLMClientConfig,
+    LLMGraphError,
+    check_health,
+    list_models,
+)
 from .workflow import TextToGraphWorkflow
 
 
@@ -39,7 +48,7 @@ def main(argv: list[str] | None = None) -> int:
     eval_parser.add_argument("--timeout", type=int, default=300, help="Per GPT API request timeout in seconds.")
 
     health_parser = subparsers.add_parser("health", help="Check the local GPT-5 API health endpoint.")
-    health_parser.add_argument("--health-url", default="http://localhost:1455/health", help="Health endpoint URL.")
+    health_parser.add_argument("--health-url", default=DEFAULT_HEALTH_URL, help="Health endpoint URL.")
 
     models_parser = subparsers.add_parser("models", help="List models from the local GPT-5 API.")
     models_parser.add_argument("--base-url", default=DEFAULT_BASE_URL, help="OpenAI-compatible API base URL.")

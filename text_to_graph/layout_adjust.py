@@ -502,6 +502,8 @@ def _layout_score(
         overflow = max(0.0, abs(x) - MAX_CANVAS_ABS * 0.95) + max(0.0, abs(y) - MAX_CANVAS_ABS * 0.95)
         score += 6.0 * overflow * overflow
 
+    score += _compactness_penalty(positions)
+
     return score
 
 
@@ -615,6 +617,17 @@ def _path_regularity_score(path: list[tuple[float, float]]) -> float:
         if diagonal_error / length < 0.12:
             score += 0.035 * diagonal_error * diagonal_error
     return score
+
+
+def _compactness_penalty(positions: dict[str, tuple[float, float]]) -> float:
+    if len(positions) < 2:
+        return 0.0
+    xs = [x for x, _ in positions.values()]
+    ys = [y for _, y in positions.values()]
+    area_per_node = ((max(xs) - min(xs)) * (max(ys) - min(ys))) / len(positions)
+    if area_per_node <= 9.0:
+        return 0.0
+    return 0.035 * (area_per_node - 9.0) ** 2
 
 
 def _variance(values: list[float]) -> float:

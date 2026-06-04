@@ -207,7 +207,7 @@ class TextToGraphWorkflow:
         if len(score_history) >= 2 and float(score_history[-1]) <= float(max(score_history[:-1])) + 0.5:
             issues.append(
                 "The visual score has stagnated. Abandon the current routing strategy and choose a structurally "
-                "different layout with wider node separation and different long-edge corridors."
+                "different layout with cleaner local spacing, compact separation, and different long-edge corridors."
             )
 
         if visual_review and not visual_review.ok:
@@ -217,8 +217,8 @@ class TextToGraphWorkflow:
             candidate.warnings.append(_motion_warning(motion))
             if _insufficient_macro_motion(motion):
                 retry_issues = issues + [
-                    "The macro relayout still moved node coordinates too little. Rebuild the layout in a larger "
-                    "coordinate frame; move whole clusters or local gadgets, not only edge bends.",
+                    "The macro relayout still moved node coordinates too little. Rebuild the layout with meaningful "
+                    "cluster or local-gadget motion, but do not expand the whole drawing unless clearance requires it.",
                     _motion_warning(motion),
                 ]
                 candidate = self._macro_relayout(text, spec, retry_issues, image_path, layout_metrics, params)
